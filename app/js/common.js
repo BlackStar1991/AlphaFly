@@ -1,44 +1,5 @@
 $(document).ready(function () {
 
-//MENU
-    var headerPage = $('.header');
-
-    $('.open-menu-min').on("click", function () {
-        $(this).toggleClass('close-menu-min');
-        $(".bl_nav__mobile").toggleClass('closeMenu');
-
-    });
-
-
-    var buttonRubrics = $(".open-menu-main"),
-        fieldRubrics = $(".bl_fullCategories__field");
-
-
-    var buttonCategories = $(".bl_catalogProducts__title"),
-        fieldCategories = $(".bl_catalogProducts__full");
-
-
-    var buttonInformation = $(".code_information__title"),
-        fieldInformation = $(".code_information__full");
-
-
-    var buttonContacts = $(".code_contacts__title"),
-        fieldContacts = $(".code_contacts__full");
-
-
-    var buttonAdress = $(".code_adress__title"),
-        fieldAdress = $(".code_adress__full");
-
-
-    var buttonFilterCategories =$(".rubric__title_button__categories"),
-        fieldFilterCategories = $(".bl_filters");
-
-    var buttonAllFilters = $(".rubric__title_button__filters"),
-        fieldAllFilters = $(".bl_filters__productsFilters");
-
-
-//////////////////////////////////////////
-
 
 //   sliderEffect
     function sliderEffectForButtons(button, element, duration) {
