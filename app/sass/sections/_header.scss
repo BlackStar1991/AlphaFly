@@ -14,8 +14,12 @@
 
 .bl_controls_item{
   display: inline-block;
-  margin-left: 10px;
-  padding-left: 30px;
+  margin-left: 20px;
+  padding-left: 24px;
+
+  &:first-child{
+    margin-left: 0;
+  }
 }
 
 .bl_controls__link{
@@ -43,7 +47,7 @@
       content: "";
       position: absolute;
       top: 0;
-      left: -16px;
+      left: -26px;
       width: 16px;
       height: 16px;
       background: url("../../image/icon_contact.svg") 50% 50% no-repeat;
@@ -248,13 +252,50 @@
 }
 
 
+.main_header{
+  clear: both;
+  width: 100%;
+
+  padding-top: 17px;
+  padding-bottom: 16px;
+
+  box-sizing: border-box;
+  border-top: 2px solid white;
+}
+
+
+.header_logo{
+  width: 100%;
+}
+
+.header_logo__link{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.header_logo__image{
+  display: block;
+  width: 100%;
+
+}
+
+.header_logo__title{
+
+  color: #fff;
+  margin: 0;
+  font-size: 14px;
+
+}
+
+
 
 .bl_search {
   position: relative;
-  margin-top: 13%;
+  margin-top: 10px;
+  margin-left: 26px;
   width: 100%;
   max-width: 415px;
-  //overflow: hidden;
 }
 
 .bl_search__field {
@@ -265,21 +306,16 @@
   background-color: #fff;
   outline: none;
   text-indent: 15px;
+  color: #000;
+  font-size: 16px;
 
   &::placeholder {
-
     text-align: center;
     width: 70px;
-    height: 13px;
-    color: #333333;
     font-family: $ArialNarrow;
-
-    font-size: 14px;
-    font-weight: 400;
-
   }
   &:hover{
-    box-shadow: 0 0 10px 1px $color_red;
+    box-shadow: 0 0 4px 2px $color_red;
   }
 
   &:focus {
@@ -322,7 +358,104 @@
 }
 
 
+.bl_phones{
+  float: right;
+
+}
+
+.bl_phones__text{
+  text-align: left;
+  color: #fff;
+}
+
+
+.bl_shopBag{
+  float: right;
+  display: block;
+  clear: both;
+  color: #fff;
+  fill: #fff;
+
+  transition: all .2s;
+
+  &:hover{
+    color: $color_red;
+    fill: $color_red;
+    transition: all .2s;
+  }
+}
+
+.bl_shopBag__goods{
+  text-align: left;
+  display: inline-block;
+}
 
 
 
+.bl_shopBag__image{
+  display: inline-block;
+  margin-right: 4px;
+  transform: translateY(12px);
 
+  width: 44px;
+  height: 40px;
+}
+
+
+#icon_bag{
+
+  fill-rule: evenodd;
+}
+
+// Navigation
+
+.bl_nav{
+  clear: both;
+  width: 100%;
+  min-height:40px;
+  background-color: $color_red;
+}
+
+.bl_nav__wrapper{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.bl_nav__fullItems{
+  display: inline-block;
+  width: 80%;
+  line-height: 40px;
+}
+
+.bl_nav__item{
+  display: inline-block;
+  width: calc(80% / 4);
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.bl_nav__link{
+  color: #fff;
+  font-size: 18px;
+}
+
+.bl_nav__discount{
+  display: inline-block;
+  width: 15%;
+  float: right;
+  line-height: 40px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #000;
+
+}
+
+.bl_nav__discount__link{
+  display: block;
+
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+
+}
