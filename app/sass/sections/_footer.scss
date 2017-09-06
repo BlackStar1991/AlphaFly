@@ -114,9 +114,9 @@
 
 
 
-    content: '\f164';
+    content: '\f003';
     font-family: $FontAwesome;
-    font-size: 26px;
+    font-size: 28px;
     color: #fff;
 
     z-index:3;
@@ -200,6 +200,11 @@
   top: 50%;
   left: 50%;
 
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+
   transform: translate(-50%, -50%);
 
   color: #000;
@@ -220,6 +225,9 @@
 
 .bl_ancor__icon{
   &:before{
+    position: absolute;
+    top: 0;
+    left: 7px;
     content: "";
     width: 20px;
     height: 20px;

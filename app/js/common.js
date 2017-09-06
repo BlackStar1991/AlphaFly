@@ -79,83 +79,83 @@ $(document).ready(function () {
 
     //// Main-slider
 
-    $(".bl_mainSlider").owlCarousel({
-        items: 1,
-        loop: true,
-        nav: true,
-        navText: true,
-        dots: false,
-        autoplay: false,
-        stopOnHover: true,
-        margin: 5,
-        smartSpeed: 1000, //Время движения слайда
-        autoplayTimeout: 4000, //Время смены слайда
-        pagination: false,
-        responsiveClass: true,
-        responsive: {
-            320: {
-                items: 1
-            }
-        }
-    });
+    // $(".bl_mainSlider").owlCarousel({
+    //     items: 1,
+    //     loop: true,
+    //     nav: true,
+    //     navText: true,
+    //     dots: false,
+    //     autoplay: false,
+    //     stopOnHover: true,
+    //     margin: 5,
+    //     smartSpeed: 1000, //Время движения слайда
+    //     autoplayTimeout: 4000, //Время смены слайда
+    //     pagination: false,
+    //     responsiveClass: true,
+    //     responsive: {
+    //         320: {
+    //             items: 1
+    //         }
+    //     }
+    // });
 
 // slider_popular
 
-    $(".slider_popular").owlCarousel({
-        items: 4,
-        loop: true,
-        nav: true,
-        navText: true,
-        dots: false,
-        autoplay: false,
-        stopOnHover: true,
-        margin: 0,
-        smartSpeed: 1000, //Время движения слайда
-        autoplayTimeout: 4000, //Время смены слайда
-        pagination: false,
-        responsiveClass: true,
-        responsive: {
-            1200: {
-                items: 4
-            },
-            992: {
-                items: 3,
-                center: true
-            },
-
-            550: {
-                items: 2
-            },
-            320: {
-                items: 1,
-                center: true
-            }
-
-        }
-    });
+    // $(".slider_popular").owlCarousel({
+    //     items: 4,
+    //     loop: true,
+    //     nav: true,
+    //     navText: true,
+    //     dots: false,
+    //     autoplay: false,
+    //     stopOnHover: true,
+    //     margin: 0,
+    //     smartSpeed: 1000, //Время движения слайда
+    //     autoplayTimeout: 4000, //Время смены слайда
+    //     pagination: false,
+    //     responsiveClass: true,
+    //     responsive: {
+    //         1200: {
+    //             items: 4
+    //         },
+    //         992: {
+    //             items: 3,
+    //             center: true
+    //         },
+    //
+    //         550: {
+    //             items: 2
+    //         },
+    //         320: {
+    //             items: 1,
+    //             center: true
+    //         }
+    //
+    //     }
+    // });
 
 
 ////// slider_newProducts
 
     $(".slider_newProducts").owlCarousel({
-        items: 4,
+        items: 5,
         loop: true,
         nav: true,
         navText: true,
         dots: false,
         autoplay: false,
         stopOnHover: true,
-        margin: 0,
+        margin: 20,
         smartSpeed: 1000, //Время движения слайда
         autoplayTimeout: 4000, //Время смены слайда
         pagination: false,
         responsiveClass: true,
         responsive: {
             1200: {
-                items: 4
+                items: 5
             },
             992: {
-                items: 3,
+                items: 4,
                 center: true
             },
             550: {
@@ -169,33 +169,31 @@ $(document).ready(function () {
         }
     });
 
-//    probuct_image__slider - SLIDER for Product
+//    Discount Products  - Скидки
 
-    $(".product_image__slider").owlCarousel({
-        items: 3,
+    $(".slider_discountProducts").owlCarousel({
+        items: 5,
         loop: true,
         nav: true,
-        navText: false,
+        navText: true,
         dots: false,
-
-        mouseDrag: false,
-        touchDrag: false,
-
         autoplay: false,
         stopOnHover: true,
-        margin: 15,
-        center: true,
+        margin: 20,
         smartSpeed: 1000, //Время движения слайда
         autoplayTimeout: 4000, //Время смены слайда
         pagination: false,
         responsiveClass: true,
         responsive: {
             1200: {
-                items: 3
+                items: 5
+            },
+            992: {
+                items: 4,
+                center: true
             },
             550: {
-                items: 2,
-                center: false
+                items: 2
             },
             320: {
                 items: 1,
@@ -207,71 +205,71 @@ $(document).ready(function () {
 
 /////// slider_withThisProductBuy - С этим товаром покупают:
 
-    $(".slider_withThisProductBuy").owlCarousel({
-        items: 4,
-        loop: true,
-        nav: true,
-        navText: true,
-        dots: false,
-        autoplay: false,
-        stopOnHover: true,
-        margin: 0,
-        smartSpeed: 1000, //Время движения слайда
-        autoplayTimeout: 4000, //Время смены слайда
-        pagination: false,
-        responsiveClass: true,
-        responsive: {
-            1200: {
-                items: 4
-            },
-            992: {
-                items: 3,
-                center: true
-            },
-            550: {
-                items: 2
-            },
-            320: {
-                items: 1,
-                center: true
-            }
-
-        }
-    });
+    // $(".slider_withThisProductBuy").owlCarousel({
+    //     items: 4,
+    //     loop: true,
+    //     nav: true,
+    //     navText: true,
+    //     dots: false,
+    //     autoplay: false,
+    //     stopOnHover: true,
+    //     margin: 0,
+    //     smartSpeed: 1000, //Время движения слайда
+    //     autoplayTimeout: 4000, //Время смены слайда
+    //     pagination: false,
+    //     responsiveClass: true,
+    //     responsive: {
+    //         1200: {
+    //             items: 4
+    //         },
+    //         992: {
+    //             items: 3,
+    //             center: true
+    //         },
+    //         550: {
+    //             items: 2
+    //         },
+    //         320: {
+    //             items: 1,
+    //             center: true
+    //         }
+    //
+    //     }
+    // });
 
 //// slider_youViewed  - Вы смотрели:
 
-    $(".slider_youViewed").owlCarousel({
-        items: 4,
-        loop: true,
-        nav: true,
-        navText: true,
-        dots: false,
-        autoplay: false,
-        stopOnHover: true,
-        margin: 0,
-        smartSpeed: 1000, //Время движения слайда
-        autoplayTimeout: 4000, //Время смены слайда
-        pagination: false,
-        responsiveClass: true,
-        responsive: {
-            1200: {
-                items: 4
-            },
-            992: {
-                items: 3,
-                center: true
-            },
-            550: {
-                items: 2
-            },
-            320: {
-                items: 1,
-                center: true
-            }
-
-        }
-    });
+    // $(".slider_youViewed").owlCarousel({
+    //     items: 4,
+    //     loop: true,
+    //     nav: true,
+    //     navText: true,
+    //     dots: false,
+    //     autoplay: false,
+    //     stopOnHover: true,
+    //     margin: 0,
+    //     smartSpeed: 1000, //Время движения слайда
+    //     autoplayTimeout: 4000, //Время смены слайда
+    //     pagination: false,
+    //     responsiveClass: true,
+    //     responsive: {
+    //         1200: {
+    //             items: 4
+    //         },
+    //         992: {
+    //             items: 3,
+    //             center: true
+    //         },
+    //         550: {
+    //             items: 2
+    //         },
+    //         320: {
+    //             items: 1,
+    //             center: true
+    //         }
+    //
+    //     }
+    // });
 
 //// hover sliders arrows navigations
 
