@@ -15,6 +15,131 @@
 /* Medium Devices, Desktops 992px */
 @media only screen and (max-width: 991px) {
 
+  .bl_controls{
+    float: none;
+    position: fixed;
+    left: -280px;
+    top: 0;
+    transition: left 0.3s ease-in;
+
+    padding-top: 30px;
+    width: 270px;
+    height: 100vh;
+    background-color: rgba(255,0,0, .8);
+
+    z-index: 100;
+  }
+
+  .bl_controls_item{
+    width: 100%;
+    display: block;
+    padding-left: 10px;
+    margin: 10px auto;
+    border-bottom: 2px solid black;
+  }
+
+  .bl_controls__link{
+
+    font-size: 20px;
+    margin-left: 10%;
+  }
+
+
+  .bl_manage{
+    float: none;
+    width: calc(100% - 50px);
+    margin: 0 auto;
+  }
+  .bl_manage__item{
+
+  }
+
+  .bl_language{
+  margin-left: 0;
+  }
+
+
+  .bl_search{
+    margin: 10px auto;
+  }
+
+  .bl_phones{
+    width: 100%;
+  }
+  .bl_phones__text{
+    font-size: 18px;
+  }
+
+
+  .bl_shopBag{
+    float: none;
+    width: 50%;
+    text-align: center;
+    border: 1px solid white;
+    padding: 20px 0;
+    margin: 10px auto;
+  }
+
+  .bl_shopBag__goods{
+    text-align: center;
+    font-size: 18px;
+  }
+  .bl_shopBag__image{
+    width: 54px;
+    height: 50px;
+  }
+
+
+  .bl_nav__fullItems{
+    display: none;
+    width: 100%;
+  }
+  .bl_nav__item{
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #000;
+    border-top:none;
+    margin: 0 auto;
+  }
+
+  .bl_nav__link,
+  .bl_nav__discount__link{
+    display: block;
+    width: 100%;
+    font-family: $ArialBold;
+    text-align: center;
+
+  }
+
+
+  .bl_nav__discount{
+    float: none;
+    //display: block;
+    display: none;
+    width: 100%;
+    margin-bottom: 4px;
+
+  }
+
+.bl_navFooter {
+  display: flex;
+
+  justify-content: space-between;
+
+}
+  .bl_navFooter__link{
+    text-align: center;
+    font-size: 18px;
+  }
+
+.bl_mainAdress{
+  margin-top: 10px;
+}
+
+  .bl_subscribe{
+    margin-top: 15px;
+  }
 
 
 }
@@ -35,6 +160,13 @@
 /* Extra Small Devices, Phones 480px */
 @media only screen and (max-width: 480px) {
 
+  .bl_subscribe__icon{
+    display: block;
+  }
+
+  .bl_subscribe__choose{
+    display: none;
+  }
 }
 
 /* Custom, iPhone Retina 320px */

@@ -12,6 +12,50 @@
   line-height: 40px;
 }
 
+.bl_controls.bl_controls__hidden{
+  left:0;
+  transition: left 0.3s ease-in;
+}
+
+
+
+.bl_controls__button{
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #000;
+  z-index: 101 ;
+}
+
+.icon-controls__open{
+  &:before{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    content: "\f0c9";
+    font-family: $FontAwesome;
+    font-size: 30px;
+    color: #000;
+  }
+}
+.icon-controls__close{
+  &:before{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    content: "\f00d";
+    font-family: $FontAwesome;
+    font-size: 30px;
+    color: #000;
+  }
+}
+
+
+
+
 .bl_controls_item{
   display: inline-block;
   margin-left: 20px;
@@ -197,7 +241,7 @@
   line-height: 40px;
   cursor: pointer;
   text-transform: uppercase;
-  z-index: 2;
+  z-index: 102;
 
 }
 
@@ -276,8 +320,9 @@
 
 .header_logo__image{
   display: block;
+  margin: 0 auto;
   width: 100%;
-
+  //max-width: 222px;
 }
 
 .header_logo__title{
@@ -415,6 +460,57 @@
   min-height:40px;
   background-color: $color_red;
 }
+
+
+.bl_nav__button{
+  display: block;
+
+  width: 100%;
+  margin: 5px auto;
+  border: 1px solid #000;
+  box-sizing: border-box;
+
+  background-color: $color_red2;
+  border-radius: 4px;
+}
+
+.bl_nav__button_text{
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 30px;
+  padding: 4px 0;
+
+}
+
+.icon_stars{
+  position: relative;
+
+  &:before{
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left:5%;
+    @include sprite($icon-star-white);
+    z-index: 5;
+  }
+
+  &:after{
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 5%;
+    @include sprite($icon-star-white);
+    z-index: 5;
+  }
+
+}
+
 
 .bl_nav__wrapper{
   position: relative;

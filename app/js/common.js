@@ -1,7 +1,30 @@
 $(document).ready(function () {
 
 
-//   sliderEffect
+//// Controls Menu
+
+    var buttonControlsInformation = $(".bl_controls__button"),
+        controlsField = $(".bl_controls"),
+        animateMobileControls = "bl_controls__hidden",
+        iconControlsOpen = "icon-controls__open",
+        iconControlsClose = "icon-controls__close";
+
+    buttonControlsInformation.on("click", function(){
+
+        $(this).toggleClass("icon-controls__open icon-controls__close");
+        controlsField.toggleClass(animateMobileControls);
+    });
+
+    var buttonCategories = $(".bl_nav__button"),
+        fullCategoriesFild = $(".bl_nav__fullItems"),
+        discountBlock = $(".bl_nav__discount");
+
+    sliderEffectForButtons(buttonCategories, fullCategoriesFild, 300);
+    sliderEffectForButtons(buttonCategories, discountBlock, 500);
+
+
+
+///  sliderEffect
     function sliderEffectForButtons(button, element, duration) {
 
         // return function () {
@@ -32,26 +55,26 @@ $(document).ready(function () {
 
 /// buttons must work only  $(window).width() <=991px
 
-
-    function liveScopeOfButtons() {
-
-        if ($(window).width() <= 991) {
-
-            sliderEffectForButtons(buttonRubrics, fieldRubrics, 600);
-            sliderEffectForButtons(buttonCategories, fieldCategories, 600);
-            sliderEffectForButtons(buttonInformation, fieldInformation, 600);
-            sliderEffectForButtons(buttonContacts, fieldContacts, 600);
-            sliderEffectForButtons(buttonAdress, fieldAdress, 600);
-            sliderEffectForButtons(buttonFilterCategories, fieldFilterCategories, 600);
-            sliderEffectForButtons(buttonAllFilters, fieldAllFilters , 600);
-
-        } else {
-            return false;
-        }
-
-    }
-
-    liveScopeOfButtons();
+    //
+    // function liveScopeOfButtons() {
+    //
+    //     if ($(window).width() <= 991) {
+    //
+    //         sliderEffectForButtons(buttonRubrics, fieldRubrics, 600);
+    //         sliderEffectForButtons(buttonCategories, fieldCategories, 600);
+    //         sliderEffectForButtons(buttonInformation, fieldInformation, 600);
+    //         sliderEffectForButtons(buttonContacts, fieldContacts, 600);
+    //         sliderEffectForButtons(buttonAdress, fieldAdress, 600);
+    //         sliderEffectForButtons(buttonFilterCategories, fieldFilterCategories, 600);
+    //         sliderEffectForButtons(buttonAllFilters, fieldAllFilters , 600);
+    //
+    //     } else {
+    //         return false;
+    //     }
+    //
+    // }
+    //
+    // liveScopeOfButtons();
 
 
     //// Main-slider

@@ -938,6 +938,10 @@ button {
 .block_white {
   background-color: #fff; }
 
+.text_error {
+  font-size: 16px;
+  color: #f00; }
+
 /*********************************************/
 /*TYPOGRAPHY*/
 /*********************************************/
@@ -957,6 +961,41 @@ button {
 .bl_controls {
   float: left;
   line-height: 40px; }
+
+.bl_controls.bl_controls__hidden {
+  left: 0;
+  transition: left 0.3s ease-in; }
+
+.bl_controls__button {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #000;
+  z-index: 101; }
+
+.icon-controls__open:before {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  content: "\f0c9";
+  font-family: "FontAwesome";
+  font-size: 30px;
+  color: #000; }
+
+.icon-controls__close:before {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  content: "\f00d";
+  font-family: "FontAwesome";
+  font-size: 30px;
+  color: #000; }
 
 .bl_controls_item {
   display: inline-block;
@@ -1083,7 +1122,7 @@ button {
   line-height: 40px;
   cursor: pointer;
   text-transform: uppercase;
-  z-index: 2; }
+  z-index: 102; }
 
 .bl_language__active:after {
   position: absolute;
@@ -1141,6 +1180,7 @@ button {
 
 .header_logo__image {
   display: block;
+  margin: 0 auto;
   width: 100%; }
 
 .header_logo__title {
@@ -1248,6 +1288,48 @@ button {
   width: 100%;
   min-height: 40px;
   background-color: #e50014; }
+
+.bl_nav__button {
+  display: block;
+  width: 100%;
+  margin: 5px auto;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  background-color: #dd101c;
+  border-radius: 4px; }
+
+.bl_nav__button_text {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 30px;
+  padding: 4px 0; }
+
+.icon_stars {
+  position: relative; }
+  .icon_stars:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5%;
+    background-image: url(../image/sprite.png);
+    background-position: -45px 0px;
+    width: 40px;
+    height: 40px;
+    z-index: 5; }
+  .icon_stars:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 5%;
+    background-image: url(../image/sprite.png);
+    background-position: -45px 0px;
+    width: 40px;
+    height: 40px;
+    z-index: 5; }
 
 .bl_nav__wrapper {
   position: relative;
@@ -1369,6 +1451,7 @@ button {
     line-height: 50px; }
 
 .bl_subscribe__button {
+  position: relative;
   float: left;
   width: 40%;
   max-width: 220px;
@@ -1380,6 +1463,17 @@ button {
   .bl_subscribe__button:hover {
     transition: all 0.2s;
     background-color: #dd101c; }
+
+.bl_subscribe__icon {
+  display: none; }
+  .bl_subscribe__icon:after {
+    position: absolute;
+    top: 0;
+    content: '\f164';
+    font-family: "FontAwesome";
+    font-size: 26px;
+    color: #fff;
+    z-index: 3; }
 
 .footer_firstPart__phones {
   float: none;
@@ -1418,7 +1512,7 @@ button {
 .bl_ancor {
   position: fixed;
   bottom: 80px;
-  right: 3%;
+  right: 2%;
   width: 124px;
   height: 35px;
   background: url("../../image/icon_up.svg") 50% 50% no-repeat;
@@ -1469,6 +1563,94 @@ button {
     font-size: 15px; } }
 
 /* Medium Devices, Desktops 992px */
+@media only screen and (max-width: 991px) {
+  .bl_controls {
+    float: none;
+    position: fixed;
+    left: -280px;
+    top: 0;
+    transition: left 0.3s ease-in;
+    padding-top: 30px;
+    width: 270px;
+    height: 100vh;
+    background-color: rgba(255, 0, 0, 0.8);
+    z-index: 100; }
+  .bl_controls_item {
+    width: 100%;
+    display: block;
+    padding-left: 10px;
+    margin: 10px auto;
+    border-bottom: 2px solid black; }
+  .bl_controls__link {
+    font-size: 20px;
+    margin-left: 10%; }
+  .bl_manage {
+    float: none;
+    width: calc(100% - 50px);
+    margin: 0 auto; }
+  .bl_language {
+    margin-left: 0; }
+  .bl_search {
+    margin: 10px auto; }
+  .bl_phones {
+    width: 100%; }
+  .bl_phones__text {
+    font-size: 18px; }
+  .bl_shopBag {
+    float: none;
+    width: 50%;
+    text-align: center;
+    border: 1px solid white;
+    padding: 20px 0;
+    margin: 10px auto; }
+  .bl_shopBag__goods {
+    text-align: center;
+    font-size: 18px; }
+  .bl_shopBag__image {
+    width: 54px;
+    height: 50px; }
+  .bl_nav__fullItems {
+    display: none;
+    width: 100%; }
+  .bl_nav__item {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #000;
+    border-top: none;
+    margin: 0 auto; }
+  .bl_nav__link,
+  .bl_nav__discount__link {
+    display: block;
+    width: 100%;
+    font-family: "Arial Narrow Bold", sans-serif;
+    text-align: center; }
+  .bl_nav__discount {
+    float: none;
+    display: none;
+    width: 100%;
+    margin-bottom: 4px; }
+  .bl_navFooter {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .bl_navFooter__link {
+    text-align: center;
+    font-size: 18px; }
+  .bl_mainAdress {
+    margin-top: 10px; }
+  .bl_subscribe {
+    margin-top: 15px; } }
+
 /* Small Devices, Tablets 768px */
 /* Extra Small Devices, Phones 480px */
+@media only screen and (max-width: 480px) {
+  .bl_subscribe__icon {
+    display: block; }
+  .bl_subscribe__choose {
+    display: none; } }
+
 /* Custom, iPhone Retina 320px */

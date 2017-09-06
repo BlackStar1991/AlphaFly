@@ -83,6 +83,7 @@
 }
 
 .bl_subscribe__button{
+  position: relative;
   float: left;
   width: 40%;
   max-width:220px;
@@ -100,6 +101,30 @@
 
 
 }
+
+
+
+.bl_subscribe__icon{
+  display: none;
+
+
+  &:after{
+    position: absolute;
+    top: 0;
+
+
+
+    content: '\f164';
+    font-family: $FontAwesome;
+    font-size: 26px;
+    color: #fff;
+
+    z-index:3;
+
+  }
+
+}
+
 
 .footer_firstPart__phones{
   float: none;
@@ -161,7 +186,7 @@
   position: fixed;
 
   bottom: 80px;
-  right: 3%;
+  right: 2%;
 
   width: 124px;
   height: 35px;

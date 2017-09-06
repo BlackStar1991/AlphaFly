@@ -56,7 +56,12 @@
                     </div>
 
 
+                    <button class="bl_controls__button icon-controls__open hidden-lg"></button>
+
                     <ul class="bl_controls">
+
+
+
                         <li class="bl_controls_item"><a href="#"
                                                         class="bl_controls__link controls_icon controls_icon__contacts">Контакты</a>
                         </li>
@@ -107,7 +112,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2 clearfix">
                         <div class="bl_phones">
                             <p class="bl_phones__text">+38 (096) 111-22-33</p>
                             <p class="bl_phones__text">+38 (050) 222-33-44</p>
@@ -137,6 +142,9 @@
                 <div class="container">
                     <div class="col-xs-12">
                         <nav class="bl_nav__wrapper">
+                            <button type="button" class="bl_nav__button icon_stars hidden-md hidden-lg" >
+                                <span class="bl_nav__button_text ">категории</span>
+                            </button>
                             <ul class="bl_nav__fullItems">
                                 <li class="bl_nav__item"><a href="#" class="bl_nav__link">Мужская одежда</a></li>
                                 <li class="bl_nav__item"><a href="#" class="bl_nav__link">Женская одежда</a></li>
@@ -187,7 +195,7 @@
                     </div>
 
                     <div class="bl_subscribe">
-                        <p class="bl_subscribe__information hidden-sm">
+                        <p class="bl_subscribe__information hidden-xs">
                             Будьте в курсе новостей и акций, от компании Alpha industries подписавшись на нашу рассылку.
                             Не пропустите свою скидку, когда у нас будет АКЦИЯ!
                         </p>
@@ -195,16 +203,17 @@
                         <form class="bl_subscribe__fullInput clearfix">
                             <input class="bl_subscribe__input" type="text" placeholder="Ваш емейл адрес ...">
                             <button class="bl_subscribe__button" type="button">
-                                <i class="bl_subscribe__icon visible-xs visible-sm"></i>
+                                <i class="bl_subscribe__icon"></i>
                                 <span class="bl_subscribe__choose">Подписаться</span>
                             </button>
                         </form>
 
+                        <p class="text_error hidden">Email указан не верно!</p>  <!-- Текст показывается если указан не правильный Email -->
 
                     </div>
                 </div>
 
-                <div class="col-md-2 col-md-offset-1 hidden-xs pull-right">
+                <div class="col-md-2 col-md-offset-1 hidden-xs pull-right ">
                     <div class="bl_phones footer_firstPart__phones clearfix">
                         <p class="bl_phones__text">+38 (096) 111-22-33</p>
                         <p class="bl_phones__text">+38 (050) 222-33-44</p>
