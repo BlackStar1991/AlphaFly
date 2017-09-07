@@ -1572,7 +1572,6 @@ button {
   content: "";
   width: 40px;
   min-height: 40px;
-  border: 1px solid #000;
   background: url("../image/icon_star.svg") 50% 50% no-repeat;
   z-index: 4; }
 
@@ -1583,7 +1582,6 @@ button {
   content: "";
   width: 50px;
   min-height: 40px;
-  background-color: #fff;
   z-index: 3; }
 
 /*********************************************/

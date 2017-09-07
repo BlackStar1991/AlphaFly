@@ -437,8 +437,7 @@ $ml: 5%;
     content: "";
     width: 40px;
     min-height:40px;
-    border: 1px solid #000;
-    
+
     background: url("../image/icon_star.svg") 50% 50% no-repeat;
     //background-size: cover;
     z-index:4;
@@ -457,10 +456,11 @@ $ml: 5%;
     width: 50px;
     min-height:40px;
 
-    background-color: #fff;
     z-index:3;
   }
+
 }
+
 
 /*********************************************/
 /*FOOTER*/
