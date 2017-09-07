@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="utf-8">
+
+    <title> Alpha Fly </title>
+    <!-- SEO -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="image/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="image/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="image/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="image/favicon/apple-touch-icon-114x114.png">
+
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body class="body">
+<!--[if lt IE 10]>
+<p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="http://browsehappy.com/">обновите</a>
+    его.</p>
+<![endif]-->
+
+<!--======================================  HEADER ==========================================================-->
+<header id="header" class="header">
+    <div class="mainWrapper">
+        <div class="bl_fullNavigation">   <!-- bl_nav__mobile closeMenu  -->
+            <div class="container">
+                <div class="col-xs-12 clearfix">
+
+                    <div class="bl_language">
+                        <span class="bl_language__active">ua</span>
+                        <ul class="bl_language__variables hidden">
+                            <li class="bl_language__variables_item language-select">ua</li>
+                            <li class="bl_language__variables_item language-select">ru</li>
+                        </ul>
+                    </div>
+
+
+                    <button class="bl_controls__button icon-controls__open hidden-lg"></button>
+
+                    <ul class="bl_controls">
+
+
+                        <li class="bl_controls_item"><a href="#"
+                                                        class="bl_controls__link controls_icon controls_icon__contacts">Контакты</a>
+                        </li>
+                        <li class="bl_controls_item"><a href="#"
+                                                        class="bl_controls__link controls_icon controls_icon__delivery">Доставка</a>
+                        </li>
+                        <li class="bl_controls_item"><a href="#"
+                                                        class="bl_controls__link controls_icon controls_icon__size">Размер</a>
+                        </li>
+                        <li class="bl_controls_item"><a href="#"
+                                                        class="bl_controls__link controls_icon controls_icon__exchange">Обмен и возврат</a>
+                        </li>
+                    </ul>
+                    <ul class="bl_manage">
+                        <li class="bl_manage__item"><a href="#"
+                                                       class="bl_manage__link manage_icon manage_icon__login">Логин</a>
+                        </li>
+                        <li class="bl_manage__item"><a href="#" class="bl_manage__link manage_icon manage_icon__tab">Закладки
+                            (<span>99</span>)</a></li>
+                        <li class="bl_manage__item"><a href="#"
+                                                       class="bl_manage__link manage_icon manage_icon__compare">Сравнение
+                            товаров (<span>99</span>)</a></li>
+                        <li class="bl_manage__item"><a href="#"
+                                                       class="bl_manage__link manage_icon manage_icon__blog">Блог</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="main_header">
+                <div class="container">
+
+                    <div class="col-md-2">
+                        <div class="header_logo">
+                            <a href="#" class="header_logo__link">
+                                <img class="header_logo__image" src="image/logo.png" alt="">
+                                <h2 class="header_logo__title">от компании Alpha FLY</h2>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-md-offset-1">
+                        <div class="bl_search">
+                            <div class="bl_wrappen">
+                                <input class="bl_search__field " type="text" placeholder="Поиск товара">
+                                <button class="bl_search__button"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 clearfix">
+                        <div class="bl_phones">
+                            <p class="bl_phones__text">+38 (096) 111-22-33</p>
+                            <p class="bl_phones__text">+38 (050) 222-33-44</p>
+                            <p class="bl_phones__text">info@alpha-fly.com.ua</p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3 correct_left">
+                        <a class="bl_shopBag" href="#">
+                            <p class="bl_shopBag__goods">
+                                Товаров:<span class="bl_shopBag__things">999</span>
+                                <span class="bl_shopBag__price">(9999999 грн)</span>
+                            </p>
+                            <svg class="bl_shopBag__image" viewBox="0 0 44 40">
+                                <path id="icon_bag"
+                                      d="M1529.48,86.074h40.74v4.444h-40.74V86.074Zm40.74,11.851V92h-40.74v12.592a0.739,0.739,0,0,0,.74.741h5.21a3.7,3.7,0,1,0,4.4,0h15.6a3.7,3.7,0,1,0,4.4,0h4.47a0.741,0.741,0,0,0,0-1.481h-33.34V97.925h39.26Zm-43.7-24.443h2.96v11.11h40.74V78.667h-39.26V72.741a0.739,0.739,0,0,0-.74-0.741h-3.7A0.741,0.741,0,0,0,1526.52,73.481Z"
+                                      transform="translate(-1525.78 -72)"/>
+                            </svg>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bl_nav">
+                <div class="container">
+                    <div class="col-xs-12">
+                        <nav class="bl_nav__wrapper">
+                            <button type="button" class="bl_nav__button icon_stars hidden-md hidden-lg">
+                                <span class="bl_nav__button_text ">категории</span>
+                            </button>
+                            <ul class="bl_nav__fullItems">
+                                <li class="bl_nav__item"><a href="#" class="bl_nav__link">Мужская одежда</a></li>
+                                <li class="bl_nav__item"><a href="#" class="bl_nav__link">Женская одежда</a></li>
+                                <li class="bl_nav__item"><a href="#" class="bl_nav__link">Детская одежда</a></li>
+                                <li class="bl_nav__item"><a href="#" class="bl_nav__link">Аксессуары</a></li>
+                            </ul>
+
+                            <div class="bl_nav__discount">
+                                <a class="bl_nav__discount__link" href="#">Скидки</a>
+                            </div>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</header>
+<!--======================================= MAIN ==========================================================-->
+<main class="main">
+    <div class="mainWrapper">
+
+        <div class="bl_mainSlider hidden-xs hidden-sm">
+            <ul class="bl_mainSlider__full">
+                <li class="bl_mainSlider__item">
+                    <a class="bl_mainSlider__link" href="#">
+                        <img class="bl_mainSlider__image" src="image/mainSlider/mainSlider_1.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- NEW Products -->
+        <div class="bl_newProducts clearfix">
+            <div class="container">
+                <div class="col-xs-12">
+                    <h2 class="product_sliderCart__title decor-likeLabel icon-star">
+                        Новинки
+                    </h2>
+
+                    <ul class="slider_newProducts owl-carousel">
+                        <li class="bl_newProducts__item">
+                            <a class="bl_newProducts__link" href="#">
+                                <div class="bl_newProducts__blockImg">
+                                    <!-- mark Discount-->
+                                    <div class="bl_mark bl_mark__discount">
+                                        <div class="bl_wrappen">
+                                            <p class="bl_mark__text">-25%</p>
+                                        </div>
+                                    </div>
+
+                                    <img class="bl_newProducts__image" src="image/Products/product_1.jpg" alt="">
+                                </div>
+                                <h3 class="bl_newProducts__title">YOUTH N-3B Maveric Parka</h3>
+                            </a>
+
+                            <div class="product_sliderCart__price clearfix">
+                                <!--<span class="product_sliderCart__price_normalPrice">99999 грн.</span>-->
+                                <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
+                                <span class="product_sliderCart__price_newPrice">100 грн.</span>
+                            </div>
+
+                            <button class="button_sliderCart__buy">
+                                <span class="button_sliderCart__buy_text">в корзину</span>
+                            </button>
+                        </li>
+                        <li class="bl_newProducts__item">
+                            <a class="bl_newProducts__link" href="#">
+                                <div class="bl_newProducts__blockImg">
+                                    <!-- mark Discount-->
+                                    <div class="bl_mark bl_mark__discount">
+                                        <div class="bl_wrappen">
+                                            <p class="bl_mark__text">-25%</p>
+                                        </div>
+                                    </div>
+
+                                    <img class="bl_newProducts__image" src="image/Products/product_1.jpg" alt="">
+                                </div>
+                                <h3 class="bl_newProducts__title">YOUTH N-3B Maveric Parka ыва ываывава Maveric
+                                    Parka</h3>
+                            </a>
+
+                            <div class="product_sliderCart__price clearfix">
+                                <span class="product_sliderCart__price_normalPrice">99999 грн.</span>
+                                <!--<span class="product_sliderCart__price_oldPrice">2034 грн.</span>-->
+                                <!--<span class="product_sliderCart__price_newPrice">100 грн.</span>-->
+                            </div>
+
+                            <button class="button_sliderCart__buy">
+                                <span class="button_sliderCart__buy_text">в корзину</span>
+                            </button>
+                        </li>
+                        <li class="bl_newProducts__item">
+                            <a class="bl_newProducts__link" href="#">
+                                <div class="bl_newProducts__blockImg">
+                                    <!-- mark Discount-->
+                                    <div class="bl_mark bl_mark__discount">
+                                        <div class="bl_wrappen">
+                                            <p class="bl_mark__text">-25%</p>
+                                        </div>
+                                    </div>
+
+                                    <img class="bl_newProducts__image" src="image/Products/product_1.jpg" alt="">
+                                </div>
+                                <h3 class="bl_newProducts__title">YOUTH N-3B Maveric Parka</h3>
+                            </a>
+
+                            <div class="product_sliderCart__price clearfix">
+                                <!--<span class="product_sliderCart__price_normalPrice">99999 грн.</span>-->
+                                <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
+                                <span class="product_sliderCart__price_newPrice">100 грн.</span>
+                            </div>
+
+                            <button class="button_sliderCart__buy">
+                                <span class="button_sliderCart__buy_text">в корзину</span>
+                            </button>
+                        </li>
+                        <li class="bl_newProducts__item">
+                            <a class="bl_newProducts__link" href="#">
+                                <div class="bl_newProducts__blockImg">
+                                    <!-- mark Discount-->
+                                    <div class="bl_mark bl_mark__discount">
+                                        <div class="bl_wrappen">
+                                            <p class="bl_mark__text">-25%</p>
+                                        </div>
+                                    </div>
+
+                                    <img class="bl_newProducts__image" src="image/Products/product_1.jpg" alt="">
+                                </div>
+                                <h3 class="bl_newProducts__title">YOUTH N-3B Maveric Parka</h3>
+                            </a>
+
+                            <div class="product_sliderCart__price clearfix">
+                                <!--<span class="product_sliderCart__price_normalPrice">99999 грн.</span>-->
+                                <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
+                                <span class="product_sliderCart__price_newPrice">100 грн.</span>
+                            </div>
+
+                            <button class="button_sliderCart__buy">
+                                <span class="button_sliderCart__buy_text">в корзину</span>
+                            </button>
+                        </li>
+                        <li class="bl_newProducts__item">
+                            <a class="bl_newProducts__link" href="#">
+                                <div class="bl_newProducts__blockImg">
+                                    <!-- mark Discount-->
+                                    <div class="bl_mark bl_mark__discount">
+                                        <div class="bl_wrappen">
+                                            <p class="bl_mark__text">-25%</p>
+                                        </div>
+                                    </div>
+
+                                    <img class="bl_newProducts__image" src="image/Products/product_1.jpg" alt="">
+                                </div>
+                                <h3 class="bl_newProducts__title">YOUTH N-3B Maveric Parka</h3>
+                            </a>
+
+                            <div class="product_sliderCart__price clearfix">
+                                <!--<span class="product_sliderCart__price_normalPrice">99999 грн.</span>-->
+                                <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
+                                <span class="product_sliderCart__price_newPrice">100 грн.</span>
+                            </div>
+
+                            <button class="button_sliderCart__buy">
+                                <span class="button_sliderCart__buy_text">в корзину</span>
+                            </button>
+                        </li>
+                        <li class="bl_newProducts__item">
+                            <a class="bl_newProducts__link" href="#">
+                                <div class="bl_newProducts__blockImg">
+                                    <!-- mark Discount-->
+                                    <div class="bl_mark bl_mark__discount">
+                                        <div class="bl_wrappen">
+                                            <p class="bl_mark__text">-25%</p>
+                                        </div>
+                                    </div>
+
+                                    <img class="bl_newProducts__image" src="image/Products/product_1.jpg" alt="">
+                                </div>
+                                <h3 class="bl_newProducts__title">YOUTH N-3B Maveric Parka</h3>
+                            </a>
+
+                            <div class="product_sliderCart__price clearfix">
+                                <!--<span class="product_sliderCart__price_normalPrice">99999 грн.</span>-->
+                                <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
+                                <span class="product_sliderCart__price_newPrice">100 грн.</span>
+                            </div>
+
+                            <button class="button_sliderCart__buy">
+                                <span class="button_sliderCart__buy_text">в корзину</span>
+                            </button>
+                        </li>
+
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Banner we have all -->
+
+        <div class="bl_inPresence">
+            <div class="container">
+                <div class="col-xs-12 ">
+                    <div class="bl_inPresence__info">
+                        <div class="bl_inPresence__fullText">
+                            <div class="bl_wrappen clearfix">
+                                <p class="bl_inPresence__bigText">
+                                    В наличии
+                                </p>
+                                <p class="bl_inPresence__smallText">
+                                    оригинальный ассортимент Alpha Industries
+                                </p>
+                                <p class="bl_inPresence__procent">
+                                    100%
+                                </p>
+                            </div>
+                        </div>
+
+                        <img class="bl_inPresence__eagle" src="image/eagle.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Discount Products -->
+        <div class="bl_discountProducts clearfix">
+            <div class="container">
+                <div class="col-xs-12">
+                    <h2 class="product_sliderCart__title decor-likeLabel icon-star">
+                        скидки
+                    </h2>
+
+                    <ul class="slider_discountProducts owl-carousel">
+                        <li class="bl_newProducts__item">
+                            <a class="bl_newProducts__link" href="#">
+                                <div class="bl_newProducts__blockImg">
+                                    <!-- mark Discount-->
+                                    <div class="bl_mark bl_mark__discount">
+                                        <div class="bl_wrappen">
+                                            <p class="bl_mark__text">-25%</p>
+                                        </div>
+                                    </div>
+
+                                    <img class="bl_newProducts__image" src="image/Products/product_1.jpg" alt="">
+                                </div>
+                                <h3 class="bl_newProducts__title">YOUTH N-3B Maveric Parka</h3>
+                            </a>
+
+                            <div class="product_sliderCart__price clearfix">
+                                <!--<span class="product_sliderCart__price_normalPrice">99999 грн.</span>-->
+                                <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
+                                <span class="product_sliderCart__price_newPrice">100 грн.</span>
+                            </div>
+
+                            <button class="button_sliderCart__buy">
+                                <span class="button_sliderCart__buy_text">в корзину</span>
+                            </button>
+                        </li>
+                        <li class="bl_newProducts__item">
+                            <a class="bl_newProducts__link" href="#">
+                                <div class="bl_newProducts__blockImg">
+                                    <!-- mark Discount-->
+                                    <div class="bl_mark bl_mark__discount">
+                                        <div class="bl_wrappen">
+                                            <p class="bl_mark__text">-25%</p>
+                                        </div>
+                                    </div>
+
+                                    <img class="bl_newProducts__image" src="image/Products/product_1.jpg" alt="">
+                                </div>
+                                <h3 class="bl_newProducts__title">YOUTH N-3B Maveric Parka ыва ываывава Maveric sdf f
+                                    sdf sdfs dfsdf sdf sdfsdf
+                                    Parka</h3>
+                            </a>
+
+                            <div class="product_sliderCart__price clearfix">
+                                <span class="product_sliderCart__price_normalPrice">99999 грн.</span>
+                                <!--<span class="product_sliderCart__price_oldPrice">2034 грн.</span>-->
+                                <!--<span class="product_sliderCart__price_newPrice">100 грн.</span>-->
+                            </div>
+
+                            <button class="button_sliderCart__buy">
+                                <span class="button_sliderCart__buy_text">в корзину</span>
+                            </button>
+                        </li>
+                        <li class="bl_newProducts__item">
+                            <a class="bl_newProducts__link" href="#">
+                                <div class="bl_newProducts__blockImg">
+                                    <!-- mark Discount-->
+                                    <div class="bl_mark bl_mark__discount">
+                                        <div class="bl_wrappen">
+                                            <p class="bl_mark__text">-25%</p>
+                                        </div>
+                                    </div>
+
+                                    <img class="bl_newProducts__image" src="image/Products/product_1.jpg" alt="">
+                                </div>
+                                <h3 class="bl_newProducts__title">YOUTH N-3B Maveric Parka</h3>
+                            </a>
+
+                            <div class="product_sliderCart__price clearfix">
+                                <!--<span class="product_sliderCart__price_normalPrice">99999 грн.</span>-->
+                                <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
+                                <span class="product_sliderCart__price_newPrice">100 грн.</span>
+                            </div>
+
+                            <button class="button_sliderCart__buy">
+                                <span class="button_sliderCart__buy_text">в корзину</span>
+                            </button>
+                        </li>
+                        <li class="bl_newProducts__item">
+                            <a class="bl_newProducts__link" href="#">
+                                <div class="bl_newProducts__blockImg">
+                                    <!-- mark Discount-->
+                                    <div class="bl_mark bl_mark__discount">
+                                        <div class="bl_wrappen">
+                                            <p class="bl_mark__text">-25%</p>
+                                        </div>
+                                    </div>
+
+                                    <img class="bl_newProducts__image" src="image/Products/product_1.jpg" alt="">
+                                </div>
+                                <h3 class="bl_newProducts__title">YOUTH N-3B Maveric Parka</h3>
+                            </a>
+
+                            <div class="product_sliderCart__price clearfix">
+                                <!--<span class="product_sliderCart__price_normalPrice">99999 грн.</span>-->
+                                <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
+                                <span class="product_sliderCart__price_newPrice">100 грн.</span>
+                            </div>
+
+                            <button class="button_sliderCart__buy">
+                                <span class="button_sliderCart__buy_text">в корзину</span>
+                            </button>
+                        </li>
+                        <li class="bl_newProducts__item">
+                            <a class="bl_newProducts__link" href="#">
+                                <div class="bl_newProducts__blockImg">
+                                    <!-- mark Discount-->
+                                    <div class="bl_mark bl_mark__discount">
+                                        <div class="bl_wrappen">
+                                            <p class="bl_mark__text">-25%</p>
+                                        </div>
+                                    </div>
+
+                                    <img class="bl_newProducts__image" src="image/Products/product_1.jpg" alt="">
+                                </div>
+                                <h3 class="bl_newProducts__title">YOUTH N-3B Maveric Parka</h3>
+                            </a>
+
+                            <div class="product_sliderCart__price clearfix">
+                                <!--<span class="product_sliderCart__price_normalPrice">99999 грн.</span>-->
+                                <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
+                                <span class="product_sliderCart__price_newPrice">100 грн.</span>
+                            </div>
+
+                            <button class="button_sliderCart__buy">
+                                <span class="button_sliderCart__buy_text">в корзину</span>
+                            </button>
+                        </li>
+                        <li class="bl_newProducts__item">
+                            <a class="bl_newProducts__link" href="#">
+                                <div class="bl_newProducts__blockImg">
+                                    <!-- mark Discount-->
+                                    <div class="bl_mark bl_mark__discount">
+                                        <div class="bl_wrappen">
+                                            <p class="bl_mark__text">-25%</p>
+                                        </div>
+                                    </div>
+
+                                    <img class="bl_newProducts__image" src="image/Products/product_1.jpg" alt="">
+                                </div>
+                                <h3 class="bl_newProducts__title">YOUTH N-3B Maveric Parka</h3>
+                            </a>
+
+                            <div class="product_sliderCart__price clearfix">
+                                <!--<span class="product_sliderCart__price_normalPrice">99999 грн.</span>-->
+                                <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
+                                <span class="product_sliderCart__price_newPrice">100 грн.</span>
+                            </div>
+
+                            <button class="button_sliderCart__buy">
+                                <span class="button_sliderCart__buy_text">в корзину</span>
+                            </button>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Classics of the genre  -->
+
+        <div class="bl_classicsGenre clearfix">
+            <div class="container">
+                <div class="col-xs-12">
+                    <h2 class="product_sliderCart__title decor-likeLabel icon-star">
+                        Классика жанра
+                    </h2>
+
+                    <div class="bl_classicsGenre__full">
+                        <ul class="bl_classicsGenre__histore">
+                            <li class="bl_classicsGenre__histore_item">
+                                <p>
+                                    Впервые куртку В-15 компании Alpha Industries™, которая заменила куртку В-10, мир
+                                    увидел в 1944 году. Ее носили пилоты ВВС США и летные экипажи. Куртка B-15,
+                                    разработанная для холодных температур с меховым воротником, вязаными манжетами и
+                                    поясом со 100% шерсти. Куртка B-15 также имела петли, для того чтобы кислородные
+                                    маски пилота и наушники оставались на своем месте. Альфа индастриз начала
+                                    широкомасштабное пошитие куртки бомбера В-15 в 1993 году и сегодня шьет их сохраняя
+                                    основные черты куртки В-15, включая нейлоновое покрытие, петли и меховой воротник.
+                                    Alpha Industries™ также разработала современную модель куртки в классическом стиле -
+                                    как для взрослых так и для детей.
+                                </p>
+                            </li>
+                            <li class="bl_classicsGenre__histore_item hidden">
+                                <p>Впервые куртку В-15 компании Alpha Industries™, которая заменила куртку В-10, мир
+                                    увидел в 1944 году. Ее носили пилоты ВВС США и летные экипажи. Куртка B-15,
+                                    разработанная для холодных температур с меховым воротником, вязаными манжетами и
+                                    поясом со 100% шерсти. Куртка B-15 также имела петли, для того чтобы кислородные
+                                    маски пилота и наушники оставались на своем месте. Альфа индастриз начала
+                                    широкомасштабное пошитие куртки бомбера В-15 в 1993 году и сегодня шьет их сохраняя
+                                    основные черты куртки В-15, включая нейлоновое покрытие, петли и меховой воротник.
+                                    Alpha Industries™ также разработала современную модель куртки в классическом стиле -
+                                    как для взрослых так и для детей.
+                                    Впервые куртку В-15 компании Alpha Industries™, которая заменила куртку В-10, мир
+                                    увидел в 1944 году. Ее носили пилоты ВВС США и летные экипажи. Куртка B-15,
+                                    разработанная для холодных температур с меховым воротником, вязаными манжетами и
+                                    поясом со 100% шерсти. Куртка B-15 также имела петли, для того чтобы кислородные
+                                    маски пилота и наушники оставались на своем месте. Альфа индастриз начала
+                                    широкомасштабное пошитие куртки бомбера В-15 в 1993 году и сегодня шьет их сохраняя
+                                    основные черты куртки В-15, включая нейлоновое покрытие, петли и меховой воротник.
+                                    Alpha Industries™ также разработала современную модель куртки в классическом стиле -
+                                    как для взрослых так и для детей.
+                                    Впервые куртку В-15 компании Alpha Industries™, которая заменила куртку В-10, мир
+                                    увидел в 1944 году. Ее носили пилоты ВВС США и летные экипажи. Куртка B-15,
+                                    разработанная для холодных температур с меховым воротником, вязаными манжетами и
+                                    поясом со 100% шерсти. Куртка B-15 также имела петли, для того чтобы кислородные
+                                    маски пилота и наушники оставались на своем месте. Альфа индастриз начала
+                                    широкомасштабное пошитие куртки бомбера В-15 в 1993 году и сегодня шьет их сохраняя
+                                    основные черты куртки В-15, включая нейлоновое покрытие, петли и меховой воротник.
+                                    Alpha Industries™ также разработала современную модель куртки в классическом стиле -
+                                    как для взрослых так и для детей.
+                                    Впервые куртку В-15 компании Alpha Industries™, которая заменила куртку В-10, мир
+                                    увидел в 1944 году. Ее носили пилоты ВВС США и летные экипажи. Куртка B-15,
+                                    разработанная для холодных температур с меховым воротником, вязаными манжетами и
+                                    поясом со 100% шерсти. Куртка B-15 также имела петли, для того чтобы кислородные
+                                    маски пилота и наушники оставались на своем месте. Альфа индастриз начала
+                                    широкомасштабное пошитие куртки бомбера В-15 в 1993 году и сегодня шьет их сохраняя
+                                    основные черты куртки В-15, включая нейлоновое покрытие, петли и меховой воротник.
+                                    Alpha Industries™ также разработала современную модель куртки в классическом стиле -
+                                    как для взрослых так и для детей.
+                                    Впервые куртку В-15 компании Alpha Industries™, которая заменила куртку В-10, мир
+                                    увидел в 1944 году. Ее носили пилоты ВВС США и летные экипажи. Куртка B-15,
+                                    разработанная для холодных температур с меховым воротником, вязаными манжетами и
+                                    поясом со 100% шерсти. Куртка B-15 также имела петли, для того чтобы кислородные
+                                    маски пилота и наушники оставались на своем месте. Альфа индастриз начала
+                                    широкомасштабное пошитие куртки бомбера В-15 в 1993 году и сегодня шьет их сохраняя
+                                    основные черты куртки В-15, включая нейлоновое покрытие, петли и меховой воротник.
+                                    Alpha Industries™ также разработала современную модель куртки в классическом стиле -
+                                    как для взрослых так и для детей.</p>
+                            </li>
+                        </ul>
+
+
+                        <ul class="slider_classicGenre clearfix">
+                            <li class="slider_classicGenre__item clearfix">
+
+
+                                <div class="col-md-6">
+                                    <img class="slider_classicGenre__image" src="image/Products/product_1-big.jpg"
+                                         alt="">
+                                </div>
+
+                                <div class="col-md-6">
+
+                                    <div class="slider_classicGenre__fullTitle clearfix">
+
+
+                                        <!-- mark Discount-->
+                                        <div class="bl_mark bl_mark__discount bl_mark__correct ">
+                                            <div class="bl_wrappen">
+                                                <p class="bl_mark__text">-25%</p>
+                                            </div>
+                                        </div>
+
+
+                                        <h3 class="slider_classicGenre__title">
+                                            YOUTH N-3B Maveric Parka
+                                        </h3>
+                                    </div>
+                                    <div class="slider_classicGenre__product clearfix">
+                                        <div class="slider_classicGenre__fullPrice">
+                                            <p class="slider_classicGenre__oldPrice">2034 грн.</p>
+                                            <p class="slider_classicGenre__newPrice">1000 грн.</p>
+
+                                            <!--<p class="slider_classicGenre__currentPrice">9999999 грн</p>  &lt;!&ndash; Если акциинету &ndash;&gt; -->
+                                        </div>
+
+                                        <div class="slider_classicGenre__description">
+                                            <p>
+                                                Новая детская аляска N-3B Maveric Parka- это точная копия
+                                                военной куртки с шевронами. Куртка очень теплая, детская Parka
+                                                из 100% летного нейлона, контрастной оранжевой подкладкой, и
+                                                100% полиэстерным наполнением для защиты от мороза -20°С. Куртка
+                                                имеет застежку молнии и капюшон с искусственным мехом как и
+                                                оригинальная куртка N-3B.
+                                                - N-3B имеет карман для карандаша с подписью Альфа и капюшон с
+                                                искусственным мехом, точно как настоящая военная куртка
+                                                - Прочная куртка имеет 100% нейлоновую поверхность с полиэфирным
+                                                наполнителем чтобы противостоять минусовым температурам.
+                                                Не стирать, стирать только в химчистке, сухая чистка. Не
+                                                отбеливать. Не сушить в стиральной машине. Не гладить.
+                                                В нашем магазине Alpha Сhayka Aero Вы можете купить, померять,
+                                                заказать понравившуюся себе оригинальную американскую детскую
+                                                зимнюю куртку N-3B Maveric Parka компании Alpha Industries™.
+                                                Доставка по Украине.
+                                            </p>
+                                        </div>
+
+
+                                        <div class="slider_classicGenre__buttonsBlock">
+                                            <div class="slider_classicGenre__buttonsBlock_wrapper">
+                                                <button class="button_blackInfo icon_bookmarks"
+                                                        title=""></button>
+                                                <button class="button_blackInfo icon_compare" title=""></button>
+                                                <button class="button_blackInfo icon_lookAt" title=""></button>
+                                                <button class="button_buy" title="">В корзину</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- BLOK Advantages-->
+
+        <div class="bl_advantages">
+            <div class="container">
+
+                    <div class="col-md-12 hidden-xs">
+                        <div class="bl_advantages__wrapper">
+                            <div class="bl_advantages__stamp_origin"></div>
+                            <div class="bl_advantages__stamp_showroom"></div>
+                            <div class="bl_advantages__stamp_delivery"></div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</main>
+
+<!--====================================== FOOTER  ====================================================-->
+<footer class="footer">
+
+    <div class="mainWrapper">
+        <div class="container">
+
+            <div class="footer_firstPart clearfix">
+                <div class="col-md-2">
+                    <nav class="bl_navFooter">
+                        <a class="bl_navFooter__link" href="#">Контакты</a>
+                        <a class="bl_navFooter__link" href="#">Доставка</a>
+                        <a class="bl_navFooter__link" href="#">Обмен</a>
+                        <a class="bl_navFooter__link" href="#">Размер</a>
+                    </nav>
+                </div>
+                <div class="col-md-7">
+                    <div class="bl_mainAdress">
+                        <p class="bl_mainAdress__text">Украина, г. Киев,</p>
+                        <p class="bl_mainAdress__text">пр-т. В.Лобановского, 28А стар.- (Краснозвездный, 28А)</p>
+                    </div>
+
+                    <div class="bl_subscribe">
+                        <p class="bl_subscribe__information hidden-xs">
+                            Будьте в курсе новостей и акций, от компании Alpha industries подписавшись на нашу рассылку.
+                            Не пропустите свою скидку, когда у нас будет АКЦИЯ!
+                        </p>
+                        <p class="bl_subscribe__information visible-xs">Подпишись, не пропустите свою скидку</p>
+                        <form class="bl_subscribe__fullInput clearfix">
+                            <input class="bl_subscribe__input" type="text" placeholder="Ваш емейл адрес ...">
+                            <button class="bl_subscribe__button" type="button">
+                                <i class="bl_subscribe__icon"></i>
+                                <span class="bl_subscribe__choose">Подписаться</span>
+                            </button>
+                        </form>
+
+                        <p class="text_error hidden">Email указан не верно!</p>
+                        <!-- Текст показывается если указан не правильный Email -->
+
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-md-offset-1 hidden-xs pull-right ">
+                    <div class="bl_phones footer_firstPart__phones clearfix">
+                        <p class="bl_phones__text">+38 (096) 111-22-33</p>
+                        <p class="bl_phones__text">+38 (050) 222-33-44</p>
+                        <p class="bl_phones__text">info@alpha-fly.com.ua</p>
+                    </div>
+                    <a class="bl_phones__facebook fa fa-facebook" href="#"></a>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="footer_secondPart hidden-xs">
+            <div class="container">
+                <div class="col-xs-12">
+                    <p class="footer_secondPart__description">
+                        © 2017 Alpha FLY
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ANCOR -->
+
+<div class="bl_ancor hidden-xs hidden">
+    <div class="bl_wrappen">
+        <a class="bl_ancor__link bl_ancor__icon" href="#header">Вверх</a>
+    </div>
+</div>
+
+<div class="blackWrapper hidden"></div>
+
+
+<script src="libs/jquery.min.js"></script>
+
+<script src="js/libs.min.js"></script>
+<script src="js/common.min.js"></script>
+
+
+</body>
+
+</html>
