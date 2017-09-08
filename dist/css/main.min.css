@@ -1410,6 +1410,10 @@ button {
 .slider_newProducts {
   width: 100%; }
 
+.bl_newProducts__wrapper {
+  position: relative;
+  width: 100%; }
+
 .bl_newProducts__item {
   position: relative;
   display: inline-block;
@@ -1480,6 +1484,114 @@ button {
   font-family: "Arial Narrow Bold", sans-serif;
   font-size: 24px; }
 
+.owl-carousel .owl-nav {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 999; }
+  .owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    left: 0;
+    top: -25px;
+    width: 30px;
+    height: 50px;
+    background-color: #202020;
+    line-height: 1;
+    font-size: 38px;
+    transition: all 0.2s; }
+    .owl-carousel .owl-nav .owl-prev:before {
+      content: "\f053";
+      font-family: "FontAwesome";
+      font-size: 20px;
+      color: #f88f1e;
+      width: 7px;
+      height: 12px; }
+  .owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    right: 0;
+    top: -25px;
+    width: 30px;
+    height: 50px;
+    background-color: #202020; }
+    .owl-carousel .owl-nav .owl-next:before {
+      content: "\f054";
+      font-family: "FontAwesome";
+      font-size: 20px;
+      color: #f88f1e;
+      width: 7px;
+      height: 12px; }
+
+.slider_newProducts.owl-carousel .owl-nav,
+.slider_discountProducts.owl-carousel .owl-nav {
+  width: initial;
+  height: auto;
+  top: -30px;
+  right: 0; }
+  .slider_newProducts.owl-carousel .owl-nav .owl-prev,
+  .slider_newProducts.owl-carousel .owl-nav .owl-next,
+  .slider_discountProducts.owl-carousel .owl-nav .owl-prev,
+  .slider_discountProducts.owl-carousel .owl-nav .owl-next {
+    float: left;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 40px;
+    vertical-align: top;
+    box-sizing: border-box;
+    border: 1px solid #2a2a2a; }
+    .slider_newProducts.owl-carousel .owl-nav .owl-prev:before,
+    .slider_newProducts.owl-carousel .owl-nav .owl-next:before,
+    .slider_discountProducts.owl-carousel .owl-nav .owl-prev:before,
+    .slider_discountProducts.owl-carousel .owl-nav .owl-next:before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-20%, -50%);
+          -ms-transform: translate(-20%, -50%);
+              transform: translate(-20%, -50%);
+      content: "\f053";
+      font-family: "FontAwesome";
+      font-size: 20px;
+      color: #f88f1e;
+      width: 100%;
+      height: 100%;
+      line-height: 40px; }
+  .slider_newProducts.owl-carousel .owl-nav .owl-next,
+  .slider_discountProducts.owl-carousel .owl-nav .owl-next {
+    float: right; }
+    .slider_newProducts.owl-carousel .owl-nav .owl-next:before,
+    .slider_discountProducts.owl-carousel .owl-nav .owl-next:before {
+      content: "\f054"; }
+
+.product_image__slider.owl-carousel .owl-nav {
+  top: 25%; }
+  .product_image__slider.owl-carousel .owl-nav .owl-prev,
+  .product_image__slider.owl-carousel .owl-nav .owl-next {
+    float: left;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 50px;
+    background-color: #0160ac;
+    box-sizing: border-box;
+    z-index: 11; }
+    .product_image__slider.owl-carousel .owl-nav .owl-prev:before,
+    .product_image__slider.owl-carousel .owl-nav .owl-next:before {
+      width: 16px;
+      height: 30px;
+      border: 1px solid #f00; }
+    .product_image__slider.owl-carousel .owl-nav .owl-prev:hover,
+    .product_image__slider.owl-carousel .owl-nav .owl-next:hover {
+      background-color: #0d8dd2; }
+  .product_image__slider.owl-carousel .owl-nav .owl-next {
+    float: right; }
+
 .bl_mark {
   position: absolute;
   top: 0;
@@ -1519,8 +1631,7 @@ button {
       -ms-transform: translateY(50%);
           transform: translateY(50%);
   width: 100%;
-  min-height: 350px;
-  border: 1px solid #000; }
+  min-height: 350px; }
 
 .bl_inPresence__fullText {
   position: absolute;
@@ -1534,13 +1645,17 @@ button {
   background-size: contain;
   color: #333; }
 
+.bl_inPresence__wrapper {
+  margin-top: 36px;
+  width: 100%;
+  line-height: 1; }
+
 .bl_inPresence__eagle {
   position: absolute;
   top: 0;
   right: 47px; }
 
 .bl_inPresence__bigText {
-  padding-top: 18px;
   margin-left: 5%;
   margin-top: 0;
   font-family: "Arial Narrow Bold", sans-serif;
@@ -1906,8 +2021,8 @@ button {
 .bl_phones__facebook {
   clear: both;
   display: block;
-  width: 100%;
-  margin-top: 20px;
+  width: 26px;
+  margin: 20px auto 0;
   color: #fff;
   font-size: 40px;
   text-align: center;
