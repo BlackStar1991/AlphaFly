@@ -1382,9 +1382,7 @@ button {
   width: 100%; }
 
 .bl_mainSlider__full {
-  width: 100%;
-  min-height: 600px;
-  background-color: #000; }
+  width: 100%; }
 
 .bl_mainSlider__link {
   display: block;
@@ -1392,7 +1390,9 @@ button {
   height: 100%; }
 
 .bl_mainSlider__image {
-  width: 100%; }
+  width: 100%;
+  height: 100%;
+  background-size: cover; }
 
 .product_sliderCart__title {
   position: relative;
@@ -1404,6 +1404,7 @@ button {
   font-size: 24px;
   font-weight: 400;
   line-height: 40px;
+  text-transform: uppercase;
   box-sizing: border-box;
   background-color: #000; }
 
@@ -1498,31 +1499,36 @@ button {
     left: 0;
     top: -25px;
     width: 30px;
-    height: 50px;
-    background-color: #202020;
-    line-height: 1;
-    font-size: 38px;
+    height: 40px;
+    background-color: #050404;
+    line-height: 40px;
     transition: all 0.2s; }
     .owl-carousel .owl-nav .owl-prev:before {
       content: "\f053";
+      display: block;
+      margin: 0 auto;
       font-family: "FontAwesome";
-      font-size: 20px;
-      color: #f88f1e;
-      width: 7px;
+      font-size: 14px;
+      color: #fff;
+      width: 12px;
       height: 12px; }
   .owl-carousel .owl-nav .owl-next {
     position: absolute;
     right: 0;
     top: -25px;
     width: 30px;
-    height: 50px;
-    background-color: #202020; }
+    height: 40px;
+    background-color: #050404;
+    line-height: 40px;
+    transition: all 0.2s; }
     .owl-carousel .owl-nav .owl-next:before {
       content: "\f054";
+      display: block;
+      margin: 0 auto;
       font-family: "FontAwesome";
-      font-size: 20px;
-      color: #f88f1e;
-      width: 7px;
+      font-size: 14px;
+      color: #fff;
+      width: 12px;
       height: 12px; }
 
 .slider_newProducts.owl-carousel .owl-nav,
@@ -1580,7 +1586,7 @@ button {
     height: 50px;
     background-color: #0160ac;
     box-sizing: border-box;
-    z-index: 11; }
+    z-index: 10; }
     .product_image__slider.owl-carousel .owl-nav .owl-prev:before,
     .product_image__slider.owl-carousel .owl-nav .owl-next:before {
       width: 16px;
@@ -1700,7 +1706,8 @@ button {
   overflow-y: auto; }
   .bl_classicsGenre__histore_item p {
     margin: 0;
-    font-size: 16px; }
+    font-size: 16px;
+    height: 24px; }
 
 .slider_classicGenre {
   width: 100%;
@@ -1721,7 +1728,9 @@ button {
 
 .slider_classicGenre__image {
   display: inline-block;
+  width: 100%;
   max-width: 500px;
+  margin-left: 6%;
   border: 1px solid #000;
   box-sizing: border-box; }
 
@@ -1732,15 +1741,28 @@ button {
   width: 100%; }
 
 .slider_classicGenre__title {
+  position: relative;
   margin: 0;
   width: 100%;
+  height: 54px;
+  overflow: hidden;
+  line-height: 53px;
   display: block;
-  padding: 10px 0;
   text-align: center;
+  background-color: #000;
+  cursor: pointer; }
+
+.slider_classicGenre__link {
+  display: block;
+  width: 100%;
+  height: 100%;
   color: #fff;
   font-family: "Arial Narrow Bold", sans-serif;
   font-size: 30px;
-  background-color: #000; }
+  text-indent: 91px; }
+  .slider_classicGenre__link:hover, .slider_classicGenre__link:focus {
+    color: #fff;
+    text-decoration: underline; }
 
 .bl_classicsGenre .bl_mark__correct {
   top: 19%; }
@@ -2011,7 +2033,7 @@ button {
     z-index: 3; }
 
 .footer_firstPart__phones {
-  float: none;
+  float: right;
   margin: 32px auto 0;
   text-align: center; }
 
@@ -2025,7 +2047,6 @@ button {
   margin: 20px auto 0;
   color: #fff;
   font-size: 40px;
-  text-align: center;
   transition: all 0.2s; }
   .bl_phones__facebook:hover {
     color: #e50014;

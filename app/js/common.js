@@ -27,11 +27,11 @@ $(document).ready(function () {
 ///  sliderEffect
     function sliderEffectForButtons(button, element, duration) {
 
-        // return function () {
+
         button.click(function () {
             element.slideToggle(duration);
         });
-        // }(button, element, duration);
+
 
     }
 
@@ -156,7 +156,7 @@ $(document).ready(function () {
             },
             992: {
                 items: 4,
-                center: true
+                center: false
             },
             550: {
                 items: 2
@@ -190,7 +190,7 @@ $(document).ready(function () {
             },
             992: {
                 items: 4,
-                center: true
+                center: false
             },
             550: {
                 items: 2
@@ -203,39 +203,72 @@ $(document).ready(function () {
         }
     });
 
-/////// slider_withThisProductBuy - С этим товаром покупают:
+/// slider_classicGenre - Слайдер Классика жанра:
 
-    // $(".slider_withThisProductBuy").owlCarousel({
-    //     items: 4,
-    //     loop: true,
-    //     nav: true,
-    //     navText: true,
-    //     dots: false,
-    //     autoplay: false,
-    //     stopOnHover: true,
-    //     margin: 0,
-    //     smartSpeed: 1000, //Время движения слайда
-    //     autoplayTimeout: 4000, //Время смены слайда
-    //     pagination: false,
-    //     responsiveClass: true,
-    //     responsive: {
-    //         1200: {
-    //             items: 4
-    //         },
-    //         992: {
-    //             items: 3,
-    //             center: true
-    //         },
-    //         550: {
-    //             items: 2
-    //         },
-    //         320: {
-    //             items: 1,
-    //             center: true
-    //         }
-    //
-    //     }
-    // });
+    $(".slider_classicGenre").owlCarousel({
+        items: 1,
+        loop: true,
+        nav: true,
+        navText: true,
+        dots: false,
+        autoplay: false,
+        stopOnHover: true,
+        margin: 0,
+        smartSpeed: 1000, //Время движения слайда
+        autoplayTimeout: 4000, //Время смены слайда
+        pagination: false,
+        responsiveClass: true
+    });
+
+ /////// Что бы работа описание для слайда - классика жанра
+
+    var classicsGenreDescriptionItems = $(".bl_classicsGenre__histore_item"),
+        classicsGenreDescriptionItemsLength = classicsGenreDescriptionItems.length;
+
+
+        var buttonClassicPrev = $(".slider_classicGenre .owl-prev");
+        var buttonClassicNext = $(".slider_classicGenre .owl-next");
+
+    buttonClassicPrev.on("click", function(){
+
+        var activeIndex = $(".bl_classicsGenre__histore_item.active"),
+            sliderIndex =   activeIndex.index(),
+            prevIndex = sliderIndex - 1;
+
+            if (prevIndex < 0){
+                prevIndex = classicsGenreDescriptionItemsLength - 1;
+            }
+
+        classicDescription(sliderIndex, prevIndex);
+    });
+
+    buttonClassicNext.on("click", function(){
+
+        var activeIndex = $(".bl_classicsGenre__histore_item.active"),
+            sliderIndex =   activeIndex.index(),
+            nextIndex = sliderIndex + 1;
+
+        if ( nextIndex === classicsGenreDescriptionItemsLength){
+            nextIndex = 0;
+        }
+
+        classicDescription(sliderIndex, nextIndex);
+
+    });
+
+
+    function classicDescription(currentIndex, indexChanged) {
+
+        classicsGenreDescriptionItems.eq(currentIndex).addClass("hidden");
+        classicsGenreDescriptionItems.eq(currentIndex).removeClass("active");
+
+        classicsGenreDescriptionItems.eq(indexChanged).addClass("active");
+        classicsGenreDescriptionItems.eq(indexChanged).removeClass("hidden");
+
+    }
+
+/////////////////////////////////////////////
+
 
 //// slider_youViewed  - Вы смотрели:
 

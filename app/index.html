@@ -47,13 +47,13 @@
             <div class="container">
                 <div class="col-xs-12 clearfix">
 
-                    <div class="bl_language">
+                    <form class="bl_language" method="" action="">
                         <span class="bl_language__active">ua</span>
                         <ul class="bl_language__variables hidden">
                             <li class="bl_language__variables_item language-select">ua</li>
                             <li class="bl_language__variables_item language-select">ru</li>
                         </ul>
-                    </div>
+                    </form>
 
 
                     <button class="bl_controls__button icon-controls__open hidden-lg"></button>
@@ -350,30 +350,33 @@
 
         <!-- Banner we have all -->
 
-        <div class="bl_inPresence">
+        <div class="bl_inPresence clearfix">
             <div class="container">
                 <div class="col-xs-12 ">
-                    <div class="bl_inPresence__info">
-                        <div class="bl_inPresence__fullText">
-                            <div class="bl_wrappen clearfix">
+                    <div class="bl_wrappen">
+                        <div class="bl_inPresence__info">
+                            <div class="bl_inPresence__fullText">
+                                <div class="bl_wrappen clearfix">
 
-                                <div class="bl_inPresence__wrapper">
-                                    <p class="bl_inPresence__bigText">
-                                        В наличии
-                                    </p>
-                                    <p class="bl_inPresence__smallText">
-                                        оригинальный ассортимент Alpha Industries
-                                    </p>
-                                    <p class="bl_inPresence__procent">
-                                        100%
-                                    </p>
+                                    <div class="bl_inPresence__wrapper">
+                                        <p class="bl_inPresence__bigText">
+                                            В наличии
+                                        </p>
+                                        <p class="bl_inPresence__smallText">
+                                            оригинальный ассортимент Alpha Industries
+                                        </p>
+                                        <p class="bl_inPresence__procent">
+                                            100%
+                                        </p>
+                                    </div>
+
                                 </div>
-
                             </div>
-                        </div>
 
-                        <img class="bl_inPresence__eagle" src="image/eagle.png">
+                            <img class="bl_inPresence__eagle" src="image/eagle.png">
+                        </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -559,7 +562,9 @@
 
                     <div class="bl_classicsGenre__full">
                         <ul class="bl_classicsGenre__histore">
-                            <li class="bl_classicsGenre__histore_item">
+                            <!-- Количество описаний для товара слайдера, должно совпадать с количеством слайдов. Описание обязательное поле для этого слайда. У активного описания должен быть класс .active у всех остальных описаний классы hidden -->
+
+                            <li class="bl_classicsGenre__histore_item active">
                                 <p>
                                     Впервые куртку В-15 компании Alpha Industries™, которая заменила куртку В-10, мир
                                     увидел в 1944 году. Ее носили пилоты ВВС США и летные экипажи. Куртка B-15,
@@ -619,22 +624,26 @@
                                     Alpha Industries™ также разработала современную модель куртки в классическом стиле -
                                     как для взрослых так и для детей.</p>
                             </li>
+                            <li class="bl_classicsGenre__histore_item hidden">
+                                <p> Третье описание </p>
+                            </li>
+                            <li class="bl_classicsGenre__histore_item hidden">
+                                <p>4 Описание</p>
+                            </li>
                         </ul>
 
 
-                        <ul class="slider_classicGenre clearfix">
+                        <ul class="slider_classicGenre clearfix owl-carousel">
                             <li class="slider_classicGenre__item clearfix">
 
-
-                                <div class="col-md-6">
+                                <div class="col-md-6 correct_right">
                                     <img class="slider_classicGenre__image" src="image/Products/product_1-big.jpg"
                                          alt="">
                                 </div>
 
-                                <div class="col-md-6">
+                                <div class="col-md-6 correct_left correct_right">
 
                                     <div class="slider_classicGenre__fullTitle clearfix">
-
 
                                         <!-- mark Discount-->
                                         <div class="bl_mark bl_mark__discount bl_mark__correct ">
@@ -643,10 +652,10 @@
                                             </div>
                                         </div>
 
-
                                         <h3 class="slider_classicGenre__title">
-                                            YOUTH N-3B Maveric Parka
+                                            <a class="slider_classicGenre__link" href="#">YOUTH N-3B Maveric Parka</a>
                                         </h3>
+
                                     </div>
                                     <div class="slider_classicGenre__product clearfix">
                                         <div class="slider_classicGenre__fullPrice">
@@ -654,6 +663,206 @@
                                             <p class="slider_classicGenre__newPrice">1000 грн.</p>
 
                                             <!--<p class="slider_classicGenre__currentPrice">9999999 грн</p>  &lt;!&ndash; Если акциинету &ndash;&gt; -->
+                                        </div>
+
+                                        <div class="slider_classicGenre__description">
+                                            <p>
+                                                Новая детская аляска N-3B Maveric Parka- это точная копия
+                                                военной куртки с шевронами. Куртка очень теплая, детская Parka
+                                                из 100% летного нейлона, контрастной оранжевой подкладкой, и
+                                                100% полиэстерным наполнением для защиты от мороза -20°С. Куртка
+                                                имеет застежку молнии и капюшон с искусственным мехом как и
+                                                оригинальная куртка N-3B.
+                                                - N-3B имеет карман для карандаша с подписью Альфа и капюшон с
+                                                искусственным мехом, точно как настоящая военная куртка
+                                                - Прочная куртка имеет 100% нейлоновую поверхность с полиэфирным
+                                                наполнителем чтобы противостоять минусовым температурам.
+                                                Не стирать, стирать только в химчистке, сухая чистка. Не
+                                                отбеливать. Не сушить в стиральной машине. Не гладить.
+                                                В нашем магазине Alpha Сhayka Aero Вы можете купить, померять,
+                                                заказать понравившуюся себе оригинальную американскую детскую
+                                                зимнюю куртку N-3B Maveric Parka компании Alpha Industries™.
+                                                Доставка по Украине.
+                                            </p>
+                                        </div>
+
+
+                                        <div class="slider_classicGenre__buttonsBlock">
+                                            <div class="slider_classicGenre__buttonsBlock_wrapper">
+                                                <button class="button_blackInfo icon_bookmarks" title=""></button>
+                                                <button class="button_blackInfo icon_compare" title=""></button>
+                                                <button class="button_blackInfo icon_lookAt" title=""></button>
+                                                <button class="button_buy" title="">В корзину</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="slider_classicGenre__item clearfix">
+
+                                <div class="col-md-6 correct_right">
+                                    <img class="slider_classicGenre__image" src="image/Products/product_2-big.jpg"
+                                         alt="">
+                                </div>
+
+                                <div class="col-md-6 correct_left correct_right">
+
+                                    <div class="slider_classicGenre__fullTitle clearfix">
+
+                                        <!-- mark Discount-->
+                                        <div class="bl_mark bl_mark__discount bl_mark__correct ">
+                                            <div class="bl_wrappen">
+                                                <p class="bl_mark__text">-15%</p>
+                                            </div>
+                                        </div>
+
+                                        <h3 class="slider_classicGenre__title">
+                                            <a class="slider_classicGenre__link"
+                                               href="#">Mego supper raincoat for your husband or your mather-in-low</a>
+                                        </h3>
+
+                                    </div>
+                                    <div class="slider_classicGenre__product clearfix">
+                                        <div class="slider_classicGenre__fullPrice">
+                                            <!--<p class="slider_classicGenre__oldPrice">2034 грн.</p>-->
+                                            <!--<p class="slider_classicGenre__newPrice">1000 грн.</p>-->
+                                            <p class="slider_classicGenre__currentPrice">9999999 грн</p>
+                                            <!-- Если акциинету -->
+                                        </div>
+
+                                        <div class="slider_classicGenre__description">
+                                            <p>
+                                                Новая детская аляска N-3B Maveric Parka- это точная копия
+                                                военной куртки с шевронами. Куртка очень теплая, детская Parka
+                                                из 100% летного нейлона, контрастной оранжевой подкладкой, и
+                                                100% полиэстерным наполнением для защиты от мороза -20°С. Куртка
+                                                имеет застежку молнии и капюшон с искусственным мехом как и
+                                                оригинальная куртка N-3B.
+                                                - N-3B имеет карман для карандаша с подписью Альфа и капюшон с
+                                                искусственным мехом, точно как настоящая военная куртка
+                                                - Прочная куртка имеет 100% нейлоновую поверхность с полиэфирным
+                                                наполнителем чтобы противостоять минусовым температурам.
+                                                Не стирать, стирать только в химчистке, сухая чистка. Не
+                                                отбеливать. Не сушить в стиральной машине. Не гладить.
+                                                В нашем магазине Alpha Сhayka Aero Вы можете купить, померять,
+                                                заказать понравившуюся себе оригинальную американскую детскую
+                                                зимнюю куртку N-3B Maveric Parka компании Alpha Industries™.
+                                                Доставка по Украине.
+                                            </p>
+                                        </div>
+
+
+                                        <div class="slider_classicGenre__buttonsBlock">
+                                            <div class="slider_classicGenre__buttonsBlock_wrapper">
+                                                <button class="button_blackInfo icon_bookmarks"
+                                                        title=""></button>
+                                                <button class="button_blackInfo icon_compare" title=""></button>
+                                                <button class="button_blackInfo icon_lookAt" title=""></button>
+                                                <button class="button_buy" title="">В корзину</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="slider_classicGenre__item clearfix">
+
+                                <div class="col-md-6 correct_right">
+                                    <img class="slider_classicGenre__image" src="image/Products/product_2-big.jpg"
+                                         alt="">
+                                </div>
+
+                                <div class="col-md-6 correct_left correct_right">
+
+                                    <div class="slider_classicGenre__fullTitle clearfix">
+
+                                        <!-- mark Discount-->
+                                        <div class="bl_mark bl_mark__discount bl_mark__correct ">
+                                            <div class="bl_wrappen">
+                                                <p class="bl_mark__text">-15%</p>
+                                            </div>
+                                        </div>
+
+                                        <h3 class="slider_classicGenre__title">
+                                            <a class="slider_classicGenre__link"
+                                               href="#">Mego supper raincoat for your husband or your mather-in-low</a>
+                                        </h3>
+
+                                    </div>
+                                    <div class="slider_classicGenre__product clearfix">
+                                        <div class="slider_classicGenre__fullPrice">
+                                            <!--<p class="slider_classicGenre__oldPrice">2034 грн.</p>-->
+                                            <!--<p class="slider_classicGenre__newPrice">1000 грн.</p>-->
+                                            <p class="slider_classicGenre__currentPrice">9999999 грн</p>
+                                            <!-- Если акциинету -->
+                                        </div>
+
+                                        <div class="slider_classicGenre__description">
+                                            <p>
+                                                Новая детская аляска N-3B Maveric Parka- это точная копия
+                                                военной куртки с шевронами. Куртка очень теплая, детская Parka
+                                                из 100% летного нейлона, контрастной оранжевой подкладкой, и
+                                                100% полиэстерным наполнением для защиты от мороза -20°С. Куртка
+                                                имеет застежку молнии и капюшон с искусственным мехом как и
+                                                оригинальная куртка N-3B.
+                                                - N-3B имеет карман для карандаша с подписью Альфа и капюшон с
+                                                искусственным мехом, точно как настоящая военная куртка
+                                                - Прочная куртка имеет 100% нейлоновую поверхность с полиэфирным
+                                                наполнителем чтобы противостоять минусовым температурам.
+                                                Не стирать, стирать только в химчистке, сухая чистка. Не
+                                                отбеливать. Не сушить в стиральной машине. Не гладить.
+                                                В нашем магазине Alpha Сhayka Aero Вы можете купить, померять,
+                                                заказать понравившуюся себе оригинальную американскую детскую
+                                                зимнюю куртку N-3B Maveric Parka компании Alpha Industries™.
+                                                Доставка по Украине.
+                                            </p>
+                                        </div>
+
+
+                                        <div class="slider_classicGenre__buttonsBlock">
+                                            <div class="slider_classicGenre__buttonsBlock_wrapper">
+                                                <button class="button_blackInfo icon_bookmarks"
+                                                        title=""></button>
+                                                <button class="button_blackInfo icon_compare" title=""></button>
+                                                <button class="button_blackInfo icon_lookAt" title=""></button>
+                                                <button class="button_buy" title="">В корзину</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="slider_classicGenre__item clearfix">
+
+                                <div class="col-md-6 correct_right">
+                                    <img class="slider_classicGenre__image" src="image/Products/product_2-big.jpg"
+                                         alt="">
+                                </div>
+
+                                <div class="col-md-6 correct_left correct_right">
+
+                                    <div class="slider_classicGenre__fullTitle clearfix">
+
+                                        <!-- mark Discount-->
+                                        <div class="bl_mark bl_mark__discount bl_mark__correct ">
+                                            <div class="bl_wrappen">
+                                                <p class="bl_mark__text">-15%</p>
+                                            </div>
+                                        </div>
+
+                                        <h3 class="slider_classicGenre__title">
+                                            <a class="slider_classicGenre__link"
+                                               href="#">Mego supper raincoat for your husband or your mather-in-low</a>
+                                        </h3>
+
+                                    </div>
+                                    <div class="slider_classicGenre__product clearfix">
+                                        <div class="slider_classicGenre__fullPrice">
+                                            <!--<p class="slider_classicGenre__oldPrice">2034 грн.</p>-->
+                                            <!--<p class="slider_classicGenre__newPrice">1000 грн.</p>-->
+                                            <p class="slider_classicGenre__currentPrice">9999999 грн</p>
+                                            <!-- Если акциинету -->
                                         </div>
 
                                         <div class="slider_classicGenre__description">
@@ -760,7 +969,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-2 col-md-offset-1 hidden-xs pull-right ">
+                <div class="col-md-2 col-md-offset-1 hidden-xs">
                     <div class="bl_phones footer_firstPart__phones clearfix">
                         <p class="bl_phones__text">+38 (096) 111-22-33</p>
                         <p class="bl_phones__text">+38 (050) 222-33-44</p>

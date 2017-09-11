@@ -112,8 +112,6 @@
     position: absolute;
     top: 0;
 
-
-
     content: '\f003';
     font-family: $FontAwesome;
     font-size: 28px;
@@ -127,10 +125,12 @@
 
 
 .footer_firstPart__phones{
-  float: none;
+  float: right;
   margin: 32px auto 0;
   text-align: center;
 }
+
+
 
 
 .footer_firstPart__phones .bl_phones__text{
@@ -144,7 +144,6 @@
   margin: 20px auto 0;
   color: #fff;
   font-size: 40px;
-  text-align: center;
   transition: all 0.2s;
 
   &:hover{
