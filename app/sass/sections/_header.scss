@@ -360,11 +360,11 @@
     font-family: $ArialNarrow;
   }
   &:hover{
-    box-shadow: 0 0 4px 2px $color_red;
+    box-shadow: 0 0 4px 2px $color_oliv;
   }
 
   &:focus {
-    border-color: $color_red;
+    border-color: $color_oliv;
   }
 
   &:focus::placeholder {
@@ -424,8 +424,9 @@
   transition: all .2s;
 
   &:hover{
-    color: $color_red;
-    fill: $color_red;
+    color: #fff;
+    //fill: #fff;
+    text-decoration: underline;
     transition: all .2s;
   }
 }
@@ -458,7 +459,7 @@
   clear: both;
   width: 100%;
   min-height:40px;
-  background-color: $color_red;
+  background-color: $color_oliv;
 }
 
 

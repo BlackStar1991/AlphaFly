@@ -252,7 +252,7 @@ button {
 
   &:hover .button_sliderCart__buy_text {
     transition: all .2s;
-    color: $color_red;
+    color: $color_oliv;
   }
 }
 
@@ -506,76 +506,13 @@ $fontSize: 14px;
 /////// BANER inPresence
 
 .bl_inPresence {
-
   margin-top: 70px;
-
-  width: 100%;
-  min-height: 600px;
-  background: url("../image/plane_1.jpg") 50% 50% no-repeat;
-  background-size: contain;
 }
 
-.bl_inPresence__info {
-  position: relative;
-  transform: translateY(50%);
-  width: 100%;
-  min-height: 350px;
-}
 
-.bl_inPresence__fullText {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  min-height: 164px;
-  background: url("../image/line_eagle.png") 50% 50% no-repeat;
-  background-size: contain;
-  color: $color_grey2;
-}
 
-.bl_inPresence__wrapper {
-  margin-top: 36px;
-  width: 100%;
-  line-height: 1;
-}
 
-.bl_inPresence__eagle {
-  position: absolute;
-  top: 0;
-  right: 47px;
 
-}
-
-$ml: 5%;
-
-.bl_inPresence__bigText {
-
-  margin-left: $ml;
-  margin-top: 0;
-  font-family: $ArialBold;
-  font-size: 48px;
-  text-transform: uppercase;
-}
-
-.bl_inPresence__smallText {
-  font-family: $ArialNarrow;
-  margin-top: 0;
-  margin-left: $ml;
-  font-size: 19px;
-}
-
-.bl_inPresence__procent {
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -30%);
-
-  color: $color_grey2;
-  font-family: $ArialBold;
-  font-size: 72px;
-  z-index: 2;
-}
 
 // SLIDER Classics of the genre
 
@@ -723,7 +660,7 @@ $ml: 5%;
 
 .slider_classicGenre__newPrice {
   margin-left: 21px;
-  color: $color_red;
+  color: $color_oliv;
   font-family: $ArialBold;
   font-size: 24px;
 }
@@ -834,7 +771,7 @@ $ml: 5%;
 
   &:hover {
     transition: all, 0.2s;
-    color: $color_red;
+    color: $color_oliv;
   }
 
 }
@@ -853,25 +790,30 @@ $ml: 5%;
 
 .bl_advantages__wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
 
   width: 100%;
   margin-top: 94px;
 }
 
-.bl_advantages__stamp_origin {
-  @include sprite($stamp-origin);
+.bl_advantages__images{
+  transform: translateY(-4%);
 }
 
-.bl_advantages__stamp_showroom {
-  margin-top: 21px;
-
-  @include sprite($stamp-showroom);
-}
-
-.bl_advantages__stamp_delivery {
-  @include sprite($stamp-delivery);
-}
+//.bl_advantages__stamp_origin {
+//  @include sprite($stamp-origin);
+//}
+//
+//.bl_advantages__stamp_showroom {
+//  margin-top: 21px;
+//
+//  @include sprite($stamp-showroom);
+//}
+//
+//.bl_advantages__stamp_delivery {
+//  @include sprite($stamp-delivery);
+//}
 
 ///////////
 .icon-star {

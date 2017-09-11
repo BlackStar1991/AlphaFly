@@ -91,13 +91,13 @@
   height: 40px;
   box-sizing: border-box;
   border: none;
-  background-color: $color_red;
+  background-color: $color_oliv;
   transition: all 0.2s;
 
-  &:hover{
-    transition: all 0.2s;
-    background-color: $color_red2;
-  }
+  //&:hover{
+  //  transition: all 0.2s;
+  //  background-color: $color_red2;
+  //}
 
 
 }
@@ -126,7 +126,7 @@
 
 .footer_firstPart__phones{
   float: right;
-  margin: 32px auto 0;
+  margin: 32px auto 20px;
   text-align: center;
 }
 
@@ -141,13 +141,13 @@
   clear: both;
   display: block;
   width: 26px;
-  margin: 20px auto 0;
+  margin: 0 auto ;
   color: #fff;
   font-size: 40px;
   transition: all 0.2s;
 
   &:hover{
-    color: $color_red;
+    color: $color_oliv;
     transition: all 0.2s;
   }
 

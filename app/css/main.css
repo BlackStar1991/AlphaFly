@@ -1217,9 +1217,9 @@ button {
     width: 70px;
     font-family: "Arial Narrow", sans-serif; }
   .bl_search__field:hover {
-    box-shadow: 0 0 4px 2px #e50014; }
+    box-shadow: 0 0 4px 2px #7f8000; }
   .bl_search__field:focus {
-    border-color: #e50014; }
+    border-color: #7f8000; }
   .bl_search__field:focus::-webkit-input-placeholder {
     opacity: 0; }
   .bl_search__field:focus:-ms-input-placeholder {
@@ -1263,8 +1263,8 @@ button {
   fill: #fff;
   transition: all .2s; }
   .bl_shopBag:hover {
-    color: #e50014;
-    fill: #e50014;
+    color: #fff;
+    text-decoration: underline;
     transition: all .2s; }
 
 .bl_shopBag__goods {
@@ -1287,7 +1287,7 @@ button {
   clear: both;
   width: 100%;
   min-height: 40px;
-  background-color: #e50014; }
+  background-color: #7f8000; }
 
 .bl_nav__button {
   display: block;
@@ -1449,7 +1449,7 @@ button {
   background-color: #000; }
   .button_sliderCart__buy:hover .button_sliderCart__buy_text {
     transition: all .2s;
-    color: #e50014; }
+    color: #7f8000; }
 
 .button_sliderCart__buy_text {
   margin-top: 16px;
@@ -1625,66 +1625,7 @@ button {
     font-size: 22px; }
 
 .bl_inPresence {
-  margin-top: 70px;
-  width: 100%;
-  min-height: 600px;
-  background: url("../image/plane_1.jpg") 50% 50% no-repeat;
-  background-size: contain; }
-
-.bl_inPresence__info {
-  position: relative;
-  -webkit-transform: translateY(50%);
-      -ms-transform: translateY(50%);
-          transform: translateY(50%);
-  width: 100%;
-  min-height: 350px; }
-
-.bl_inPresence__fullText {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 100%;
-  min-height: 164px;
-  background: url("../image/line_eagle.png") 50% 50% no-repeat;
-  background-size: contain;
-  color: #333; }
-
-.bl_inPresence__wrapper {
-  margin-top: 36px;
-  width: 100%;
-  line-height: 1; }
-
-.bl_inPresence__eagle {
-  position: absolute;
-  top: 0;
-  right: 47px; }
-
-.bl_inPresence__bigText {
-  margin-left: 5%;
-  margin-top: 0;
-  font-family: "Arial Narrow Bold", sans-serif;
-  font-size: 48px;
-  text-transform: uppercase; }
-
-.bl_inPresence__smallText {
-  font-family: "Arial Narrow", sans-serif;
-  margin-top: 0;
-  margin-left: 5%;
-  font-size: 19px; }
-
-.bl_inPresence__procent {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -30%);
-      -ms-transform: translate(-50%, -30%);
-          transform: translate(-50%, -30%);
-  color: #333;
-  font-family: "Arial Narrow Bold", sans-serif;
-  font-size: 72px;
-  z-index: 2; }
+  margin-top: 70px; }
 
 .bl_classicsGenre {
   position: relative;
@@ -1790,7 +1731,7 @@ button {
 
 .slider_classicGenre__newPrice {
   margin-left: 21px;
-  color: #e50014;
+  color: #7f8000;
   font-family: "Arial Narrow Bold", sans-serif;
   font-size: 24px; }
 
@@ -1877,7 +1818,7 @@ button {
   transition: all, 0.2s; }
   .button_buy:hover {
     transition: all, 0.2s;
-    color: #e50014; }
+    color: #7f8000; }
 
 .bl_advantages {
   width: 100%;
@@ -1889,30 +1830,19 @@ button {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   margin-top: 94px; }
 
-.bl_advantages__stamp_origin {
-  background-image: url(../image/sprite.png);
-  background-position: -281px 0px;
-  width: 276px;
-  height: 256px; }
-
-.bl_advantages__stamp_showroom {
-  margin-top: 21px;
-  background-image: url(../image/sprite.png);
-  background-position: 0px -261px;
-  width: 221px;
-  height: 218px; }
-
-.bl_advantages__stamp_delivery {
-  background-image: url(../image/sprite.png);
-  background-position: 0px 0px;
-  width: 276px;
-  height: 256px; }
+.bl_advantages__images {
+  -webkit-transform: translateY(-4%);
+      -ms-transform: translateY(-4%);
+          transform: translateY(-4%); }
 
 .icon-star:after {
   position: absolute;
@@ -2015,11 +1945,8 @@ button {
   height: 40px;
   box-sizing: border-box;
   border: none;
-  background-color: #e50014;
+  background-color: #7f8000;
   transition: all 0.2s; }
-  .bl_subscribe__button:hover {
-    transition: all 0.2s;
-    background-color: #dd101c; }
 
 .bl_subscribe__icon {
   display: none; }
@@ -2034,7 +1961,7 @@ button {
 
 .footer_firstPart__phones {
   float: right;
-  margin: 32px auto 0;
+  margin: 32px auto 20px;
   text-align: center; }
 
 .footer_firstPart__phones .bl_phones__text {
@@ -2044,12 +1971,12 @@ button {
   clear: both;
   display: block;
   width: 26px;
-  margin: 20px auto 0;
+  margin: 0 auto;
   color: #fff;
   font-size: 40px;
   transition: all 0.2s; }
   .bl_phones__facebook:hover {
-    color: #e50014;
+    color: #7f8000;
     transition: all 0.2s; }
 
 .footer_secondPart {
@@ -2122,8 +2049,14 @@ button {
 /*********************************************/
 /* Large Devices, Wide Screens 1280px */
 @media only screen and (max-width: 1200px) {
+  .bl_inPresence__procent {
+    left: 60%; }
   .bl_phones {
-    font-size: 15px; } }
+    font-size: 15px; }
+  .slider_classicGenre__item {
+    display: block; }
+  .slider_classicGenre__fullPrice {
+    margin-top: 0; } }
 
 /* Medium Devices, Desktops 992px */
 @media only screen and (max-width: 991px) {
@@ -2136,7 +2069,7 @@ button {
     padding-top: 30px;
     width: 270px;
     height: 100vh;
-    background-color: rgba(255, 0, 0, 0.8);
+    background-color: rgba(127, 128, 0, 0.85);
     z-index: 100; }
   .bl_controls_item {
     width: 100%;
@@ -2193,6 +2126,8 @@ button {
     display: none;
     width: 100%;
     margin-bottom: 4px; }
+  .bl_classicsGenre__full .owl-nav {
+    top: 30%; }
   .bl_navFooter {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2206,7 +2141,12 @@ button {
   .bl_mainAdress {
     margin-top: 10px; }
   .bl_subscribe {
-    margin-top: 15px; } }
+    margin-top: 15px; }
+  .bl_inPresence__wrapper {
+    margin-top: 48px; }
+  .slider_classicGenre__image {
+    margin-left: 0;
+    margin: 0 auto; } }
 
 /* Small Devices, Tablets 768px */
 /* Extra Small Devices, Phones 480px */
