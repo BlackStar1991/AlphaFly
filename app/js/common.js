@@ -79,25 +79,25 @@ $(document).ready(function () {
 
     //// Main-slider
 
-    // $(".bl_mainSlider").owlCarousel({
-    //     items: 1,
-    //     loop: true,
-    //     nav: true,
-    //     navText: true,
-    //     dots: false,
-    //     autoplay: false,
-    //     stopOnHover: true,
-    //     margin: 5,
-    //     smartSpeed: 1000, //Время движения слайда
-    //     autoplayTimeout: 4000, //Время смены слайда
-    //     pagination: false,
-    //     responsiveClass: true,
-    //     responsive: {
-    //         320: {
-    //             items: 1
-    //         }
-    //     }
-    // });
+    $(".bl_mainSlider__full").owlCarousel({
+        items: 1,
+        loop: true,
+        nav: false,
+        navText: true,
+        dots: true,
+        autoplay: true,
+        stopOnHover: true,
+        margin: 4,
+        smartSpeed: 1000, //Время движения слайда
+        autoplayTimeout: 4000, //Время смены слайда
+        pagination: true,
+        responsiveClass: true,
+        responsive: {
+            320: {
+                items: 1
+            }
+        }
+    });
 
 // slider_popular
 

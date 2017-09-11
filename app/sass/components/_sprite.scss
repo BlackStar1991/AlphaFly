@@ -9,6 +9,17 @@
 //
 // At the bottom of this section, we provide information about the spritesheet itself
 // $spritesheet: width height image $spritesheet-sprites;
+$icon-star-small-name: 'icon-star-small';
+$icon-star-small-x: 271px;
+$icon-star-small-y: 261px;
+$icon-star-small-offset-x: -271px;
+$icon-star-small-offset-y: -261px;
+$icon-star-small-width: 11px;
+$icon-star-small-height: 10px;
+$icon-star-small-total-width: 557px;
+$icon-star-small-total-height: 479px;
+$icon-star-small-image: '../image/sprite.png';
+$icon-star-small: (271px, 261px, -271px, -261px, 11px, 10px, 557px, 479px, '../image/sprite.png', 'icon-star-small', );
 $icon-star-white-name: 'icon-starWhite';
 $icon-star-white-x: 226px;
 $icon-star-white-y: 261px;
@@ -56,7 +67,7 @@ $stamp-showroom: (0px, 261px, 0px, -261px, 221px, 218px, 557px, 479px, '../image
 $spritesheet-width: 557px;
 $spritesheet-height: 479px;
 $spritesheet-image: '../image/sprite.png';
-$spritesheet-sprites: ($icon-star-white, $stamp-delivery, $stamp-origin, $stamp-showroom, );
+$spritesheet-sprites: ($icon-star-small, $icon-star-white, $stamp-delivery, $stamp-origin, $stamp-showroom, );
 $spritesheet: (557px, 479px, '../image/sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables

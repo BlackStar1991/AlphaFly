@@ -366,6 +366,42 @@ $fontSize: 14px;
 
 //corrected style
 
+.bl_mainSlider__full.owl-carousel .owl-dots {
+  position: absolute;
+
+  left: 50%;
+  bottom: 30px;
+
+  //border: 1px solid red;
+  z-index: 10;
+
+  .owl-dot {
+    float: left;
+    margin-left: 10px;
+
+    position: relative;
+    width: 25px;
+    height: 5px;
+    background-color: #000000;
+
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+  .owl-dot.active{
+    :after{
+      position: absolute;
+      left: 0;
+      top: 2px;
+      content: "";
+      height: 1px;
+      width: 100%;
+      background-color: #fff;
+    }
+  }
+
+
+}
 
 .slider_newProducts.owl-carousel .owl-nav,
 .slider_discountProducts.owl-carousel .owl-nav{
@@ -583,6 +619,8 @@ $fontSize: 14px;
   top: 0;
   display: inline-block;
   width: 100%;
+
+  //padding-right: 30px;
 }
 
 .slider_classicGenre__title {
@@ -638,7 +676,6 @@ $fontSize: 14px;
   background-color: #fff;
   box-sizing: border-box;
   //min-height: 500px;
-
 }
 
 .slider_classicGenre__fullPrice {
@@ -848,6 +885,205 @@ $fontSize: 14px;
   }
 
 }
+
+
+/////// BREADCRUMBS
+.bl_breadcrumbs__wrapper{
+  width: 100%;
+  padding: 12px 0;
+  background-color: $color_grey;
+}
+
+
+.bl_breadcrumbs {
+  width: 100%;
+
+  &__item {
+    position: relative;
+    display: inline-block;
+    padding-right: 2%;
+
+
+    &:not(:last-child):after {
+      content: "";
+      position: absolute;
+      top: 7px;
+      right: 5px;
+      z-index: 3;
+      @include sprite($icon-star-small);
+    }
+  }
+  &__link {
+    position: relative;
+    display: block;
+    width: 100%;
+    color: $color_grey2;
+    font-family: $ArialNarrow;
+    text-decoration: underline;
+
+
+    &:hover {
+      color: #000;
+    }
+  }
+  &__active {
+    text-decoration: none;
+  }
+
+}
+
+//////////
+
+.bl_catalog{
+  position: relative;
+  width: 100%;
+  margin-top: 29px;
+}
+
+.bl_catalog__title{
+  text-align: center;
+  padding:14px 0;
+
+  font-family: $ArialBold;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+}
+
+.bl_category__full{
+  width: 100%;
+  margin-top: 28px;
+}
+
+.bl_category__item{
+  position: relative;
+  margin-top: 4px;
+  height: 40px;
+}
+
+.bl_category__label{
+  width: 100%;
+  line-height: 44px;
+  cursor: pointer;
+}
+
+.bl_category__checkbox{
+  visibility: hidden;
+  position: absolute;
+  top: 30%;
+  left: 20px;
+}
+
+
+.bl_category__name{
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+
+  transition: 0.2s all;
+  color: #000;
+
+  &:hover{
+    transition: 0.2s all;
+    color: $color_oliv;
+  }
+
+  &:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+
+}
+
+
+.bl_category__checkbox:checked + .bl_category__name:after{
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 13px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #000;
+
+  box-sizing: border-box;
+  background-color: #000;
+
+  z-index:3;
+}
+.bl_category__checkbox:checked + .bl_category__name:before{
+  content: none;
+}
+
+
+/////// Filter Colors
+
+.filter_color{
+  width: 100%;
+  margin-top: 20px;
+}
+
+.bl_catalog__filtersWrapper{
+  max-width: 242px;
+  box-sizing: border-box;
+}
+
+.filter_color__fullColors{
+  margin-top: 28px;
+  width: calc(100% + 10px);
+  margin-left: -5px;
+}
+
+.filter_color__item{
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
+
+.filter_color__label{
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  box-sizing: border-box;
+}
+
+.filter_color__checkbox{
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  visibility: hidden;
+}
+
+.filter_color__checkbox:checked + .filter_color__image{
+  border-color: $color_oliv;
+}
+
+.filter_color__image{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 2px solid rgba(0,0,0,0);
+}
+
+
+
+
+
+
+
 
 /*********************************************/
 /*FOOTER*/
