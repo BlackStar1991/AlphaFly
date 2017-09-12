@@ -201,35 +201,35 @@ button {
 
 // SLIDER
 
-.slider_newProducts {
+.slider_bestseller {
   width: 100%;
 }
 
-.bl_newProducts__wrapper{
+.bl_bestseller__wrapper{
   position: relative;
   width: 100%;
 }
 
-.bl_newProducts__item {
+.bl_bestseller__item {
   position: relative;
   display: inline-block;
   max-width: 225px;
   box-sizing: border-box;
 }
 
-.bl_newProducts__link {
+.bl_bestseller__link {
   display: block;
   width: 100%;
   height: 100%;
 
 }
 
-.bl_newProducts__blockImg {
+.bl_bestseller__blockImg {
   width: 100%;
   min-height: 100%;
 }
 
-.bl_newProducts__title {
+.bl_bestseller__title {
   position: relative;
   display: block;
   width: 100%;
@@ -403,7 +403,7 @@ $fontSize: 14px;
 
 }
 
-.slider_newProducts.owl-carousel .owl-nav,
+.slider_bestseller.owl-carousel .owl-nav,
 .slider_discountProducts.owl-carousel .owl-nav{
   width: initial;
   height: auto;
@@ -743,7 +743,7 @@ $fontSize: 14px;
   height: 35px;
   box-sizing: border-box;
   background-color: #000;
-  border: 1px solid #fff;
+  border: 1px solid $color_oliv;
 }
 
 .icon_bookmarks {
@@ -756,7 +756,7 @@ $fontSize: 14px;
     width: 12px;
     height: 16px;
 
-    background: url("../image/icon_tab.svg") 50% 50% no-repeat;
+    background: url("../image/icon_tab-olive.svg") 50% 50% no-repeat;
   }
 }
 
@@ -770,7 +770,7 @@ $fontSize: 14px;
     width: 20px;
     height: 20px;
 
-    background: url("../image/icon_compare.svg") 50% 50% no-repeat;
+    background: url("../image/icon_compare-olive.svg") 50% 50% no-repeat;
   }
 }
 
@@ -783,7 +783,7 @@ $fontSize: 14px;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 17px;
-    color: #fff;
+    color: $color_oliv;
     //width: 17px;
     //height: 17px;
     //
@@ -796,7 +796,7 @@ $fontSize: 14px;
   vertical-align: top;
   margin-top: 2px;
   padding: 7px 16px;
-  color: #fff;
+  color: $color_oliv;
   font-family: $ArialNarrow;
   font-size: 16px;
   font-weight: 400;

@@ -135,9 +135,9 @@ $(document).ready(function () {
     // });
 
 
-////// slider_newProducts
+////// slider_bestseller
 
-    $(".slider_newProducts").owlCarousel({
+    $(".slider_bestseller").owlCarousel({
         items: 5,
         loop: true,
         nav: true,
@@ -322,8 +322,8 @@ $(document).ready(function () {
         allPopularArrows = $(".slider_popular.owl-carousel .owl-prev, .slider_popular.owl-carousel .owl-next"),
 
 
-        blockNewProducts = $(".bl_newProducts"),
-        allNewProductsArrows = $(".slider_newProducts.owl-carousel .owl-prev, .slider_newProducts.owl-carousel .owl-next"),
+        blockNewProducts = $(".bl_bestseller"),
+        allNewProductsArrows = $(".slider_bestseller.owl-carousel .owl-prev, .slider_bestseller.owl-carousel .owl-next"),
 
 
         blockWithThisProductBuy = $(".bl_withThisProductBuy"),
