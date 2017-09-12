@@ -1502,7 +1502,7 @@ button {
     top: -25px;
     width: 30px;
     height: 40px;
-    background-color: #050404;
+    background-color: #000;
     line-height: 40px;
     transition: all 0.2s; }
     .owl-carousel .owl-nav .owl-prev:before {
@@ -1520,7 +1520,7 @@ button {
     top: -25px;
     width: 30px;
     height: 40px;
-    background-color: #050404;
+    background-color: #000;
     line-height: 40px;
     transition: all 0.2s; }
     .owl-carousel .owl-nav .owl-next:before {
@@ -1650,7 +1650,66 @@ button {
     font-size: 22px; }
 
 .bl_inPresence {
-  margin-top: 70px; }
+  margin-top: 70px;
+  width: 100%;
+  min-height: 600px;
+  background: url("../image/plane_1.jpg") 50% 50% no-repeat;
+  background-size: contain; }
+
+.bl_inPresence__info {
+  position: relative;
+  -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  width: 100%;
+  min-height: 350px; }
+
+.bl_inPresence__fullText {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  min-height: 164px;
+  background: url("../image/line_eagle.png") 50% 50% no-repeat;
+  background-size: contain;
+  color: #333; }
+
+.bl_inPresence__wrapper {
+  margin-top: 36px;
+  width: 100%;
+  line-height: 1; }
+
+.bl_inPresence__eagle {
+  position: absolute;
+  top: 0;
+  right: 47px; }
+
+.bl_inPresence__bigText {
+  margin-left: 5%;
+  margin-top: 0;
+  font-family: "Arial Narrow Bold", sans-serif;
+  font-size: 48px;
+  text-transform: uppercase; }
+
+.bl_inPresence__smallText {
+  font-family: "Arial Narrow", sans-serif;
+  margin-top: 0;
+  margin-left: 5%;
+  font-size: 19px; }
+
+.bl_inPresence__procent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -30%);
+      -ms-transform: translate(-50%, -30%);
+          transform: translate(-50%, -30%);
+  color: #333;
+  font-family: "Arial Narrow Bold", sans-serif;
+  font-size: 72px;
+  z-index: 2; }
 
 .bl_classicsGenre {
   position: relative;
@@ -2246,8 +2305,7 @@ button {
 .bl_catalog__fullProducts {
   width: 100%;
   height: 100%;
-  margin-top: 16px;
-  padding-top: 15px; }
+  margin-top: 16px; }
 
 .view_grid__STYLE .bl_fullProducts__options,
 .view_grid__STYLE .product_info__id,
@@ -2257,21 +2315,13 @@ button {
 .bl_products {
   margin-top: 20px; }
 
-.bl_products__border {
-  border-top: 1px solid #f4f4f4;
-  border-left: 1px solid #f4f4f4; }
-
 .bl_fullProducts__item {
   position: relative;
   height: 100%;
   min-height: 380px;
-  padding: 16px 20px 23px 20px;
+  border: 1px solid #f00;
   box-sizing: border-box;
   overflow: hidden; }
-
-.bl_fullProducts__item_border {
-  border-right: 1px solid #f4f4f4;
-  border-bottom: 1px solid #f4f4f4; }
 
 .bl_fullProducts__item_border.col-md-4 .bl_fullProducts__item_border:nth-of-type(3) {
   border-right: none;
@@ -2280,7 +2330,9 @@ button {
 .bl_fullProducts__imageWrapper {
   margin: 0 auto;
   text-align: center;
-  padding: 12px 8px;
+  width: 100%; }
+
+.bl_fullProducts__image {
   width: 100%; }
 
 .bl_fullProducts__title {
