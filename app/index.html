@@ -68,16 +68,14 @@
                                                         class="bl_controls__link controls_icon controls_icon__delivery">Доставка</a>
                         </li>
                         <li class="bl_controls_item"><a href="#"
-                                                        class="bl_controls__link controls_icon controls_icon__size">Размер</a>
+                                                        class="bl_controls__link controls_icon controls_icon__size">Выбор размера</a>
                         </li>
                         <li class="bl_controls_item"><a href="#"
                                                         class="bl_controls__link controls_icon controls_icon__exchange">Обмен и возврат</a>
                         </li>
                     </ul>
                     <ul class="bl_manage">
-                        <li class="bl_manage__item hidden"><a href="#"
-                                                              class="bl_manage__link manage_icon manage_icon__login">Логин</a>
-                        </li>
+                        <li class="bl_manage__item hidden"><a href="#" class="bl_manage__link manage_icon manage_icon__login">Логин</a></li>
                         <li class="bl_manage__item"><a href="#" class="bl_manage__link manage_icon manage_icon__tab">Закладки
                             (<span>99</span>)</a></li>
                         <li class="bl_manage__item"><a href="#"
@@ -164,7 +162,7 @@
         </div>
     </div>
 </header>
-<!--======================================= MAIN ==========================================================-->
+<!-- ======================================= MAIN ========================================================== -->
 <main class="main">
     <div class="mainWrapper">
 
@@ -484,41 +482,51 @@
 
                             <a class="bl_view__compare" href="#">Сравнение товаров <span>(0)</span></a>
 
-                            <div class="bl_numberOfItemShow">
+                            <label class="bl_numberOfItemShow">
                                 <span class="bl_view__text">На странице:</span>
                                 <select class="bl_numberOfItemShow__select">
                                     <option value="" selected="selected">15</option>
                                     <option value="">30</option>
                                     <option value="">Все</option>
                                 </select>
-                            </div>
+                            </label>
 
-                            <div class="bl_sorter">
+                            <label class="bl_sorter">
                                 <span class="bl_view__text">Сортировка:</span>
                                 <select class="bl_sorter__select">
                                     <option value="" selected="selected">По умолчанию</option>
                                     <option value="">Наименование (А -&gt; Я)</option>
                                 </select>
-                            </div>
+                            </label>
 
                         </div>
 
-                        <div class="bl_products bl_products__border view_grid__STYLE  clearfix">  <!-- тут происходит переключение классов view_grid__STYLE  view_list__STYLE-->
+                        <div class="bl_products  view_grid__STYLE  clearfix">  <!-- тут происходит переключение классов view_grid__STYLE  view_list__STYLE-->
 
-                            <div class="bl_fullProducts__item bl_fullProducts__item_border col-md-3 col-sm-4 col-xs-6 clearfix">
+                            <div class="bl_fullProducts__item  clearfix">
                                 <div class="bl_wrappen code_listView1">
                                     <div class="bl_fullProducts__imageWrapper code_listView2">
 
-                                        <!-- Лейба Хит продаж, для всех страниц-->
-                                        <div class="bl_mark bl_mark__hit">
-                                            <div class="wrapperBlock"><span class="bl_mark__text">хит</span></div>
+                                        <!-- mark Discount-->
+                                        <div class="bl_mark bl_mark__discount">
+                                            <div class="bl_wrappen">
+                                                <p class="bl_mark__text">-25%</p>
+                                            </div>
                                         </div>
-                                        <!-- -->
+                                        <!--  -->
 
                                         <img class="bl_fullProducts__image"
                                              src="image/Products/product_1.jpg" alt="">
                                     </div>
                                     <div class="code_listView3 ">
+                                        <div class="bl_fullProducts__raiting">
+                                            <div class="box_forStar box_forStar__full"></div>
+                                            <div class="box_forStar box_forStar__empty"></div>
+                                            <div class="box_forStar box_forStar__empty"></div>
+                                            <div class="box_forStar box_forStar__empty"></div>
+                                            <div class="box_forStar box_forStar__empty"></div>
+                                        </div>
+
 
                                         <a class="bl_fullProducts__link" href="#">
                                             <h2 class="bl_fullProducts__title">YOUTH N-3B Maveric Parka</h2>
@@ -533,21 +541,475 @@
                                                 <!--<span class="product_info__productAvailability__no">нету в наличии </span>  Если товара нету -->
                                             </p>
 
-                                            <p class="bl_fullProducts__price">
+                                            <div class="bl_fullProducts__price">
 
-                                                <!--<span class="bl_price__oldPrice bl_fullProducts__oldPrice">2034 грн.</span>-->
-                                                <!--<span class="bl_price__newPrice bl_fullProducts__newPrice">100 грн.</span>-->
-                                                <span class="bl_price__normal bl_fullProducts__normal">2700 грн.</span>
-                                            </p>
-                                            <button class="button_buy">
-                                                <span class="button_buy__text">Купить</span>
-                                            </button>
+                                                <span class="bl_price__oldPrice">999999 грн.</span>
+                                                <span class="bl_price__newPrice">100 грн.</span>
+                                                <!--<span class="bl_price__normal">2700 грн.</span>-->
+                                            </div>
+
+
+                                            <p class="bl_fullProducts__fakeButton">В корзину</p>
+
+
+                                            <div class="bl_fullProducts__buttonsBlock">
+                                                <button class="button_blackInfo icon_bookmarks"
+                                                        title=""></button>
+                                                <button class="button_blackInfo icon_compare" title=""></button>
+                                                <button class="button_blackInfo icon_lookAt" title=""></button>
+                                                <button class="button_buy" title="">В корзину</button>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
 
+                            
+                            <div class="bl_fullProducts__item  clearfix">
+                                <div class="bl_wrappen code_listView1">
+                                    <div class="bl_fullProducts__imageWrapper code_listView2">
+
+                                        <!-- mark NEW Product-->
+                                        <div class="bl_mark bl_mark__new">
+                                            <div class="bl_wrappen">
+                                                <p class="bl_mark__text">new</p>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+
+                                        <img class="bl_fullProducts__image"
+                                             src="image/Products/product_1.jpg" alt="">
+                                    </div>
+                                    <div class="code_listView3 ">
+                                        <div class="bl_fullProducts__raiting">
+                                            <div class="box_forStar box_forStar__full"></div>
+                                            <div class="box_forStar box_forStar__full"></div>
+                                            <div class="box_forStar box_forStar__full"></div>
+                                            <div class="box_forStar box_forStar__empty"></div>
+                                            <div class="box_forStar box_forStar__empty"></div>
+                                        </div>
+
+
+                                        <a class="bl_fullProducts__link" href="#">
+                                            <h2 class="bl_fullProducts__title">YOUTH N-3B Maveric Parka fdgdfg  dfgdf gdf gdf gdfg dfgdddddddg dfg dfgdf gdf gdfgdfg dfg dfg </h2>
+                                        </a>
+
+                                        <div class="bl_fullProducts__listStyle">
+
+                                            <p class="product_info__id">Код товара: <span class="product_info__id_text">518003-L</span>
+                                            </p>
+                                            <p class="product_info__productAvailability">На складе:
+                                                <span class="product_info__productAvailability__yes">есть в наличии</span>
+                                                <!--<span class="product_info__productAvailability__no">нету в наличии </span>  Если товара нету -->
+                                            </p>
+
+                                            <div class="bl_fullProducts__price">
+
+                                                <!--<span class="bl_price__oldPrice">999999 грн.</span>-->
+                                                <!--<span class="bl_price__newPrice">100 грн.</span>-->
+                                                <span class="bl_price__normal">2700 грн.</span>
+                                            </div>
+
+
+                                            <p class="bl_fullProducts__fakeButton">В корзину</p>
+
+
+                                            <div class="bl_fullProducts__buttonsBlock">
+                                                <button class="button_blackInfo icon_bookmarks"
+                                                        title=""></button>
+                                                <button class="button_blackInfo icon_compare" title=""></button>
+                                                <button class="button_blackInfo icon_lookAt" title=""></button>
+                                                <button class="button_buy" title="">В корзину</button>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bl_fullProducts__item  clearfix">
+                                <div class="bl_wrappen code_listView1">
+                                    <div class="bl_fullProducts__imageWrapper code_listView2">
+
+
+
+                                        <img class="bl_fullProducts__image"
+                                             src="image/Products/product_1.jpg" alt="">
+                                    </div>
+                                    <div class="code_listView3 ">
+                                        <div class="bl_fullProducts__raiting">
+                                            <div class="box_forStar box_forStar__full"></div>
+                                            <div class="box_forStar box_forStar__full"></div>
+                                            <div class="box_forStar box_forStar__full"></div>
+                                            <div class="box_forStar box_forStar__empty"></div>
+                                            <div class="box_forStar box_forStar__empty"></div>
+                                        </div>
+
+
+                                        <a class="bl_fullProducts__link" href="#">
+                                            <h2 class="bl_fullProducts__title">YOUTH N-3B Maveric Parka fdgdfg  dfgdf gdf gdf gdfg dfgdddddddg dfg dfgdf gdf gdfgdfg dfg dfg </h2>
+                                        </a>
+
+                                        <div class="bl_fullProducts__listStyle">
+
+                                            <p class="product_info__id">Код товара: <span class="product_info__id_text">518003-L</span>
+                                            </p>
+                                            <p class="product_info__productAvailability">На складе:
+                                                <span class="product_info__productAvailability__yes">есть в наличии</span>
+                                                <!--<span class="product_info__productAvailability__no">нету в наличии </span>  Если товара нету -->
+                                            </p>
+
+                                            <div class="bl_fullProducts__price">
+
+                                                <!--<span class="bl_price__oldPrice">999999 грн.</span>-->
+                                                <!--<span class="bl_price__newPrice">100 грн.</span>-->
+                                                <span class="bl_price__normal">2700 грн.</span>
+                                            </div>
+
+
+                                            <p class="bl_fullProducts__fakeButton">В корзину</p>
+
+
+                                            <div class="bl_fullProducts__buttonsBlock">
+                                                <button class="button_blackInfo icon_bookmarks"
+                                                        title=""></button>
+                                                <button class="button_blackInfo icon_compare" title=""></button>
+                                                <button class="button_blackInfo icon_lookAt" title=""></button>
+                                                <button class="button_buy" title="">В корзину</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bl_fullProducts__item  clearfix">
+                                <div class="bl_wrappen code_listView1">
+                                    <div class="bl_fullProducts__imageWrapper code_listView2">
+
+
+
+                                        <img class="bl_fullProducts__image"
+                                             src="image/Products/product_1.jpg" alt="">
+                                    </div>
+                                    <div class="code_listView3 ">
+                                        <div class="bl_fullProducts__raiting">
+                                            <div class="box_forStar box_forStar__full"></div>
+                                            <div class="box_forStar box_forStar__full"></div>
+                                            <div class="box_forStar box_forStar__full"></div>
+                                            <div class="box_forStar box_forStar__empty"></div>
+                                            <div class="box_forStar box_forStar__empty"></div>
+                                        </div>
+
+
+                                        <a class="bl_fullProducts__link" href="#">
+                                            <h2 class="bl_fullProducts__title">YOUTH N-3B Maveric Parka fdgdfg  dfgdf gdf gdf gdfg dfgdddddddg dfg dfgdf gdf gdfgdfg dfg dfg </h2>
+                                        </a>
+
+                                        <div class="bl_fullProducts__listStyle">
+
+                                            <p class="product_info__id">Код товара: <span class="product_info__id_text">518003-L</span>
+                                            </p>
+                                            <p class="product_info__productAvailability">На складе:
+                                                <span class="product_info__productAvailability__yes">есть в наличии</span>
+                                                <!--<span class="product_info__productAvailability__no">нету в наличии </span>  Если товара нету -->
+                                            </p>
+
+                                            <div class="bl_fullProducts__price">
+
+                                                <!--<span class="bl_price__oldPrice">999999 грн.</span>-->
+                                                <!--<span class="bl_price__newPrice">100 грн.</span>-->
+                                                <span class="bl_price__normal">2700 грн.</span>
+                                            </div>
+
+
+                                            <p class="bl_fullProducts__fakeButton">В корзину</p>
+
+
+                                            <div class="bl_fullProducts__buttonsBlock">
+                                                <button class="button_blackInfo icon_bookmarks"
+                                                        title=""></button>
+                                                <button class="button_blackInfo icon_compare" title=""></button>
+                                                <button class="button_blackInfo icon_lookAt" title=""></button>
+                                                <button class="button_buy" title="">В корзину</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bl_fullProducts__item  clearfix">
+                                <div class="bl_wrappen code_listView1">
+                                    <div class="bl_fullProducts__imageWrapper code_listView2">
+
+
+                                        <img class="bl_fullProducts__image"
+                                             src="image/Products/product_1.jpg" alt="">
+                                    </div>
+                                    <div class="code_listView3 ">
+                                        <div class="bl_fullProducts__raiting">
+                                            <div class="box_forStar box_forStar__full"></div>
+                                            <div class="box_forStar box_forStar__full"></div>
+                                            <div class="box_forStar box_forStar__full"></div>
+                                            <div class="box_forStar box_forStar__empty"></div>
+                                            <div class="box_forStar box_forStar__empty"></div>
+                                        </div>
+
+
+                                        <a class="bl_fullProducts__link" href="#">
+                                            <h2 class="bl_fullProducts__title">YOUTH N-3B Maveric Parka fdgdfg  dfgdf gdf gdf gdfg dfgdddddddg dfg dfgdf gdf gdfgdfg dfg dfg </h2>
+                                        </a>
+
+                                        <div class="bl_fullProducts__listStyle">
+
+                                            <p class="product_info__id">Код товара: <span class="product_info__id_text">518003-L</span>
+                                            </p>
+                                            <p class="product_info__productAvailability">На складе:
+                                                <span class="product_info__productAvailability__yes">есть в наличии</span>
+                                                <!--<span class="product_info__productAvailability__no">нету в наличии </span>  Если товара нету -->
+                                            </p>
+
+                                            <div class="bl_fullProducts__price">
+
+                                                <!--<span class="bl_price__oldPrice">999999 грн.</span>-->
+                                                <!--<span class="bl_price__newPrice">100 грн.</span>-->
+                                                <span class="bl_price__normal">2700 грн.</span>
+                                            </div>
+
+
+                                            <p class="bl_fullProducts__fakeButton">В корзину</p>
+
+
+                                            <div class="bl_fullProducts__buttonsBlock">
+                                                <button class="button_blackInfo icon_bookmarks"
+                                                        title=""></button>
+                                                <button class="button_blackInfo icon_compare" title=""></button>
+                                                <button class="button_blackInfo icon_lookAt" title=""></button>
+                                                <button class="button_buy" title="">В корзину</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bl_fullProducts__item  clearfix">
+                                <div class="bl_wrappen code_listView1">
+                                    <div class="bl_fullProducts__imageWrapper code_listView2">
+
+
+
+                                        <img class="bl_fullProducts__image"
+                                             src="image/Products/product_1.jpg" alt="">
+                                    </div>
+                                    <div class="code_listView3 ">
+                                        <div class="bl_fullProducts__raiting">
+                                            <div class="box_forStar box_forStar__full"></div>
+                                            <div class="box_forStar box_forStar__full"></div>
+                                            <div class="box_forStar box_forStar__full"></div>
+                                            <div class="box_forStar box_forStar__empty"></div>
+                                            <div class="box_forStar box_forStar__empty"></div>
+                                        </div>
+
+
+                                        <a class="bl_fullProducts__link" href="#">
+                                            <h2 class="bl_fullProducts__title">YOUTH N-3B Maveric Parka fdgdfg  dfgdf gdf gdf gdfg dfgdddddddg dfg dfgdf gdf gdfgdfg dfg dfg </h2>
+                                        </a>
+
+                                        <div class="bl_fullProducts__listStyle">
+
+                                            <p class="product_info__id">Код товара: <span class="product_info__id_text">518003-L</span>
+                                            </p>
+                                            <p class="product_info__productAvailability">На складе:
+                                                <span class="product_info__productAvailability__yes">есть в наличии</span>
+                                                <!--<span class="product_info__productAvailability__no">нету в наличии </span>  Если товара нету -->
+                                            </p>
+
+                                            <div class="bl_fullProducts__price">
+
+                                                <!--<span class="bl_price__oldPrice">999999 грн.</span>-->
+                                                <!--<span class="bl_price__newPrice">100 грн.</span>-->
+                                                <span class="bl_price__normal">2700 грн.</span>
+                                            </div>
+
+
+                                            <p class="bl_fullProducts__fakeButton">В корзину</p>
+
+
+                                            <div class="bl_fullProducts__buttonsBlock">
+                                                <button class="button_blackInfo icon_bookmarks"
+                                                        title=""></button>
+                                                <button class="button_blackInfo icon_compare" title=""></button>
+                                                <button class="button_blackInfo icon_lookAt" title=""></button>
+                                                <button class="button_buy" title="">В корзину</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bl_fullProducts__item  clearfix">
+                                <div class="bl_wrappen code_listView1">
+                                    <div class="bl_fullProducts__imageWrapper code_listView2">
+
+
+                                        <img class="bl_fullProducts__image"
+                                             src="image/Products/product_1.jpg" alt="">
+                                    </div>
+                                    <div class="code_listView3 ">
+                                        <div class="bl_fullProducts__raiting">
+                                            <div class="box_forStar box_forStar__full"></div>
+                                            <div class="box_forStar box_forStar__full"></div>
+                                            <div class="box_forStar box_forStar__full"></div>
+                                            <div class="box_forStar box_forStar__empty"></div>
+                                            <div class="box_forStar box_forStar__empty"></div>
+                                        </div>
+
+
+                                        <a class="bl_fullProducts__link" href="#">
+                                            <h2 class="bl_fullProducts__title">YOUTH N-3B Maveric Parka fdgdfg  dfgdf gdf gdf gdfg dfgdddddddg dfg dfgdf gdf gdfgdfg dfg dfg </h2>
+                                        </a>
+
+                                        <div class="bl_fullProducts__listStyle">
+
+                                            <p class="product_info__id">Код товара: <span class="product_info__id_text">518003-L</span>
+                                            </p>
+                                            <p class="product_info__productAvailability">На складе:
+                                                <span class="product_info__productAvailability__yes">есть в наличии</span>
+                                                <!--<span class="product_info__productAvailability__no">нету в наличии </span>  Если товара нету -->
+                                            </p>
+
+                                            <div class="bl_fullProducts__price">
+
+                                                <!--<span class="bl_price__oldPrice">999999 грн.</span>-->
+                                                <!--<span class="bl_price__newPrice">100 грн.</span>-->
+                                                <span class="bl_price__normal">2700 грн.</span>
+                                            </div>
+
+
+                                            <p class="bl_fullProducts__fakeButton">В корзину</p>
+
+
+                                            <div class="bl_fullProducts__buttonsBlock">
+                                                <button class="button_blackInfo icon_bookmarks"
+                                                        title=""></button>
+                                                <button class="button_blackInfo icon_compare" title=""></button>
+                                                <button class="button_blackInfo icon_lookAt" title=""></button>
+                                                <button class="button_buy" title="">В корзину</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bl_fullProducts__item  clearfix">
+                                <div class="bl_wrappen code_listView1">
+                                    <div class="bl_fullProducts__imageWrapper code_listView2">
+
+
+                                        <img class="bl_fullProducts__image"
+                                             src="image/Products/product_1.jpg" alt="">
+                                    </div>
+                                    <div class="code_listView3 ">
+                                        <div class="bl_fullProducts__raiting">
+                                            <div class="box_forStar box_forStar__full"></div>
+                                            <div class="box_forStar box_forStar__full"></div>
+                                            <div class="box_forStar box_forStar__full"></div>
+                                            <div class="box_forStar box_forStar__empty"></div>
+                                            <div class="box_forStar box_forStar__empty"></div>
+                                        </div>
+
+
+                                        <a class="bl_fullProducts__link" href="#">
+                                            <h2 class="bl_fullProducts__title">YOUTH N-3B Maveric Parka fdgdfg  dfgdf gdf gdf gdfg dfgdddddddg dfg dfgdf gdf gdfgdfg dfg dfg </h2>
+                                        </a>
+
+                                        <div class="bl_fullProducts__listStyle">
+
+                                            <p class="product_info__id">Код товара: <span class="product_info__id_text">518003-L</span>
+                                            </p>
+                                            <p class="product_info__productAvailability">На складе:
+                                                <span class="product_info__productAvailability__yes">есть в наличии</span>
+                                                <!--<span class="product_info__productAvailability__no">нету в наличии </span>  Если товара нету -->
+                                            </p>
+
+                                            <div class="bl_fullProducts__price">
+
+                                                <!--<span class="bl_price__oldPrice">999999 грн.</span>-->
+                                                <!--<span class="bl_price__newPrice">100 грн.</span>-->
+                                                <span class="bl_price__normal">2700 грн.</span>
+                                            </div>
+
+
+                                            <p class="bl_fullProducts__fakeButton">В корзину</p>
+
+
+                                            <div class="bl_fullProducts__buttonsBlock">
+                                                <button class="button_blackInfo icon_bookmarks"
+                                                        title=""></button>
+                                                <button class="button_blackInfo icon_compare" title=""></button>
+                                                <button class="button_blackInfo icon_lookAt" title=""></button>
+                                                <button class="button_buy" title="">В корзину</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bl_fullProducts__item  clearfix">
+                                <div class="bl_wrappen code_listView1">
+                                    <div class="bl_fullProducts__imageWrapper code_listView2">
+
+                                       
+
+                                        <img class="bl_fullProducts__image"
+                                             src="image/Products/product_1.jpg" alt="">
+                                    </div>
+                                    <div class="code_listView3 ">
+                                        <div class="bl_fullProducts__raiting">
+                                            <div class="box_forStar box_forStar__full"></div>
+                                            <div class="box_forStar box_forStar__full"></div>
+                                            <div class="box_forStar box_forStar__full"></div>
+                                            <div class="box_forStar box_forStar__empty"></div>
+                                            <div class="box_forStar box_forStar__empty"></div>
+                                        </div>
+
+
+                                        <a class="bl_fullProducts__link" href="#">
+                                            <h2 class="bl_fullProducts__title">YOUTH N-3B Maveric Parka fdgdfg  dfgdf gdf gdf gdfg dfgdddddddg dfg dfgdf gdf gdfgdfg dfg dfg </h2>
+                                        </a>
+
+                                        <div class="bl_fullProducts__listStyle">
+
+                                            <p class="product_info__id">Код товара: <span class="product_info__id_text">518003-L</span>
+                                            </p>
+                                            <p class="product_info__productAvailability">На складе:
+                                                <span class="product_info__productAvailability__yes">есть в наличии</span>
+                                                <!--<span class="product_info__productAvailability__no">нету в наличии </span>  Если товара нету -->
+                                            </p>
+
+                                            <div class="bl_fullProducts__price">
+
+                                                <!--<span class="bl_price__oldPrice">999999 грн.</span>-->
+                                                <!--<span class="bl_price__newPrice">100 грн.</span>-->
+                                                <span class="bl_price__normal">2700 грн.</span>
+                                            </div>
+
+
+                                            <p class="bl_fullProducts__fakeButton">В корзину</p>
+
+
+                                            <div class="bl_fullProducts__buttonsBlock">
+                                                <button class="button_blackInfo icon_bookmarks"
+                                                        title=""></button>
+                                                <button class="button_blackInfo icon_compare" title=""></button>
+                                                <button class="button_blackInfo icon_lookAt" title=""></button>
+                                                <button class="button_buy" title="">В корзину</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
 
                         </div>
@@ -584,7 +1046,7 @@
                         <a class="bl_navFooter__link" href="#">Контакты</a>
                         <a class="bl_navFooter__link" href="#">Доставка</a>
                         <a class="bl_navFooter__link" href="#">Обмен</a>
-                        <a class="bl_navFooter__link" href="#">Размер</a>
+                        <a class="bl_navFooter__link" href="#">Выбор размера</a>
                     </nav>
                 </div>
                 <div class="col-md-7">
@@ -639,6 +1101,7 @@
     </div>
 
 </footer>
+
 
 
 <!-- ANCOR -->
