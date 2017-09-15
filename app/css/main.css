@@ -1296,7 +1296,7 @@ button {
   margin: 5px auto;
   border: 1px solid #000;
   box-sizing: border-box;
-  background-color: #dd101c;
+  background-color: #000;
   border-radius: 4px; }
 
 .bl_nav__button_text {
@@ -1488,9 +1488,6 @@ button {
   width: 100%;
   height: 0;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
   z-index: 999; }
   .owl-carousel .owl-nav .owl-prev {
     position: absolute;
@@ -1564,7 +1561,7 @@ button {
   .slider_discountProducts.owl-carousel .owl-nav .owl-next {
     float: left;
     position: relative;
-    top: 0;
+    top: -20px;
     left: 0;
     width: 30px;
     height: 40px;
@@ -2125,7 +2122,8 @@ button {
 
 .oc_filter__buttons {
   width: 100%;
-  margin-top: 30px; }
+  margin-top: 30px;
+  margin-bottom: 15px; }
 
 .oc_filter__chooseButton {
   float: left;
@@ -2865,6 +2863,7 @@ button {
   .bl_phones {
     width: 100%; }
   .bl_phones__text {
+    text-align: center;
     font-size: 18px; }
   .bl_shopBag {
     float: none;
@@ -2924,7 +2923,9 @@ button {
   .bl_fullProducts__item {
     width: 32%; }
     .bl_fullProducts__item:nth-of-type(4n) {
-      margin-right: inherit; } }
+      margin-right: inherit; }
+  .bl_catalog__filtersWrapper {
+    max-width: none; } }
 
 /* Small Devices, Tablets 768px */
 @media only screen and (max-width: 768px) {

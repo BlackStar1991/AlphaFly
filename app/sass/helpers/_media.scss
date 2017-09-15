@@ -84,6 +84,7 @@
     width: 100%;
   }
   .bl_phones__text {
+    text-align: center;
     font-size: 18px;
   }
 
@@ -175,6 +176,13 @@
     &:nth-of-type(4n) {
       margin-right: inherit;
     }
+  }
+
+
+  .bl_catalog__filtersWrapper{
+
+    max-width: none;
+
   }
 
 }
