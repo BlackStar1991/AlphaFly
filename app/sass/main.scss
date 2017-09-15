@@ -1256,6 +1256,20 @@ $ml: 5%;
   position: relative;
   margin-top: 5px;
   float: right;
+}
+
+.bl_sorter__select {
+  position: relative;
+  width: 206px;
+  height: 30px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.icon_triangle{
 
   &:after {
     content: "\f0d7";
@@ -1277,16 +1291,6 @@ $ml: 5%;
   }
 }
 
-.bl_sorter__select {
-  position: relative;
-  width: 206px;
-  height: 30px;
-  background-color: #000;
-  color: #fff;
-  border: 1px solid #fff;
-  box-sizing: border-box;
-  cursor: pointer;
-}
 
 .bl_numberOfItemShow {
   position: relative;
@@ -1454,7 +1458,7 @@ $ml: 5%;
 
   //padding-bottom: 40px; // компенсация для кнопок
 
-  border: 1px solid #f00;
+  //border: 1px solid #f00;
   box-sizing: border-box;
   overflow: hidden;
 

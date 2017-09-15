@@ -42,9 +42,30 @@
   text-align: center;
 }
 
+.bl_mainAdress__link{
+  width: 100%;
+  display: block;
+}
+
+.bl_mainAdress__map{
+  display: block;
+  max-width:140px;
+  margin: 10px auto 5px;
+
+  transition: .25s linear all;
+  transform: scale(1);
+
+  &:hover{
+    transition: .25s linear all;
+    transform: scale(1.2);
+  }
+
+}
+
+
 
 .bl_subscribe{
-  margin-top: 42px;
+  margin-top: 20px;
   width: 100%;
   text-align: center;
 }

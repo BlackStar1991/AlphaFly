@@ -448,31 +448,26 @@ $(document).ready(function () {
         code_listView2 = $(".code_listView2"),
         code_listView3 = $(".code_listView3"),
         code_listView4 = $(".code_listView4"),
-
-
-
         allProducts = $(".bl_products");
 
+
+
     buttonGridView.on("click", function(){
-        // allProducts.removeClass(classList);
-        // allProducts.addClass(classGrid);
-        //
-        // bl_fullProducts__item.addClass("col-md-4 col-sm-6 col-xs-12");
-        // code_listView1.removeClass("col-xs-12");
-        // code_listView2.removeClass("col-xs-4");
-        // code_listView3.removeClass("col-xs-8");
-        // code_listView4.removeClass("bl_fullProducts__listStyle");
+        allProducts.removeClass(classList);
+        allProducts.addClass(classGrid);
+
+
+        code_listView1.removeClass("col-md-3");
+        code_listView2.removeClass("col-md-9");
+
     });
 
     buttonListView.on("click", function(){
-        // allProducts.removeClass(classGrid);
-        // allProducts.addClass(classList);
-        //
-        // bl_fullProducts__item.removeClass("col-md-4 col-sm-6 col-xs-12");
-        // code_listView1.addClass("col-xs-12");
-        // code_listView2.addClass("col-xs-4");
-        // code_listView3.addClass("col-xs-8");
-        // code_listView4.addClass("bl_fullProducts__listStyle");
+        allProducts.removeClass(classGrid);
+        allProducts.addClass(classList);
+
+        code_listView1.addClass("col-md-3");
+        code_listView2.addClass("col-md-9");
 
 
     });

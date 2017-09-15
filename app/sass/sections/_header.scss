@@ -421,13 +421,12 @@
   color: #fff;
   fill: #fff;
 
-  transition: all .2s;
+  //transition: all .2s;
 
   &:hover{
     color: #fff;
-    //fill: #fff;
-    text-decoration: underline;
-    transition: all .2s;
+    fill: #fff;
+    //transition: all .2s;
   }
 }
 
