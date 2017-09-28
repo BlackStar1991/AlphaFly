@@ -119,8 +119,7 @@
     margin: 0 auto;
   }
 
-  .bl_nav__link,
-  .bl_nav__discount__link {
+  .bl_nav__link {
     display: block;
     width: 100%;
     font-family: $ArialBold;
@@ -128,14 +127,14 @@
 
   }
 
-  .bl_nav__discount {
-    float: none;
-
-    display: none;
-    width: 100%;
-    margin-bottom: 4px;
-
-  }
+  //.bl_nav__discount {
+  //  float: none;
+  //
+  //  display: none;
+  //  width: 100%;
+  //  margin-bottom: 4px;
+  //
+  //}
 
   .bl_classicsGenre__full {
     .owl-nav {
