@@ -1848,16 +1848,16 @@ button {
     background-color: #7f8000; }
 
 .icon_bookmarks:after {
-  content: "";
+  content: "\f004";
+  font-family: "FontAwesome";
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 12px;
-  height: 16px;
-  background: url("../image/icon_tab.svg") 50% 50% no-repeat; }
+  font-size: 17px;
+  color: #000; }
 
 .icon_compare:after {
   content: "";
@@ -1881,7 +1881,7 @@ button {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-size: 17px;
-  color: #fff; }
+  color: #000; }
 
 .button_buy {
   vertical-align: top;
@@ -1894,6 +1894,9 @@ button {
   background-color: #000;
   text-transform: uppercase;
   transition: all, 0.2s; }
+  .button_buy:hover {
+    background-color: #7f8000;
+    transition: all, 0.2s; }
 
 .bl_advantages {
   width: 100%;
@@ -2049,8 +2052,7 @@ button {
   box-sizing: border-box; }
 
 .filter_color {
-  width: 100%;
-  margin-top: 20px; }
+  width: 100%; }
 
 .filter_color__fullColors,
 .filter_size__fullSizes {
@@ -2086,7 +2088,8 @@ button {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  border: 2px solid transparent; }
+  border: 2px solid transparent;
+  cursor: pointer; }
 
 .filter_size {
   width: 100%;
@@ -2098,11 +2101,12 @@ button {
   height: 100%;
   border: 1px solid #000;
   line-height: 40px;
-  text-align: center; }
+  text-align: center;
+  cursor: pointer; }
 
 .filter_size__checkbox:checked + .filter_size__box {
-  border-color: #7f8000;
-  color: #7f8000; }
+  background-color: #7f8000;
+  color: #fff; }
 
 .filter_price {
   width: 100%;
@@ -2315,12 +2319,10 @@ button {
 .bl_fullProducts__item {
   position: relative;
   height: 100%;
-  min-height: 380px;
+  min-height: 350px;
   float: left;
   width: 24.25%;
   margin-right: 1%;
-  margin-top: 30px;
-  margin-bottom: 30px;
   box-sizing: border-box;
   overflow: hidden; }
   .bl_fullProducts__item:nth-of-type(4n) {
@@ -2333,7 +2335,21 @@ button {
   width: 100%; }
 
 .bl_fullProducts__image {
-  width: 100%; }
+  width: 100%;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1); }
+
+.bl_fullProducts__item:hover .bl_fullProducts__image {
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: scale(1.15);
+      -ms-transform: scale(1.15);
+          transform: scale(1.15); }
 
 .bl_fullProducts__raiting {
   display: -webkit-flex;
@@ -2402,22 +2418,23 @@ button {
     text-align: center;
     font-size: 24px; }
 
-.bl_fullProducts__fakeButton {
-  width: 100%;
-  text-align: center;
-  line-height: 40px;
-  background-color: #000;
-  color: #fff;
-  text-transform: uppercase; }
+.button_bookmarks {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 200;
+  visibility: hidden; }
 
-.bl_fullProducts__item:hover .bl_fullProducts__fakeButton {
-  display: none; }
+.bl_fullProducts__item:hover .button_bookmarks {
+  visibility: inherit; }
 
 .bl_fullProducts__buttonsBlock {
   position: absolute;
   bottom: 0;
   left: 0;
-  display: none;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
@@ -2454,8 +2471,8 @@ button {
 .view_list__STYLE .bl_fullProducts__imageWrapper {
   display: block;
   width: 100%;
-  box-sizing: border-box;
-  border: 1px solid #000; }
+  min-height: 200px;
+  box-sizing: border-box; }
 
 .view_list__STYLE .bl_mark {
   left: -12px; }
@@ -2938,13 +2955,7 @@ button {
   .bl_fullProducts__item {
     width: 49%; }
     .bl_fullProducts__item:nth-of-type(2n) {
-      margin-right: 1%; }
-  .box_forStar__empty,
-  .box_forStar__full {
-    width: 40px;
-    height: 40px; }
-  .bl_fullProducts__raiting {
-    height: 50px; } }
+      margin-right: 1%; } }
 
 /* Extra Small Devices, Phones 480px */
 @media only screen and (max-width: 480px) {
