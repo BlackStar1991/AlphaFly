@@ -474,6 +474,7 @@ $(document).ready(function () {
 
 
 
+
 //// Short description
 
     var sizeDescription = $(".product_sizeDescription"),

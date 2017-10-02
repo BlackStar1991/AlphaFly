@@ -670,7 +670,7 @@ $ml: 5%;
 
 .slider_classicGenre__item {
   display: flex;
-  align-items: flex-end;
+  //align-items: flex-end;
   flex-wrap: wrap;
 }
 
@@ -1649,11 +1649,18 @@ $ml: 5%;
     //}
   }
 
-  .button_buy {
-    padding: 7px 2px;
-    text-decoration: underline;
-  }
+  //.button_buy {
+  //  padding: 7px 2px;
+  //  text-decoration: underline;
+  //}
 }
+
+.button_buy__classicGenre{
+  width: 225px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
 
 .bl_fullProducts__item:hover .bl_fullProducts__buttonsBlock {
   display: flex;

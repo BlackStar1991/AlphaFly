@@ -18,19 +18,8 @@
     <link rel="apple-touch-icon" sizes="72x72" href="image/favicon/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="image/favicon/apple-touch-icon-114x114.png">
 
-    <!-- build:css css/libs.min.css -->
-    <link rel="stylesheet" href="bower/normalize-css/normalize.css">
-    <link rel="stylesheet" href="bower/font-awesome/css/font-awesome.css">
-
-    <link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap-theme.min.css">
-
-    <link rel="stylesheet" href="bower/owl.carousel/dist/assets/owl.carousel.min.css">
-
-    <!-- endbuild -->
-    <!-- build:css css/main.min.css -->
-    <link rel="stylesheet" href="css/main.css">
-    <!-- endbuild -->
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
 
 </head>
 
@@ -147,7 +136,21 @@
                                 <span class="bl_nav__button_text ">категории</span>
                             </button>
                             <ul class="bl_nav__fullItems">
-                                <li class="bl_nav__item"><a href="#" class="bl_nav__link">Мужская одежда</a></li>
+                                <li class="bl_nav__item"><a href="#" class="bl_nav__link">Мужская одежда</a>
+                                    <button class="bl_nav__button_subCategory icon_arrow__right hidden-lg"></button> <!-- Кнопку добавлять только есть подкатигории в категории -->
+                                    <ul class="bl_nav__subCategory">
+                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Куртки, пальто</a></li>
+                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Рубашки, регланы</a></li>
+                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Футболки, майки</a></li>
+                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Носки</a></li>
+                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Мужские брюки, штаны, шорты</a></li>
+                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Спортирные костюмы</a></li>
+                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Термобелье</a></li>
+                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Жилетки, безрукавки</a></li>
+                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Перчатки, шарфы</a></li>
+                                    </ul>
+
+                                </li>
                                 <li class="bl_nav__item"><a href="#" class="bl_nav__link">Женская одежда</a></li>
                                 <li class="bl_nav__item"><a href="#" class="bl_nav__link">Детская одежда</a></li>
                                 <li class="bl_nav__item"><a href="#" class="bl_nav__link">Аксессуары</a></li>
@@ -376,8 +379,7 @@
                                         <div class="bl_inPresence__secondPart">
                                             <p class="bl_inPresence__bigText">Оригинальная продукция </p>
                                             <p class="bl_inPresence__smallText">Компании Alpha Industries</p>
-                                            <p class="bl_inPresence__smallText">Наш код авторизированного диллера в
-                                                Украине: **** **** **** ****</p>
+                                            <p class="bl_inPresence__smallText">Наш код авторизированного диллера в Украине: **** **** **** ****</p>
                                         </div>
                                     </div>
 
@@ -696,17 +698,15 @@
                                             </p>
                                         </div>
 
-                                        <button class="button_buy button_buy__classicGenre" title="">В корзину</button>
-                                        <!-- <div class="slider_classicGenre__buttonsBlock">
+
+                                        <div class="slider_classicGenre__buttonsBlock">
                                             <div class="slider_classicGenre__buttonsBlock_wrapper">
                                                 <button class="button_blackInfo icon_bookmarks" title=""></button>
-                                                <button class="button_blackInfo icon_compare" title=""></button>
+                                                <!--<button class="button_blackInfo icon_compare" title=""></button>-->
                                                 <button class="button_blackInfo icon_lookAt" title=""></button>
                                                 <button class="button_buy" title="">В корзину</button>
                                             </div>
-                                        </div> -->
-
-
+                                        </div>
                                     </div>
                                 </div>
 
@@ -764,8 +764,7 @@
                                             </p>
                                         </div>
 
-                                        <button class="button_buy button_buy__classicGenre" title="">В корзину</button>
-                                        <!--
+
                                         <div class="slider_classicGenre__buttonsBlock">
                                             <div class="slider_classicGenre__buttonsBlock_wrapper">
                                                 <button class="button_blackInfo icon_bookmarks" title=""></button>
@@ -773,7 +772,7 @@
                                                 <button class="button_blackInfo icon_lookAt" title=""></button>
                                                 <button class="button_buy" title="">В корзину</button>
                                             </div>
-                                        </div> -->
+                                        </div>
                                     </div>
                                 </div>
 
@@ -831,8 +830,7 @@
                                             </p>
                                         </div>
 
-                                        <button class="button_buy button_buy__classicGenre" title="">В корзину</button>
-                                        <!--
+
                                         <div class="slider_classicGenre__buttonsBlock">
                                             <div class="slider_classicGenre__buttonsBlock_wrapper">
                                                 <button class="button_blackInfo icon_bookmarks"
@@ -842,7 +840,7 @@
                                                 <button class="button_buy" title="">В корзину</button>
                                             </div>
                                         </div>
-                                        -->
+
 
                                     </div>
                                 </div>
@@ -902,18 +900,16 @@
                                         </div>
 
 
-                                        <button class="button_buy button_buy__classicGenre" title="">В корзину</button>
-                                        <!--
-                                    <div class="slider_classicGenre__buttonsBlock">
-                                        <div class="slider_classicGenre__buttonsBlock_wrapper">
-                                            <button class="button_blackInfo icon_bookmarks"
-                                                    title=""></button>
-                                            <button class="button_blackInfo icon_compare" title=""></button>
-                                            <button class="button_blackInfo icon_lookAt" title=""></button>
-                                            <button class="button_buy" title="">В корзину</button>
+                                        <div class="slider_classicGenre__buttonsBlock">
+                                            <div class="slider_classicGenre__buttonsBlock_wrapper">
+                                                <button class="button_blackInfo icon_bookmarks"
+                                                        title=""></button>
+                                                <button class="button_blackInfo icon_compare" title=""></button>
+                                                <button class="button_blackInfo icon_lookAt" title=""></button>
+                                                <button class="button_buy" title="">В корзину</button>
+                                            </div>
                                         </div>
-                                    </div>
-                                            -->
+
 
                                     </div>
                                 </div>
@@ -1032,21 +1028,8 @@
 
 <script src="libs/jquery.min.js"></script>
 
-<!-- build:js js/libs.min.js -->
-
-<script src="bower/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="bower/owl.carousel/dist/owl.carousel.min.js"></script>
-
-<script src="bower/fancybox/dist/jquery.fancybox.min.js"></script>
-<script src="bower/jquery.maskedinput/dist/jquery.maskedinput.min.js"></script>
-
-
-<!-- endbuild -->
-<!-- build:js js/common.min.js -->
-
-
-<script src="js/common.js"></script>
-<!-- endbuild -->
+<script src="js/libs.min.js"></script>
+<script src="js/common.min.js"></script>
 
 
 </body>

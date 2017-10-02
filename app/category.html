@@ -18,8 +18,19 @@
     <link rel="apple-touch-icon" sizes="72x72" href="image/favicon/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="image/favicon/apple-touch-icon-114x114.png">
 
-    <link rel="stylesheet" href="css/libs.min.css">
-    <link rel="stylesheet" href="css/main.min.css">
+    <!-- build:css css/libs.min.css -->
+    <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+    <link rel="stylesheet" href="bower/font-awesome/css/font-awesome.css">
+
+    <link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="bower/owl.carousel/dist/assets/owl.carousel.min.css">
+
+    <!-- endbuild -->
+    <!-- build:css css/main.min.css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
 
 </head>
 
@@ -28,6 +39,7 @@
 <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="http://browsehappy.com/">обновите</a>
     его.</p>
 <![endif]-->
+
 
 <!-- ======================================  HEADER ========================================================== -->
 <header id="header" class="header">
@@ -136,7 +148,21 @@
                                 <span class="bl_nav__button_text ">категории</span>
                             </button>
                             <ul class="bl_nav__fullItems">
-                                <li class="bl_nav__item"><a href="#" class="bl_nav__link">Мужская одежда</a></li>
+                                <li class="bl_nav__item"><a href="#" class="bl_nav__link">Мужская одежда</a>
+                                    <button class="bl_nav__button_subCategory icon_arrow__right hidden-lg"></button> <!-- Кнопку добавлять только есть подкатигории в категории -->
+                                    <ul class="bl_nav__subCategory">
+                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Куртки, пальто</a></li>
+                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Рубашки, регланы</a></li>
+                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Футболки, майки</a></li>
+                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Носки</a></li>
+                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Мужские брюки, штаны, шорты</a></li>
+                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Спортирные костюмы</a></li>
+                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Термобелье</a></li>
+                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Жилетки, безрукавки</a></li>
+                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Перчатки, шарфы</a></li>
+                                    </ul>
+
+                                </li>
                                 <li class="bl_nav__item"><a href="#" class="bl_nav__link">Женская одежда</a></li>
                                 <li class="bl_nav__item"><a href="#" class="bl_nav__link">Детская одежда</a></li>
                                 <li class="bl_nav__item"><a href="#" class="bl_nav__link">Аксессуары</a></li>
@@ -568,6 +594,7 @@
                                             <!--<button class="button_buy" title="">В корзину</button>-->
                                         <!--</div>-->
 
+                                        <button type="button" class="button_bookmarks icon_bookmarks"></button>
                                     </div>
                                 </div>
 
@@ -653,7 +680,7 @@
                                             <!--<button class="button_blackInfo icon_lookAt" title=""></button>-->
                                             <!--<button class="button_buy" title="">В корзину</button>-->
                                         <!--</div>-->
-
+                                        <button type="button" class="button_bookmarks icon_bookmarks"></button>
                                     </div>
                                 </div>
 
@@ -727,82 +754,7 @@
                                             <!--<button class="button_blackInfo icon_lookAt" title=""></button>-->
                                             <!--<button class="button_buy" title="">В корзину</button>-->
                                         <!--</div>-->
-
-                                    </div>
-                                </div>
-
-
-                            </div>
-                            <div class="bl_fullProducts__item">
-
-                                <div class="code_listView1  correct_right correct_left">
-
-                                    <a href="" class="bl_fullProducts__imageWrapper">
-
-
-                                        <img class="bl_fullProducts__image" src="image/Products/product_1.jpg"
-                                             alt="">
-                                    </a>
-
-                                </div>
-
-                                <div class="code_listView2 ">
-                                    <!--<div class="bl_fullProducts__raiting">-->
-                                        <!--<div class="box_forStar box_forStar__full"></div>-->
-                                        <!--<div class="box_forStar box_forStar__empty"></div>-->
-                                        <!--<div class="box_forStar box_forStar__empty"></div>-->
-                                        <!--<div class="box_forStar box_forStar__empty"></div>-->
-                                        <!--<div class="box_forStar box_forStar__empty"></div>-->
-                                    <!--</div>-->
-
-
-                                    <a class="bl_fullProducts__link" href="#">
-                                        <h2 class="bl_fullProducts__title">YOUTH N-3B Maveric Parka</h2>
-                                    </a>
-
-                                    <div class="bl_fullProducts__listStyle">
-
-
-                                        <div class="bl_fullProducts__price clearfix">
-
-                                            <span class="bl_price__oldPrice">999999 грн.</span>
-                                            <span class="bl_price__newPrice">100 грн.</span>
-                                            <!--<span class="bl_price__normal">2700 грн.</span>-->
-                                        </div>
-
-                                        <div class="bl_fullProducts__description">
-                                            <p>Новая детская аляска N-3B Maveric Parka- это точная копия военной куртки
-                                                с шевронами. Куртка очень теплая, детская Parka из 100% летного нейлона,
-                                                контрастной оранжевой подкладкой, и 100% полиэстерным наполнением для
-                                                защиты от мороза -20°С. Куртка имеет застежку молнии и капюшон с
-                                                искусственным мехом как и оригинальная куртка N-3B. летного нейлона,
-                                                контрастной оранжевой подкладкой, и 100%
-                                                полиэстерным наполнением для защиты от мороза -20°С. Куртка имеет
-                                                застежку молнии и капюшон с искусственным мехом как и оригинальная
-                                                куртка N-3B. летного нейлона, контрастной оранжевой подкладкой, и 100%
-                                                полиэстерным наполнением для защиты от мороза -20°С. Куртка имеет
-                                                застежку молнии и капюшон с искусственным мехом как и оригинальная
-                                                куртка N-3B. летного нейлона, контрастной оранжевой подкладкой, и 100%
-                                                полиэстерным наполнением для защиты от мороза -20°С. Куртка имеет
-                                                застежку молнии и капюшон с искусственным мехом как и оригинальная
-                                                куртка N-3B. летного нейлона, контрастной оранжевой подкладкой, и 100%
-                                                полиэстерным наполнением для защиты от мороза -20°С. Куртка имеет
-                                                застежку молнии и капюшон с искусственным мехом как и оригинальная
-                                                куртка N-3B.</p>
-                                        </div>
-
-
-                                        <!--<p class="bl_fullProducts__fakeButton">В корзину</p>-->
-
-                                        <button class="button_buy" title="">В корзину</button>
-                                        <!--<div class="bl_fullProducts__buttonsBlock">-->
-                                            <!--<button class="button_blackInfo icon_bookmarks"-->
-                                                    <!--title=""></button>-->
-                                            <!--&lt;!&ndash;<button class="button_blackInfo icon_compare" title=""></button>&ndash;&gt;-->
-                                            <!--<button class="button_blackInfo icon_lookAt" title=""></button>-->
-                                            <!--<button class="button_buy" title="">В корзину</button>-->
-                                        <!--</div>-->
-
+                                        <button type="button" class="button_bookmarks icon_bookmarks"></button>
                                     </div>
                                 </div>
 
@@ -877,7 +829,7 @@
                                             <!--<button class="button_blackInfo icon_lookAt" title=""></button>-->
                                             <!--<button class="button_buy" title="">В корзину</button>-->
                                         <!--</div>-->
-
+                                        <button type="button" class="button_bookmarks icon_bookmarks"></button>
                                     </div>
                                 </div>
 
@@ -952,7 +904,82 @@
                                             <!--<button class="button_blackInfo icon_lookAt" title=""></button>-->
                                             <!--<button class="button_buy" title="">В корзину</button>-->
                                         <!--</div>-->
+                                        <button type="button" class="button_bookmarks icon_bookmarks"></button>
+                                    </div>
+                                </div>
 
+
+                            </div>
+                            <div class="bl_fullProducts__item">
+
+                                <div class="code_listView1  correct_right correct_left">
+
+                                    <a href="" class="bl_fullProducts__imageWrapper">
+
+
+                                        <img class="bl_fullProducts__image" src="image/Products/product_1.jpg"
+                                             alt="">
+                                    </a>
+
+                                </div>
+
+                                <div class="code_listView2 ">
+                                    <!--<div class="bl_fullProducts__raiting">-->
+                                        <!--<div class="box_forStar box_forStar__full"></div>-->
+                                        <!--<div class="box_forStar box_forStar__empty"></div>-->
+                                        <!--<div class="box_forStar box_forStar__empty"></div>-->
+                                        <!--<div class="box_forStar box_forStar__empty"></div>-->
+                                        <!--<div class="box_forStar box_forStar__empty"></div>-->
+                                    <!--</div>-->
+
+
+                                    <a class="bl_fullProducts__link" href="#">
+                                        <h2 class="bl_fullProducts__title">YOUTH N-3B Maveric Parka</h2>
+                                    </a>
+
+                                    <div class="bl_fullProducts__listStyle">
+
+
+                                        <div class="bl_fullProducts__price clearfix">
+
+                                            <span class="bl_price__oldPrice">999999 грн.</span>
+                                            <span class="bl_price__newPrice">100 грн.</span>
+                                            <!--<span class="bl_price__normal">2700 грн.</span>-->
+                                        </div>
+
+                                        <div class="bl_fullProducts__description">
+                                            <p>Новая детская аляска N-3B Maveric Parka- это точная копия военной куртки
+                                                с шевронами. Куртка очень теплая, детская Parka из 100% летного нейлона,
+                                                контрастной оранжевой подкладкой, и 100% полиэстерным наполнением для
+                                                защиты от мороза -20°С. Куртка имеет застежку молнии и капюшон с
+                                                искусственным мехом как и оригинальная куртка N-3B. летного нейлона,
+                                                контрастной оранжевой подкладкой, и 100%
+                                                полиэстерным наполнением для защиты от мороза -20°С. Куртка имеет
+                                                застежку молнии и капюшон с искусственным мехом как и оригинальная
+                                                куртка N-3B. летного нейлона, контрастной оранжевой подкладкой, и 100%
+                                                полиэстерным наполнением для защиты от мороза -20°С. Куртка имеет
+                                                застежку молнии и капюшон с искусственным мехом как и оригинальная
+                                                куртка N-3B. летного нейлона, контрастной оранжевой подкладкой, и 100%
+                                                полиэстерным наполнением для защиты от мороза -20°С. Куртка имеет
+                                                застежку молнии и капюшон с искусственным мехом как и оригинальная
+                                                куртка N-3B. летного нейлона, контрастной оранжевой подкладкой, и 100%
+                                                полиэстерным наполнением для защиты от мороза -20°С. Куртка имеет
+                                                застежку молнии и капюшон с искусственным мехом как и оригинальная
+                                                куртка N-3B.</p>
+                                        </div>
+
+
+                                        <!--<p class="bl_fullProducts__fakeButton">В корзину</p>-->
+
+                                        <button class="button_buy" title="">В корзину</button>
+                                        <!--<div class="bl_fullProducts__buttonsBlock">-->
+                                            <!--<button class="button_blackInfo icon_bookmarks"-->
+                                                    <!--title=""></button>-->
+                                            <!--&lt;!&ndash;<button class="button_blackInfo icon_compare" title=""></button>&ndash;&gt;-->
+                                            <!--<button class="button_blackInfo icon_lookAt" title=""></button>-->
+                                            <!--<button class="button_buy" title="">В корзину</button>-->
+                                        <!--</div>-->
+                                        <button type="button" class="button_bookmarks icon_bookmarks"></button>
                                     </div>
                                 </div>
 
@@ -1026,7 +1053,7 @@
                                             <!--&lt;!&ndash;<button class="button_blackInfo icon_lookAt" title=""></button>&ndash;&gt;-->
                                             <!--<button class="button_buy" title="">В корзину</button>-->
                                         <!--</div>-->
-
+                                        <button type="button" class="button_bookmarks icon_bookmarks"></button>
                                     </div>
                                 </div>
 
@@ -1101,7 +1128,7 @@
                                             <!--<button class="button_blackInfo icon_lookAt" title=""></button>-->
                                             <!--<button class="button_buy" title="">В корзину</button>-->
                                         <!--</div>-->
-
+                                        <button type="button" class="button_bookmarks icon_bookmarks"></button>
                                     </div>
                                 </div>
 
@@ -1176,7 +1203,7 @@
                                             <!--<button class="button_blackInfo icon_lookAt" title=""></button>-->
                                             <!--<button class="button_buy" title="">В корзину</button>-->
                                         <!--</div>-->
-
+                                        <button type="button" class="button_bookmarks icon_bookmarks"></button>
                                     </div>
                                 </div>
 
@@ -1251,7 +1278,7 @@
                                             <!--<button class="button_blackInfo icon_lookAt" title=""></button>-->
                                             <!--<button class="button_buy" title="">В корзину</button>-->
                                         <!--</div>-->
-
+                                        <button type="button" class="button_bookmarks icon_bookmarks"></button>
                                     </div>
                                 </div>
 
@@ -1460,8 +1487,21 @@
 
 <script src="libs/jquery.min.js"></script>
 
-<script src="js/libs.min.js"></script>
-<script src="js/common.min.js"></script>
+<!-- build:js js/libs.min.js -->
+
+<script src="bower/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower/owl.carousel/dist/owl.carousel.min.js"></script>
+
+<script src="bower/fancybox/dist/jquery.fancybox.min.js"></script>
+<script src="bower/jquery.maskedinput/dist/jquery.maskedinput.min.js"></script>
+
+
+<!-- endbuild -->
+<!-- build:js js/common.min.js -->
+
+
+<script src="js/common.js"></script>
+<!-- endbuild -->
 
 
 </body>

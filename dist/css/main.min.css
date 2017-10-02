@@ -1341,6 +1341,7 @@ button {
   line-height: 40px; }
 
 .bl_nav__item {
+  position: relative;
   display: inline-block;
   height: 100%;
   box-sizing: border-box;
@@ -1349,8 +1350,29 @@ button {
     margin-left: 0; }
 
 .bl_nav__link {
+  display: block;
+  width: 100%;
   color: #fff;
   font-size: 18px; }
+
+.bl_nav__subCategory {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 10px;
+  width: 320px;
+  background-color: #7f8000;
+  color: #fff;
+  z-index: 4;
+  border: 1px solid black; }
+
+.bl_nav__subItem {
+  width: 100%;
+  display: block; }
+
+.bl_nav__item:hover .bl_nav__subCategory {
+  display: block; }
 
 /*********************************************/
 /*SECTIONS*/
