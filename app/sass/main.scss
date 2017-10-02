@@ -1671,16 +1671,12 @@ $ml: 5%;
 
 .view_list__STYLE .bl_fullProducts__item {
   float: none;
-  margin-top: 28px;
-  margin-right: 0;
-  margin-left: 0;
-  margin-bottom: 0;
+  margin: 28px 0 0;
   width: 100%;
   min-height: 250px;
   padding: 12px;
 
   background-color: $color_grey;
-
   overflow: hidden;
 }
 

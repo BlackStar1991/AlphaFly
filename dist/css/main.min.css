@@ -851,21 +851,17 @@ body {
   font-weight: 400;
   min-width: 320px;
   position: relative;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   min-height: 100vh; }
 
 .wrapperBlock {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   position: relative;
   width: 100%;
   height: 100%; }
@@ -894,14 +890,12 @@ body {
   height: 100%; }
 
 .main {
-  -webkit-flex: 1 0 auto;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto; }
+  -ms-flex: 1 0 auto;
+      flex: 1 0 auto; }
 
 .footer {
-  -webkit-flex: 0 0 auto;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto; }
+  -ms-flex: 0 0 auto;
+      flex: 0 0 auto; }
 
 img {
   max-width: 100%;
@@ -979,9 +973,8 @@ button {
 
 .icon-controls__open:before {
   position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
   content: "\f0c9";
   font-family: "FontAwesome";
   font-size: 30px;
@@ -989,9 +982,8 @@ button {
 
 .icon-controls__close:before {
   position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
   content: "\f00d";
   font-family: "FontAwesome";
   font-size: 30px;
@@ -1156,9 +1148,8 @@ button {
   content: "";
   width: 15px;
   height: 8px;
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
   background: url("../image/arrow_lang.svg") 50% 50% no-repeat;
   z-index: 12; }
 
@@ -1273,9 +1264,8 @@ button {
 .bl_shopBag__image {
   display: inline-block;
   margin-right: 4px;
-  -webkit-transform: translateY(12px);
-      -ms-transform: translateY(12px);
-          transform: translateY(12px);
+  -ms-transform: translateY(12px);
+      transform: translateY(12px);
   width: 44px;
   height: 40px; }
 
@@ -1466,12 +1456,10 @@ button {
   text-transform: uppercase; }
 
 .product_sliderCart__price {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   width: 100%;
   margin-top: 5px;
   line-height: 33px; }
@@ -1584,9 +1572,8 @@ button {
       position: absolute;
       top: 50%;
       left: 50%;
-      -webkit-transform: translate(-20%, -50%);
-          -ms-transform: translate(-20%, -50%);
-              transform: translate(-20%, -50%);
+      -ms-transform: translate(-20%, -50%);
+          transform: translate(-20%, -50%);
       content: "\f053";
       font-family: "FontAwesome";
       font-size: 20px;
@@ -1641,9 +1628,8 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-100%, -50%);
-      -ms-transform: translate(-100%, -50%);
-          transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+      transform: translate(-100%, -50%);
   color: #fff;
   font-family: "Arial Narrow", sans-serif;
   font-weight: 400;
@@ -1669,18 +1655,16 @@ button {
 
 .bl_inPresence__info {
   position: relative;
-  -webkit-transform: translateY(50%);
-      -ms-transform: translateY(50%);
-          transform: translateY(50%);
+  -ms-transform: translateY(50%);
+      transform: translateY(50%);
   width: 100%;
   min-height: 350px; }
 
 .bl_inPresence__fullText {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
   width: 100%;
   min-height: 164px;
   background: url("../image/line_eagle.png") 50% 50% no-repeat;
@@ -1755,15 +1739,10 @@ button {
   padding: 50px 0; }
 
 .slider_classicGenre__item {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .slider_classicGenre__image {
   display: inline-block;
@@ -1812,12 +1791,10 @@ button {
   box-sizing: border-box; }
 
 .slider_classicGenre__fullPrice {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   margin-top: 44px;
   width: 100%;
   line-height: 33px; }
@@ -1875,9 +1852,8 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
   font-size: 17px;
   color: #000; }
 
@@ -1886,9 +1862,8 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
   width: 20px;
   height: 20px;
   background: url("../image/icon_compare.svg") 50% 50% no-repeat; }
@@ -1899,9 +1874,8 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
   font-size: 17px;
   color: #000; }
 
@@ -1928,22 +1902,18 @@ button {
   background-size: cover; }
 
 .bl_advantages__wrapper {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
   width: 100%;
   margin-top: 94px; }
 
 .bl_advantages__images {
-  -webkit-transform: translateY(-4%);
-      -ms-transform: translateY(-4%);
-          transform: translateY(-4%); }
+  -ms-transform: translateY(-4%);
+      transform: translateY(-4%); }
 
 .icon-star:after {
   position: absolute;
@@ -2303,9 +2273,8 @@ button {
     position: absolute;
     left: 50%;
     top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     content: '\f009';
     font-family: "FontAwesome";
     font-size: 17px; }
@@ -2317,9 +2286,8 @@ button {
     position: absolute;
     left: 50%;
     top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     content: '\f03a';
     font-family: "FontAwesome";
     font-size: 17px; }
@@ -2358,31 +2326,22 @@ button {
 
 .bl_fullProducts__image {
   width: 100%;
-  transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1); }
+  -ms-transform: scale(1);
+      transform: scale(1); }
 
 .bl_fullProducts__item:hover .bl_fullProducts__image {
-  transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
-  -webkit-transform: scale(1.15);
-      -ms-transform: scale(1.15);
-          transform: scale(1.15); }
+  -ms-transform: scale(1.15);
+      transform: scale(1.15); }
 
 .bl_fullProducts__raiting {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
   width: 100%;
   height: 30px;
   margin: 20px auto 0;
@@ -2454,12 +2413,10 @@ button {
   position: absolute;
   bottom: 0;
   left: 0;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   min-height: 40px;
   background-color: #000;
   width: 100%;
@@ -2468,22 +2425,20 @@ button {
     color: #fff;
     border-color: #fff;
     box-sizing: border-box; }
-  .bl_fullProducts__buttonsBlock .button_buy {
-    padding: 7px 2px;
-    text-decoration: underline; }
+
+.button_buy__classicGenre {
+  width: 225px;
+  display: block;
+  margin: 0 auto 20px; }
 
 .bl_fullProducts__item:hover .bl_fullProducts__buttonsBlock {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   position: relative; }
 
 .view_list__STYLE .bl_fullProducts__item {
   float: none;
-  margin-top: 28px;
-  margin-right: 0;
-  margin-left: 0;
-  margin-bottom: 0;
+  margin: 28px 0 0;
   width: 100%;
   min-height: 250px;
   padding: 12px;
@@ -2539,7 +2494,6 @@ button {
 
 .view_list__STYLE .bl_fullProducts__buttonsBlock {
   position: relative;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   width: 225px; }
@@ -2553,15 +2507,12 @@ button {
   background-color: #fff; }
 
 .bl_fullProducts__listStyle {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   min-height: 84px; }
 
 .button_control {
@@ -2576,12 +2527,10 @@ button {
   width: 100%; }
 
 .pagination.bl_pagination__fullItems {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   width: 100%;
   text-align: center; }
 
@@ -2708,14 +2657,12 @@ button {
   max-width: 140px;
   margin: 10px auto 5px;
   transition: .25s linear all;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1); }
+  -ms-transform: scale(1);
+      transform: scale(1); }
   .bl_mainAdress__map:hover {
     transition: .25s linear all;
-    -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2); }
+    -ms-transform: scale(1.2);
+        transform: scale(1.2); }
 
 .bl_subscribe {
   margin-top: 20px;
@@ -2828,9 +2775,8 @@ button {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
   color: #000;
   font-family: "Arial Narrow", sans-serif;
   font-size: 14px;
@@ -2947,12 +2893,10 @@ button {
   .bl_classicsGenre__full .owl-nav {
     top: 30%; }
   .bl_navFooter {
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
   .bl_navFooter__link {
     text-align: center;
     font-size: 18px; }
