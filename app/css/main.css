@@ -2091,14 +2091,15 @@ button {
   display: block;
   width: 100%;
   height: 100%;
+  background-color: #7f8000;
   border: 1px solid #000;
   line-height: 40px;
+  color: #fff;
   text-align: center;
   cursor: pointer; }
 
 .filter_size__checkbox:checked + .filter_size__box {
-  background-color: #7f8000;
-  color: #fff; }
+  background-color: #000; }
 
 .filter_price {
   width: 100%;
@@ -2613,6 +2614,191 @@ button {
     color: #000;
     content: "\f054";
     font-family: "FontAwesome"; }
+
+.bl_product {
+  width: 100%;
+  margin-top: 26px; }
+
+.bl_product__title {
+  position: relative;
+  width: 100%;
+  min-height: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fff;
+  font-family: "Arial Narrow", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  background-color: #000; }
+
+.bl_product__images {
+  width: 100%; }
+
+.bl_product__verticalSlider {
+  position: relative;
+  float: left;
+  height: 100%;
+  max-width: 94px; }
+
+.bl_product__productSlider {
+  float: left;
+  max-width: 350px;
+  height: 100%;
+  border: 1px solid #000;
+  box-sizing: border-box; }
+
+.bl_product__verticalSlider.slick-slider .slick-prev {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 24px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+  z-index: 3; }
+
+.bl_product__verticalSlider.slick-slider .slick-next {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 24px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+  z-index: 3; }
+
+.bl_characteristics {
+  width: 100%; }
+
+.bl_raiting {
+  padding-right: 20px;
+  display: inline-block;
+  width: auto;
+  margin-top: 24px;
+  background-color: #fff;
+  color: #333;
+  font-size: 12px;
+  line-height: 30px; }
+
+.bl_productName .bl_raiting {
+  float: right; }
+
+.bl_raiting label {
+  float: right; }
+
+.bl_raiting__chackbox {
+  position: absolute;
+  visibility: hidden; }
+
+.bl_raiting__button {
+  position: relative;
+  display: inline-block;
+  background-color: inherit;
+  text-decoration: underline;
+  z-index: 5; }
+
+.bl_raiting input:checked ~ label:before {
+  background: url("../image/star_full.svg") 50% 50% no-repeat; }
+
+.bl_raiting label:hover:before,
+.bl_raiting label:hover ~ label:before {
+  background: url("../image/star_full.svg") 50% 50% no-repeat; }
+
+.bl_raiting__label {
+  position: relative;
+  display: inline-block;
+  width: 22px;
+  height: 21px;
+  margin-left: 3px;
+  cursor: pointer; }
+  .bl_raiting__label:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 22px;
+    height: 21px;
+    background: url("../image/star_empty.svg") 50% 50% no-repeat;
+    z-index: 2; }
+  .bl_raiting__label:first-child {
+    margin-left: 13px; }
+
+.bl_ratingInfo {
+  margin-top: 10px; }
+
+.bl_raiting__small {
+  margin-top: 0;
+  vertical-align: middle; }
+
+.bl_raitingCart .fa-stack {
+  width: 1.4em; }
+
+.bl_raitingCart i {
+  margin: 0 1px 0 2px;
+  font-size: 18px;
+  color: #ffc757; }
+
+.bl_characteristics_fullReviews {
+  display: inline-block;
+  color: #000;
+  font-family: "Arial Narrow", sans-serif;
+  font-size: 14px;
+  line-height: 20px; }
+
+.bl_characteristics__addReview {
+  display: inline-block;
+  color: #000;
+  font-family: "Arial Narrow", sans-serif;
+  font-size: 14px;
+  line-height: 20px; }
+
+.bl_characteristics__title {
+  border-top: 1px solid black;
+  padding-top: 19px;
+  color: #000;
+  font-family: "Arial Narrow Bold", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase; }
+
+.bl_characteristics__fullList {
+  position: relative;
+  width: 100%;
+  margin-top: 19px;
+  padding-bottom: 17px; }
+
+.bl_characteristics__item {
+  display: block;
+  width: 100%; }
+
+.bl_characteristics__name {
+  color: #000;
+  font-size: 16px;
+  font-family: "Arial Narrow Bold", sans-serif; }
+
+.bl_characteristics__value {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400; }
+
+.bl_minDescription {
+  position: relative;
+  padding-top: 18px;
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px solid #000; }
+  .bl_minDescription p {
+    font-family: "Arial Narrow", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px; }
 
 /*********************************************/
 /*FOOTER*/

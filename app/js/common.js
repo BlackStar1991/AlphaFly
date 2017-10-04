@@ -269,6 +269,40 @@ $(document).ready(function () {
 
 /////////////////////////////////////////////
 
+/// SLIDER Product
+
+    $(".bl_product__productSlider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.bl_product__verticalSlider'
+    });
+
+
+/// SLIDER Product Vertical
+
+
+    $('.bl_product__verticalSlider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.bl_product__productSlider',
+        arrows: true,
+        vertical: true,
+        focusOnSelect: true,
+        infinite: true
+
+    });
+
+
+
+
+
+
+
+
+
+
 
 //// slider_youViewed  - Вы смотрели:
 
@@ -420,19 +454,7 @@ $(document).ready(function () {
     sliderShowForAllCategories();
 
 
-//  Fancybox - увеличение главной фотки товара по клику ////////////////////
 
-
-    $('.fancybox-animated').fancybox({
-        youtube: {
-            controls: 0,
-            showinfo: 0
-        },
-        vimeo: {
-            color: 'f00'
-        },
-        arrows: true
-    });
 
 ////// GRID / LIST view - switch
 
