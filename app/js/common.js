@@ -290,14 +290,21 @@ $(document).ready(function () {
         arrows: true,
         vertical: true,
         focusOnSelect: true,
+        prevArrow: '<div class="slickArrow-prev"></div>',
+        nextArrow: '<div class="slickArrow-next"></div>',
+
         infinite: true
 
     });
 
 
+// Zoom Effect
 
-
-
+    $(".elevatezoom-gallery").ezPlus({
+        zoomType: "inner",
+        debug: true,
+        cursor: "crosshair"
+    });
 
 
 
@@ -373,23 +380,6 @@ $(document).ready(function () {
     hoverArrows(blockNewProducts, allNewProductsArrows, hover_arrowsClass);
     hoverArrows(blockWithThisProductBuy, allWithThisProductBuyArrows, hover_arrowsClass);
     hoverArrows(blockYouViewed, allYouViewedArrows, hover_arrowsClass);
-
-
-//// Img for main product slider
-
-    $('.product_image__slider').on("click", ".product_image__sliderImg", function () {
-        var currentSrc = $(this).attr('src');
-
-        var hrefForFancybox = currentSrc.split(".").join("-big.");
-
-
-        $('.product_image__img').attr('src', currentSrc);
-
-        // add Big photo for fancybox  ///////////////////////////////
-        $(".fancybox-animated").attr("href", hrefForFancybox);
-
-
-    });
 
 
     // SLIDER for categories show
