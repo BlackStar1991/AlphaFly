@@ -99,41 +99,6 @@ $(document).ready(function () {
         }
     });
 
-// slider_popular
-
-    // $(".slider_popular").owlCarousel({
-    //     items: 4,
-    //     loop: true,
-    //     nav: true,
-    //     navText: true,
-    //     dots: false,
-    //     autoplay: false,
-    //     stopOnHover: true,
-    //     margin: 0,
-    //     smartSpeed: 1000, //Время движения слайда
-    //     autoplayTimeout: 4000, //Время смены слайда
-    //     pagination: false,
-    //     responsiveClass: true,
-    //     responsive: {
-    //         1200: {
-    //             items: 4
-    //         },
-    //         992: {
-    //             items: 3,
-    //             center: true
-    //         },
-    //
-    //         550: {
-    //             items: 2
-    //         },
-    //         320: {
-    //             items: 1,
-    //             center: true
-    //         }
-    //
-    //     }
-    // });
-
 
 ////// slider_bestseller
 
@@ -203,6 +168,44 @@ $(document).ready(function () {
         }
     });
 
+
+    ///// SLIDER Similar products
+
+    $(".slider_similarProducts").owlCarousel({
+        items: 5,
+        loop: true,
+        nav: true,
+        navText: true,
+        dots: false,
+        autoplay: false,
+        stopOnHover: true,
+        margin: 20,
+        smartSpeed: 1000, //Время движения слайда
+        autoplayTimeout: 4000, //Время смены слайда
+        pagination: false,
+        responsiveClass: true,
+        responsive: {
+            1200: {
+                items: 5
+            },
+            992: {
+                items: 4,
+                center: false
+            },
+            550: {
+                items: 2
+            },
+            320: {
+                items: 1,
+                center: true
+            }
+
+        }
+    });
+
+
+
+
 /// slider_classicGenre - Слайдер Классика жанра:
 
     $(".slider_classicGenre").owlCarousel({
@@ -220,7 +223,7 @@ $(document).ready(function () {
         responsiveClass: true
     });
 
- /////// Что бы работа описание для слайда - классика жанра
+ /////// Что бы работало описание для слайда - классика жанра
 
     var classicsGenreDescriptionItems = $(".bl_classicsGenre__histore_item"),
         classicsGenreDescriptionItemsLength = classicsGenreDescriptionItems.length;
