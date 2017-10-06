@@ -16,6 +16,7 @@ $(document).ready(function () {
     });
 
     var buttonCategories = $(".bl_nav__button"),
+        buttonSubCategories = $(".bl_nav__button_subCategory"),
         fullCategoriesFild = $(".bl_nav__fullItems"),
         discountBlock = $(".bl_nav__discount");
 
@@ -26,19 +27,24 @@ $(document).ready(function () {
 
 ///  sliderEffect
     function sliderEffectForButtons(button, element, duration) {
-
-
         button.click(function () {
             element.slideToggle(duration);
         });
-
-
     }
+
+/// slideEffect for SubcategoriesMenu
+    function sliderEffectForSubcategoriesMenu() {
+        buttonSubCategories.on("click", function () {
+            $(this).toggleClass("icon_arrowSubmenu__active");
+            $(this).siblings(".bl_nav__subCategory").slideToggle();
+        });
+    }
+
+
 
 
 //  hideShowEffect
     function hideShowEffect(button, element) {
-
         button.click(function () {
             element.toggleClass("hidden");
         });
@@ -55,26 +61,28 @@ $(document).ready(function () {
 
 /// buttons must work only  $(window).width() <=991px
 
-    //
-    // function liveScopeOfButtons() {
-    //
-    //     if ($(window).width() <= 991) {
-    //
-    //         sliderEffectForButtons(buttonRubrics, fieldRubrics, 600);
-    //         sliderEffectForButtons(buttonCategories, fieldCategories, 600);
-    //         sliderEffectForButtons(buttonInformation, fieldInformation, 600);
-    //         sliderEffectForButtons(buttonContacts, fieldContacts, 600);
-    //         sliderEffectForButtons(buttonAdress, fieldAdress, 600);
-    //         sliderEffectForButtons(buttonFilterCategories, fieldFilterCategories, 600);
-    //         sliderEffectForButtons(buttonAllFilters, fieldAllFilters , 600);
-    //
-    //     } else {
-    //         return false;
-    //     }
-    //
-    // }
-    //
-    // liveScopeOfButtons();
+
+    function liveScopeOfButtons() {
+
+        if ($(window).width() <= 991) {
+            sliderEffectForSubcategoriesMenu();
+
+
+            // sliderEffectForButtons(buttonRubrics, fieldRubrics, 600);
+            // sliderEffectForButtons(buttonCategories, fieldCategories, 600);
+            // sliderEffectForButtons(buttonInformation, fieldInformation, 600);
+            // sliderEffectForButtons(buttonContacts, fieldContacts, 600);
+            // sliderEffectForButtons(buttonAdress, fieldAdress, 600);
+            // sliderEffectForButtons(buttonFilterCategories, fieldFilterCategories, 600);
+            // sliderEffectForButtons(buttonAllFilters, fieldAllFilters , 600);
+
+        } else {
+            return false;
+        }
+
+    }
+
+    liveScopeOfButtons();
 
 
     //// Main-slider
@@ -119,13 +127,19 @@ $(document).ready(function () {
             1200: {
                 items: 5
             },
-            992: {
-                items: 4,
-                center: false
+            991: {
+                items: 3
             },
             550: {
-                items: 2
+                items: 2,
+                margin: 5
             },
+            450: {
+                margin: 0,
+                items: 1,
+                center: true
+            },
+
             320: {
                 items: 1,
                 center: true
@@ -153,12 +167,12 @@ $(document).ready(function () {
             1200: {
                 items: 5
             },
-            992: {
-                items: 4,
-                center: false
+            991: {
+                items: 3
             },
             550: {
-                items: 2
+                items: 2,
+                margin: 5
             },
             320: {
                 items: 1,
@@ -188,12 +202,12 @@ $(document).ready(function () {
             1200: {
                 items: 5
             },
-            992: {
-                items: 4,
-                center: false
+            991: {
+                items: 3
             },
             550: {
-                items: 2
+                items: 2,
+                margin: 5
             },
             320: {
                 items: 1,
@@ -202,7 +216,40 @@ $(document).ready(function () {
 
         }
     });
+//// slider_youViewed  - Вы смотрели:
 
+
+    $(".slider_youViewed").owlCarousel({
+        items: 5,
+        loop: true,
+        nav: true,
+        navText: true,
+        dots: false,
+        autoplay: false,
+        stopOnHover: true,
+        margin: 20,
+        smartSpeed: 1000, //Время движения слайда
+        autoplayTimeout: 4000, //Время смены слайда
+        pagination: false,
+        responsiveClass: true,
+        responsive: {
+            1200: {
+                items: 5
+            },
+            991: {
+                items: 3
+            },
+            550: {
+                items: 2,
+                margin: 5
+            },
+            320: {
+                items: 1,
+                center: true
+            }
+
+        }
+    });
 
 
 
@@ -314,7 +361,7 @@ $(document).ready(function () {
 
 
 
-//// slider_youViewed  - Вы смотрели:
+
 
     // $(".slider_youViewed").owlCarousel({
     //     items: 4,

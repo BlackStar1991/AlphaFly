@@ -17,7 +17,6 @@
 }
 
 .bl_navFooter__link{
-  //margin-top: 15px;
   display: block;
   width: 100%;
 
@@ -171,6 +170,9 @@
     color: $color_oliv;
     transition: all 0.2s;
   }
+  &:focus{
+    color: #fff;
+  }
 
 }
 
@@ -210,7 +212,7 @@
 
   width: 124px;
   height: 35px;
-  background: url("../../image/icon_up.svg") 50% 50% no-repeat;
+  background: url("../image/icon_up.svg") 50% 50% no-repeat;
 
   z-index: 999;
 }
@@ -251,7 +253,7 @@
     content: "";
     width: 20px;
     height: 20px;
-    background: url("../../image/icon_eagle.svg") 50% 50% no-repeat;
+    background: url("../image/icon_eagle.svg") 50% 50% no-repeat;
     z-index:1000;
   }
 

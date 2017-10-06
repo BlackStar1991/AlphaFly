@@ -119,9 +119,7 @@
                                 <span class="bl_shopBag__price">(9999999 грн)</span>
                             </p>
                             <svg class="bl_shopBag__image" viewBox="0 0 44 40">
-                                <path id="icon_bag"
-                                      d="M1529.48,86.074h40.74v4.444h-40.74V86.074Zm40.74,11.851V92h-40.74v12.592a0.739,0.739,0,0,0,.74.741h5.21a3.7,3.7,0,1,0,4.4,0h15.6a3.7,3.7,0,1,0,4.4,0h4.47a0.741,0.741,0,0,0,0-1.481h-33.34V97.925h39.26Zm-43.7-24.443h2.96v11.11h40.74V78.667h-39.26V72.741a0.739,0.739,0,0,0-.74-0.741h-3.7A0.741,0.741,0,0,0,1526.52,73.481Z"
-                                      transform="translate(-1525.78 -72)"/>
+                                <path id="icon_bag" class="cls-1" d="M1529.48,86.074h40.74v4.444h-40.74V86.074Zm40.74,11.851V92h-40.74v12.592a0.739,0.739,0,0,0,.74.741h5.21a3.7,3.7,0,1,0,4.4,0h15.6a3.7,3.7,0,1,0,4.4,0h4.47a0.741,0.741,0,0,0,0-1.481h-33.34V97.925h39.26Zm-43.7-24.443h2.96v11.11h40.74V78.667h-39.26V72.741a0.739,0.739,0,0,0-.74-0.741h-3.7A0.741,0.741,0,0,0,1526.52,73.481Z" transform="translate(-1525.78 -72)"/>
                             </svg>
 
                         </a>
@@ -138,7 +136,8 @@
                             </button>
                             <ul class="bl_nav__fullItems">
                                 <li class="bl_nav__item"><a href="#" class="bl_nav__link">Мужская одежда</a>
-                                    <button class="bl_nav__button_subCategory icon_arrow__right hidden-lg"></button> <!-- Кнопку добавлять только есть подкатигории в категории -->
+                                    <button class="bl_nav__button_subCategory icon_arrowSubmenu  hidden-md hidden-lg"></button>
+                                    <!-- Кнопку добавлять только есть подкатигории в категории -->
                                     <ul class="bl_nav__subCategory">
                                         <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Куртки, пальто</a></li>
                                         <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Рубашки, регланы</a></li>
@@ -152,16 +151,22 @@
                                     </ul>
 
                                 </li>
-                                <li class="bl_nav__item"><a href="#" class="bl_nav__link">Женская одежда</a></li>
+                                <li class="bl_nav__item"><a href="#" class="bl_nav__link">Женская одежда</a>
+                                    <button class="bl_nav__button_subCategory icon_arrowSubmenu  hidden-md hidden-lg"></button>
+                                    <ul class="bl_nav__subCategory">
+                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Труселя</a></li>
+                                    </ul>
+
+                                </li>
                                 <li class="bl_nav__item"><a href="#" class="bl_nav__link">Детская одежда</a></li>
                                 <li class="bl_nav__item"><a href="#" class="bl_nav__link">Аксессуары</a></li>
                                 <li class="bl_nav__item"><a href="#" class="bl_nav__link">Скидки</a></li>
 
                             </ul>
 
-                            <!--<div class="bl_nav__discount">-->
-                                <!--<a class="bl_nav__discount__link" href="#"></a>-->
-                            <!--</div>-->
+                            <div class="bl_nav__discount">
+                                <a class="bl_nav__discount__link" href="#"></a>
+                            </div>
 
                         </nav>
                     </div>
@@ -214,7 +219,7 @@
 
                                         <img class="product_sliderCart__image" src="image/Products/product_1.jpg" alt="">
                                     </div>
-                                    <h3 class="product_sliderCart__title">YOUTH N-3B Maveric Parka</h3>
+                                    <p class="product_sliderCart__title">YOUTH N-3B Maveric Parka</p>
                                 </a>
 
                                 <div class="product_sliderCart__price clearfix">
@@ -239,8 +244,8 @@
 
                                         <img class="product_sliderCart__image" src="image/Products/product_1.jpg" alt="">
                                     </div>
-                                    <h3 class="product_sliderCart__title">YOUTH N-3B Maveric Parka ыва ываывава Maveric
-                                        Parka</h3>
+                                    <p class="product_sliderCart__title">YOUTH N-3B Maveric Parka ыва ываывава Maveric
+                                        Parka</p>
                                 </a>
 
                                 <div class="product_sliderCart__price clearfix">
@@ -265,7 +270,7 @@
 
                                         <img class="product_sliderCart__image" src="image/Products/product_1.jpg" alt="">
                                     </div>
-                                    <h3 class="product_sliderCart__title">YOUTH N-3B Maveric Parka</h3>
+                                    <p class="product_sliderCart__title">YOUTH N-3B Maveric Parka</p>
                                 </a>
 
                                 <div class="product_sliderCart__price clearfix">
@@ -290,7 +295,7 @@
 
                                         <img class="product_sliderCart__image" src="image/Products/product_1.jpg" alt="">
                                     </div>
-                                    <h3 class="product_sliderCart__title">YOUTH N-3B Maveric Parka</h3>
+                                    <p class="product_sliderCart__title">YOUTH N-3B Maveric Parka</p>
                                 </a>
 
                                 <div class="product_sliderCart__price clearfix">
@@ -315,7 +320,7 @@
 
                                         <img class="product_sliderCart__image" src="image/Products/product_1.jpg" alt="">
                                     </div>
-                                    <h3 class="product_sliderCart__title">YOUTH N-3B Maveric Parka</h3>
+                                    <p class="product_sliderCart__title">YOUTH N-3B Maveric Parka</p>
                                 </a>
 
                                 <div class="product_sliderCart__price clearfix">
@@ -340,7 +345,7 @@
 
                                         <img class="product_sliderCart__image" src="image/Products/product_1.jpg" alt="">
                                     </div>
-                                    <h3 class="product_sliderCart__title">YOUTH N-3B Maveric Parka</h3>
+                                    <p class="product_sliderCart__title">YOUTH N-3B Maveric Parka</p>
                                 </a>
 
                                 <div class="product_sliderCart__price clearfix">
@@ -417,7 +422,7 @@
 
                                     <img class="product_sliderCart__image" src="image/Products/product_1.jpg" alt="">
                                 </div>
-                                <h3 class="product_sliderCart__title">YOUTH N-3B Maveric Parka</h3>
+                                <p class="product_sliderCart__title">YOUTH N-3B Maveric Parka</p>
                             </a>
 
                             <div class="product_sliderCart__price clearfix">
@@ -442,9 +447,9 @@
 
                                     <img class="product_sliderCart__image" src="image/Products/product_1.jpg" alt="">
                                 </div>
-                                <h3 class="product_sliderCart__title">YOUTH N-3B Maveric Parka ыва ываывава Maveric sdf f
+                                <p class="product_sliderCart__title">YOUTH N-3B Maveric Parka ыва ываывава Maveric sdf f
                                     sdf sdfs dfsdf sdf sdfsdf
-                                    Parka</h3>
+                                    Parka</p>
                             </a>
 
                             <div class="product_sliderCart__price clearfix">
@@ -469,7 +474,7 @@
 
                                     <img class="product_sliderCart__image" src="image/Products/product_1.jpg" alt="">
                                 </div>
-                                <h3 class="product_sliderCart__title">YOUTH N-3B Maveric Parka</h3>
+                                <p class="product_sliderCart__title">YOUTH N-3B Maveric Parka</p>
                             </a>
 
                             <div class="product_sliderCart__price clearfix">
@@ -494,7 +499,7 @@
 
                                     <img class="product_sliderCart__image" src="image/Products/product_1.jpg" alt="">
                                 </div>
-                                <h3 class="product_sliderCart__title">YOUTH N-3B Maveric Parka</h3>
+                                <p class="product_sliderCart__title">YOUTH N-3B Maveric Parka</p>
                             </a>
 
                             <div class="product_sliderCart__price clearfix">
@@ -519,7 +524,7 @@
 
                                     <img class="product_sliderCart__image" src="image/Products/product_1.jpg" alt="">
                                 </div>
-                                <h3 class="product_sliderCart__title">YOUTH N-3B Maveric Parka</h3>
+                                <p class="product_sliderCart__title">YOUTH N-3B Maveric Parka</p>
                             </a>
 
                             <div class="product_sliderCart__price clearfix">
@@ -544,7 +549,7 @@
 
                                     <img class="product_sliderCart__image" src="image/Products/product_1.jpg" alt="">
                                 </div>
-                                <h3 class="product_sliderCart__title">YOUTH N-3B Maveric Parka</h3>
+                                <p class="product_sliderCart__title">YOUTH N-3B Maveric Parka</p>
                             </a>
 
                             <div class="product_sliderCart__price clearfix">
@@ -666,9 +671,9 @@
                                             </div>
                                         </div>
 
-                                        <h3 class="slider_classicGenre__title">
+                                        <p class="slider_classicGenre__title">
                                             <a class="slider_classicGenre__link" href="#">YOUTH N-3B Maveric Parka</a>
-                                        </h3>
+                                        </p>
 
                                     </div>
                                     <div class="slider_classicGenre__product clearfix">
@@ -733,10 +738,10 @@
                                             </div>
                                         </div>
 
-                                        <h3 class="slider_classicGenre__title">
+                                        <p class="slider_classicGenre__title">
                                             <a class="slider_classicGenre__link"
                                                href="#">Mego supper raincoat for your husband or your mather-in-low</a>
-                                        </h3>
+                                        </p>
 
                                     </div>
                                     <div class="slider_classicGenre__product clearfix">
@@ -800,10 +805,10 @@
                                             </div>
                                         </div>
 
-                                        <h3 class="slider_classicGenre__title">
+                                        <p class="slider_classicGenre__title">
                                             <a class="slider_classicGenre__link"
                                                href="#">Mego supper raincoat for your husband or your mather-in-low</a>
-                                        </h3>
+                                        </p>
 
                                     </div>
                                     <div class="slider_classicGenre__product clearfix">
@@ -870,10 +875,10 @@
                                             </div>
                                         </div>
 
-                                        <h3 class="slider_classicGenre__title">
+                                        <p class="slider_classicGenre__title">
                                             <a class="slider_classicGenre__link"
                                                href="#">Mego supper raincoat for your husband or your mather-in-low</a>
-                                        </h3>
+                                        </p>
 
                                     </div>
                                     <div class="slider_classicGenre__product clearfix">
