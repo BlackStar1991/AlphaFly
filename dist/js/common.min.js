@@ -270,52 +270,9 @@ $(document).ready(function () {
         responsiveClass: true
     });
 
- /////// Что бы работало описание для слайда - классика жанра
-
-    var classicsGenreDescriptionItems = $(".bl_classicsGenre__histore_item"),
-        classicsGenreDescriptionItemsLength = classicsGenreDescriptionItems.length;
 
 
-        var buttonClassicPrev = $(".slider_classicGenre .owl-prev");
-        var buttonClassicNext = $(".slider_classicGenre .owl-next");
 
-    buttonClassicPrev.on("click", function(){
-
-        var activeIndex = $(".bl_classicsGenre__histore_item.active"),
-            sliderIndex =   activeIndex.index(),
-            prevIndex = sliderIndex - 1;
-
-            if (prevIndex < 0){
-                prevIndex = classicsGenreDescriptionItemsLength - 1;
-            }
-
-        classicDescription(sliderIndex, prevIndex);
-    });
-
-    buttonClassicNext.on("click", function(){
-
-        var activeIndex = $(".bl_classicsGenre__histore_item.active"),
-            sliderIndex =   activeIndex.index(),
-            nextIndex = sliderIndex + 1;
-
-        if ( nextIndex === classicsGenreDescriptionItemsLength){
-            nextIndex = 0;
-        }
-
-        classicDescription(sliderIndex, nextIndex);
-
-    });
-
-
-    function classicDescription(currentIndex, indexChanged) {
-
-        classicsGenreDescriptionItems.eq(currentIndex).addClass("hidden");
-        classicsGenreDescriptionItems.eq(currentIndex).removeClass("active");
-
-        classicsGenreDescriptionItems.eq(indexChanged).addClass("active");
-        classicsGenreDescriptionItems.eq(indexChanged).removeClass("hidden");
-
-    }
 
 /////////////////////////////////////////////
 

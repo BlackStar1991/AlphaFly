@@ -1741,18 +1741,14 @@ button {
 
 .bl_classicsGenre__histore {
   display: block;
-  margin-top: 29px;
-  line-height: 24px; }
-
-.bl_classicsGenre__histore_item {
-  position: relative;
-  width: 100%;
+  margin-top: 28px;
+  margin-bottom: 10px;
+  line-height: 24px;
   height: 120px;
   overflow-y: auto; }
-  .bl_classicsGenre__histore_item p {
+  .bl_classicsGenre__histore p {
     margin: 0;
-    font-size: 16px;
-    height: 24px; }
+    font-size: 16px; }
 
 .slider_classicGenre {
   width: 100%;
@@ -1799,7 +1795,6 @@ button {
   color: #fff;
   font-family: "Arial Narrow Bold", sans-serif;
   font-size: 30px;
-  text-indent: 91px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden; }
@@ -1978,7 +1973,7 @@ button {
       right: 5px;
       z-index: 3;
       background-image: url(../image/sprite.png);
-      background-position: -226px -261px;
+      background-position: -681px -380px;
       width: 11px;
       height: 10px; }
   .bl_breadcrumbs__link {
@@ -2994,15 +2989,49 @@ button {
 .bl_product__buttonBuy {
   width: 100%; }
 
-.bl_likeBlock {
-  margin-top: 20px;
-  margin-bottom: 20px;
+.bl_productAdvantages {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
   width: 100%;
-  border: 1px solid #000; }
-  .bl_likeBlock h4 {
-    font-size: 30px;
-    text-align: center;
-    font-weight: bold; }
+  min-height: 204px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  background: url("../image/plane_product.jpg") 50% 50% no-repeat;
+  background-size: cover; }
+
+.bl_productAdvantages__wrapper {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.bl_productAdvantages__original {
+  display: block;
+  background-image: url(../image/sprite.png);
+  background-position: -377px -261px;
+  width: 179px;
+  height: 179px; }
+
+.bl_productAdvantages__showroom {
+  display: block;
+  background-image: url(../image/sprite.png);
+  background-position: -562px -184px;
+  width: 179px;
+  height: 179px; }
+
+.bl_productAdvantages__delivery {
+  display: block;
+  background-image: url(../image/sprite.png);
+  background-position: -562px 0px;
+  width: 179px;
+  height: 179px; }
 
 .inf_product {
   width: 100%;
@@ -3056,6 +3085,89 @@ button {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px; }
+
+#tab-sizes {
+  width: 100%;
+  padding-top: 18px; }
+
+.clothes_sizes {
+  width: 100%; }
+
+.clothes_sizes th {
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Arial Narrow Bold", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: -0.12px; }
+
+.clothes_sizes td {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 36px; }
+
+.clothes_sizes tr:nth-of-type(even) {
+  background-color: #f1f1f1; }
+
+.clothes_sizes__text {
+  position: relative;
+  margin-top: 8px;
+  font-size: 15px;
+  padding-left: 10px;
+  font-weight: bold;
+  line-height: 16px; }
+
+.clothes_body {
+  position: relative;
+  float: left;
+  background-image: url(../image/sprite.png);
+  background-position: 0px -261px;
+  width: 146px;
+  height: 399px; }
+
+.clothes_body__neck {
+  position: absolute;
+  top: 68px;
+  left: 50px;
+  background-image: url(../image/sprite.png);
+  background-position: -681px -368px;
+  width: 52px;
+  height: 7px; }
+
+.clothes_body__chest {
+  position: absolute;
+  top: 86px;
+  background-image: url(../image/sprite.png);
+  background-position: -562px -368px;
+  width: 114px;
+  height: 41px; }
+
+.clothes_body__waist {
+  top: 136px;
+  position: absolute;
+  background-image: url(../image/sprite.png);
+  background-position: -562px -460px;
+  width: 111px;
+  height: 41px; }
+
+.clothes_body__sleeve {
+  position: absolute;
+  top: 82px;
+  right: 6px;
+  background-image: url(../image/sprite.png);
+  background-position: -562px -506px;
+  width: 23px;
+  height: 127px; }
+
+.clothes_body__hip {
+  position: absolute;
+  top: 170px;
+  background-image: url(../image/sprite.png);
+  background-position: -562px -414px;
+  width: 114px;
+  height: 41px; }
 
 .bl_similarProducts {
   width: 100%;
