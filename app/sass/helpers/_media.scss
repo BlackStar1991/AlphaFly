@@ -29,6 +29,52 @@
     right: 12px;
   }
 
+
+  .bl_product__FullImages{
+    flex-direction: column;
+  }
+
+  .bl_product__verticalSlider{
+    clear: both;
+    max-width: initial;
+    float: none;
+    width: 100%;
+    min-height: 94px;
+  }
+  .bl_product__verticalItem{
+    margin-right: 5px;
+  }
+
+
+  .bl_minInformation__availability{
+    float: none;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .bl_minInformation__article{
+    float: none;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+
+  .bl_characteristics_fullReviews{
+    top: 0;
+    width: 100%;
+  }
+
+  .bl_characteristics__addReview{
+    top: 0;
+    display: block;
+    margin-top: 10px;
+  }
+
+  .bl_characteristics__title{
+    padding-top: 5px;
+  }
+
 }
 
 /* Medium Devices, Desktops 992px */

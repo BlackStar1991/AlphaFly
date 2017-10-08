@@ -299,8 +299,34 @@ $(document).ready(function () {
         focusOnSelect: true,
         prevArrow: '<div class="slickArrow-prev"></div>',
         nextArrow: '<div class="slickArrow-next"></div>',
+        infinite: true,
+        responsive: [
+            {
+                breakpoint: 1201,
+                settings: {
+                    slidesToShow: 4,
+                    vertical: false,
+                    infinite: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    // slidesToShow: 2,
+                    // slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    // slidesToShow: 1,
+                    // slidesToScroll: 1
+                }
+            }
 
-        infinite: true
+        ]
+
+
 
     });
 
@@ -318,75 +344,25 @@ $(document).ready(function () {
 
 
 
-
-
-    // $(".slider_youViewed").owlCarousel({
-    //     items: 4,
-    //     loop: true,
-    //     nav: true,
-    //     navText: true,
-    //     dots: false,
-    //     autoplay: false,
-    //     stopOnHover: true,
-    //     margin: 0,
-    //     smartSpeed: 1000, //Время движения слайда
-    //     autoplayTimeout: 4000, //Время смены слайда
-    //     pagination: false,
-    //     responsiveClass: true,
-    //     responsive: {
-    //         1200: {
-    //             items: 4
-    //         },
-    //         992: {
-    //             items: 3,
-    //             center: true
-    //         },
-    //         550: {
-    //             items: 2
-    //         },
-    //         320: {
-    //             items: 1,
-    //             center: true
-    //         }
-    //
-    //     }
-    // });
-
 //// hover sliders arrows navigations
 
-    function hoverArrows(sliderBox, fullArrows, changedClass) {
+    function hoverPartOfClotes(partOftext, partOfBody) {
 
-        sliderBox.hover(function () {
-                fullArrows.addClass(changedClass);
-
+        partOftext.hover(function () {
+                partOfBody.addClass("clothes_body__show");
             },
             function () {
-                fullArrows.removeClass(changedClass);
+                partOfBody.removeClass("clothes_body__show");
             });
     }
 
-
-    var blockPopular = $(".bl_popular"),
-        allPopularArrows = $(".slider_popular.owl-carousel .owl-prev, .slider_popular.owl-carousel .owl-next"),
-
-
-        blockNewProducts = $(".bl_bestseller"),
-        allNewProductsArrows = $(".slider_bestseller.owl-carousel .owl-prev, .slider_bestseller.owl-carousel .owl-next"),
+    hoverPartOfClotes( $("#code_neck"), $(".clothes_body__neck") );
+    hoverPartOfClotes( $("#code_chest"), $(".clothes_body__chest") );
+    hoverPartOfClotes( $("#code_sleeve"), $(".clothes_body__sleeve") );
+    hoverPartOfClotes( $("#code_waist"), $(".clothes_body__waist") );
+    hoverPartOfClotes( $("#code_hip"), $(".clothes_body__hip") );
 
 
-        blockWithThisProductBuy = $(".bl_withThisProductBuy"),
-        allWithThisProductBuyArrows = $(".slider_withThisProductBuy.owl-carousel .owl-prev, .slider_withThisProductBuy.owl-carousel .owl-next"),
-
-        blockYouViewed = $(".bl_youViewed"),
-        allYouViewedArrows = $(".slider_youViewed.owl-carousel .owl-prev, .slider_youViewed.owl-carousel .owl-next"),
-
-
-        hover_arrowsClass = "arrow-prev__hover";
-
-    hoverArrows(blockPopular, allPopularArrows, hover_arrowsClass);
-    hoverArrows(blockNewProducts, allNewProductsArrows, hover_arrowsClass);
-    hoverArrows(blockWithThisProductBuy, allWithThisProductBuyArrows, hover_arrowsClass);
-    hoverArrows(blockYouViewed, allYouViewedArrows, hover_arrowsClass);
 
 
     // SLIDER for categories show

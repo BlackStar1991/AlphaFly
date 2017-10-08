@@ -530,6 +530,24 @@
 }
 
 
+.icon_star__left{
+
+  &:before{
+    content: "";
+
+    position: absolute;
+    top: 2px;
+    left:5px;
+    width: 20px;
+    min-height: 20px;
+
+    background: url("../image/icon_star-white.svg") 50% 50% no-repeat;
+    background-size: cover;
+    z-index: 5;
+  }
+}
+
+
 .bl_nav__wrapper{
   position: relative;
   width: 100%;

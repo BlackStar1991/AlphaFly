@@ -21,6 +21,5 @@
     "gulp.spritesmith": "^6.2.1",
     "imagemin-pngquant": "^5.0.0",
     "main-bower-files": "^2.13.1"
-  },
-  "dependencies": {}
+  }
 }

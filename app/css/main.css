@@ -1326,6 +1326,17 @@ button {
     background: url("../image/icon_star-white.svg") 50% 50% no-repeat;
     z-index: 4; }
 
+.icon_star__left:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 20px;
+  min-height: 20px;
+  background: url("../image/icon_star-white.svg") 50% 50% no-repeat;
+  background-size: cover;
+  z-index: 5; }
+
 .bl_nav__wrapper {
   position: relative;
   width: 100%;
@@ -1801,6 +1812,9 @@ button {
   .slider_classicGenre__link:hover, .slider_classicGenre__link:focus {
     color: #fff;
     text-decoration: underline; }
+
+.slider_classicGenre__link.slider_classicGenre__link_correctIfMark {
+  text-indent: 104px; }
 
 .bl_classicsGenre .bl_mark__correct {
   top: 19%; }
@@ -2673,9 +2687,22 @@ button {
   box-sizing: border-box;
   background-color: #000; }
 
+.bl_product__FullImages {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
 .bl_product__images {
+  display: inline-block;
   position: relative;
-  width: 100%; }
+  width: 100%;
+  max-width: 340px; }
 
 .bl_product__verticalSlider {
   position: relative;
@@ -2685,13 +2712,12 @@ button {
 
 .bl_product__verticalItem {
   width: 100%;
-  margin-bottom: 5px;
   cursor: pointer; }
 
 .bl_product__productSlider {
   position: relative;
   float: left;
-  max-width: 364px;
+  max-width: 350px;
   height: 100%;
   max-height: 364px;
   border: 1px solid #000;
@@ -3040,7 +3066,9 @@ button {
 .inf_product__tabs {
   width: 100%;
   height: 70px;
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+  border-bottom: 1px solid #000; }
 
 .inf_product__tabs li {
   height: 100%; }
@@ -3067,7 +3095,7 @@ button {
   width: 25%; }
 
 .inf_product__item-3 {
-  width: 33%; }
+  width: 33.33%; }
 
 .inf_product__item-2 {
   width: 50%; }
@@ -3121,6 +3149,7 @@ button {
 
 .clothes_body {
   position: relative;
+  margin-right: 20px;
   float: left;
   background-image: url(../image/sprite.png);
   background-position: 0px -261px;
@@ -3128,6 +3157,7 @@ button {
   height: 399px; }
 
 .clothes_body__neck {
+  opacity: 0;
   position: absolute;
   top: 68px;
   left: 50px;
@@ -3137,6 +3167,7 @@ button {
   height: 7px; }
 
 .clothes_body__chest {
+  opacity: 0;
   position: absolute;
   top: 86px;
   background-image: url(../image/sprite.png);
@@ -3145,6 +3176,7 @@ button {
   height: 41px; }
 
 .clothes_body__waist {
+  opacity: 0;
   top: 136px;
   position: absolute;
   background-image: url(../image/sprite.png);
@@ -3153,6 +3185,7 @@ button {
   height: 41px; }
 
 .clothes_body__sleeve {
+  opacity: 0;
   position: absolute;
   top: 82px;
   right: 6px;
@@ -3162,12 +3195,43 @@ button {
   height: 127px; }
 
 .clothes_body__hip {
+  opacity: 0;
   position: absolute;
   top: 170px;
   background-image: url(../image/sprite.png);
   background-position: -562px -414px;
   width: 114px;
   height: 41px; }
+
+.clothes_body__show {
+  opacity: 1; }
+
+.clothes_description {
+  float: left;
+  max-width: 374px;
+  width: 100%; }
+
+.clothes_description__item {
+  display: block;
+  margin-top: 6px;
+  padding: 4px 10px;
+  box-sizing: border-box;
+  border: 1px dashed transparent;
+  cursor: pointer; }
+  .clothes_description__item:first-child {
+    margin: 0;
+    padding-top: 0; }
+  .clothes_description__item:hover {
+    border-color: #7f8000; }
+
+.clothes_description__title {
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 24px; }
+
+.clothes_description__text {
+  font-size: 14px;
+  line-height: 14px; }
 
 .bl_similarProducts {
   width: 100%;
@@ -3177,6 +3241,65 @@ button {
   width: 100%;
   margin-top: 40px;
   margin-bottom: 60px; }
+
+.review_allReview {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px; }
+
+.review_item {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.review_item__userName {
+  position: relative;
+  text-indent: 32px;
+  line-height: 30px;
+  color: #fff;
+  background-color: #000;
+  font-size: 18px; }
+
+.review_item__time {
+  float: right; }
+
+.review_item__raiting {
+  font-size: 18px;
+  font-family: "Arial Narrow Bold", sans-serif; }
+
+.review_item__fullReview {
+  width: 100%;
+  margin-top: 5px;
+  margin-left: 10px;
+  padding-left: 20px;
+  border-left: 2px solid #000; }
+
+.review_empty {
+  color: #e50014;
+  font-size: 18px; }
+
+.review_product {
+  width: 100%;
+  margin-top: 10px; }
+
+.review_product__title {
+  display: inline-block;
+  padding-right: 15px;
+  text-align: center; }
+
+.review_product__bold {
+  font-size: 18px;
+  font-family: "Arial Narrow Bold", sans-serif; }
+
+.bl_review__raitingFull {
+  display: inline-block; }
+
+.review_text {
+  vertical-align: top;
+  color: #f00; }
+
+.bl_review__raiting .bl_review__raitingFull {
+  margin-top: 0; }
 
 /*********************************************/
 /*FOOTER*/
@@ -3391,7 +3514,36 @@ button {
   .bl_sorter__select {
     margin-right: 6px; }
   .bl_sorter:after {
-    right: 12px; } }
+    right: 12px; }
+  .bl_product__FullImages {
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .bl_product__verticalSlider {
+    clear: both;
+    max-width: initial;
+    float: none;
+    width: 100%;
+    min-height: 94px; }
+  .bl_product__verticalItem {
+    margin-right: 5px; }
+  .bl_minInformation__availability {
+    float: none;
+    width: 100%;
+    display: block;
+    margin: 0 auto; }
+  .bl_minInformation__article {
+    float: none;
+    text-align: center;
+    margin-top: 15px; }
+  .bl_characteristics_fullReviews {
+    top: 0;
+    width: 100%; }
+  .bl_characteristics__addReview {
+    top: 0;
+    display: block;
+    margin-top: 10px; }
+  .bl_characteristics__title {
+    padding-top: 5px; } }
 
 /* Medium Devices, Desktops 992px */
 @media only screen and (max-width: 991px) {
