@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
-    var blackWrapper = $(".blackWrapper");
+    var blackWrapper = $(".blackWrapper"),
+        body = $("body");
 
 
 //// Controls Menu
@@ -176,6 +177,12 @@ $(document).ready(function () {
                 items: 2,
                 margin: 5
             },
+            450: {
+                margin: 0,
+                items: 1,
+                center: true
+            },
+
             320: {
                 items: 1,
                 center: true
@@ -211,6 +218,12 @@ $(document).ready(function () {
                 items: 2,
                 margin: 5
             },
+            450: {
+                margin: 0,
+                items: 1,
+                center: true
+            },
+
             320: {
                 items: 1,
                 center: true
@@ -245,6 +258,12 @@ $(document).ready(function () {
                 items: 2,
                 margin: 5
             },
+            450: {
+                margin: 0,
+                items: 1,
+                center: true
+            },
+
             320: {
                 items: 1,
                 center: true
@@ -285,20 +304,54 @@ $(document).ready(function () {
             slidesToScroll: 1,
             arrows: false,
             fade: true,
-            asNavFor: '.bl_product__verticalSlider'
+            asNavFor: '.bl_product__verticalSlider',
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        arrows: true,
+                        prevArrow: '<div class="mainProductSlickArrow-prev"></div>',
+                        nextArrow: '<div class="mainProductSlickArrow-next"></div>',
+                        infinite: true
+                    }
+                },
+                {
+                    breakpoint: 320,
+                    settings: {
+                        slidesToShow: 1,
+                        arrows: true,
+                        prevArrow: '<div class="mainProductSlickArrow-prev"></div>',
+                        nextArrow: '<div class="mainProductSlickArrow-next"></div>',
+                        infinite: true
+                    }
+                }
+                ]
         });
 
 
     // Zoom Effect
 
     function zoomEffect() {
-        $(".bl_product__productSlider .slick-active .bl_product_image").elevateZoom({
-            borderSize: 2,
-            borderColour: "#7f8000"
-        });
-    }
 
+        if (body.width() >= 1200) {
+            $(".bl_product__productSlider .slick-active .bl_product_image").elevateZoom({
+                borderSize: 2,
+                borderColour: "#7f8000"
+            });
+        }else if ( (body.width() < 1200) && (body.width() > 768) ) {
+            $(".bl_product__productSlider .slick-active .bl_product_image").elevateZoom({
+                zoomType: "inner",
+                cursor: "crosshair"
+            });
+        }else {
+            return false;
+        }
+
+
+    }
     zoomEffect();
+
 
 
 
@@ -324,24 +377,30 @@ $(document).ready(function () {
                 breakpoint: 1201,
                 settings: {
                     slidesToShow: 4,
+                    prevArrow: '<div class="slickArrow-prev"></div>',
+                    nextArrow: '<div class="slickArrow-next"></div>',
                     vertical: false,
                     infinite: true
                 }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    // slidesToShow: 2,
-                    // slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    // slidesToShow: 1,
-                    // slidesToScroll: 1
-                }
             }
+            // {
+            //     breakpoint: 600,
+            //     settings: {
+            //         slidesToShow: 4,
+            //         prevArrow: '<div class="slickArrow-prev"></div>',
+            //         nextArrow: '<div class="slickArrow-next"></div>',
+            //         vertical: false
+            //     }
+            // },
+            // {
+            //     breakpoint: 320,
+            //     settings: {
+            //         slidesToShow: 3,
+            //         prevArrow: '<div class="slickArrow-prev"></div>',
+            //         nextArrow: '<div class="slickArrow-next"></div>',
+            //         vertical: false
+            //     }
+            // }
 
         ]
 
@@ -712,6 +771,10 @@ $(window).resize(function () {
 
 
     if (body.width() >= 1200) {
+
+
+
+
 
 
         fullNavigation.removeClass(mobileNavigation);

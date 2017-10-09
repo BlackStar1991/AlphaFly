@@ -215,7 +215,9 @@ button {
 .product_sliderCart__item {
   position: relative;
   display: inline-block;
-  max-width: 225px;
+  //max-width: 225px;
+  width: 100%;
+  margin: 0 auto;
   box-sizing: border-box;
 }
 
@@ -1977,6 +1979,11 @@ $ml: 5%;
   cursor: pointer;
 }
 
+.bl_product__minImg{
+  margin: 0 auto;
+  width: 100%;
+}
+
 .bl_product__productSlider {
   position: relative;
   float: left;
@@ -1988,7 +1995,40 @@ $ml: 5%;
 
   overflow: hidden;
 }
+//main product
+.bl_product__productSlider .mainProductSlickArrow-prev,
+.bl_product__productSlider .mainProductSlickArrow-next{
+  position: absolute;
+  height: 100%;
+  width: 36px;
+  top: 0;
+  left: -36px;
+  background-color: #000;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  z-index: 2;
+  &:before{
+    content: "\f104";
+    font-family: $FontAwesome;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 40%;
+    left: 10px;
+    font-size: 30px;
+    color: #fff;
+  }
+}
+.bl_product__productSlider .mainProductSlickArrow-next{
+  left: 100%;
+ 
+  &:before{
+    content: "\f105";
+    left: 10px;
+  }
+}
 
+//vertical
 .bl_product__verticalSlider.slick-slider .slickArrow-prev {
   position: absolute;
   top: 0;
@@ -2315,6 +2355,18 @@ $ml: 5%;
   font-size: 28px;
 }
 
+.bl_options__fullParametrs{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  min-height: 302px;
+
+}
+
+
+
 .bl_options__colors {
 
 }
@@ -2365,15 +2417,14 @@ $ml: 5%;
 }
 
 .bl_product__buttonBuy {
-  position: absolute;
 
-  bottom: 10px;
-
-  width: 92%;
   box-sizing: border-box;
 
 
 }
+
+
+
 
 ///////////////
 
@@ -2423,7 +2474,7 @@ $ml: 5%;
 
 .inf_product__tabs {
   width: 100%;
-  height: 70px;
+  //height: 70px;
   background-color: $color_grey;
   box-sizing: border-box;
   border-bottom: 1px solid #000;
@@ -2522,11 +2573,20 @@ $ml: 5%;
   line-height: 16px;
 }
 
+
+.clothes_description__full{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
 .clothes_body{
   position: relative;
-  margin-right: 20px;
-  float: left;
+  //margin-right: 20px;
+  //float: left;
   @include sprite($body-clothes);
+  min-width:146px;
 }
 
 .clothes_body__neck{
@@ -2569,7 +2629,7 @@ $ml: 5%;
 
 
 .clothes_description{
-  float: left;
+  //float: left;
   max-width:374px;
   width: 100%;
 }

@@ -1435,7 +1435,8 @@ button {
 .product_sliderCart__item {
   position: relative;
   display: inline-block;
-  max-width: 225px;
+  width: 100%;
+  margin: 0 auto;
   box-sizing: border-box; }
 
 .product_sliderCart__link {
@@ -2717,6 +2718,10 @@ button {
   width: 100%;
   cursor: pointer; }
 
+.bl_product__minImg {
+  margin: 0 auto;
+  width: 100%; }
+
 .bl_product__productSlider {
   position: relative;
   float: left;
@@ -2726,6 +2731,35 @@ button {
   border: 1px solid #000;
   box-sizing: border-box;
   overflow: hidden; }
+
+.bl_product__productSlider .mainProductSlickArrow-prev,
+.bl_product__productSlider .mainProductSlickArrow-next {
+  position: absolute;
+  height: 100%;
+  width: 36px;
+  top: 0;
+  left: -36px;
+  background-color: #000;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  z-index: 2; }
+  .bl_product__productSlider .mainProductSlickArrow-prev:before,
+  .bl_product__productSlider .mainProductSlickArrow-next:before {
+    content: "\f104";
+    font-family: "FontAwesome";
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 40%;
+    left: 10px;
+    font-size: 30px;
+    color: #fff; }
+
+.bl_product__productSlider .mainProductSlickArrow-next {
+  left: 100%; }
+  .bl_product__productSlider .mainProductSlickArrow-next:before {
+    content: "\f105";
+    left: 10px; }
 
 .bl_product__verticalSlider.slick-slider .slickArrow-prev {
   position: absolute;
@@ -2982,6 +3016,17 @@ button {
 .bl_options__price .bl_price__normal {
   font-size: 28px; }
 
+.bl_options__fullParametrs {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  min-height: 302px; }
+
 .bl_options__title {
   margin-top: 12px;
   padding-bottom: 2px;
@@ -3017,9 +3062,6 @@ button {
     margin: 3.5px; }
 
 .bl_product__buttonBuy {
-  position: absolute;
-  bottom: 10px;
-  width: 92%;
   box-sizing: border-box; }
 
 .bl_productAdvantages {
@@ -3072,7 +3114,6 @@ button {
 
 .inf_product__tabs {
   width: 100%;
-  height: 70px;
   background-color: #f4f4f4;
   box-sizing: border-box;
   border-bottom: 1px solid #000; }
@@ -3154,14 +3195,22 @@ button {
   font-weight: bold;
   line-height: 16px; }
 
+.clothes_description__full {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+
 .clothes_body {
   position: relative;
-  margin-right: 20px;
-  float: left;
   background-image: url(../image/sprite.png);
   background-position: 0px -261px;
   width: 146px;
-  height: 399px; }
+  height: 399px;
+  min-width: 146px; }
 
 .clothes_body__neck {
   opacity: 0;
@@ -3214,7 +3263,6 @@ button {
   opacity: 1; }
 
 .clothes_description {
-  float: left;
   max-width: 374px;
   width: 100%; }
 
@@ -3608,7 +3656,12 @@ button {
   .bl_product__FullImages {
     -ms-flex-direction: column;
         flex-direction: column; }
+  .bl_product__images {
+    margin: 0 auto;
+    -ms-flex-order: -1;
+        order: -1; }
   .bl_product__verticalSlider {
+    margin-top: 10px;
     clear: both;
     max-width: initial;
     float: none;
@@ -3616,6 +3669,18 @@ button {
     min-height: 94px; }
   .bl_product__verticalItem {
     margin-right: 5px; }
+  .bl_product__verticalSlider.slick-slider .slickArrow-prev,
+  .bl_product__verticalSlider.slick-slider .slickArrow-next {
+    height: 100%;
+    width: 24px; }
+  .bl_product__verticalSlider.slick-slider .slickArrow-prev.slick-arrow:before {
+    content: "\f104";
+    top: 30%; }
+  .bl_product__verticalSlider.slick-slider .slickArrow-next.slick-arrow {
+    left: 100%; }
+    .bl_product__verticalSlider.slick-slider .slickArrow-next.slick-arrow:before {
+      content: "\f105";
+      top: 30%; }
   .bl_minInformation__availability {
     float: none;
     width: 100%;
@@ -3633,6 +3698,7 @@ button {
     display: block;
     margin-top: 10px; }
   .bl_characteristics__title {
+    clear: both;
     padding-top: 5px; } }
 
 /* Medium Devices, Desktops 992px */
@@ -3704,6 +3770,8 @@ button {
     width: 100%;
     font-family: "Arial Narrow Bold", sans-serif;
     text-align: center; }
+  .bl_breadcrumbs__item {
+    padding-right: 3%; }
   .bl_classicsGenre__full .owl-nav {
     top: 30%; }
   .bl_navFooter {
@@ -3728,14 +3796,44 @@ button {
     .bl_fullProducts__item:nth-of-type(4n) {
       margin-right: inherit; }
   .bl_catalog__filtersWrapper {
-    max-width: none; } }
+    max-width: none; }
+  .bl_characteristics_fullReviews {
+    width: auto; }
+  .bl_characteristics__addReview {
+    display: inline-block;
+    float: right; }
+  .bl_product__verticalSlider.slick-slider .slickArrow-prev.slick-arrow:before,
+  .bl_product__verticalSlider.slick-slider .slickArrow-next.slick-arrow:before {
+    top: 40%; } }
 
 /* Small Devices, Tablets 768px */
 @media only screen and (max-width: 768px) {
   .bl_fullProducts__item {
     width: 49%; }
     .bl_fullProducts__item:nth-of-type(2n) {
-      margin-right: 1%; } }
+      margin-right: 1%; }
+  .bl_product__productSlider {
+    float: none;
+    overflow: visible;
+    max-width: initial;
+    max-height: initial; } }
+
+@media only screen and (max-width: 600px) {
+  .inf_product__tabs li {
+    width: 100%;
+    display: block; }
+  table {
+    overflow-x: auto;
+    display: block; }
+  .clothes_body {
+    -ms-transform: translateX(50%);
+        transform: translateX(50%); }
+  .clothes_body__neck,
+  .clothes_body__chest,
+  .clothes_body__waist,
+  .clothes_body__sleeve,
+  .clothes_body__hip {
+    opacity: 1; } }
 
 /* Extra Small Devices, Phones 480px */
 @media only screen and (max-width: 480px) {
@@ -3753,7 +3851,14 @@ button {
     display: block;
     margin: 0 auto; }
   .product_slider__title {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .bl_subscribe__input {
+    width: 80%; }
+  .bl_subscribe__button {
+    width: 20%; }
+  .review_product__title {
+    padding: 0;
+    text-align: left; } }
 
 /* Custom, iPhone Retina 320px */
 @media only screen and (max-width: 320px) {

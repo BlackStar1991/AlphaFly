@@ -29,49 +29,76 @@
     right: 12px;
   }
 
-
-  .bl_product__FullImages{
+  .bl_product__FullImages {
     flex-direction: column;
   }
 
-  .bl_product__verticalSlider{
+  .bl_product__images {
+    margin: 0 auto;
+    order: -1;
+  }
+
+  .bl_product__verticalSlider {
+    margin-top: 10px;
     clear: both;
     max-width: initial;
     float: none;
     width: 100%;
     min-height: 94px;
   }
-  .bl_product__verticalItem{
+  .bl_product__verticalItem {
     margin-right: 5px;
   }
 
+  .bl_product__verticalSlider.slick-slider .slickArrow-prev,
+  .bl_product__verticalSlider.slick-slider .slickArrow-next {
+    height: 100%;
+    width: 24px;
+  }
 
-  .bl_minInformation__availability{
+  .bl_product__verticalSlider.slick-slider .slickArrow-prev.slick-arrow {
+
+    &:before {
+      content: "\f104";
+      top: 30%;
+    }
+  }
+
+  .bl_product__verticalSlider.slick-slider .slickArrow-next.slick-arrow {
+    left: 100%;
+
+    &:before {
+      content: "\f105";
+      top: 30%;
+    }
+  }
+
+  .bl_minInformation__availability {
     float: none;
     width: 100%;
     display: block;
     margin: 0 auto;
   }
 
-  .bl_minInformation__article{
+  .bl_minInformation__article {
     float: none;
     text-align: center;
     margin-top: 15px;
   }
 
-
-  .bl_characteristics_fullReviews{
+  .bl_characteristics_fullReviews {
     top: 0;
     width: 100%;
   }
 
-  .bl_characteristics__addReview{
+  .bl_characteristics__addReview {
     top: 0;
     display: block;
     margin-top: 10px;
   }
 
-  .bl_characteristics__title{
+  .bl_characteristics__title {
+    clear: both;
     padding-top: 5px;
   }
 
@@ -80,13 +107,12 @@
 /* Medium Devices, Desktops 992px */
 @media only screen and (max-width: 991px) {
 
-  .bl_nav__subCategory{
+  .bl_nav__subCategory {
     position: relative;
     top: 0;
-    width:auto;
+    width: auto;
   }
-  
-  
+
   .bl_controls {
     float: none;
     position: fixed;
@@ -172,7 +198,7 @@
     margin: 0 auto;
   }
 
-  .bl_nav__item:hover .bl_nav__subCategory{
+  .bl_nav__item:hover .bl_nav__subCategory {
     display: none;
   }
 
@@ -182,6 +208,10 @@
     font-family: $ArialBold;
     text-align: center;
 
+  }
+
+  .bl_breadcrumbs__item {
+    padding-right: 3%;
   }
 
   //.bl_nav__discount {
@@ -234,11 +264,21 @@
     }
   }
 
-
-  .bl_catalog__filtersWrapper{
-
+  .bl_catalog__filtersWrapper {
     max-width: none;
+  }
+  .bl_characteristics_fullReviews {
+    width: auto;
+  }
 
+  .bl_characteristics__addReview {
+    display: inline-block;
+    float: right;
+  }
+
+  .bl_product__verticalSlider.slick-slider .slickArrow-prev.slick-arrow:before,
+  .bl_product__verticalSlider.slick-slider .slickArrow-next.slick-arrow:before {
+    top: 40%;
   }
 
 }
@@ -254,18 +294,38 @@
     }
   }
 
-  //.box_forStar__empty,
-  //.box_forStar__full{
-  //  width: 40px;
-  //  height: 40px;
-  //}
-  //.bl_fullProducts__raiting{
-  //  height: 50px;
-  //}
-
+  .bl_product__productSlider {
+    float: none;
+    overflow: visible;
+    max-width: initial;
+    max-height: initial;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+
+  .inf_product__tabs li {
+    width: 100%;
+    display: block;
+  }
+
+  table {
+    overflow-x: auto;
+    display: block;
+  }
+
+  .clothes_body {
+    transform: translateX(50%);
+  }
+
+
+  .clothes_body__neck,
+  .clothes_body__chest,
+  .clothes_body__waist,
+  .clothes_body__sleeve,
+  .clothes_body__hip{
+    opacity: 1;
+  }
 
 }
 
@@ -288,30 +348,42 @@
     }
   }
 
-  .bl_classicsGenre__full .owl-nav{
-    top:20%;
+  .bl_classicsGenre__full .owl-nav {
+    top: 20%;
   }
 
-  .product_sliderCart__item{
+  .product_sliderCart__item {
     display: block;
     margin: 0 auto;
   }
 
-  .product_slider__title{
+  .product_slider__title {
     font-size: 18px;
   }
 
+  .bl_subscribe__input {
+    width: 80%;
+  }
+
+  .bl_subscribe__button {
+    width: 20%;
+  }
+
+  .review_product__title {
+    padding: 0;
+    text-align: left;
+  }
 
 }
 
 /* Custom, iPhone Retina 320px */
 @media only screen and (max-width: 320px) {
 
-  .slider_classicGenre__link{
+  .slider_classicGenre__link {
     font-size: 16px;
   }
 
-  .bl_classicsGenre__full .owl-nav{
+  .bl_classicsGenre__full .owl-nav {
     top: 14%;
   }
 }
