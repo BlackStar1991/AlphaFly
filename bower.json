@@ -13,6 +13,6 @@
     "fancybox": "^3.1.20",
     "jquery.maskedinput": "^1.4.1",
     "slick-carousel": "^1.8.1",
-    "ez-plus": "elevatezoom-plus#^1.2.1"
+    "elevatezoom": "^2.2.3"
   }
 }
