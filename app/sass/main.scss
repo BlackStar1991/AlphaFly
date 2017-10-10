@@ -2398,6 +2398,24 @@ $ml: 5%;
   }
 }
 
+.decor_threeLine{
+
+  &:before{
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    content: "";
+    width: 60px;
+    min-height: 40px;
+
+    background: url('data:image/svg+xml, <svg version="1.1" id="likeLine" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 40">  <polyline points="0,0 35,0 58,40 0,40 0,0" fill="#fff"/></svg>') 0 0 no-repeat;
+    z-index: 3;
+
+  }
+}
+
+
 .bl_options__colors .filter_color__fullColors {
   width: 100%;
   margin: 0;
@@ -2867,7 +2885,153 @@ $ml: 5%;
   }
 }
 
+////////// BLOG
 
+.bl_blog{
+  width: 100%;
+}
+
+.bl_blog__new{
+  position: relative;
+  margin-top: 68px;
+  width: 100%;
+
+  &:nth-of-type(1){
+    margin-top: 0;
+  }
+}
+
+.bl_blog__fullImage{
+  position: relative;
+  width: 100%;
+  max-width:777px;
+}
+
+.bl_blog__time{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  color: $color_grey;
+  text-align: center;
+  text-transform: uppercase;
+  width: 128px;
+  height: 190px;
+  background-color: #000;
+  line-height: 36px;
+  opacity: 0.8;
+}
+
+
+.bl_blog__day{
+  display: block;
+  width: 100%;
+  font-size: 52px;
+  line-height: 36px;
+
+}
+
+.bl_blog__month{
+  width: 100%;
+  display: block;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.bl_blog__year{
+  width: 100%;
+  display: block;
+  font-size: 34px;
+  line-height: 36px;
+}
+
+.bl_blog__image{
+  width: 100%;
+}
+
+.bl_blog__about{
+  position: absolute;
+  top: 0;
+  right: 0;
+
+
+  width: 100%;
+  padding: 24px 5% 10px 35px;
+
+  max-width: 568px;
+  min-height: 322px;
+  box-shadow: 7px 11px 15px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+
+.bl_blog__name{
+  display: block;
+  width: 100%;
+  color: #000;
+  font-family: $ArialBold;
+  padding-bottom: 5px;
+  font-size: 32px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.bl_blog__shortDescription{
+  position: relative;
+  width: 100%;
+  height: 100px;
+  color: #000;
+  font-size: 16px;
+  line-height: 24px;
+  overflow: hidden;
+}
+
+.link_moreInfo{
+  position: relative;
+  float: right;
+  width: 222px;
+  height: 42px;
+  background-color: #000;
+  color: #fff;
+  display: block;
+  margin: 20px auto 0;
+  line-height: 40px;
+
+  text-transform: uppercase;
+  text-align: center;
+  
+  &:hover,
+  &:focus{
+    background-color: $color_oliv;
+    color: #fff;
+  }
+}
+
+
+///////////// Статья
+
+
+.bl_news{
+  position: relative;
+  width: 100%;
+
+  p{
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 10px;
+  }
+}
+
+.bl_news__fullImage{
+  position: relative;
+  float: left;
+  padding-right: 32px;
+  padding-bottom: 20px;
+  max-width: 668px;
+
+
+}
 
 
 

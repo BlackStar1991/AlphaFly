@@ -281,6 +281,12 @@
     top: 40%;
   }
 
+
+  .bl_blog__about{
+    position: relative;
+    max-width: initial;
+  }
+
 }
 
 /* Small Devices, Tablets 768px */
@@ -327,6 +333,22 @@
     opacity: 1;
   }
 
+
+  .bl_blog__time{
+    width: 90px;
+    height: 100px;
+  }
+  .bl_blog__day{
+    font-size: 32px;
+  }
+
+  .bl_blog__month{
+    line-height: 14px;
+  }
+  .bl_blog__year{
+    line-height:24px;
+    font-size: 28px;
+  }
 }
 
 /* Extra Small Devices, Phones 480px */
@@ -373,6 +395,37 @@
     padding: 0;
     text-align: left;
   }
+
+  .bl_blog__about{
+    padding-left: 5%;
+  }
+
+  .bl_blog__name{
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .bl_blog__shortDescription{
+    height: 170px;
+  }
+
+  .link_moreInfo{
+    float: none;
+  }
+
+  .bl_blog__day{
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .bl_blog__month{
+    font-size: 20px;
+  }
+  .bl_blog__year{
+    font-size: 20px;
+  }
+
+
+
+
 
 }
 

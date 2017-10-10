@@ -12,7 +12,7 @@
     </style>
 
   <g transform="translate(-1119.81 -1145.5)" style="fill: #e50014; filter: url(#filter)">
-    <path id="star_empty" class="cls-1" d="M1133.5,1146l-3.3,9h-9.9l7.92,6v0.6l-3.3,8.4,8.58-5.4,8.58,5.4-3.3-8.4V1161l7.92-6h-9.9Z" style="stroke: inherit; filter: none; fill: inherit"/>
+    <path id="star_empty" class="cls-1" d="M1133.5,1146l-3.3,9h-9.9l7.92,6v0.6l-3.3,8.4,8.58-5.4,8.58,5.4-3.3-8.4V1161l7.92-6h-9.9Z" style="stroke: inherit; filter: none; stroke: #e50014; fill: inherit"/>
   </g>
     <use transform="translate(-1119.81 -1145.5)" xlink:href="#star_empty" style="stroke: #000; filter: none; fill: none"/>
 </svg>
