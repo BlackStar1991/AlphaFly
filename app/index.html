@@ -221,7 +221,7 @@
                     <h1 class="product_slider__title decor-likeLabel icon-star">Контакты</h1>
 
                     <div class="bl_contacts">
-                        <div class="col-xs-5 col-xs-offset-1 correct_left">
+                        <div class="col-md-5 col-xs-offset-1 correct_left">
                             <div class="bl_contacts_item">
                                 <div class="bl_contacts__icon icon-adress"></div>
                                 <div class="bl_contacts__description">
@@ -240,7 +240,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-5 col-xs-offset-1 correct_left">
+                        <div class="col-md-5 col-xs-offset-1 correct_left">
 
                             <div class="bl_contacts_item">
                                 <div class="bl_contacts__icon icon-worktime"></div>
@@ -277,16 +277,19 @@
                 <div class="container">
                     <div class="col-xs-12">
                         <form class="bl_callBackForm__form" action="">
-                            <input class="bl_callBackForm__input" type="text" placeholder="Ваше имя:">
-                            <input class="bl_callBackForm__input" type="text" placeholder="Ваш E-Mail:">
-                            <textarea class="bl_callBackForm__textarea" name="" id="" cols="30" rows="10"></textarea>
+                            <p class="bl_callBackForm__text">Написать нам</p>
+
+                            <input class="bl_callBackForm__input" type="text" placeholder="Ваше имя:" title="" required>
+                            <input class="bl_callBackForm__input" type="text" placeholder="Ваш E-Mail:" title="" required>
+
+                            <textarea class="bl_callBackForm__textarea" name="" placeholder="Ваш вопрос:"  rows="5" title="" required></textarea>
                         
                         
-                            <div class="bl_callBackForm__capch">
-                                <img src="" alt="">
+                            <div class="bl_callBackForm__capch" >
+                                <img src="" alt="capcha">
                             </div>
 
-                            <button class="bl_callBackForm__button">Отправить</button>
+                            <button type="submit" class="link_moreInfo bl_callBackForm__button decor_threeLine">Отправить</button>
                         </form>
                     </div>
                 </div>
