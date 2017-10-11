@@ -1991,7 +1991,7 @@ button {
       right: 5px;
       z-index: 3;
       background-image: url(../image/sprite.png);
-      background-position: -681px -380px;
+      background-position: -721px -368px;
       width: 11px;
       height: 10px; }
   .bl_breadcrumbs__link {
@@ -3054,9 +3054,10 @@ button {
   left: 0;
   top: 0;
   content: "";
-  width: 60px;
-  min-height: 40px;
-  background: url('data:image/svg+xml, <svg version="1.1" id="likeLine" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 40">  <polyline points="0,0 35,0 58,40 0,40 0,0" fill="#fff"/></svg>') 0 0 no-repeat;
+  background-image: url(../image/sprite.png);
+  background-position: -681px -368px;
+  width: 35px;
+  height: 30px;
   z-index: 3; }
 
 .bl_options__colors .filter_color__fullColors {
@@ -3228,7 +3229,7 @@ button {
   top: 68px;
   left: 50px;
   background-image: url(../image/sprite.png);
-  background-position: -681px -368px;
+  background-position: -681px -414px;
   width: 52px;
   height: 7px; }
 
@@ -3547,13 +3548,16 @@ button {
   text-transform: uppercase;
   text-align: center; }
   .link_moreInfo:hover, .link_moreInfo:focus {
-    background-color: #7f8000;
     color: #fff; }
 
 .bl_news {
   position: relative;
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 50px;
+  box-shadow: 4px 12px 15px rgba(0, 0, 0, 0.16);
+  background-color: #fff; }
   .bl_news p {
+    padding: 0 40px;
     font-size: 16px;
     line-height: 28px;
     margin-top: 10px; }
@@ -3933,7 +3937,9 @@ button {
     top: 40%; }
   .bl_blog__about {
     position: relative;
-    max-width: initial; } }
+    max-width: initial; }
+  .bl_news__fullImage {
+    padding-right: 0; } }
 
 /* Small Devices, Tablets 768px */
 @media only screen and (max-width: 768px) {
@@ -3945,7 +3951,20 @@ button {
     float: none;
     overflow: visible;
     max-width: initial;
-    max-height: initial; } }
+    max-height: initial; }
+  .bl_blog__time {
+    width: 90px;
+    height: 100px; }
+  .bl_blog__day {
+    font-size: 24px; }
+  .bl_blog__month {
+    line-height: 14px;
+    font-size: 24px; }
+  .bl_blog__year {
+    line-height: 24px;
+    font-size: 26px; }
+  .bl_news p {
+    padding: 0 20px; } }
 
 @media only screen and (max-width: 600px) {
   .inf_product__tabs li {
@@ -3963,16 +3982,10 @@ button {
   .clothes_body__sleeve,
   .clothes_body__hip {
     opacity: 1; }
-  .bl_blog__time {
-    width: 90px;
-    height: 100px; }
-  .bl_blog__day {
-    font-size: 32px; }
-  .bl_blog__month {
-    line-height: 14px; }
-  .bl_blog__year {
-    line-height: 24px;
-    font-size: 28px; } }
+  .decor-likeLabel:before {
+    content: none; }
+  .icon-star:after {
+    content: none; } }
 
 /* Extra Small Devices, Phones 480px */
 @media only screen and (max-width: 480px) {

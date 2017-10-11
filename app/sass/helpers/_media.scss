@@ -281,10 +281,13 @@
     top: 40%;
   }
 
-
-  .bl_blog__about{
+  .bl_blog__about {
     position: relative;
     max-width: initial;
+  }
+
+  .bl_news__fullImage{
+    padding-right: 0;
   }
 
 }
@@ -306,6 +309,29 @@
     max-width: initial;
     max-height: initial;
   }
+
+  .bl_blog__time {
+    width: 90px;
+    height: 100px;
+  }
+  .bl_blog__day {
+    font-size: 24px;
+  }
+
+  .bl_blog__month {
+    line-height: 14px;
+    font-size: 24px;
+
+  }
+  .bl_blog__year {
+    line-height: 24px;
+    font-size: 26px;
+  }
+
+  .bl_news p{
+    padding: 0 20px;
+  }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -324,31 +350,26 @@
     transform: translateX(50%);
   }
 
-
   .clothes_body__neck,
   .clothes_body__chest,
   .clothes_body__waist,
   .clothes_body__sleeve,
-  .clothes_body__hip{
+  .clothes_body__hip {
     opacity: 1;
   }
 
-
-  .bl_blog__time{
-    width: 90px;
-    height: 100px;
-  }
-  .bl_blog__day{
-    font-size: 32px;
+  .decor-likeLabel {
+    &:before {
+      content: none;
+    }
   }
 
-  .bl_blog__month{
-    line-height: 14px;
+  .icon-star {
+    &:after {
+      content: none;
+    }
   }
-  .bl_blog__year{
-    line-height:24px;
-    font-size: 28px;
-  }
+
 }
 
 /* Extra Small Devices, Phones 480px */
@@ -396,36 +417,32 @@
     text-align: left;
   }
 
-  .bl_blog__about{
+  .bl_blog__about {
     padding-left: 5%;
   }
 
-  .bl_blog__name{
+  .bl_blog__name {
     font-size: 24px;
     line-height: 26px;
   }
-  .bl_blog__shortDescription{
+  .bl_blog__shortDescription {
     height: 170px;
   }
 
-  .link_moreInfo{
+  .link_moreInfo {
     float: none;
   }
 
-  .bl_blog__day{
+  .bl_blog__day {
     font-size: 24px;
     line-height: 26px;
   }
-  .bl_blog__month{
+  .bl_blog__month {
     font-size: 20px;
   }
-  .bl_blog__year{
+  .bl_blog__year {
     font-size: 20px;
   }
-
-
-
-
 
 }
 

@@ -190,6 +190,8 @@ button {
   margin-top: 20px;
   margin-bottom: 10px;
 
+
+
   color: #fff;
   font-family: $ArialNarrow;
   font-size: 24px;
@@ -945,6 +947,7 @@ $ml: 5%;
 
 
 .decor-likeLabel {
+
 
   &:before {
     position: absolute;
@@ -2404,12 +2407,8 @@ $ml: 5%;
     position: absolute;
     left: 0;
     top: 0;
-
     content: "";
-    width: 60px;
-    min-height: 40px;
-
-    background: url('data:image/svg+xml, <svg version="1.1" id="likeLine" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 40">  <polyline points="0,0 35,0 58,40 0,40 0,0" fill="#fff"/></svg>') 0 0 no-repeat;
+    @include  sprite($icon-tree-lines);
     z-index: 3;
 
   }
@@ -3003,7 +3002,7 @@ $ml: 5%;
   
   &:hover,
   &:focus{
-    background-color: $color_oliv;
+    //background-color: $color_oliv;
     color: #fff;
   }
 }
@@ -3015,8 +3014,12 @@ $ml: 5%;
 .bl_news{
   position: relative;
   width: 100%;
+  padding-bottom: 50px;
+  box-shadow: 4px 12px 15px rgba(0, 0, 0, 0.16);
+  background-color: #fff;
 
   p{
+    padding: 0 40px;
     font-size: 16px;
     line-height: 28px;
     margin-top: 10px;
