@@ -3569,6 +3569,79 @@ button {
   padding-bottom: 20px;
   max-width: 668px; }
 
+.bl_contacts {
+  width: 100%;
+  margin-top: 60px; }
+
+.bl_contacts_item {
+  width: 100%;
+  margin-bottom: 50px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.bl_contacts__icon {
+  position: relative;
+  font-family: "FontAwesome";
+  font-size: 52px;
+  min-width: 112px;
+  min-height: 112px;
+  background-color: #000;
+  color: #f4f4f4; }
+  .bl_contacts__icon:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+
+.icon-adress:before {
+  content: "\f041"; }
+
+.icon-email:before {
+  content: "\f003"; }
+
+.icon-worktime:before {
+  content: "\f073"; }
+
+.icon-phone:before {
+  content: "\f095"; }
+
+.bl_contacts__description {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding-left: 24px;
+  width: 100%;
+  color: #000;
+  font-family: "Arial Narrow", sans-serif; }
+
+.bl_contacts__name {
+  font-size: 24px; }
+
+.bl_contacts__text {
+  font-size: 18px; }
+
+.bl_map {
+  position: relative;
+  width: 100%;
+  min-height: 579px;
+  background: url("../image/plane_1.jpg") 50% 50% no-repeat;
+  background-size: cover;
+  overflow: hidden; }
+  .bl_map iframe {
+    width: 100%;
+    min-height: 579px;
+    height: 100%; }
+    .bl_map iframe:after {
+      content: none; }
+
 /*********************************************/
 /*FOOTER*/
 /*********************************************/

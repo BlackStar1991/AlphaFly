@@ -190,8 +190,6 @@ button {
   margin-top: 20px;
   margin-bottom: 10px;
 
-
-
   color: #fff;
   font-family: $ArialNarrow;
   font-size: 24px;
@@ -645,7 +643,7 @@ $ml: 5%;
 
   display: block;
   margin-top: 28px;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   line-height: 24px;
   height: 120px;
 
@@ -733,12 +731,10 @@ $ml: 5%;
     text-decoration: underline;
   }
 }
-.slider_classicGenre__link.slider_classicGenre__link_correctIfMark{
+
+.slider_classicGenre__link.slider_classicGenre__link_correctIfMark {
   text-indent: 104px;
 }
-
-
-
 
 .bl_classicsGenre .bl_mark__correct {
   top: 19%;
@@ -864,7 +860,7 @@ $ml: 5%;
 }
 
 .button_buy,
-.button_review{
+.button_review {
 
   vertical-align: top;
   margin-top: 2px;
@@ -885,7 +881,6 @@ $ml: 5%;
     transition: all, 0.2s;
   }
 }
-
 
 ////////// block Advantages
 
@@ -945,9 +940,7 @@ $ml: 5%;
   }
 }
 
-
 .decor-likeLabel {
-
 
   &:before {
     position: absolute;
@@ -1952,15 +1945,13 @@ $ml: 5%;
 
 // Product Images
 
-.bl_product__FullImages{
+.bl_product__FullImages {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
-
 
 .bl_product__images {
   display: inline-block;
@@ -1982,7 +1973,7 @@ $ml: 5%;
   cursor: pointer;
 }
 
-.bl_product__minImg{
+.bl_product__minImg {
   margin: 0 auto;
   width: 100%;
 }
@@ -1998,9 +1989,10 @@ $ml: 5%;
 
   overflow: hidden;
 }
+
 //main product
 .bl_product__productSlider .mainProductSlickArrow-prev,
-.bl_product__productSlider .mainProductSlickArrow-next{
+.bl_product__productSlider .mainProductSlickArrow-next {
   position: absolute;
   height: 100%;
   width: 36px;
@@ -2010,7 +2002,7 @@ $ml: 5%;
   border: 1px solid #000;
   box-sizing: border-box;
   z-index: 2;
-  &:before{
+  &:before {
     content: "\f104";
     font-family: $FontAwesome;
     position: relative;
@@ -2022,10 +2014,11 @@ $ml: 5%;
     color: #fff;
   }
 }
-.bl_product__productSlider .mainProductSlickArrow-next{
+
+.bl_product__productSlider .mainProductSlickArrow-next {
   left: 100%;
- 
-  &:before{
+
+  &:before {
     content: "\f105";
     left: 10px;
   }
@@ -2358,7 +2351,7 @@ $ml: 5%;
   font-size: 28px;
 }
 
-.bl_options__fullParametrs{
+.bl_options__fullParametrs {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -2367,8 +2360,6 @@ $ml: 5%;
   min-height: 302px;
 
 }
-
-
 
 .bl_options__colors {
 
@@ -2401,19 +2392,18 @@ $ml: 5%;
   }
 }
 
-.decor_threeLine{
+.decor_threeLine {
 
-  &:before{
+  &:before {
     position: absolute;
     left: 0;
     top: 0;
     content: "";
-    @include  sprite($icon-tree-lines);
+    @include sprite($icon-tree-lines);
     z-index: 3;
 
   }
 }
-
 
 .bl_options__colors .filter_color__fullColors {
   width: 100%;
@@ -2437,21 +2427,17 @@ $ml: 5%;
 
   box-sizing: border-box;
 
-
 }
-
-
-
 
 ///////////////
 
-.bl_productAdvantages{
+.bl_productAdvantages {
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   width: 100%;
-  min-height:204px;
+  min-height: 204px;
   margin-top: 70px;
   margin-bottom: 70px;
 
@@ -2466,21 +2452,20 @@ $ml: 5%;
   justify-content: space-between;
 }
 
-.bl_productAdvantages__original{
+.bl_productAdvantages__original {
   display: block;
   @include sprite($laib-100proc);
 }
 
-.bl_productAdvantages__showroom{
+.bl_productAdvantages__showroom {
   display: block;
   @include sprite($laib-showroom);
 }
 
-.bl_productAdvantages__delivery{
+.bl_productAdvantages__delivery {
   display: block;
   @include sprite($laib-free-delivery);
 }
-
 
 ////////
 
@@ -2550,17 +2535,19 @@ $ml: 5%;
   font-weight: 400;
   line-height: 24px;
 }
+
 ///////////// #tab-sizes
-#tab-sizes{
+#tab-sizes {
   width: 100%;
   padding-top: 18px;
 }
 
-.clothes_sizes{
+.clothes_sizes {
   width: 100%;
 
 }
-.clothes_sizes th{
+
+.clothes_sizes th {
   text-align: center;
   vertical-align: middle;
   font-family: $ArialBold;
@@ -2570,122 +2557,120 @@ $ml: 5%;
   letter-spacing: -0.12px;
 }
 
-.clothes_sizes td{
+.clothes_sizes td {
 
   text-align: center;
   font-size: 14px;
   font-weight: 400;
   line-height: 36px;
 }
-.clothes_sizes tr:nth-of-type(even){
+
+.clothes_sizes tr:nth-of-type(even) {
   background-color: $color_table;
 }
 
-.clothes_sizes__text{
+.clothes_sizes__text {
   position: relative;
   margin-top: 8px;
   font-size: 15px;
   padding-left: 10px;
-  font-weight:bold;
+  font-weight: bold;
   line-height: 16px;
 }
 
-
-.clothes_description__full{
+.clothes_description__full {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
-.clothes_body{
+.clothes_body {
   position: relative;
   //margin-right: 20px;
   //float: left;
   @include sprite($body-clothes);
-  min-width:146px;
+  min-width: 146px;
 }
 
-.clothes_body__neck{
+.clothes_body__neck {
   opacity: 0;
   position: absolute;
   top: 68px;
   left: 50px;
   @include sprite($elem-neck);
 }
-.clothes_body__chest{
+
+.clothes_body__chest {
   opacity: 0;
   position: absolute;
   top: 86px;
   @include sprite($elem-chest);
 }
-.clothes_body__waist{
+
+.clothes_body__waist {
   opacity: 0;
-  top:136px;
+  top: 136px;
   position: absolute;
   @include sprite($elem-waist);
 }
-.clothes_body__sleeve{
+
+.clothes_body__sleeve {
   opacity: 0;
   position: absolute;
   top: 82px;
   right: 6px;
   @include sprite($elem-sleeve);
 }
-.clothes_body__hip{
+
+.clothes_body__hip {
   opacity: 0;
   position: absolute;
   top: 170px;
   @include sprite($elem-hip);
 }
 
-.clothes_body__show{
-  opacity:1;
+.clothes_body__show {
+  opacity: 1;
 }
 
-
-
-.clothes_description{
+.clothes_description {
   //float: left;
-  max-width:374px;
+  max-width: 374px;
   width: 100%;
 }
 
-
-.clothes_description__item{
+.clothes_description__item {
   //width: 100%;
   display: block;
 
   margin-top: 6px;
-  padding:4px 10px;
+  padding: 4px 10px;
   box-sizing: border-box;
-  border: 1px dashed rgba(0,0,0,0);
+  border: 1px dashed rgba(0, 0, 0, 0);
   cursor: pointer;
 
-  &:first-child{
+  &:first-child {
     margin: 0;
     padding-top: 0;
   }
 
-  &:hover{
+  &:hover {
     border-color: $color_oliv;
   }
 }
 
-.clothes_description__title{
+.clothes_description__title {
 
   font-size: 14px;
   text-transform: uppercase;
   line-height: 24px;
 }
 
-
-.clothes_description__text{
+.clothes_description__text {
   font-size: 14px;
   line-height: 14px;
 }
-
-
 
 //
 .bl_similarProducts {
@@ -2700,23 +2685,22 @@ $ml: 5%;
   margin-bottom: 60px;
 }
 
-
 //// Reviews Отзывы
 
-.review_allReview{
+.review_allReview {
   position: relative;
   width: 100%;
   margin-bottom: 10px;
 }
 
-.review_item{
+.review_item {
   width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
 
 }
 
-.review_item__userName{
+.review_item__userName {
   position: relative;
   text-indent: 32px;
   line-height: 30px;
@@ -2725,15 +2709,17 @@ $ml: 5%;
   font-size: 18px;
 
 }
-.review_item__time{
+
+.review_item__time {
   float: right;
 }
-.review_item__raiting{
+
+.review_item__raiting {
   font-size: 18px;
   font-family: $ArialBold;
 }
 
-.review_item__fullReview{
+.review_item__fullReview {
   width: 100%;
   margin-top: 5px;
   margin-left: 10px;
@@ -2741,51 +2727,49 @@ $ml: 5%;
   border-left: 2px solid #000;
 }
 
-
-.review_product__form{
+.review_product__form {
   width: 100%;
   display: none;
 }
 
-
-.review_empty{
+.review_empty {
   color: $color_red;
   font-size: 18px;
 }
 
-.review_product{
+.review_product {
   width: 100%;
   margin-top: 10px;
 
 }
-.review_product__title{
+
+.review_product__title {
   display: inline-block;
   padding-right: 15px;
   text-align: center;
 }
 
-.review_product__bold{
+.review_product__bold {
   font-size: 18px;
   font-family: $ArialBold;
 }
 
-.bl_review__raitingFull{
+.bl_review__raitingFull {
   display: inline-block;
 }
 
-.review_text{
+.review_text {
   vertical-align: top;
   color: #f00;
 
 }
 
-.bl_review__raiting .bl_review__raitingFull{
+.bl_review__raiting .bl_review__raitingFull {
   margin-top: 0;
 
 }
 
 // POPUP BIFORE ADD TO SHOPBAG
-
 
 .TEST_BUTTON { //////////////////////////
   width: 50px;
@@ -2886,27 +2870,27 @@ $ml: 5%;
 
 ////////// BLOG
 
-.bl_blog{
+.bl_blog {
   width: 100%;
 }
 
-.bl_blog__new{
+.bl_blog__new {
   position: relative;
   margin-top: 68px;
   width: 100%;
 
-  &:nth-of-type(1){
+  &:nth-of-type(1) {
     margin-top: 0;
   }
 }
 
-.bl_blog__fullImage{
+.bl_blog__fullImage {
   position: relative;
   width: 100%;
-  max-width:777px;
+  max-width: 777px;
 }
 
-.bl_blog__time{
+.bl_blog__time {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -2923,8 +2907,7 @@ $ml: 5%;
   opacity: 0.8;
 }
 
-
-.bl_blog__day{
+.bl_blog__day {
   display: block;
   width: 100%;
   font-size: 52px;
@@ -2932,29 +2915,28 @@ $ml: 5%;
 
 }
 
-.bl_blog__month{
+.bl_blog__month {
   width: 100%;
   display: block;
   font-size: 30px;
   line-height: 36px;
 }
 
-.bl_blog__year{
+.bl_blog__year {
   width: 100%;
   display: block;
   font-size: 34px;
   line-height: 36px;
 }
 
-.bl_blog__image{
+.bl_blog__image {
   width: 100%;
 }
 
-.bl_blog__about{
+.bl_blog__about {
   position: absolute;
   top: 0;
   right: 0;
-
 
   width: 100%;
   padding: 24px 5% 10px 35px;
@@ -2965,7 +2947,7 @@ $ml: 5%;
   background-color: #fff;
 }
 
-.bl_blog__name{
+.bl_blog__name {
   display: block;
   width: 100%;
   color: #000;
@@ -2976,7 +2958,7 @@ $ml: 5%;
   text-transform: uppercase;
 }
 
-.bl_blog__shortDescription{
+.bl_blog__shortDescription {
   position: relative;
   width: 100%;
   height: 100px;
@@ -2986,7 +2968,7 @@ $ml: 5%;
   overflow: hidden;
 }
 
-.link_moreInfo{
+.link_moreInfo {
   position: relative;
   float: right;
   width: 222px;
@@ -2999,26 +2981,24 @@ $ml: 5%;
 
   text-transform: uppercase;
   text-align: center;
-  
+
   &:hover,
-  &:focus{
+  &:focus {
     //background-color: $color_oliv;
     color: #fff;
   }
 }
 
-
 ///////////// Статья
 
-
-.bl_news{
+.bl_news {
   position: relative;
   width: 100%;
   padding-bottom: 50px;
   box-shadow: 4px 12px 15px rgba(0, 0, 0, 0.16);
   background-color: #fff;
 
-  p{
+  p {
     padding: 0 40px;
     font-size: 16px;
     line-height: 28px;
@@ -3026,15 +3006,106 @@ $ml: 5%;
   }
 }
 
-.bl_news__fullImage{
+.bl_news__fullImage {
   position: relative;
   float: left;
   padding-right: 32px;
   padding-bottom: 20px;
   max-width: 668px;
 
-
 }
+
+////// Contacts Контакты
+
+.bl_contacts {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.bl_contacts_item{
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.bl_contacts__icon {
+  position: relative;
+  font-family: $FontAwesome;
+  font-size: 52px;
+  min-width: 112px;
+  min-height: 112px;
+  background-color: #000;
+  color: $color_grey;
+
+  &:before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.icon-adress{
+  &:before{
+    content: "\f041";
+  }
+}
+
+.icon-email{
+  &:before{
+    content: "\f003";
+  }
+}
+
+.icon-worktime{
+  &:before{
+    content: "\f073";
+  }
+}
+
+.icon-phone{
+  &:before{
+    content: "\f095";
+  }
+}
+
+.bl_contacts__description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-left: 24px;
+  width: 100%;
+  color: #000;
+  font-family: $ArialNarrow;
+}
+.bl_contacts__name{
+  font-size: 24px;
+}
+.bl_contacts__text{
+  font-size: 18px;
+}
+
+.bl_map{
+  position: relative;
+  width: 100%;
+  min-height:579px;
+  background: url("../image/plane_1.jpg") 50% 50% no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+  iframe{
+    width: 100%;
+    min-height:579px;
+    height: 100%;
+    &:after{
+      content: none;
+    }
+  }
+}
+
 
 
 
