@@ -702,18 +702,20 @@ $(document).ready(function () {
 
 ////// Product quantity
 
-    var quantityProduct = $(".block_quantity__input"),
-        plusProduct = $(".block_quantity__plus"),
-        minusProduct = $(".block_quantity__minus");
 
-    plusProduct.on("click", function () {
-        quantityProduct.val(Number(quantityProduct.val()) + 1);
+    $(".block_quantity__plus").on("click", function () {
+
+     var  quantityProduct = $(this).siblings(".block_quantity__input");
+
+        quantityProduct.val(Number( quantityProduct.val()) + 1);
     });
 
-    minusProduct.on("click", function () {
+    $(".block_quantity__minus").on("click", function () {
+
+        var  quantityProduct = $(this).siblings(".block_quantity__input");
 
         if (quantityProduct.val() > 1) {
-            quantityProduct.val(Number(quantityProduct.val()) - 1);
+            quantityProduct.val(Number( quantityProduct.val()) - 1);
         }
         else {
             quantityProduct.val(1);
