@@ -1161,6 +1161,12 @@ button {
   box-sizing: border-box;
   border-top: 2px solid white; }
 
+.main_header__fixed {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: #000; }
+
 .header_logo {
   width: 100%; }
 
@@ -1278,6 +1284,12 @@ button {
   width: 100%;
   min-height: 40px;
   background-color: #7f8000; }
+
+.bl_nav__fixed {
+  position: fixed;
+  width: 100%;
+  top: 101px;
+  z-index: 10; }
 
 .bl_nav__button {
   display: block;
@@ -2090,6 +2102,9 @@ button {
   width: calc(100% + 10px);
   margin-left: -5px; }
 
+.filter_size__fullSizes {
+  min-height: 96px !important; }
+
 .filter_item {
   float: left;
   width: 40px;
@@ -2580,7 +2595,8 @@ button {
   .pagination li.bl_pagination__item span {
     vertical-align: bottom; }
 
-.pagination li a.bl_pagination__link {
+.pagination li a.bl_pagination__link,
+.pagination li span.bl_pagination__link {
   display: block;
   height: 30px;
   padding: 0;
@@ -2729,7 +2745,6 @@ button {
   float: left;
   max-width: 350px;
   height: 100%;
-  max-height: 364px;
   border: 1px solid #000;
   box-sizing: border-box;
   overflow: hidden; }
@@ -2786,7 +2801,7 @@ button {
         transform: translateX(-50%);
     content: "\f106";
     font-family: "FontAwesome";
-    font-size: 20px; }
+    font-size: 18px; }
 
 .bl_product__verticalSlider.slick-slider .slickArrow-next {
   position: absolute;
@@ -2811,7 +2826,7 @@ button {
         transform: translateX(-50%);
     content: "\f107";
     font-family: "FontAwesome";
-    font-size: 20px; }
+    font-size: 18px; }
 
 .bl_characteristics {
   width: 100%; }
@@ -2864,7 +2879,8 @@ button {
     content: "";
     width: 22px;
     height: 21px;
-    background: url("../image/star_empty.svg") 50% 50% no-repeat; }
+    background: url("../image/star_empty.svg") 50% 50% no-repeat;
+    background-size: contain; }
   .bl_raiting__label:first-child {
     margin-left: 13px; }
 
@@ -2959,7 +2975,7 @@ button {
 
 .bl_minInformation {
   font-family: "Arial Narrow Bold", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 14px; }
 
 .bl_minInformation__availability {
@@ -3006,6 +3022,8 @@ button {
 .bl_minInformation__article {
   float: right;
   text-align: right; }
+  .bl_minInformation__article span:last-child {
+    font-size: 16px; }
 
 .bl_options__price {
   position: relative;
@@ -3086,8 +3104,8 @@ button {
       justify-content: center;
   width: 100%;
   min-height: 204px;
-  margin-top: 70px;
-  margin-bottom: 70px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   background: url("../image/plane_product.jpg") 50% 50% no-repeat;
   background-size: cover; }
 
@@ -3934,7 +3952,7 @@ button {
       justify-content: center; }
 
 .shoppingBasket_product__name {
-  text-align: center;
+  text-align: center !important;
   margin: 0 0 25px;
   font-size: 16px;
   color: #000; }
@@ -4121,6 +4139,9 @@ button {
     line-height: 20px;
     text-transform: uppercase; }
 
+.options .form-group {
+  margin-bottom: 0 !important; }
+
 /*********************************************/
 /*FOOTER*/
 /*********************************************/
@@ -4303,7 +4324,7 @@ button {
   content: "";
   width: 20px;
   height: 20px;
-  background: url("../image/icon_eagle.svg") 50% 50% no-repeat;
+  background: url(../image/icon_eagle.svg) 50% 50% no-repeat;
   z-index: 1000; }
 
 /*********************************************/

@@ -306,6 +306,14 @@
   box-sizing: border-box;
   border-top: 2px solid white;
 }
+.main_header__fixed{
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: #000;
+}
+
+
 
 
 .header_logo{
@@ -461,6 +469,13 @@
   min-height:40px;
   background-color: $color_oliv;
 }
+.bl_nav__fixed{
+  position: fixed;
+  width: 100%;
+  top: 101px; // Размер зависит от Height верхнего блока
+  z-index: 10;
+}
+
 
 
 .bl_nav__button{

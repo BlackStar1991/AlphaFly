@@ -1,22 +1,22 @@
-.footer{
+.footer {
   margin-top: 40px;
   background-color: #000;
   color: #fff;
 }
 
-.footer_firstPart{
+.footer_firstPart {
 
   padding-top: 20px;
   width: 100%;
 
 }
 
-.bl_navFooter{
+.bl_navFooter {
   width: 100%;
   padding-top: 28px;
 }
 
-.bl_navFooter__link{
+.bl_navFooter__link {
   display: block;
   width: 100%;
 
@@ -24,52 +24,50 @@
   font-family: $ArialNarrow;
   line-height: 30px;
   &:hover,
-  &:focus{
+  &:focus {
     color: #fff;
     text-decoration: underline;
   }
 }
 
-
-.bl_mainAdress{
+.bl_mainAdress {
 
   width: 100%;
   max-width: 346px;
   margin: 0 auto;
 }
-.bl_mainAdress__text{
+
+.bl_mainAdress__text {
   text-align: center;
 }
 
-.bl_mainAdress__link{
+.bl_mainAdress__link {
   width: 100%;
   display: block;
 }
 
-.bl_mainAdress__map{
+.bl_mainAdress__map {
   display: block;
-  max-width:140px;
+  max-width: 140px;
   margin: 10px auto 5px;
 
   transition: .25s linear all;
   transform: scale(1);
 
-  &:hover{
+  &:hover {
     transition: .25s linear all;
     transform: scale(1.2);
   }
 
 }
 
-
-
-.bl_subscribe{
+.bl_subscribe {
   margin-top: 20px;
   width: 100%;
   text-align: center;
 }
 
-.bl_subscribe__information{
+.bl_subscribe__information {
   display: block;
   width: 100%;
   max-width: 515px;
@@ -77,7 +75,7 @@
   text-align: center;
 }
 
-.bl_subscribe__fullInput{
+.bl_subscribe__fullInput {
   display: block;
   width: 100%;
 
@@ -85,28 +83,28 @@
   margin-bottom: 22px;
 }
 
-.bl_subscribe__input{
+.bl_subscribe__input {
   float: left;
   width: 60%;
-  max-width:400px;
+  max-width: 400px;
 
   height: 40px;
   color: #000;
   box-sizing: border-box;
   padding-left: 14px;
 
-  &::placeholder{
+  &::placeholder {
     color: #000;
     font-size: 14px;
     line-height: 50px;
   }
 }
 
-.bl_subscribe__button{
+.bl_subscribe__button {
   position: relative;
   float: left;
   width: 40%;
-  max-width:220px;
+  max-width: 220px;
 
   height: 40px;
   box-sizing: border-box;
@@ -119,16 +117,12 @@
   //  background-color: $color_red2;
   //}
 
-
 }
 
-
-
-.bl_subscribe__icon{
+.bl_subscribe__icon {
   display: none;
 
-
-  &:after{
+  &:after {
     position: absolute;
     top: 0;
 
@@ -137,57 +131,49 @@
     font-size: 28px;
     color: #fff;
 
-    z-index:3;
+    z-index: 3;
 
   }
 
 }
 
-
-.footer_firstPart__phones{
+.footer_firstPart__phones {
   float: right;
   margin: 32px auto 20px;
   text-align: center;
 }
 
-
-
-
-.footer_firstPart__phones .bl_phones__text{
+.footer_firstPart__phones .bl_phones__text {
   text-align: center;
 }
 
-.bl_phones__facebook{
+.bl_phones__facebook {
   clear: both;
   display: block;
   width: 26px;
-  margin: 0 auto ;
+  margin: 0 auto;
   color: #fff;
   font-size: 40px;
   transition: all 0.2s;
 
-  &:hover{
+  &:hover {
     color: $color_oliv;
     transition: all 0.2s;
   }
-  &:focus{
+  &:focus {
     color: #fff;
   }
 
 }
 
-
-
-
-
-.footer_secondPart{
+.footer_secondPart {
   width: 100%;
   min-height: 42px;
   background-color: #000;
   border-top: 2px solid white;
   box-sizing: border-box;
 
-  &__description{
+  &__description {
     width: 100%;
     display: inline-block;
     text-align: center;
@@ -196,14 +182,8 @@
   }
 }
 
-
-
-
-
-
-
-// ANCOR 
-.bl_ancor{
+// ANCOR
+.bl_ancor {
 
   position: fixed;
 
@@ -217,7 +197,7 @@
   z-index: 999;
 }
 
-.bl_ancor__link{
+.bl_ancor__link {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -235,26 +215,25 @@
   box-sizing: border-box;
   text-decoration: underline;
 
-  z-index:1000;
+  z-index: 1000;
 
   &:hover,
   &:focus,
-  &:active{
+  &:active {
     color: #000;
     text-decoration: underline;
   }
 }
 
-.bl_ancor__icon{
-  &:before{
+.bl_ancor__icon {
+  &:before {
     position: absolute;
     top: 0;
     left: 7px;
     content: "";
     width: 20px;
     height: 20px;
-    background: url("../image/icon_eagle.svg") 50% 50% no-repeat;
-    z-index:1000;
+    background: url(../image/icon_eagle.svg) 50% 50% no-repeat;
+    z-index: 1000;
   }
-
 }
