@@ -1926,7 +1926,10 @@ button {
   font-size: 17px;
   color: #000; }
 
-.button_buy, .button_review, .button_search {
+.button_simple,
+.button_buy,
+.button_review,
+.button_search {
   vertical-align: top;
   margin-top: 2px;
   margin-bottom: 5px;
@@ -1938,9 +1941,24 @@ button {
   background-color: #000;
   text-transform: uppercase;
   transition: all, 0.2s; }
-  .button_buy:hover, .button_review:hover, .button_search:hover {
+  .button_simple:hover,
+  .button_buy:hover,
+  .button_review:hover,
+  .button_search:hover {
     background-color: #7f8000;
     transition: all, 0.2s; }
+
+.button_simple {
+  max-width: 200px;
+  padding: 0;
+  margin-top: 10px; }
+
+.button_simple a,
+.button_simple span {
+  padding: 7px 16px;
+  display: block;
+  text-align: center;
+  color: #fff; }
 
 .bl_advantages {
   width: 100%;
@@ -2091,9 +2109,6 @@ button {
   max-width: 242px;
   box-sizing: border-box; }
 
-.filter_color {
-  width: 100%; }
-
 #option-13,
 #option-11 {
   margin-top: 5px;
@@ -2154,9 +2169,6 @@ button {
 
 .filter_label.selected .filter_size__box {
   background-color: #000; }
-
-.filter_price {
-  width: 100%; }
 
 .oc_filter {
   margin-top: 30px;
@@ -2262,22 +2274,9 @@ button {
   font-weight: normal;
   margin-left: 7%;
   display: inline-block; }
-  .bl_numberOfItemShow:after {
-    content: "\f0d7";
-    font-family: "FontAwesome";
-    position: absolute;
-    top: 3px;
-    right: 11px;
-    pointer-events: none;
-    box-sizing: border-box;
-    width: 10px;
-    height: 6px;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 400;
-    z-index: 5; }
 
 .bl_numberOfItemShow__select {
+  position: relative;
   width: 66px;
   height: 30px;
   margin-right: 6px;
@@ -3391,15 +3390,6 @@ button {
 
 .bl_review__raiting .bl_review__raitingFull {
   margin-top: 0; }
-
-.TEST_BUTTON {
-  width: 50px;
-  height: 50px;
-  position: fixed;
-  right: 30px;
-  bottom: 50px;
-  background-color: #f00;
-  cursor: pointer; }
 
 .popup_likeShopbag {
   position: fixed;
