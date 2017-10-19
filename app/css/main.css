@@ -1926,8 +1926,7 @@ button {
   font-size: 17px;
   color: #000; }
 
-.button_buy,
-.button_review {
+.button_buy, .button_review, .button_search {
   vertical-align: top;
   margin-top: 2px;
   margin-bottom: 5px;
@@ -1939,8 +1938,7 @@ button {
   background-color: #000;
   text-transform: uppercase;
   transition: all, 0.2s; }
-  .button_buy:hover,
-  .button_review:hover {
+  .button_buy:hover, .button_review:hover, .button_search:hover {
     background-color: #7f8000;
     transition: all, 0.2s; }
 
@@ -2228,7 +2226,8 @@ button {
   display: inline-block;
   position: relative;
   margin-top: 5px;
-  float: right; }
+  float: right;
+  font-weight: normal; }
 
 .bl_sorter__select {
   position: relative;
@@ -2237,6 +2236,7 @@ button {
   background-color: #000;
   color: #fff;
   border: 1px solid #fff;
+  font-weight: normal;
   box-sizing: border-box;
   cursor: pointer; }
 
@@ -2259,6 +2259,7 @@ button {
   position: relative;
   float: right;
   margin-top: 5px;
+  font-weight: normal;
   margin-left: 7%;
   display: inline-block; }
   .bl_numberOfItemShow:after {

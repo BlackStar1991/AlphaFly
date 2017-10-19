@@ -859,8 +859,7 @@ $ml: 5%;
   }
 }
 
-.button_buy,
-.button_review {
+.button_buy, .button_review, .button_search {
 
   vertical-align: top;
   margin-top: 2px;
@@ -1290,6 +1289,7 @@ $ml: 5%;
   position: relative;
   margin-top: 5px;
   float: right;
+  font-weight:normal;
 }
 
 .bl_sorter__select {
@@ -1299,6 +1299,7 @@ $ml: 5%;
   background-color: #000;
   color: #fff;
   border: 1px solid #fff;
+  font-weight:normal;
   box-sizing: border-box;
   cursor: pointer;
 }
@@ -1330,6 +1331,7 @@ $ml: 5%;
 
   float: right;
   margin-top: 5px;
+  font-weight: normal;
   margin-left: 7%; ////////
   display: inline-block;
 
@@ -1486,8 +1488,6 @@ $ml: 5%;
   float: left;
   width: 24.25%;
   margin-right: 1%;
-  //margin-top: 30px;
-  //margin-bottom: 30px;
   box-sizing: border-box;
   overflow: hidden;
 
@@ -1643,30 +1643,7 @@ $ml: 5%;
     color: #fff;
     border-color: #fff;
     box-sizing: border-box;
-
-    //&.icon_bookmarks{
-    //  &:after{
-    //    background-image: url("../image/icon_tab.svg");
-    //  }
-    //}
-    //
-    //&.icon_compare{
-    //  &:after{
-    //    background-image: url("../image/icon_compare.svg");
-    //  }
-    //}
-    //
-    //&.icon_lookAt{
-    //  &:after{
-    //    color:#fff;
-    //  }
-    //}
   }
-
-  //.button_buy {
-  //  padding: 7px 2px;
-  //  text-decoration: underline;
-  //}
 }
 
 .button_buy__classicGenre {
@@ -3688,6 +3665,8 @@ $ml: 5%;
 .options .form-group{
   margin-bottom: 0 !important;
 }
+
+//// Page Search
 
 
 
