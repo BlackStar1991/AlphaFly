@@ -131,6 +131,12 @@ button {
   color: $color_red;
 }
 
+.text_success{
+  text-align: center;
+  font-size: 16px;
+  color: #00b800;
+}
+
 /*********************************************/
 /*TYPOGRAPHY*/
 /*********************************************/
@@ -3517,7 +3523,7 @@ $ml: 5%;
   float: right;
   margin-top: 18px;
   margin-right: 1.29%;
-  max-width: 190px;
+  max-width: 210px;
 }
 
 .button_continueBuying__link,

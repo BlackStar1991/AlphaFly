@@ -936,6 +936,11 @@ button {
   font-size: 16px;
   color: #e50014; }
 
+.text_success {
+  text-align: center;
+  font-size: 16px;
+  color: #00b800; }
+
 /*********************************************/
 /*TYPOGRAPHY*/
 /*********************************************/
@@ -4030,7 +4035,7 @@ button {
   float: right;
   margin-top: 18px;
   margin-right: 1.29%;
-  max-width: 190px; }
+  max-width: 210px; }
 
 .button_continueBuying__link,
 .button_buyProduct__text {
