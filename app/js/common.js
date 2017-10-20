@@ -429,25 +429,25 @@ $(document).ready(function () {
                     vertical: false,
                     infinite: true
                 }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 4,
+                    prevArrow: '<div class="slickArrow-prev"></div>',
+                    nextArrow: '<div class="slickArrow-next"></div>',
+                    vertical: false
+                }
+            },
+            {
+                breakpoint: 320,
+                settings: {
+                    slidesToShow: 3,
+                    prevArrow: '<div class="slickArrow-prev"></div>',
+                    nextArrow: '<div class="slickArrow-next"></div>',
+                    vertical: false
+                }
             }
-            // {
-            //     breakpoint: 600,
-            //     settings: {
-            //         slidesToShow: 4,
-            //         prevArrow: '<div class="slickArrow-prev"></div>',
-            //         nextArrow: '<div class="slickArrow-next"></div>',
-            //         vertical: false
-            //     }
-            // },
-            // {
-            //     breakpoint: 320,
-            //     settings: {
-            //         slidesToShow: 3,
-            //         prevArrow: '<div class="slickArrow-prev"></div>',
-            //         nextArrow: '<div class="slickArrow-next"></div>',
-            //         vertical: false
-            //     }
-            // }
 
         ]
 

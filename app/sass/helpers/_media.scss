@@ -45,6 +45,7 @@
     float: none;
     width: 100%;
     min-height: 94px;
+    max-height: 150px;
   }
   .bl_product__verticalItem {
     margin-right: 5px;
@@ -100,6 +101,11 @@
   .bl_characteristics__title {
     clear: both;
     padding-top: 5px;
+  }
+
+
+  .bl_product__minImg{
+    max-width: initial;
   }
 
 }
@@ -279,6 +285,11 @@
   .bl_product__verticalSlider.slick-slider .slickArrow-prev.slick-arrow:before,
   .bl_product__verticalSlider.slick-slider .slickArrow-next.slick-arrow:before {
     top: 40%;
+  }
+
+
+  .bl_product__verticalSlider{
+    max-height:230px;
   }
 
   .bl_blog__about {

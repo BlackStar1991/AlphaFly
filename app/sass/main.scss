@@ -954,7 +954,7 @@ $ml: 5%;
     width: 60px;
     min-height: 40px;
 
-    background: url('data:image/svg+xml, <svg version="1.1" id="likeLine" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 40">  <polyline points="0,0 35,0 58,40 0,40 0,0" fill="#fff"/></svg>') 0 0 no-repeat;
+    background: url('data:image/svg+xml, <svg version="1.1" id="likeLine" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 40"><polyline fill="#ffffff" points="0,0 35,0 58,40 0,40 0,0"></polyline></svg>') 0 0 no-repeat;
     z-index: 3;
   }
 
@@ -1321,6 +1321,12 @@ $ml: 5%;
     z-index: 5;
   }
 }
+.bl_numberOfItemShow.icon_triangle{
+  &:after{
+    right: 11px;
+  }
+}
+
 
 .bl_numberOfItemShow {
   position: relative;
@@ -1579,9 +1585,12 @@ $ml: 5%;
   position: absolute;
   top: 15px;
   right: 15px;
-  z-index: 200;
 
+  width: 20px;
+  height: 20px;
+  background: none;
   visibility: hidden;
+  z-index: 2;
 }
 
 .bl_fullProducts__item:hover .button_bookmarks {
@@ -1927,9 +1936,13 @@ $ml: 5%;
   cursor: pointer;
 }
 
+
+
+
 .bl_product__minImg {
   margin: 0 auto;
   width: 100%;
+  max-width: 94px;
 }
 
 .bl_product__productSlider {
@@ -1937,7 +1950,7 @@ $ml: 5%;
   float: left;
   max-width: 350px;
   height: 100%;
-  //max-height: 364px;
+  max-height: 380px;
   border: 1px solid #000;
   box-sizing: border-box;
 
@@ -2045,7 +2058,7 @@ $ml: 5%;
 /// raiting
 
 .bl_raiting {
-  padding-right: 20px;
+  padding-right: 8px;
   display: inline-block;
   width: auto;
   margin-top: 24px;
