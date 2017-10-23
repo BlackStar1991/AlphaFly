@@ -1760,7 +1760,7 @@ button {
 .bl_classicsGenre {
   position: relative;
   width: 100%;
-  margin-top: 140px; }
+  margin-top: 86px; }
 
 .bl_classicsGenre__full {
   width: 100%; }
@@ -2000,7 +2000,7 @@ button {
   content: "";
   width: 60px;
   min-height: 40px;
-  background: url('data:image/svg+xml, <svg version="1.1" id="likeLine" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 40"><polyline fill="#ffffff" points="0,0 35,0 58,40 0,40 0,0"></polyline></svg>') 0 0 no-repeat;
+  background: url('data:image/svg+xml, <svg version="1.1" id="likeLine" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 40"><polyline fill="%23fff" points="0,0 35,0 58,40 0,40 0,0"></polyline></svg>') 0 0 no-repeat;
   z-index: 3; }
 
 .bl_breadcrumbs__wrapper {
@@ -2699,8 +2699,7 @@ button {
   transition: all 0.2s; }
 
 .bl_product {
-  width: 100%;
-  margin-top: 26px; }
+  width: 100%; }
 
 .bl_product__title {
   position: relative;
@@ -2887,8 +2886,8 @@ button {
     top: 0;
     left: 0;
     content: "";
-    width: 22px;
-    height: 21px;
+    width: 26px;
+    height: 24px;
     background: url("../image/star_empty.svg") 50% 50% no-repeat;
     background-size: contain; }
   .bl_raiting__label:first-child {
@@ -4328,6 +4327,26 @@ button {
   background: url(../image/icon_eagle.svg) 50% 50% no-repeat;
   z-index: 1000; }
 
+#marker {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  height: 0;
+  width: 0;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 80px solid #f00;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  line-height: 80px;
+  z-index: 2; }
+  #marker:after {
+    position: absolute;
+    content: "Layout";
+    -ms-transform: translate(-150%, -50%);
+        transform: translate(-150%, -50%); }
+
 /*********************************************/
 /*@IMPORT MEDIA*/
 /*********************************************/
@@ -4530,6 +4549,8 @@ button {
     width: 49%; }
     .bl_fullProducts__item:nth-of-type(2n) {
       margin-right: 1%; }
+  .bl_classicsGenre {
+    margin-top: 40px; }
   .bl_product__productSlider {
     float: none;
     overflow: visible;

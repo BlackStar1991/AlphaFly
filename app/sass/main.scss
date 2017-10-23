@@ -638,7 +638,7 @@ $ml: 5%;
   position: relative;
   width: 100%;
 
-  margin-top: 140px;
+  margin-top: 86px;
 }
 
 .bl_classicsGenre__full {
@@ -960,7 +960,7 @@ $ml: 5%;
     width: 60px;
     min-height: 40px;
 
-    background: url('data:image/svg+xml, <svg version="1.1" id="likeLine" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 40"><polyline fill="#ffffff" points="0,0 35,0 58,40 0,40 0,0"></polyline></svg>') 0 0 no-repeat;
+    background: url('data:image/svg+xml, <svg version="1.1" id="likeLine" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 40"><polyline fill="%23fff" points="0,0 35,0 58,40 0,40 0,0"></polyline></svg>') 0 0 no-repeat;
     z-index: 3;
   }
 
@@ -1890,7 +1890,7 @@ $ml: 5%;
 
 .bl_product {
   width: 100%;
-  margin-top: 26px;
+  //margin-top: 26px;
 }
 
 .bl_product__title {
@@ -2122,8 +2122,8 @@ $ml: 5%;
     top: 0;
     left: 0;
     content: "";
-    width: 22px;
-    height: 21px;
+    width: 26px; ///22
+    height: 24px; //21
     background: url("../image/star_empty.svg") 50% 50% no-repeat;
     background-size: contain;
     //z-index: 2;
@@ -3157,10 +3157,7 @@ $ml: 5%;
 .bl_callBackForm__capch{
   display: block;
   margin: 14px auto 0;
-  
-  max-width:308px;
-  height: 20px;
-  border: 1px solid #000;
+  max-width:384px;
 }
 
 
