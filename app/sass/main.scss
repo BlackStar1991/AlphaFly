@@ -131,7 +131,7 @@ button {
   color: $color_red;
 }
 
-.text_success{
+.text_success {
   text-align: center;
   font-size: 16px;
   color: #00b800;
@@ -868,7 +868,7 @@ $ml: 5%;
 .button_simple,
 .button_buy,
 .button_review,
-.button_search{
+.button_search {
 
   vertical-align: top;
   margin-top: 2px;
@@ -890,22 +890,39 @@ $ml: 5%;
   }
 }
 
+.button_remove {
+  display: block;
+  position: relative;
+  color: #fff;
+  width: 34px;
+  height: 34px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  background-color: #f00;
+  border-radius: 4px;
 
-.button_simple{
-  max-width:200px;
+}
+
+.wishlist_page .button_remove {
+  float: right;
+  text-align: center;
+  margin-top: 4px;
+  margin-right: 10px;
+}
+
+.button_simple {
+  max-width: 200px;
   padding: 0;
   margin-top: 10px;
 }
 
 .button_simple a,
-.button_simple span{
+.button_simple span {
   padding: 7px 16px;
   display: block;
   text-align: center;
   color: #fff;
 }
-
-
 
 ////////// block Advantages
 
@@ -1108,8 +1125,6 @@ $ml: 5%;
 
 /////// Filter Colors
 
-
-
 //.filter_color__fullColors,
 //.filter_size__fullSizes {
 //  margin-top: 5px;
@@ -1118,24 +1133,24 @@ $ml: 5%;
 //}
 
 #option-13,
-#option-11{
+#option-11 {
   margin-top: 5px;
   width: calc(100% + 10px);
   margin-left: -5px;
 }
 
-.filter_size__fullSizes{
+.filter_size__fullSizes {
   min-height: 96px !important;
 }
 
-.filter_item{
+.filter_item {
   float: left;
   width: 40px;
   height: 40px;
   margin: 3.5px;
 }
 
-.filter_label{
+.filter_label {
   position: relative;
   width: 100%;
   height: 100%;
@@ -1143,7 +1158,7 @@ $ml: 5%;
   box-sizing: border-box;
 }
 
-.filter_checkbox{
+.filter_checkbox {
   position: absolute;
   top: 10px;
   left: 14px;
@@ -1153,11 +1168,10 @@ $ml: 5%;
 .filter_checkbox:checked + .filter_color__image {
   border-color: #000;
 }
-.filter_label.selected .filter_color__image{
+
+.filter_label.selected .filter_color__image {
   border-color: #000;
 }
-
-
 
 .filter_color__image {
   width: 100%;
@@ -1190,7 +1204,7 @@ $ml: 5%;
   background-color: #000;
 }
 
-.filter_label.selected .filter_size__box{
+.filter_label.selected .filter_size__box {
   background-color: #000;
 }
 
@@ -1291,7 +1305,7 @@ $ml: 5%;
   position: relative;
   margin-top: 5px;
   float: right;
-  font-weight:normal;
+  font-weight: normal;
 }
 
 .bl_sorter__select {
@@ -1301,7 +1315,7 @@ $ml: 5%;
   background-color: #000;
   color: #fff;
   border: 1px solid #fff;
-  font-weight:normal;
+  font-weight: normal;
   box-sizing: border-box;
   cursor: pointer;
 }
@@ -1327,12 +1341,12 @@ $ml: 5%;
     z-index: 5;
   }
 }
-.bl_numberOfItemShow.icon_triangle{
-  &:after{
+
+.bl_numberOfItemShow.icon_triangle {
+  &:after {
     right: 11px;
   }
 }
-
 
 .bl_numberOfItemShow {
   position: relative;
@@ -1768,9 +1782,10 @@ $ml: 5%;
 
   li {
     a.bl_pagination__link,
-    span.bl_pagination__link{
+    span.bl_pagination__link {
       display: block;
       height: 30px;
+      min-width: 30px;
       padding: 0;
       margin: 0;
       float: none;
@@ -1826,7 +1841,7 @@ $ml: 5%;
     &:focus,
     &:active {
       border-right: 1px solid $color_grey2;
-      color: #000!important;
+      color: #000 !important;
     }
   }
 }
@@ -1938,12 +1953,8 @@ $ml: 5%;
 
 .bl_product__verticalItem {
   width: 100%;
-  //margin-bottom: 2px;
   cursor: pointer;
 }
-
-
-
 
 .bl_product__minImg {
   margin: 0 auto;
@@ -2126,7 +2137,6 @@ $ml: 5%;
     height: 24px; //21
     background: url("../image/star_empty.svg") 50% 50% no-repeat;
     background-size: contain;
-    //z-index: 2;
   }
 
   &:first-child {
@@ -2302,14 +2312,13 @@ $ml: 5%;
     line-height: 20px;
     border-radius: 50%;
     text-align: center;
-
   }
 }
 
 .bl_minInformation__article {
   float: right;
   text-align: right;
-  span:last-child{
+  span:last-child {
     font-size: 16px;
   }
 }
@@ -2338,9 +2347,6 @@ $ml: 5%;
 
 }
 
-.bl_options__colors {
-
-}
 
 .bl_options__title {
   margin-top: 12px;
@@ -2990,7 +2996,7 @@ $ml: 5%;
   margin-top: 60px;
 }
 
-.bl_contacts_item{
+.bl_contacts_item {
   width: 100%;
   margin-bottom: 50px;
   display: flex;
@@ -3007,7 +3013,7 @@ $ml: 5%;
   background-color: #000;
   color: $color_grey;
 
-  &:before{
+  &:before {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -3015,31 +3021,31 @@ $ml: 5%;
   }
 }
 
-.icon-adress{
-  &:before{
+.icon-adress {
+  &:before {
     content: "\f041";
   }
 }
 
-.icon-email{
-  &:before{
+.icon-email {
+  &:before {
     content: "\f003";
   }
 }
 
-.icon-worktime{
-  &:before{
+.icon-worktime {
+  &:before {
     content: "\f073";
   }
 }
 
-.icon-phone{
-  &:before{
+.icon-phone {
+  &:before {
     content: "\f095";
   }
 }
 
-.bl_contacts__description{
+.bl_contacts__description {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -3049,42 +3055,42 @@ $ml: 5%;
   color: #000;
   font-family: $ArialNarrow;
 }
-.bl_contacts__name{
+
+.bl_contacts__name {
   font-size: 24px;
 }
-.bl_contacts__text{
+
+.bl_contacts__text {
   font-size: 18px;
 }
 
-.bl_map{
+.bl_map {
   position: relative;
   width: 100%;
-  min-height:579px;
+  min-height: 579px;
   background: url("../image/plane_1.jpg") 50% 50% no-repeat;
   background-size: cover;
   overflow: hidden;
 
-  iframe{
+  iframe {
     width: 100%;
-    min-height:579px;
+    min-height: 579px;
     height: 100%;
-    &:after{
+    &:after {
       content: none;
     }
   }
 }
 
-
 ////// CallBack Form
 
-.bl_callBackForm{
+.bl_callBackForm {
   position: relative;
   margin-top: 60px;
   width: 100%;
 }
 
-
-.bl_callBackForm__form{
+.bl_callBackForm__form {
   position: relative;
   display: block;
   margin: 0 auto;
@@ -3099,8 +3105,7 @@ $ml: 5%;
   background-color: #fff;
 }
 
-
-.bl_callBackForm__text{
+.bl_callBackForm__text {
   text-align: center;
   font-family: $ArialBold;
   font-size: 32px;
@@ -3108,31 +3113,29 @@ $ml: 5%;
   text-transform: uppercase;
 }
 
-.bl_callBackForm__input{
+.bl_callBackForm__input {
   position: relative;
   display: block;
   margin-top: 32px;
   width: 100%;
   outline: none;
-  border:none;
+  border: none;
   border-bottom: 2px solid black;
 
-
-
-  &::placeholder{
+  &::placeholder {
     color: #000;
     font-family: $ArialNarrow;
     font-size: 16px;
     line-height: 24px;
   }
-  &:focus{
-    &::placeholder{
-     opacity: 0;
+  &:focus {
+    &::placeholder {
+      opacity: 0;
     }
   }
 }
 
-.bl_callBackForm__textarea{
+.bl_callBackForm__textarea {
   display: block;
   margin-top: 32px;
   width: 100%;
@@ -3140,34 +3143,31 @@ $ml: 5%;
   border: 2px solid #000;
   box-sizing: border-box;
 
-  &::placeholder{
+  &::placeholder {
     color: #000;
     font-family: $ArialNarrow;
     font-size: 16px;
     line-height: 24px;
   }
-  &:focus{
-    &::placeholder{
+  &:focus {
+    &::placeholder {
       opacity: 0;
     }
   }
 
 }
 
-.bl_callBackForm__capch{
+.bl_callBackForm__capch {
   display: block;
   margin: 14px auto 0;
-  max-width:384px;
+  max-width: 384px;
 }
 
-
-.bl_callBackForm__button{
+.bl_callBackForm__button {
   display: block;
   margin: 24px auto 0;
   float: none;
 }
-
-
 
 // SHOPING BAG
 
@@ -3236,7 +3236,6 @@ $ml: 5%;
     line-height: 30px;
   }
 }
-
 
 .shoppingBasket_label {
   position: relative;
@@ -3413,7 +3412,7 @@ $ml: 5%;
 }
 
 .shoppingBasket_product__name {
-  text-align: center!important;
+  text-align: center !important;
   margin: 0 0 25px;
   font-size: 16px;
   color: #000;
@@ -3515,7 +3514,6 @@ $ml: 5%;
   padding: 4px 43px;
 }
 
-
 .button_continueBuying__corrected {
   float: right;
   margin-top: 18px;
@@ -3570,7 +3568,6 @@ $ml: 5%;
   text-align: center;
 
 }
-
 
 .block_quantity__box {
   position: relative;
@@ -3628,13 +3625,18 @@ $ml: 5%;
   }
 }
 
-.options .form-group{
+.options .form-group {
   margin-bottom: 0 !important;
 }
 
 //// Page Search
 
+///// Page Wishlist (Закладки)
 
+.wishlist_page .table td {
+  text-align: center;
+  vertical-align: middle;
+}
 
 /*********************************************/
 /*FOOTER*/

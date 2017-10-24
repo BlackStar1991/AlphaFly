@@ -1183,11 +1183,13 @@ button {
 .header_logo__image {
   display: block;
   margin: 0 auto;
-  width: 100%; }
+  width: 100%;
+  max-width: 160px; }
 
 .header_logo__title {
   color: #fff;
-  margin: 0;
+  margin-top: 6px;
+  margin-bottom: 0;
   font-size: 14px;
   text-align: right; }
 
@@ -1357,7 +1359,12 @@ button {
   height: 100%; }
 
 .bl_nav__fullItems {
-  display: inline-block;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
   width: 100%;
   line-height: 40px; }
 
@@ -1949,6 +1956,23 @@ button {
   .button_search:hover {
     background-color: #7f8000;
     transition: all, 0.2s; }
+
+.button_remove {
+  display: block;
+  position: relative;
+  color: #fff;
+  width: 34px;
+  height: 34px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  background-color: #f00;
+  border-radius: 4px; }
+
+.wishlist_page .button_remove {
+  float: right;
+  text-align: center;
+  margin-top: 4px;
+  margin-right: 10px; }
 
 .button_simple {
   max-width: 200px;
@@ -2607,6 +2631,7 @@ button {
 .pagination li span.bl_pagination__link {
   display: block;
   height: 30px;
+  min-width: 30px;
   padding: 0;
   margin: 0;
   float: none;
@@ -3750,9 +3775,7 @@ button {
 .bl_callBackForm__capch {
   display: block;
   margin: 14px auto 0;
-  max-width: 308px;
-  height: 20px;
-  border: 1px solid #000; }
+  max-width: 384px; }
 
 .bl_callBackForm__button {
   display: block;
@@ -4142,6 +4165,10 @@ button {
 .options .form-group {
   margin-bottom: 0 !important; }
 
+.wishlist_page .table td {
+  text-align: center;
+  vertical-align: middle; }
+
 /*********************************************/
 /*FOOTER*/
 /*********************************************/
@@ -4205,10 +4232,11 @@ button {
   text-align: center; }
 
 .bl_subscribe__fullInput {
-  display: block;
+  display: inline-block;
   width: 100%;
-  margin-top: 18px;
-  margin-bottom: 22px; }
+  min-width: 320px;
+  max-width: 560px;
+  margin: 20px auto; }
 
 .bl_subscribe__input {
   float: left;
@@ -4589,7 +4617,12 @@ button {
   .decor-likeLabel:before {
     content: none; }
   .icon-star:after {
-    content: none; } }
+    content: none; }
+  .bl_navFooter {
+    padding-top: 0;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    min-height: 100px; } }
 
 /* Extra Small Devices, Phones 480px */
 @media only screen and (max-width: 480px) {

@@ -383,13 +383,13 @@ $(document).ready(function () {
 
         if (body.width() >= 1200) {
             $(".bl_product__productSlider .slick-active .bl_product_image").elevateZoom({
+                cursor: "pointer",
                 borderSize: 2,
                 borderColour: "#7f8000"
             });
         }else if ( (body.width() < 1200) && (body.width() > 768) ) {
             $(".bl_product__productSlider .slick-active .bl_product_image").elevateZoom({
-                zoomType: "inner",
-                cursor: "crosshair"
+                zoomType: "inner"
             });
         }else {
             return false;
@@ -401,6 +401,23 @@ $(document).ready(function () {
 
 
 
+    $('.popup-gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        tLoading: 'Загрузка изображения #%curr%...',
+
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+        },
+        image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+            titleSrc: function (item) {
+                return item.el.attr('title');
+            }
+        }
+    });
 
 
 

@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="bower/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="bower/slick-carousel/slick/slick.css">
-    
+    <link rel="stylesheet" href="bower/magnific-popup/dist/magnific-popup.css">
     <!-- endbuild -->
 
     <!-- build:css css/main.min.css -->
@@ -35,10 +35,12 @@
 </head>
 
 <body class="body">
+
 <!--[if lt IE 10]>
 <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="http://browsehappy.com/">обновите</a>
     его.</p>
 <![endif]-->
+
 
 <!-- ======================================  HEADER ========================================================== -->
 <header id="header" class="header">
@@ -99,7 +101,7 @@
                     <div class="col-md-2">
                         <div class="header_logo">
                             <a href="#" class="header_logo__link">
-                                <img class="header_logo__image" src="image/logo.png" alt="">
+                                <img class="header_logo__image" src="image/log_Alpha.svg" alt="">
                                 <h2 class="header_logo__title">от компании Alpha FLY</h2>
                             </a>
                         </div>
@@ -129,7 +131,9 @@
                                 <span class="bl_shopBag__price">(9999999 грн)</span>
                             </p>
                             <svg class="bl_shopBag__image" viewBox="0 0 44 40">
-                                <path id="icon_bag" class="cls-1" d="M1529.48,86.074h40.74v4.444h-40.74V86.074Zm40.74,11.851V92h-40.74v12.592a0.739,0.739,0,0,0,.74.741h5.21a3.7,3.7,0,1,0,4.4,0h15.6a3.7,3.7,0,1,0,4.4,0h4.47a0.741,0.741,0,0,0,0-1.481h-33.34V97.925h39.26Zm-43.7-24.443h2.96v11.11h40.74V78.667h-39.26V72.741a0.739,0.739,0,0,0-.74-0.741h-3.7A0.741,0.741,0,0,0,1526.52,73.481Z" transform="translate(-1525.78 -72)"/>
+                                <path id="icon_bag" class="cls-1"
+                                      d="M1529.48,86.074h40.74v4.444h-40.74V86.074Zm40.74,11.851V92h-40.74v12.592a0.739,0.739,0,0,0,.74.741h5.21a3.7,3.7,0,1,0,4.4,0h15.6a3.7,3.7,0,1,0,4.4,0h4.47a0.741,0.741,0,0,0,0-1.481h-33.34V97.925h39.26Zm-43.7-24.443h2.96v11.11h40.74V78.667h-39.26V72.741a0.739,0.739,0,0,0-.74-0.741h-3.7A0.741,0.741,0,0,0,1526.52,73.481Z"
+                                      transform="translate(-1525.78 -72)"/>
                             </svg>
 
                         </a>
@@ -149,15 +153,23 @@
                                     <button class="bl_nav__button_subCategory icon_arrowSubmenu  hidden-md hidden-lg"></button>
                                     <!-- Кнопку добавлять только есть подкатигории в категории -->
                                     <ul class="bl_nav__subCategory">
-                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Куртки, пальто</a></li>
-                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Рубашки, регланы</a></li>
-                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Футболки, майки</a></li>
+                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Куртки, пальто</a>
+                                        </li>
+                                        <li class="bl_nav__subItem"><a href="#"
+                                                                       class="bl_nav__link">Рубашки, регланы</a></li>
+                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Футболки, майки</a>
+                                        </li>
                                         <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Носки</a></li>
-                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Мужские брюки, штаны, шорты</a></li>
-                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Спортирные костюмы</a></li>
+                                        <li class="bl_nav__subItem"><a href="#"
+                                                                       class="bl_nav__link">Мужские брюки, штаны, шорты</a>
+                                        </li>
+                                        <li class="bl_nav__subItem"><a href="#"
+                                                                       class="bl_nav__link">Спортирные костюмы</a></li>
                                         <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Термобелье</a></li>
-                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Жилетки, безрукавки</a></li>
-                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Перчатки, шарфы</a></li>
+                                        <li class="bl_nav__subItem"><a href="#"
+                                                                       class="bl_nav__link">Жилетки, безрукавки</a></li>
+                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Перчатки, шарфы</a>
+                                        </li>
                                     </ul>
 
                                 </li>
@@ -919,13 +931,13 @@
                         <a class="bl_navFooter__link" href="#">Выбор размера</a>
                     </nav>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-8">
                     <div class="bl_mainAdress">
                         <p class="bl_mainAdress__text">г. Киев, м."Лесная",</p>
                         <p class="bl_mainAdress__text">ул. Беломорская, 1, ЦТ "Дарынок", зал Г, магазин ДЛ-8</p>
-                        <a class="bl_mainAdress__link" href="" title="">
-                            <img class="bl_mainAdress__map" src="image/map.png" alt="">
-                        </a>
+                        <!--<a class="bl_mainAdress__link" href="" title="">-->
+                        <!--<img class="bl_mainAdress__map" src="image/map.png" alt="">-->
+                        <!--</a>-->
 
                     </div>
 
@@ -950,7 +962,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-2 col-md-offset-1 hidden-xs">
+                <div class="col-md-2 hidden-xs">
                     <div class="bl_phones footer_firstPart__phones clearfix">
                         <p class="bl_phones__text">+38 (096) 111-22-33</p>
                         <p class="bl_phones__text">+38 (050) 222-33-44</p>
@@ -974,6 +986,7 @@
         </div>
 
     </div>
+
 </footer>
 
 
@@ -986,8 +999,6 @@
 </div>
 
 <!-- POPUP BIFORE ADD TO SHOPBAG-->
-
-<div class="TEST_BUTTON"></div>  <!--  уберешь эту кнопку и повесешь собитие на то что тебе надо-->
 
 <div class="popup_likeShopbag hidden">
     <div class="wrapperBlock">
@@ -1005,16 +1016,17 @@
             <button  class="button_buyProduct popup_likeShopbag__continueBuying">
                 <span class="button_buyProduct__text popup_likeShopbag__buttons_text">Продолжить покупки</span>
             </button>
-            <button  class="button_buyProduct popup_likeShopbag__goToShopbag">
+            <div  class="button_buyProduct popup_likeShopbag__goToShopbag">
                 <a href="#" class="button_buyProduct__text popup_likeShopbag__goToShopbag_text">Оформление заказа</a>
-            </button>
+            </div>
         </div>
 
     </div>
 </div>
 
-
 <div class="blackWrapper hidden"></div>
+
+
 
 
 <script src="libs/jquery.min.js"></script>
@@ -1027,6 +1039,7 @@
 <script src="bower/jquery.maskedinput/dist/jquery.maskedinput.min.js"></script>
 <script src="bower/slick-carousel/slick/slick.min.js"></script>
 <script src="bower/elevatezoom/jquery.elevateZoom-2.2.3.min.js"></script>
+<script src="bower/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
 
 <!-- endbuild -->
 
@@ -1035,6 +1048,7 @@
 <!-- endbuild -->
 
 
+<script src="libs/LocalMarker.js"></script>
 </body>
 
 </html>
