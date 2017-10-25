@@ -30,6 +30,7 @@
   }
 
   .bl_product__FullImages {
+    max-height: initial;
     flex-direction: column;
   }
 
@@ -66,7 +67,7 @@
   }
 
   .bl_product__verticalSlider.slick-slider .slickArrow-next.slick-arrow {
-    left: 100%;
+    left: 94.5%;
 
     &:before {
       content: "\f105";
@@ -203,6 +204,11 @@
     border-top: none;
     margin: 0 auto;
   }
+  .bl_product__verticalSlider.slick-slider .slickArrow-next.slick-arrow {
+    left: 97%;
+  }
+
+
 
   .bl_nav__item:hover .bl_nav__subCategory {
     display: none;

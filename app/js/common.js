@@ -600,9 +600,48 @@ $(document).ready(function () {
 
     } popupWindowBiforeAddToShopBag();
 
+///// Popups Advantages
+
+    function popupAdvantages() {
+
+        var popupBlock = $(".popup_advantages"),
+            buttonOriginal = $(".code_original"),
+            buttonShowroom = $(".code_showroom"),
+            buttonDelivery = $(".code_delivery"),
+            contentBlock = $(".popup_advantages__fullContent"),
+            closeButton = $(".popup_advantages__close");
+
+
+        function showPopupAdvantage(btn) {
+            btn.on("click", function () {
+                contentBlock.html("");
+                popupBlock.removeClass("hidden");
+
+                contentBlock.insertAfter();  //// Тут вставляй свой контент
+
+                blackWrapper.removeClass("hidden");
+                blackWrapper.animate({opacity: 0.6}, 300);
+            });
+        }
+        showPopupAdvantage(buttonOriginal);
+        showPopupAdvantage(buttonShowroom);
+        showPopupAdvantage(buttonDelivery);
+
+        function hidePopupAdvantage(btn){
+            btn.on("click", function () {
+                popupBlock.addClass("hidden");
+                blackWrapper.addClass("hidden");
+                blackWrapper.animate({opacity: 0}, 400);
+            })
+        }
+
+        hidePopupAdvantage(closeButton);
+        hidePopupAdvantage(blackWrapper);
 
 
 
+
+    }popupAdvantages();
 
 
 
