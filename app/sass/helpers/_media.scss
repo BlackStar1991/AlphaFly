@@ -479,12 +479,20 @@
     font-size: 20px;
   }
 
+  .button_continueBuying__corrected{
+    margin-right: 0;
+  }
 
   .bl_contacts__icon{
     display: none;
   }
 
-
+  .bl_subscribe__fullInput{
+   min-width: initial;
+  }
+  .bl_subscribe__icon:after{
+    left: 20%;
+  }
 }
 
 /* Custom, iPhone Retina 320px */

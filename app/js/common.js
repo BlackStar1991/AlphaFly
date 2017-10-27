@@ -397,7 +397,7 @@ $(document).ready(function () {
 
 
     }
-    zoomEffect();
+    // zoomEffect();
 
 
 

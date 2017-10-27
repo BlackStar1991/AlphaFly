@@ -199,320 +199,288 @@
         </div>
     </div>
 </header>
-<!-- ======================================= MAIN ========================================================== -->
+<!-- ========================================== MAIN ===================================================== -->
 <main class="main">
-    <div class="mainWrapper">
-
+    <div class="container">
 
         <div class="bl_breadcrumbs__wrapper hidden-xs">
             <div class="container">
                 <div class="col-xs-12 ">
                     <ul class="bl_breadcrumbs">
                         <li class="bl_breadcrumbs__item"><a class="bl_breadcrumbs__link" href="#">Главная</a></li>
-                        <li class="bl_breadcrumbs__item"><a class="bl_breadcrumbs__link" href="#">Название категории</a>
-                        </li>
                         <li class="bl_breadcrumbs__item"><p class="bl_breadcrumbs__link bl_breadcrumbs__active"
-                                                            href="#">Название товара</p></li>
+                                                            href="#">Корзина покупок</p></li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <div class="container">
-            <div class="bl_product">
-                <div class="col-xs-12">
-                    <h1 class="product_slider__title decor-likeLabel icon-star">
-                        YOUTH N-3B Maveric Parka
-                    </h1>
+
+        <div class="row row-flex row-flex-wrapss clearfix">
+            <div class="col-xs-12 col-md-5 col-md-offset-1 ">
+                <div class="bl_receiver">
+                    <h2 class="text_title text_title__margin">Получатель</h2>
+                    <form class="bl_receiver__form" role="form" action="">
+
+                        <div class="form-group ">
+                            <label for="user_name" class="text_paragraph">Имя:</label>
+                            <input class="form-control form-lineStyle" id="user_name" type="text" autofocus>
+                        </div>
+                        <div class="form-group form_telephone">
+                            <label for="user_tel" class="text_paragraph text_decor__importantField">Телефон:</label>
+                            <input class="form-control" id="user_tel" type="tel" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="user_email" class="text_paragraph">E-mail:</label>
+                            <input class=" form-control" id="user_email" type="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="user_refinement" class="text_paragraph">Пожелания и уточнения:</label>
+                            <textarea class=" form-control" name="" id="user_refinement" cols="30" rows="5"></textarea>
+                        </div>
+                    </form>
                 </div>
-                <div class="col-md-5">
 
-                    <div class="bl_product__FullImages">
+            </div>
+            <div class="col-xs-12 col-md-5 ">
+                <div class="bl_deliveryMethod">
+                    <h2 class="text_title text_title__margin">Способ доставки</h2>
+                    <label class="shoppingBasket_label">
+                        <input class="shoppingBasket_input" type="radio" name="deliveryMethod_radio" checked>
+                        <p class="shoppingBasket_text">Отправить Новой Почтой</p>
+                    </label>
+                    <label class="shoppingBasket_label">
+                        <input class="shoppingBasket_input" type="radio" name="deliveryMethod_radio">
+                        <p class="shoppingBasket_text">Доставить курьером по Киеву</p>
+                    </label>
+                    <label class="shoppingBasket_label">
+                        <input class="shoppingBasket_input" type="radio" name="deliveryMethod_radio">
+                        <p class="shoppingBasket_text">Самовывоз из магазина</p>
+                    </label>
 
-                        <ul class="bl_product__verticalSlider slick-slider hidden-xs">
+                    <div class="form-group group_selects">
+                        <select name="zone_id" id="input-payment-zone" class="form-control">
+                            <option value=""> Выберете область</option>
+                            <option value="">Киевская</option>
+                            <option value="">Волынская</option>
+                            <option value="">Одесская</option>
+                        </select>
+                    </div>
+                    <div class="form-group group_selects">
+                        <select name="city" id="input-payment-city" class="form-control">
+                            <option value=""> Выберите город</option>
+                            <option value="">Киев</option>
+                            <option value="">Луцк</option>
+                            <option value="">Одесса</option>
+                        </select>
+                    </div>
+                    <div class="form-group group_selects">
+                        <select name="department" id="input-payment-department" class="form-control">
+                            <option value=""> Выберите отделение</option>
+                            <option value="">№15</option>
+                            <option value="">№3</option>
+                            <option value="">№11</option>
+                        </select>
+                    </div>
 
-                            <li class="bl_product__verticalItem"><img class="bl_product__minImg"
-                                                                      src="image/Products/product1min.jpg" alt=""></li>
-                            <li class="bl_product__verticalItem"><img class="bl_product__minImg"
-                                                                      src="image/Products/product2min.jpg" alt=""></li>
-                            <li class="bl_product__verticalItem"><img class="bl_product__minImg"
-                                                                      src="image/Products/product3min.jpg" alt=""></li>
-                            <li class="bl_product__verticalItem"><img class="bl_product__minImg"
-                                                                      src="image/Products/product4min.jpg" alt=""></li>
-                            <li class="bl_product__verticalItem"><img class="bl_product__minImg"
-                                                                      src="image/Products/product5min.jpg" alt=""></li>
-                        </ul>
-                        <div class="bl_product__images">
-                            <!-- mark Discount-->
-                            <div class="bl_mark bl_mark__discount">
-                                <div class="bl_wrappen">
-                                    <p class="bl_mark__text">-25%</p>
+
+                    <h2 class="text_title text_title__margin">Способ оплаты</h2>
+
+
+                    <label class="shoppingBasket_label">
+                        <input class="shoppingBasket_input" type="radio" name="bl_paymentMethod_radio" checked>
+                        <p class="shoppingBasket_text">Оплата наличными</p>
+                    </label>
+
+                    <label class="shoppingBasket_label">
+                        <input class="shoppingBasket_input" type="radio" name="bl_paymentMethod_radio">
+                        <p class="shoppingBasket_text">Оплата через сайт</p>
+                    </label>
+
+
+                    <label class="shoppingBasket_label">
+                        <input class="shoppingBasket_input" type="radio" name="bl_paymentMethod_radio">
+                        <p class="shoppingBasket_text">Оплата на карту</p>
+                    </label>
+
+                    <label class="shoppingBasket_label">
+                        <input class="shoppingBasket_input" type="radio" name="bl_paymentMethod_radio">
+                        <p class="shoppingBasket_text">Самовывоз из магазина</p>
+                    </label>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="shoppingBasket_product">
+            <div class="row">
+
+                <div class="shoppingBasket_product__title clearfix">
+
+                    <div class="visible-xs visible-sm col-xs-12">
+                        <p class="table_title">Товары к покупке</p>
+                    </div>
+
+
+                    <div class="hidden-xs hidden-sm col-xs-12 col-md-5">
+                        <p class="table_title table_title__left">Товар</p>
+                    </div>
+                    <div class="hidden-xs hidden-sm col-xs-6 col-md-2">
+                        <p class="table_title ">Код товара</p>
+                    </div>
+                    <div class="hidden-xs hidden-sm col-xs-6 col-md-2">
+                        <p class="table_title">Количество</p>
+                    </div>
+
+                    <div class="hidden-xs hidden-sm col-xs-6 col-md-1">
+                        <p class="table_title">Цена</p>
+                    </div>
+                    <div class="hidden-xs hidden-sm col-xs-6 col-md-2">
+                        <p class="table_title">Итого</p>
+                    </div>
+                </div>
+
+
+                <!--  GOODS -->
+
+                <!-- product 1-->
+
+                <div class="shoppingBasket_product__good clearfix">
+                    <div class="col-xs-12 col-md-5">
+
+                        <div class="shoppingBasket_product__item">
+
+                            <div class="shoppingBasket_product__wrapper">
+                                <button class="delite_product">
+                                    <!--<i class="fa fa-times" aria-hidden="true"></i>-->
+                                </button>
+                                <img class="shoppingBasket_product__img" src="image/Products/product_small_1.jpg" alt="">
+
+                                <div class="shoppingBasket_product__description">
+                                    <h2 class="shoppingBasket_product__name">Мужская сумка со съемным плечевым ремешком
+                                        Piquadro
+                                        Pulse</h2>
+                                    <p class="shoppingBasket_product__value"><span>Цвет:</span> <span>черный</span></p>
                                 </div>
                             </div>
-
-
-                            <ul class="bl_product__productSlider popup-gallery slick-slider">
-                                <li class="bl_product__slidelItem"><a class="bl_product__popupLink"
-                                                                      href="image/Products/product1-big.jpg"><img
-                                        class="bl_product_image" src="image/Products/product1.jpg"
-                                        data-zoom-image="image/Products/product1-big.jpg" alt="test1" title="TEST1"></a>
-                                </li>
-                                <li class="bl_product__slidelItem"><a class="bl_product__popupLink"
-                                                                      href="image/Products/product2-big.jpg"><img
-                                        class="bl_product_image" src="image/Products/product2.jpg"
-                                        data-zoom-image="image/Products/product2-big.jpg" alt="test1" title="TEST1"></a>
-                                </li>
-                                <li class="bl_product__slidelItem"><a class="bl_product__popupLink"
-                                                                      href="image/Products/product3-big.jpg"><img
-                                        class="bl_product_image" src="image/Products/product3.jpg"
-                                        data-zoom-image="image/Products/product3-big.jpg" alt="test1" title="TEST1"></a>
-                                </li>
-                                <li class="bl_product__slidelItem"><a class="bl_product__popupLink"
-                                                                      href="image/Products/product4-big.jpg"><img
-                                        class="bl_product_image" src="image/Products/product4.jpg"
-                                        data-zoom-image="image/Products/product4-big.jpg" alt="test1" title="TEST1"></a>
-                                </li>
-                                <li class="bl_product__slidelItem"><a class="bl_product__popupLink"
-                                                                      href="image/Products/product5-big.jpg"><img
-                                        class="bl_product_image" src="image/Products/product5.jpg"
-                                        data-zoom-image="image/Products/product5-big.jpg" alt="test1" title="TEST1"></a>
-                                </li>
-                            </ul>
                         </div>
+                    </div>
+
+
+                    <div class="col-xs-6 col-md-2">
+
+                        <div class="shoppingBasket_product__item">
+                            <p class="shoppingBasket_product__mark">FR-528M</p>
+                        </div>
+
+
+                    </div>
+                    <div class="col-xs-6 col-md-2">
+
+
+                        <div class="shoppingBasket_product__item">
+                            <div class="block_quantity__box">
+                                <button class="block_quantity__minus"><span>-</span></button>
+                                <input class="block_quantity__input" type="text" value="1">
+                                <button class="block_quantity__plus"><span>+</span></button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-xs-6 col-md-1">
+
+
+                        <div class="shoppingBasket_product__item" >
+                            <!--<span class="good-price__normal good-price__minSize">2 990 грн</span>-->
+                            <!-- Если есть акция то выподить эти цены -->
+                            <span class="good-price__old">5000 грн</span>
+                            <span class="good-price__new">2 990 грн</span>
+                        </div>
+
+
+                    </div>
+                    <div class="col-xs-6 col-md-2">
+
+
+                        <div class="shoppingBasket_product__item" >
+                            <span class="good-price__normal">9150 грн</span>
+                        </div>
+
 
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="bl_characteristics">
-                        <div class="bl_raiting">
-                            <input class="bl_raiting__chackbox" id="raiting5" type="radio" name="raiting" value="5">
-                            <label class="bl_raiting__label" for="raiting5"></label>
-                            <input class="bl_raiting__chackbox" id="raiting4" type="radio" name="raiting" value="4">
-                            <label class="bl_raiting__label" for="raiting4"></label>
-                            <input class="bl_raiting__chackbox" id="raiting3" type="radio" name="raiting" value="3">
-                            <label class="bl_raiting__label" for="raiting3"></label>
-                            <input class="bl_raiting__chackbox" id="raiting2" type="radio" name="raiting" value="2">
-                            <label class="bl_raiting__label" for="raiting2"></label>
-                            <input class="bl_raiting__chackbox" id="raiting1" type="radio" name="raiting" value="1">
-                            <label class="bl_raiting__label" for="raiting1"></label>
-                        </div>
 
-                        <p class="bl_characteristics_fullReviews"><span>Отзывов</span> <span>999</span></p>
-                        <button type="button" class="bl_characteristics__addReview">Добавить свой отзыв</button>
 
-                        <p class="bl_characteristics__title">
-                            Перечень характеристик:
-                        </p>
-                        <ul class="bl_characteristics__fullList">
-                            <li class="bl_characteristics__item">
-                                <span class="bl_characteristics__name">Бренд: </span><span
-                                    class="bl_characteristics__value">Naturino </span>
-                            </li>
-                            <li class="bl_characteristics__item">
-                                <span class="bl_characteristics__name">Пол: </span><span
-                                    class="bl_characteristics__value">для мальчиков    </span>
-                            </li>
-                            <li class="bl_characteristics__item">
-                                <span class="bl_characteristics__name">Сезон: </span><span
-                                    class="bl_characteristics__value"> лето  </span>
-                            </li>
-                            <li class="bl_characteristics__item">
-                                <span class="bl_characteristics__name">  Цвет: </span><span
-                                    class="bl_characteristics__value">синие  </span>
-                            </li>
-                            <li class="bl_characteristics__item">
-                                <span class="bl_characteristics__name"> Вес изделия:</span><span
-                                    class="bl_characteristics__value">  400гр  </span>
-                            </li>
-                            <li class="bl_characteristics__item">
-                                <span class="bl_characteristics__name"> Материал:</span><span
-                                    class="bl_characteristics__value">кожа</span>
-                            </li>
+                <!-- product 2-->
 
-                        </ul>
-                        <div class="bl_minDescription">
-                            <p>Новая детская аляска N-3B Maveric Parka- это
-                                точная копия военной куртки с шевронами.
-                                Куртка очень теплая, детская Parka из 100% летного нейлона,
-                                контрастной оранжевой подкладкой, и 100% полиэстерным наполнением
-                                для защиты от мороза -20°С.
-                                Куртка имеет застежку молнии и капюшон с искусственным мехом как
-                                и оригинальная куртка N-3B.</p>
+                <div class="shoppingBasket_product__good clearfix">
+                    <div class="col-xs-12 col-md-5">
+
+                        <div class="shoppingBasket_product__item" >
+
+                            <div class="shoppingBasket_product__wrapper">
+                                <button class="delite_product">
+                                    <!--<i class="fa fa-times" aria-hidden="true"></i>-->
+                                </button>
+                                <img class="shoppingBasket_product__img" src="image/Products/product_small_2.jpg" alt="">
+
+                                <div class="shoppingBasket_product__description">
+                                    <h2 class="shoppingBasket_product__name">Мужская сумка со съемным плечевым ремешком
+                                        Piquadro
+                                        Pulse</h2>
+                                    <p class="shoppingBasket_product__value"><span>Цвет:</span> <span>черный</span></p>
+                                    <p class="shoppingBasket_product__value"><span>Цвет:</span> <span>черный</span></p>
+                                    <p class="shoppingBasket_product__value"><span>Размер:</span> <span>XXL</span></p>
+                                    <p class="shoppingBasket_product__value"><span>Материал:</span>
+                                        <span>Драконья кожа</span>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="bl_options">
-                        <div class="bl_minInformation clearfix">
-                            <span class="bl_minInformation__availability icon-availability-yes">В наличии</span>
-                            <!--<span class="bl_minInformation__availability icon-availability-no">Нет в наличии</span>-->
 
 
-                            <p class="bl_minInformation__article"><span>Артикул:</span> <span>310575</span></p>
+                    <div class="col-xs-6 col-md-2">
+
+                        <div class="shoppingBasket_product__item" >
+                            <p class="shoppingBasket_product__mark">FR-528M</p>
                         </div>
 
 
-                        <div class="bl_options__price bl_fullProducts__price clearfix">
+                    </div>
+                    <div class="col-xs-6 col-md-2">
 
-                            <span class="bl_price__oldPrice">999999 грн.</span>
-                            <span class="bl_price__newPrice">100 грн.</span>
-                            <!--<span class="bl_price__normal">2700 грн.</span>-->
+
+                        <div class="shoppingBasket_product__item">
+                            <div class="block_quantity__box">
+                                <button class="block_quantity__minus"><span>-</span></button>
+                                <input class="block_quantity__input" type="text" value="1">
+                                <button class="block_quantity__plus"><span>+</span></button>
+                            </div>
                         </div>
 
-                        <div class="bl_options__fullParametrs">
-                            <div class="bl_options__colors">
-                                <p class="bl_options__title">
-                                    <span class="bl_options__name decor_important">Цвет</span>
-                                    <span class="text_error">(сделайте выбор)</span>
-                                </p>
 
-                                <ul class="filter_color__fullColors clearfix">
-                                    <li class="filter_item">
-                                        <label class="filter_label">
-                                            <input class="filter_checkbox" type="radio" name="filterColor">
-                                            <img class="filter_color__image" src="image/colors/color_1.png" alt=""
-                                                 title="">
-                                        </label>
-                                    </li>
-                                    <li class="filter_item">
-                                        <label class="filter_label">
-                                            <input class="filter_checkbox" type="radio" name="filterColor">
-                                            <img class="filter_color__image" src="image/colors/color_2.png" alt=""
-                                                 title="">
-                                        </label>
-                                    </li>
-                                    <li class="filter_item">
-                                        <label class="filter_label">
-                                            <input class="filter_checkbox" type="radio" name="filterColor">
-                                            <img class="filter_color__image" src="image/colors/color_3.png" alt=""
-                                                 title="">
-                                        </label>
-                                    </li>
-                                    <li class="filter_item">
-                                        <label class="filter_label">
-                                            <input class="filter_checkbox" type="radio" name="filterColor">
-                                            <img class="filter_color__image" src="image/colors/color_4.png" alt=""
-                                                 title="">
-                                        </label>
-                                    </li>
-                                    <li class="filter_item">
-                                        <label class="filter_label">
-                                            <input class="filter_checkbox" type="radio" name="filterColor">
-                                            <img class="filter_color__image" src="image/colors/color_5.png" alt=""
-                                                 title="">
-                                        </label>
-                                    </li>
-                                    <li class="filter_item">
-                                        <label class="filter_label">
-                                            <input class="filter_checkbox" type="radio" name="filterColor">
-                                            <img class="filter_color__image" src="image/colors/color_6.png" alt=""
-                                                 title="">
-                                        </label>
-                                    </li>
-                                    <li class="filter_item">
-                                        <label class="filter_label">
-                                            <input class="filter_checkbox" type="radio" name="filterColor">
-                                            <img class="filter_color__image" src="image/colors/color_7.png" alt=""
-                                                 title="">
-                                        </label>
-                                    </li>
-                                    <li class="filter_item">
-                                        <label class="filter_label">
-                                            <input class="filter_checkbox" type="radio" name="filterColor">
-                                            <img class="filter_color__image" src="image/colors/color_8.png" alt=""
-                                                 title="">
-                                        </label>
-                                    </li>
-                                    <li class="filter_item">
-                                        <label class="filter_label">
-                                            <input class="filter_checkbox" type="radio" name="filterColor">
-                                            <img class="filter_color__image" src="image/colors/color_9.png" alt=""
-                                                 title="">
-                                        </label>
-                                    </li>
-                                    <li class="filter_item">
-                                        <label class="filter_label">
-                                            <input class="filter_checkbox" type="radio" name="filterColor">
-                                            <img class="filter_color__image" src="image/colors/color_10.png" alt=""
-                                                 title="">
-                                        </label>
-                                    </li>
-                                </ul>
+                    </div>
+                    <div class="col-xs-6 col-md-1">
 
-                            </div>
 
-                            <div class="bl_options__sizes">
-                                <p class="bl_options__title">
-                                    <span class="bl_options__name decor_important">Размер</span>
-                                    <span class="text_error">(сделайте выбор)</span>
-                                </p>
+                        <div class="shoppingBasket_product__item" >
+                            <span class="good-price__normal ">2 990 грн</span>
+                            <!-- Если есть акция то выподить эти цены -->
 
-                                <ul class="filter_size__fullSizes clearfix">
-                                    <li class="filter_item">
-                                        <label class="filter_label">
-                                            <input class="filter_checkbox" type="radio" name="filterSize">
-                                            <span class="filter_size__box">XXS</span>
-                                        </label>
-                                    </li>
-                                    <li class="filter_item">
-                                        <label class="filter_label">
-                                            <input class="filter_checkbox" type="radio" name="filterSize">
-                                            <span class="filter_size__box">XS</span>
-                                        </label>
-                                    </li>
-                                    <li class="filter_item">
-                                        <label class="filter_label">
-                                            <input class="filter_checkbox" type="radio" name="filterSize">
-                                            <span class="filter_size__box">S</span>
-                                        </label>
-                                    </li>
-                                    <li class="filter_item">
-                                        <label class="filter_label">
-                                            <input class="filter_checkbox" type="radio" name="filterSize">
-                                            <span class="filter_size__box">M</span>
-                                        </label>
-                                    </li>
-                                    <li class="filter_item">
-                                        <label class="filter_label">
-                                            <input class="filter_checkbox" type="radio" name="filterSize">
-                                            <span class="filter_size__box">L</span>
-                                        </label>
-                                    </li>
-                                    <li class="filter_item">
-                                        <label class="filter_label">
-                                            <input class="filter_checkbox" type="radio" name="filterSize">
-                                            <span class="filter_size__box">XL</span>
-                                        </label>
-                                    </li>
-                                    <li class="filter_item">
-                                        <label class="filter_label">
-                                            <input class="filter_checkbox" type="radio" name="filterSize">
-                                            <span class="filter_size__box">2XL</span>
-                                        </label>
-                                    </li>
-                                    <li class="filter_item">
-                                        <label class="filter_label">
-                                            <input class="filter_checkbox" type="radio" name="filterSize">
-                                            <span class="filter_size__box">3XL</span>
-                                        </label>
-                                    </li>
-                                    <li class="filter_item">
-                                        <label class="filter_label">
-                                            <input class="filter_checkbox" type="radio" name="filterSize">
-                                            <span class="filter_size__box">4XL</span>
-                                        </label>
-                                    </li>
-                                    <li class="filter_item">
-                                        <label class="filter_label">
-                                            <input class="filter_checkbox" type="radio" name="filterSize">
-                                            <span class="filter_size__box">5XL</span>
-                                        </label>
-                                    </li>
-                                </ul>
-                            </div>
+                        </div>
 
-                            <button class="button_buy bl_product__buttonBuy" title="">В корзину</button>
 
+                    </div>
+                    <div class="col-xs-6 col-md-2">
+
+
+                        <div class="shoppingBasket_product__item" >
+                            <span class="good-price__normal">99999999 грн</span>
                         </div>
 
 
@@ -520,689 +488,40 @@
                 </div>
             </div>
         </div>
+        <!---->
 
-        <div class="bl_productAdvantages hidden-xs">
-            <div class="container">
-                <div class="col-xs-12">
-                    <div class="bl_productAdvantages__wrapper">
-                        <button type="button" class="bl_productAdvantages__original code_original" title="button original"></button>
-                        <button type="button" class="bl_productAdvantages__showroom code_showroom" title="button showroom"></button>
-                        <button type="button" class="bl_productAdvantages__delivery code_delivery" title="button delivery"></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="col-xs-12">
-                <div class="inf_product">
-                    <ul class="nav nav-tabs inf_product__tabs clearfix">
-                        <!-- Если табов 3 то выводи класс inf_product__item-3 если 4 - inf_product__item-4 если 2 - inf_product__item-3 если 1 -inf_product__item-1 -->
-
-                        <li class="inf_product__item-3 active">
-                            <a href="#tab-description" data-toggle="tab">Описание</a>
-                        </li>
-
-                        <li class="inf_product__item-3 ">
-                            <a href="#tab-sizes" data-toggle="tab">Выбор размеров</a>
-                        </li>
-
-                        <li id="top-tab-review" class="inf_product__item-3 ">
-                            <a href="#tab-review" data-toggle="tab">Отзывы (0)</a>
-                        </li>
-                    </ul>
-
-
-                    <div class="tab-content clearfix">
-                        <div class="tab-pane active" id="tab-description">
-                            <p>Новая детская аляска N-3B Maveric Parka- это точная копия военной куртки с шевронами.
-                                Куртка очень теплая, детская Parka из 100% летного нейлона,
-                                контрастной оранжевой подкладкой, и 100% полиэстерным наполнением для защиты от мороза
-                                -20°С.
-                                Куртка имеет застежку молнии и капюшон с искусственным мехом как и оригинальная куртка
-                                N-3B. 
-
-                                - N-3B имеет карман для карандаша с подписью Альфа и капюшон с искусственным мехом,
-                                точно как настоящая военная куртка 
-                                - Прочная куртка имеет 100% нейлоновую поверхность с полиэфирным наполнителем чтобы
-                                противостоять минусовым температурам. Не стирать, стирать только в химчистке, сухая
-                                чистка. Не отбеливать. Не сушить в стиральной машине. Не гладить.
-                                 В нашем магазине Alpha Сhayka Aero Вы можете купить, померять, заказать понравившуюся
-                                себе оригинальную американскую детскую зимнюю куртку N-3B Maveric Parka компании Alpha
-                                Industries™.  </p>
-                            <p>
-                                 Впервые куртку В-15 компании Alpha Industries™, которая заменила куртку В-10, мир
-                                увидел в 1944 году. Ее носили пилоты ВВС США и летные экипажи. Куртка B-15,
-                                разработанная для холодных температур с меховым воротником, вязаными манжетами и поясом
-                                со 100% шерсти.
-                                Куртка B-15 также имела петли, для того чтобы кислородные маски пилота и наушники
-                                оставались на своем месте. Альфа индастриз начала широкомасштабное пошитие куртки
-                                бомбера В-15 в 1993 году и сегодня шьет их сохраняя основные черты куртки В-15,
-                                включая нейлоновое покрытие, петли и меховой воротник. Alpha Industries™ также
-                                разработала современную модель куртки в классическом стиле - как для взрослых так и для
-                                детей. Доставка по Украине. </p>
-                        </div>
-                        <div class="tab-pane " id="tab-sizes">
-                            <div class="col-md-6">
-
-                                <table class="clothes_sizes">
-                                    <tr>
-                                        <th>Размер</th>
-                                        <th>Примерный рост (см)</th>
-                                        <th>Примерный вес (кг)</th>
-                                        <th>Обхват шеи (см)</th>
-                                        <th>Обхват груди (см)</th>
-                                        <th>Обхват талии (см)</th>
-                                        <th>Длина рукава (см)</th>
-                                        <th>Обхват бедер (см)</th>
-                                    </tr>
-                                    <tr>
-                                        <td>XS</td>
-                                        <td>169-178</td>
-                                        <td>58-65</td>
-                                        <td>36-37</td>
-                                        <td>91-96</td>
-                                        <td>75-80</td>
-                                        <td>79-81</td>
-                                        <td>91-96</td>
-                                    </tr>
-                                    <tr>
-                                        <td>S</td>
-                                        <td>169-178</td>
-                                        <td>65-72</td>
-                                        <td>36-37</td>
-                                        <td>96-101</td>
-                                        <td>80-85</td>
-                                        <td>81-83</td>
-                                        <td>96-101</td>
-                                    </tr>
-                                    <tr>
-                                        <td>M</td>
-                                        <td>169-179</td>
-                                        <td>72-79</td>
-                                        <td>38-39</td>
-                                        <td>101-106</td>
-                                        <td>85-90</td>
-                                        <td>84-86</td>
-                                        <td>101-106</td>
-                                    </tr>
-                                    <tr>
-                                        <td>L</td>
-                                        <td>169-179</td>
-                                        <td>78-85</td>
-                                        <td>41-42</td>
-                                        <td>106-111</td>
-                                        <td>90-96</td>
-                                        <td>86-88</td>
-                                        <td>106-111</td>
-                                    </tr>
-                                    <tr>
-                                        <td>XL</td>
-                                        <td>170-180</td>
-                                        <td>85-94</td>
-                                        <td>43-44</td>
-                                        <td>111-117</td>
-                                        <td>97-103</td>
-                                        <td>89-91</td>
-                                        <td>111-117</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2XL</td>
-                                        <td>170-180</td>
-                                        <td>96-102</td>
-                                        <td>46-47</td>
-                                        <td>121-127</td>
-                                        <td>106-111</td>
-                                        <td>92-94</td>
-                                        <td>121-127</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3XL</td>
-                                        <td>171-182</td>
-                                        <td>104-111</td>
-                                        <td>48-50</td>
-                                        <td>130-135</td>
-                                        <td>112-117</td>
-                                        <td>94-97</td>
-                                        <td>130-135</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4XL</td>
-                                        <td>171-182</td>
-                                        <td>111-118</td>
-                                        <td>51-52</td>
-                                        <td>135-142</td>
-                                        <td>122-127</td>
-                                        <td>97-99</td>
-                                        <td>135-142</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5XL</td>
-                                        <td>173-185</td>
-                                        <td>118-125</td>
-                                        <td>51-52</td>
-                                        <td>145-147</td>
-                                        <td>129-135</td>
-                                        <td>99-102</td>
-                                        <td>145-147</td>
-                                    </tr>
-                                </table>
-                                <p class="clothes_sizes__text decor_important">данные в таблице примерные. При выборе
-                                    размера - просьба обратиться за помощью к менеджеру магазина</p>
-
-                            </div>
-                            <div class="col-md-6 correct_right">
-
-                                <div class="clothes_description__full">
-                                    <div class="clothes_body clearfix">
-                                        <div class="clothes_body__neck"></div>
-                                        <div class="clothes_body__chest"></div>
-                                        <div class="clothes_body__waist"></div>
-                                        <div class="clothes_body__sleeve"></div>
-                                        <div class="clothes_body__hip"></div>
-                                    </div>
-
-                                    <ul class="clothes_description">
-                                        <li id="code_neck" class="clothes_description__item">
-                                            <p class="clothes_description__title">Обхват шеи </p>
-                                            <p class="clothes_description__text">Обхват шеи измеряется по основанию шеи.
-                                                Оберните шею измерительной лентой так, чтобы нижний край ленты проходил
-                                                чере
-                                                зточку основания шеи сзади, а спереди замыкался над яремной впадиной.
-                                                При
-                                                измерении лента должна плотно (без натяжения) прилегать к телу.</p>
-                                        </li>
-                                        <li id="code_chest" class="clothes_description__item">
-                                            <p class="clothes_description__title">Обхват груди </p>
-                                            <p class="clothes_description__text">оберните грудь измерительной лентой
-                                                так,
-                                                чтобы она проходила горизонтально через наиболее выступающие точки
-                                                грудной
-                                                клетки. На спине лента накладывается на лопатки.</p>
-                                        </li>
-                                        <li id="code_sleeve" class="clothes_description__item">
-                                            <p class="clothes_description__title">Длина рукава </p>
-                                            <p class="clothes_description__text">измерьте по слегка согнутой руке
-                                                расстояние
-                                                от точки перехода плечевого ската в плечо до того места, где, по Вашему
-                                                мнению, должен заканчиваться длинный рукав рубашки.</p>
-                                        </li>
-                                        <li id="code_waist" class="clothes_description__item">
-                                            <p class="clothes_description__title">Обхват талии </p>
-                                            <p class="clothes_description__text"> приложите измерительную ленту
-                                                горизонтально вокруг талии. При измерении лента должна плотно (без
-                                                натяжения) прилегать к телу.</p>
-                                        </li>
-                                        <li id="code_hip" class="clothes_description__item">
-                                            <p class="clothes_description__title">Обхват бедер </p>
-                                            <p class="clothes_description__text">измерительная лента должна проходить
-                                                горизонтально в самой широкой части бедер по наиболее выступающим точкам
-                                                живота спереди и ягодиц сзади. </p>
-                                        </li>
-                                    </ul>
-                                </div>
-
-
-                            </div>
-
-
-                        </div>
-                        <div class="tab-pane " id="tab-review">
-
-
-                            <div class="col-xs-12">
-                                <div class="review_allReview">
-
-                                    <div class="review_item">
-                                        <p class="review_item__userName icon_star__left">User Name</p>
-                                        <time class="review_item__time">01.08.2017</time>
-                                        <p class="review_item__raiting"><span>Рейтинг пользователя</span>
-                                            <span>4</span><span>/5</span></p>
-                                        <p class="review_item__fullReview">
-                                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur eos laborum magni quam quod ratione repudiandae suscipit tempora veniam! Aspernatur, atque corporis dignissimos minima nam officia provident quasi quia!</span>
-                                            <span>Alias, amet autem cum cumque delectus, deleniti dignissimos doloribus dolorum facilis illum incidunt iure iusto, laboriosam laborum maxime minus natus necessitatibus perspiciatis quaerat quis repellendus saepe sed similique suscipit unde!</span>
-                                            <span>Assumenda at consectetur cumque cupiditate, dicta obcaecati quas qui ut. Ad consequuntur culpa cumque deleniti, dolores dolorum, harum id inventore nihil porro praesentium quae sunt vel! Atque fugiat possimus similique.</span>
-                                            <span>Accusamus dolorem earum eos error exercitationem, fugiat, id incidunt laudantium nobis obcaecati provident quae quasi quo similique veniam? Aliquam aliquid animi autem dolore dolorem, eos error facere minima odio sit!</span>
-                                            <span>At atque cum facilis optio quia quibusdam quis recusandae! Adipisci architecto consequatur debitis dicta dolore, enim esse est eum, iure labore laborum necessitatibus obcaecati quibusdam quos repudiandae saepe sit unde.</span>
-                                            <span>Ab, aperiam autem dolor dolorem hic iure iusto nobis nulla voluptas? Eligendi esse, eum ipsa laudantium maxime modi non nulla perspiciatis quae, quibusdam temporibus velit veritatis voluptatem! Asperiores, repellat, tempore!</span>
-                                            <span>Aliquam animi aut blanditiis culpa delectus ea esse facilis hic iste laboriosam maiores minus molestiae neque nihil odit quasi quia, quis quisquam ratione repudiandae sapiente sed sunt suscipit veniam veritatis.</span>
-                                        </p>
-                                    </div>
-
-                                    <div class="review_item">
-                                        <p class="review_item__userName icon_star__left">User Name</p>
-                                        <time class="review_item__time">01.08.2017</time>
-                                        <p class="review_item__raiting"><span>Рейтинг пользователя</span>
-                                            <span>1</span><span>/5</span></p>
-                                        <p class="review_item__fullReview">
-                                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur eos laborum magni quam quod ratione repudiandae suscipit tempora veniam! Aspernatur, atque corporis dignissimos minima nam officia provident quasi quia!</span>
-                                            <span>Alias, amet autem cum cumque delectus, deleniti dignissimos doloribus dolorum facilis illum incidunt iure iusto, laboriosam laborum maxime minus natus necessitatibus perspiciatis quaerat quis repellendus saepe sed similique suscipit unde!</span>
-                                            <span>Assumenda at consectetur cumque cupiditate, dicta obcaecati quas qui ut. Ad consequuntur culpa cumque deleniti, dolores dolorum, harum id inventore nihil porro praesentium quae sunt vel! Atque fugiat possimus similique.</span>
-                                            <span>Accusamus dolorem earum eos error exercitationem, fugiat, id incidunt laudantium nobis obcaecati provident quae quasi quo similique veniam? Aliquam aliquid animi autem dolore dolorem, eos error facere minima odio sit!</span>
-                                            <span>At atque cum facilis optio quia quibusdam quis recusandae! Adipisci architecto consequatur debitis dicta dolore, enim esse est eum, iure labore laborum necessitatibus obcaecati quibusdam quos repudiandae saepe sit unde.</span>
-                                            <span>Ab, aperiam autem dolor dolorem hic iure iusto nobis nulla voluptas? Eligendi esse, eum ipsa laudantium maxime modi non nulla perspiciatis quae, quibusdam temporibus velit veritatis voluptatem! Asperiores, repellat, tempore!</span>
-                                            <span>Aliquam animi aut blanditiis culpa delectus ea esse facilis hic iste laboriosam maiores minus molestiae neque nihil odit quasi quia, quis quisquam ratione repudiandae sapiente sed sunt suscipit veniam veritatis.</span>
-                                        </p>
-                                    </div>
-
-                                    <div class="review_empty hidden"><p>У данного товара пока нету отзывов, будь
-                                        первым</p></div>  <!-- Выводить если отзывов нет.  hidden убрать-->
-
-                                </div>
-
-                                <button class="button_review" type="button">Оставить отзыв</button>
-
-
-                                <form class="form-horizontal review_product__form clearfix" id="form-review">
-
-                                    <div class="alert alert-danger hidden"><i class="fa fa-exclamation-circle"></i>
-                                        Пожалуйста, выберите оценку товара!
-                                    </div> <!-- Выводить если пользователь ошибся. hidden убрать-->
-                                    <div class="alert alert-success hidden"><i class="fa fa-exclamation-circle"></i>
-                                        Спасибо, ваш отзыв будет добавлен после проверки модератором
-                                    </div>
-                                    <!-- Выводить после того как сообщение отправилось на модерацию. hidden убрать -->
-                                    <div class="col-xs-12 review_product">
-                                        <p class="review_product__title">Написать отзыв о</p>
-                                        <p class="review_product__title review_product__bold">YOUTH N-3B MAVERIC
-                                            PARKA</p>
-                                    </div>
-
-                                    <div class="form-group required review_form clearfix">
-                                        <div class="col-sm-6">
-                                            <input class="form-control review_name" type="text" name="name"
-                                                   placeholder="Ваше имя:">
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="bl_review__raiting">
-                                                <span class="decor_important review_text">Оценить товар</span>
-
-                                                <div class="bl_raiting bl_review__raitingFull">
-                                                    <input class="bl_raiting__chackbox" id="review_star5" type="radio"
-                                                           name="raiting" value="5">
-                                                    <label class="bl_raiting__label" for="review_star5"></label>
-
-                                                    <input class="bl_raiting__chackbox" id="review_star4" type="radio"
-                                                           name="raiting" value="4">
-                                                    <label class="bl_raiting__label" for="review_star4"></label>
-
-                                                    <input class="bl_raiting__chackbox" id="review_star3" type="radio"
-                                                           name="raiting" value="3">
-                                                    <label class="bl_raiting__label" for="review_star3"></label>
-
-                                                    <input class="bl_raiting__chackbox" id="review_star2" type="radio"
-                                                           name="raiting" value="2">
-                                                    <label class="bl_raiting__label" for="review_star2"></label>
-
-                                                    <input class="bl_raiting__chackbox" id="review_star1" type="radio"
-                                                           name="raiting" value="1">
-                                                    <label class="bl_raiting__label" for="review_star1"></label>
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-                                    <div class="form-group required">
-                                        <div class="col-sm-12">
-                                        <textarea class="form-control review_textarea" name="text" rows="5"
-                                                  id="input-review" placeholder="Текст сообщения"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <button class="button_buy clearfix" type="button" id="button-review"
-                                            data-loading-text="Загрузка...">
-                                        <span class="button_buy__text">Отправить</span>
-                                    </button>
-
-                                </form>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Slider Similar Products -->
-        <div class="bl_similarProducts clearfix">
-            <div class="container">
-                <div class="col-xs-12">
-                    <p class="product_slider__title decor-likeLabel icon-star">
-                        Похожие товары
-                    </p>
-
-                    <ul class="slider_similarProducts owl-carousel">
-                        <li class="product_sliderCart__item">
-                            <a class="product_sliderCart__link" href="#">
-                                <div class="product_sliderCart__blockImg">
-                                    <!-- mark Discount-->
-                                    <div class="bl_mark bl_mark__discount">
-                                        <div class="bl_wrappen">
-                                            <p class="bl_mark__text">-25%</p>
-                                        </div>
-                                    </div>
-
-                                    <img class="product_sliderCart__image" src="image/Products/product_1.jpg" alt="">
-                                </div>
-                                <p class="product_sliderCart__title">YOUTH N-3B Maveric Parka</p>
-                            </a>
-
-                            <div class="product_sliderCart__price clearfix">
-                                <!--<span class="product_sliderCart__price_normalPrice">99999 грн.</span>-->
-                                <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
-                                <span class="product_sliderCart__price_newPrice">100 грн.</span>
-                            </div>
-
-                            <button class="button_sliderCart__buy">
-                                <span class="button_sliderCart__buy_text">в корзину</span>
-                            </button>
-                        </li>
-                        <li class="product_sliderCart__item">
-                            <a class="product_sliderCart__link" href="#">
-                                <div class="product_sliderCart__blockImg">
-                                    <!-- mark Discount-->
-                                    <div class="bl_mark bl_mark__discount">
-                                        <div class="bl_wrappen">
-                                            <p class="bl_mark__text">-25%</p>
-                                        </div>
-                                    </div>
-
-                                    <img class="product_sliderCart__image" src="image/Products/product_1.jpg" alt="">
-                                </div>
-                                <p class="product_sliderCart__title">YOUTH N-3B Maveric Parka ыва ываывава Maveric sdf
-                                    f
-                                    sdf sdfs dfsdf sdf sdfsdf
-                                    Parka</p>
-                            </a>
-
-                            <div class="product_sliderCart__price clearfix">
-                                <span class="product_sliderCart__price_normalPrice">99999 грн.</span>
-                                <!--<span class="product_sliderCart__price_oldPrice">2034 грн.</span>-->
-                                <!--<span class="product_sliderCart__price_newPrice">100 грн.</span>-->
-                            </div>
-
-                            <button class="button_sliderCart__buy">
-                                <span class="button_sliderCart__buy_text">в корзину</span>
-                            </button>
-                        </li>
-                        <li class="product_sliderCart__item">
-                            <a class="product_sliderCart__link" href="#">
-                                <div class="product_sliderCart__blockImg">
-                                    <!-- mark Discount-->
-                                    <div class="bl_mark bl_mark__discount">
-                                        <div class="bl_wrappen">
-                                            <p class="bl_mark__text">-25%</p>
-                                        </div>
-                                    </div>
-
-                                    <img class="product_sliderCart__image" src="image/Products/product_1.jpg" alt="">
-                                </div>
-                                <p class="product_sliderCart__title">YOUTH N-3B Maveric Parka</p>
-                            </a>
-
-                            <div class="product_sliderCart__price clearfix">
-                                <!--<span class="product_sliderCart__price_normalPrice">99999 грн.</span>-->
-                                <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
-                                <span class="product_sliderCart__price_newPrice">100 грн.</span>
-                            </div>
-
-                            <button class="button_sliderCart__buy">
-                                <span class="button_sliderCart__buy_text">в корзину</span>
-                            </button>
-                        </li>
-                        <li class="product_sliderCart__item">
-                            <a class="product_sliderCart__link" href="#">
-                                <div class="product_sliderCart__blockImg">
-                                    <!-- mark Discount-->
-                                    <div class="bl_mark bl_mark__discount">
-                                        <div class="bl_wrappen">
-                                            <p class="bl_mark__text">-25%</p>
-                                        </div>
-                                    </div>
-
-                                    <img class="product_sliderCart__image" src="image/Products/product_1.jpg" alt="">
-                                </div>
-                                <p class="product_sliderCart__title">YOUTH N-3B Maveric Parka</p>
-                            </a>
-
-                            <div class="product_sliderCart__price clearfix">
-                                <!--<span class="product_sliderCart__price_normalPrice">99999 грн.</span>-->
-                                <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
-                                <span class="product_sliderCart__price_newPrice">100 грн.</span>
-                            </div>
-
-                            <button class="button_sliderCart__buy">
-                                <span class="button_sliderCart__buy_text">в корзину</span>
-                            </button>
-                        </li>
-                        <li class="product_sliderCart__item">
-                            <a class="product_sliderCart__link" href="#">
-                                <div class="product_sliderCart__blockImg">
-                                    <!-- mark Discount-->
-                                    <div class="bl_mark bl_mark__discount">
-                                        <div class="bl_wrappen">
-                                            <p class="bl_mark__text">-25%</p>
-                                        </div>
-                                    </div>
-
-                                    <img class="product_sliderCart__image" src="image/Products/product_1.jpg" alt="">
-                                </div>
-                                <p class="product_sliderCart__title">YOUTH N-3B Maveric Parka</p>
-                            </a>
-
-                            <div class="product_sliderCart__price clearfix">
-                                <!--<span class="product_sliderCart__price_normalPrice">99999 грн.</span>-->
-                                <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
-                                <span class="product_sliderCart__price_newPrice">100 грн.</span>
-                            </div>
-
-                            <button class="button_sliderCart__buy">
-                                <span class="button_sliderCart__buy_text">в корзину</span>
-                            </button>
-                        </li>
-                        <li class="product_sliderCart__item">
-                            <a class="product_sliderCart__link" href="#">
-                                <div class="product_sliderCart__blockImg">
-                                    <!-- mark Discount-->
-                                    <div class="bl_mark bl_mark__discount">
-                                        <div class="bl_wrappen">
-                                            <p class="bl_mark__text">-25%</p>
-                                        </div>
-                                    </div>
-
-                                    <img class="product_sliderCart__image" src="image/Products/product_1.jpg" alt="">
-                                </div>
-                                <p class="product_sliderCart__title">YOUTH N-3B Maveric Parka</p>
-                            </a>
-
-                            <div class="product_sliderCart__price clearfix">
-                                <!--<span class="product_sliderCart__price_normalPrice">99999 грн.</span>-->
-                                <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
-                                <span class="product_sliderCart__price_newPrice">100 грн.</span>
-                            </div>
-
-                            <button class="button_sliderCart__buy">
-                                <span class="button_sliderCart__buy_text">в корзину</span>
-                            </button>
-                        </li>
-                    </ul>
-
-                </div>
+        <div class="col-xs-12 col-md-2 col-md-offset-10">
+            <div class="shoppingBasket_product__fullPrise">
+                <p>
+                    <span class="table_title">всего:</span>
+                    <span class="good-price__normal good-price__minSize shoppingBasket_product__fullPrise_text">99999999 грн</span>
+                </p>
             </div>
         </div>
 
 
-        <!-- Slider youViewed -->
-        <div class="bl_youViewed clearfix">
-            <div class="container">
-                <div class="col-xs-12">
-                    <p class="product_slider__title decor-likeLabel icon-star">
-                        Просмотренные ранее товары
-                    </p>
+        <div class="col-xs-12 clearfix">
+            <button class="button_buyProduct button_buyProduct__corrected decor_threeLine">
+                <span class="button_buyProduct__text">Оформить заказ</span>
+            </button>
 
-                    <ul class="slider_youViewed owl-carousel">
-                        <li class="product_sliderCart__item">
-                            <a class="product_sliderCart__link" href="#">
-                                <div class="product_sliderCart__blockImg">
-                                    <!-- mark Discount-->
-                                    <div class="bl_mark bl_mark__discount">
-                                        <div class="bl_wrappen">
-                                            <p class="bl_mark__text">-25%</p>
-                                        </div>
-                                    </div>
 
-                                    <img class="product_sliderCart__image" src="image/Products/product_1.jpg" alt="">
-                                </div>
-                                <p class="product_sliderCart__title">YOUTH N-3B Maveric Parka</p>
-                            </a>
+            <button class="button_continueBuying button_continueBuying__corrected">
+                <a class="button_buyProduct__text button_continueBuying__link" href="#">Продолжить покупки</a>
+            </button>
 
-                            <div class="product_sliderCart__price clearfix">
-                                <!--<span class="product_sliderCart__price_normalPrice">99999 грн.</span>-->
-                                <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
-                                <span class="product_sliderCart__price_newPrice">100 грн.</span>
-                            </div>
 
-                            <button class="button_sliderCart__buy">
-                                <span class="button_sliderCart__buy_text">в корзину</span>
-                            </button>
-                        </li>
-                        <li class="product_sliderCart__item">
-                            <a class="product_sliderCart__link" href="#">
-                                <div class="product_sliderCart__blockImg">
-                                    <!-- mark Discount-->
-                                    <div class="bl_mark bl_mark__discount">
-                                        <div class="bl_wrappen">
-                                            <p class="bl_mark__text">-25%</p>
-                                        </div>
-                                    </div>
 
-                                    <img class="product_sliderCart__image" src="image/Products/product_1.jpg" alt="">
-                                </div>
-                                <p class="product_sliderCart__title">YOUTH N-3B Maveric Parka ыва ываывава Maveric
-                                    sdffsdf sdfs dfsdf sdf sdfsdfParka</p>
-                            </a>
 
-                            <div class="product_sliderCart__price clearfix">
-                                <span class="product_sliderCart__price_normalPrice">99999 грн.</span>
-                                <!--<span class="product_sliderCart__price_oldPrice">2034 грн.</span>-->
-                                <!--<span class="product_sliderCart__price_newPrice">100 грн.</span>-->
-                            </div>
-
-                            <button class="button_sliderCart__buy">
-                                <span class="button_sliderCart__buy_text">в корзину</span>
-                            </button>
-                        </li>
-                        <li class="product_sliderCart__item">
-                            <a class="product_sliderCart__link" href="#">
-                                <div class="product_sliderCart__blockImg">
-                                    <!-- mark Discount-->
-                                    <div class="bl_mark bl_mark__discount">
-                                        <div class="bl_wrappen">
-                                            <p class="bl_mark__text">-25%</p>
-                                        </div>
-                                    </div>
-
-                                    <img class="product_sliderCart__image" src="image/Products/product_1.jpg" alt="">
-                                </div>
-                                <p class="product_sliderCart__title">YOUTH N-3B Maveric Parka</p>
-                            </a>
-
-                            <div class="product_sliderCart__price clearfix">
-                                <!--<span class="product_sliderCart__price_normalPrice">99999 грн.</span>-->
-                                <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
-                                <span class="product_sliderCart__price_newPrice">100 грн.</span>
-                            </div>
-
-                            <button class="button_sliderCart__buy">
-                                <span class="button_sliderCart__buy_text">в корзину</span>
-                            </button>
-                        </li>
-                        <li class="product_sliderCart__item">
-                            <a class="product_sliderCart__link" href="#">
-                                <div class="product_sliderCart__blockImg">
-                                    <!-- mark Discount-->
-                                    <div class="bl_mark bl_mark__discount">
-                                        <div class="bl_wrappen">
-                                            <p class="bl_mark__text">-25%</p>
-                                        </div>
-                                    </div>
-
-                                    <img class="product_sliderCart__image" src="image/Products/product_1.jpg" alt="">
-                                </div>
-                                <p class="product_sliderCart__title">YOUTH N-3B Maveric Parka</p>
-                            </a>
-
-                            <div class="product_sliderCart__price clearfix">
-                                <!--<span class="product_sliderCart__price_normalPrice">99999 грн.</span>-->
-                                <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
-                                <span class="product_sliderCart__price_newPrice">100 грн.</span>
-                            </div>
-
-                            <button class="button_sliderCart__buy">
-                                <span class="button_sliderCart__buy_text">в корзину</span>
-                            </button>
-                        </li>
-                        <li class="product_sliderCart__item">
-                            <a class="product_sliderCart__link" href="#">
-                                <div class="product_sliderCart__blockImg">
-                                    <!-- mark Discount-->
-                                    <div class="bl_mark bl_mark__discount">
-                                        <div class="bl_wrappen">
-                                            <p class="bl_mark__text">-25%</p>
-                                        </div>
-                                    </div>
-
-                                    <img class="product_sliderCart__image" src="image/Products/product_1.jpg" alt="">
-                                </div>
-                                <p class="product_sliderCart__title">YOUTH N-3B Maveric Parka</p>
-                            </a>
-
-                            <div class="product_sliderCart__price clearfix">
-                                <!--<span class="product_sliderCart__price_normalPrice">99999 грн.</span>-->
-                                <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
-                                <span class="product_sliderCart__price_newPrice">100 грн.</span>
-                            </div>
-
-                            <button class="button_sliderCart__buy">
-                                <span class="button_sliderCart__buy_text">в корзину</span>
-                            </button>
-                        </li>
-                        <li class="product_sliderCart__item">
-                            <a class="product_sliderCart__link" href="#">
-                                <div class="product_sliderCart__blockImg">
-                                    <!-- mark Discount-->
-                                    <div class="bl_mark bl_mark__discount">
-                                        <div class="bl_wrappen">
-                                            <p class="bl_mark__text">-25%</p>
-                                        </div>
-                                    </div>
-
-                                    <img class="product_sliderCart__image" src="image/Products/product_1.jpg" alt="">
-                                </div>
-                                <p class="product_sliderCart__title">YOUTH N-3B Maveric Parka</p>
-                            </a>
-
-                            <div class="product_sliderCart__price clearfix">
-                                <!--<span class="product_sliderCart__price_normalPrice">99999 грн.</span>-->
-                                <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
-                                <span class="product_sliderCart__price_newPrice">100 грн.</span>
-                            </div>
-
-                            <button class="button_sliderCart__buy">
-                                <span class="button_sliderCart__buy_text">в корзину</span>
-                            </button>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
         </div>
 
 
+        <div class="col-xs-12">
+            <div class="decor_line"></div>
+        </div>
     </div>
+
+
 </main>
 
 <!-- ====================================== FOOTER  ==================================================== -->

@@ -1477,7 +1477,7 @@ button {
   color: #333;
   font-size: 18px;
   margin-top: 20px;
-  height: 44px;
+  height: 48px;
   overflow: hidden;
   box-sizing: border-box;
   text-overflow: ellipsis; }
@@ -2759,7 +2759,10 @@ button {
   display: inline-block;
   position: relative;
   width: 100%;
-  max-width: 340px; }
+  max-width: 340px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  overflow: hidden; }
 
 .bl_product__verticalSlider {
   position: relative;
@@ -2782,8 +2785,6 @@ button {
   max-width: 350px;
   height: 100%;
   max-height: 380px;
-  border: 1px solid #000;
-  box-sizing: border-box;
   overflow: hidden; }
 
 .bl_product__productSlider .mainProductSlickArrow-prev,
@@ -3154,26 +3155,30 @@ button {
       flex-direction: row;
   -ms-flex-pack: justify;
       justify-content: space-between; }
+  .bl_productAdvantages__wrapper button {
+    display: block;
+    background-color: initial;
+    -ms-transform: scale(1);
+        transform: scale(1);
+    transition: all, .3s; }
+    .bl_productAdvantages__wrapper button:hover {
+      -ms-transform: scale(1.15);
+          transform: scale(1.15);
+      transition: all, .3s; }
 
 .bl_productAdvantages__original {
-  display: block;
-  background-color: initial;
   background-image: url(../image/sprite.png);
   background-position: -377px -261px;
   width: 179px;
   height: 179px; }
 
 .bl_productAdvantages__showroom {
-  display: block;
-  background-color: initial;
   background-image: url(../image/sprite.png);
   background-position: -562px -184px;
   width: 179px;
   height: 179px; }
 
 .bl_productAdvantages__delivery {
-  display: block;
-  background-color: initial;
   background-image: url(../image/sprite.png);
   background-position: -562px 0px;
   width: 179px;
@@ -4074,6 +4079,7 @@ button {
 .button_continueBuying {
   margin-top: 18px;
   width: 100%;
+  max-width: 206px;
   min-height: 35px;
   box-sizing: border-box;
   background-color: #000;
@@ -4298,15 +4304,15 @@ button {
   .bl_subscribe__input::-webkit-input-placeholder {
     color: #000;
     font-size: 14px;
-    line-height: 50px; }
+    line-height: 36px; }
   .bl_subscribe__input:-ms-input-placeholder {
     color: #000;
     font-size: 14px;
-    line-height: 50px; }
+    line-height: 36px; }
   .bl_subscribe__input::placeholder {
     color: #000;
     font-size: 14px;
-    line-height: 50px; }
+    line-height: 36px; }
 
 .bl_subscribe__button {
   position: relative;
@@ -4423,6 +4429,18 @@ button {
     content: "Layout";
     -ms-transform: translate(-150%, -50%);
         transform: translate(-150%, -50%); }
+
+.bl_options p,
+.bl_options span,
+.bl_options a,
+.tab-content p,
+.tab-content span,
+.tab-content a,
+.bl_information p,
+.bl_information span,
+.bl_information a {
+  font-family: "Arial Narrow" !important;
+  font-style: normal; }
 
 /*********************************************/
 /*@IMPORT MEDIA*/
@@ -4716,8 +4734,14 @@ button {
     font-size: 20px; }
   .bl_blog__year {
     font-size: 20px; }
+  .button_continueBuying__corrected {
+    margin-right: 0; }
   .bl_contacts__icon {
-    display: none; } }
+    display: none; }
+  .bl_subscribe__fullInput {
+    min-width: initial; }
+  .bl_subscribe__icon:after {
+    left: 20%; } }
 
 /* Custom, iPhone Retina 320px */
 @media only screen and (max-width: 320px) {

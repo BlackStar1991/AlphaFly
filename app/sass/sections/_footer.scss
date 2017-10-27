@@ -96,7 +96,7 @@
   &::placeholder {
     color: #000;
     font-size: 14px;
-    line-height: 50px;
+    line-height: 36px;
   }
 }
 
@@ -257,4 +257,21 @@
     content: "Layout";
     transform:translate(-150%, -50%);
   }
+}
+
+
+/// КОСТЫЛИ
+
+// *Сброс стилей по причине криворукости копирайтеров
+.bl_options p,
+.bl_options span,
+.bl_options a,
+.tab-content p,
+.tab-content span,
+.tab-content a,
+.bl_information p,
+.bl_information span,
+.bl_information a{
+  font-family: "Arial Narrow"!important;
+  font-style: normal;
 }
