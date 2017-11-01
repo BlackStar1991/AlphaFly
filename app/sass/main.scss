@@ -263,10 +263,6 @@ button {
   &:hover {
     background-color: $color_oliv;
   }
-  //&:hover .button_sliderCart__buy_text {
-  //  transition: all .2s;
-  //  color: $color_oliv;
-  //}
 }
 
 .button_sliderCart__buy_text {
@@ -550,6 +546,11 @@ $fontSize: 14px;
     font-family: $ArialBold;
   }
 }
+
+.zoomLens{
+  cursor: pointer !important;
+}
+
 
 /////// BANER inPresence
 
@@ -889,6 +890,11 @@ $ml: 5%;
     transition: all, 0.2s;
   }
 }
+
+.button_search {
+  margin-top: -3px;
+}
+
 
 .button_remove {
   display: block;
@@ -3062,8 +3068,10 @@ $ml: 5%;
   font-size: 52px;
   min-width: 112px;
   min-height: 112px;
-  background-color: #000;
-  color: $color_grey;
+  background-color: #fff;
+  border: 2px solid black;
+  box-sizing: border-box;
+  color: black;
 
   &:before {
     position: absolute;
@@ -3126,7 +3134,7 @@ $ml: 5%;
 
   iframe {
     width: 100%;
-    min-height: 579px;
+    min-height: 580px;
     height: 100%;
     &:after {
       content: none;
@@ -3181,6 +3189,7 @@ $ml: 5%;
     line-height: 24px;
   }
   &:focus {
+    border-color: $color_oliv;
     &::placeholder {
       opacity: 0;
     }
@@ -3202,6 +3211,7 @@ $ml: 5%;
     line-height: 24px;
   }
   &:focus {
+    border-color: $color_oliv;
     &::placeholder {
       opacity: 0;
     }
@@ -3213,6 +3223,10 @@ $ml: 5%;
   display: block;
   margin: 14px auto 0;
   max-width: 384px;
+}
+
+.captch-review{
+  display:none;
 }
 
 .bl_callBackForm__button {
@@ -3699,6 +3713,22 @@ $ml: 5%;
 }
 
 //// Page Search
+
+.search-entry-title{
+  padding-top: 7px;
+}
+
+.block-form-serch {
+  margin-top: 25px;
+}
+
+#button-search{
+  float: right;
+}
+
+
+
+
 
 ///// Page Wishlist (Закладки)
 

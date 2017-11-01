@@ -76,6 +76,7 @@
 }
 
 .bl_subscribe__fullInput {
+  position: relative;
   display: inline-block;
   width: 100%;
   min-width: 320px;
@@ -99,6 +100,19 @@
     line-height: 36px;
   }
 }
+
+.bl_subscribe__message{
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  padding:2px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #fff;
+  color: #f00;
+}
+
+
 
 .bl_subscribe__button {
   position: relative;
@@ -270,7 +284,12 @@
 .tab-content a,
 .bl_information p,
 .bl_information span,
-.bl_information a{
-  font-family: "Arial Narrow"!important;
+.bl_information a,
+.MsoNormal,
+.MsoNormal p,
+.MsoNormal a,
+.MsoNormal span,
+.MsoNormal ul{
+  font-family: "Arial Narrow", sans-serif!important;
   font-style: normal;
 }
