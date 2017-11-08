@@ -18,23 +18,14 @@
     <link rel="apple-touch-icon" sizes="72x72" href="image/favicon/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="image/favicon/apple-touch-icon-114x114.png">
 
-    <!-- build:css css/libs.min.css -->
-    <link rel="stylesheet" href="bower/normalize-css/normalize.css">
-    <link rel="stylesheet" href="bower/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="bower/owl.carousel/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="bower/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="css/libs.min.css">
 
-    <!-- endbuild -->
-
-    <!-- build:css css/main.min.css -->
-    <link rel="stylesheet" href="css/main.css">
-    <!-- endbuild -->
+    <link rel="stylesheet" href="css/main.min.css">
 
 </head>
 
 <body class="body">
+
 <!--[if lt IE 10]>
 <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="http://browsehappy.com/">обновите</a>
     его.</p>
@@ -48,7 +39,7 @@
             <div class="container">
                 <div class="col-xs-12 clearfix">
 
-                    <form class="bl_language">
+                    <form class="bl_language" method="" action="">
                         <span class="bl_language__active">ua</span>
                         <ul class="bl_language__variables hidden">
                             <li class="bl_language__variables_item language-select">ua</li>
@@ -100,7 +91,7 @@
                     <div class="col-md-2">
                         <div class="header_logo">
                             <a href="#" class="header_logo__link">
-                                <img class="header_logo__image" src="image/logo.png" alt="">
+                                <img class="header_logo__image" src="image/log_Alpha.svg" alt="aaaa">
                                 <h2 class="header_logo__title">от компании Alpha FLY</h2>
                             </a>
                         </div>
@@ -538,13 +529,13 @@
                         <a class="bl_navFooter__link" href="#">Выбор размера</a>
                     </nav>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-8">
                     <div class="bl_mainAdress">
                         <p class="bl_mainAdress__text">г. Киев, м."Лесная",</p>
                         <p class="bl_mainAdress__text">ул. Беломорская, 1, ЦТ "Дарынок", зал Г, магазин ДЛ-8</p>
-                        <a class="bl_mainAdress__link" href="" title="">
-                            <img class="bl_mainAdress__map" src="image/map.png" alt="">
-                        </a>
+                        <!--<a class="bl_mainAdress__link" href="" title="">-->
+                        <!--<img class="bl_mainAdress__map" src="image/map.png" alt="">-->
+                        <!--</a>-->
 
                     </div>
 
@@ -557,6 +548,7 @@
                         <p class="bl_subscribe__information visible-xs">Подпишись, не пропустите свою скидку</p>
                         <form class="bl_subscribe__fullInput clearfix">
                             <input class="bl_subscribe__input" type="text" placeholder="Ваш емейл адрес ...">
+                            <div class="bl_subscribe__message"> </div>
                             <button class="bl_subscribe__button" type="button">
                                 <i class="bl_subscribe__icon"></i>
                                 <span class="bl_subscribe__choose">Подписаться</span>
@@ -569,7 +561,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-2 col-md-offset-1 hidden-xs">
+                <div class="col-md-2 hidden-xs">
                     <div class="bl_phones footer_firstPart__phones clearfix">
                         <p class="bl_phones__text">+38 (096) 111-22-33</p>
                         <p class="bl_phones__text">+38 (050) 222-33-44</p>
@@ -609,7 +601,7 @@
 
 <div class="popup_likeShopbag hidden">
     <div class="wrapperBlock">
-        <button class="popup_likeShopbag__close">
+        <button type="button" class="popup_likeShopbag__close">
             <i class="fa fa-times decor_icon__close" aria-hidden="true"></i>
         </button>
         <p class="popup_likeShopbag__text popup_likeShopbag__text_main">Подтверждение</p>
@@ -624,11 +616,20 @@
             <button class="button_buyProduct popup_likeShopbag__continueBuying">
                 <span class="button_buyProduct__text popup_likeShopbag__buttons_text">Продолжить покупки</span>
             </button>
-            <button class="button_buyProduct popup_likeShopbag__goToShopbag">
+            <div class="button_buyProduct popup_likeShopbag__goToShopbag">
                 <a href="#" class="button_buyProduct__text popup_likeShopbag__goToShopbag_text">Оформление заказа</a>
-            </button>
+            </div>
         </div>
 
+    </div>
+</div>
+
+<!-- Popup ADVANTAGES-->
+
+<div class="popup_advantages hidden">
+    <button type="button" class="popup_advantages__close decor_close"></button>
+    <div class="popup_advantages__fullContent">
+        ВПИХИВАЙ УМНЫЕ СЛОВА СЮДА
     </div>
 </div>
 
@@ -638,23 +639,12 @@
 
 <script src="libs/jquery.min.js"></script>
 
-<!-- build:js js/libs.min.js -->
+<script src="js/libs.min.js"></script>
 
-<script src="bower/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="bower/owl.carousel/dist/owl.carousel.min.js"></script>
-<script src="bower/fancybox/dist/jquery.fancybox.min.js"></script>
-<script src="bower/jquery.maskedinput/dist/jquery.maskedinput.min.js"></script>
-<script src="bower/slick-carousel/slick/slick.min.js"></script>
-<script src="bower/elevatezoom/jquery.elevateZoom-2.2.3.min.js"></script>
+<script src="js/common.min.js"></script>
 
 
-<!-- endbuild -->
-
-<!-- build:js js/common.min.js -->
-<script src="js/common.js"></script>
-<!-- endbuild -->
-
-
+<script src="libs/LocalMarker.js"></script>
 </body>
 
 </html>

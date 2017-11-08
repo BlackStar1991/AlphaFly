@@ -76,11 +76,12 @@
 }
 
 .bl_subscribe__fullInput {
-  display: block;
+  position: relative;
+  display: inline-block;
   width: 100%;
-
-  margin-top: 18px;
-  margin-bottom: 22px;
+  min-width: 320px;
+  max-width: 560px;
+  margin: 20px auto;
 }
 
 .bl_subscribe__input {
@@ -96,9 +97,22 @@
   &::placeholder {
     color: #000;
     font-size: 14px;
-    line-height: 50px;
+    line-height: 36px;
   }
 }
+
+.bl_subscribe__message{
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  padding:2px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #fff;
+  color: #f00;
+}
+
+
 
 .bl_subscribe__button {
   position: relative;
@@ -163,7 +177,6 @@
   &:focus {
     color: #fff;
   }
-
 }
 
 .footer_secondPart {
@@ -238,23 +251,45 @@
   }
 }
 
-#marker{
-  //position: fixed;
-  //top: 50%;
-  //left: 0;
-  //height: 0;
-  //width: 0;
-  //border-top: 40px solid transparent;
-  //border-bottom: 40px solid transparent;
-  //border-left: 80px solid #f00;
-  //font-family: Arial, sans-serif;
-  //font-weight: 700;
-  //color: #fff;
-  //line-height: 80px;
-  //z-index: 2;
-  //&:after{
-  //  position: absolute;
-  //  content: "Layout";
-  //  transform:translate(-150%, -50%);
-  //}
+//#marker{
+//  position: fixed;
+//  top: 50%;
+//  left: 0;
+//  height: 0;
+//  width: 0;
+//  border-top: 40px solid transparent;
+//  border-bottom: 40px solid transparent;
+//  border-left: 80px solid #f00;
+//  font-family: Arial, sans-serif;
+//  font-weight: 700;
+//  color: #fff;
+//  line-height: 80px;
+//  z-index: 2;
+//  &:after{
+//    position: absolute;
+//    content: "Layout";
+//    transform:translate(-150%, -50%);
+//  }
+//}
+
+
+/// КОСТЫЛИ
+
+// *Сброс стилей по причине криворукости копирайтеров
+.bl_options p,
+.bl_options span,
+.bl_options a,
+.tab-content p,
+.tab-content span,
+.tab-content a,
+.bl_information p,
+.bl_information span,
+.bl_information a,
+.MsoNormal,
+.MsoNormal p,
+.MsoNormal a,
+.MsoNormal span,
+.MsoNormal ul{
+  font-family: "Arial Narrow", sans-serif!important;
+  font-style: normal;
 }

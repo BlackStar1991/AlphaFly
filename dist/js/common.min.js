@@ -383,13 +383,13 @@ $(document).ready(function () {
 
         if (body.width() >= 1200) {
             $(".bl_product__productSlider .slick-active .bl_product_image").elevateZoom({
+                cursor: "pointer",
                 borderSize: 2,
                 borderColour: "#7f8000"
             });
         }else if ( (body.width() < 1200) && (body.width() > 768) ) {
             $(".bl_product__productSlider .slick-active .bl_product_image").elevateZoom({
-                zoomType: "inner",
-                cursor: "crosshair"
+                zoomType: "inner"
             });
         }else {
             return false;
@@ -397,10 +397,27 @@ $(document).ready(function () {
 
 
     }
-    zoomEffect();
+    // zoomEffect();
 
 
 
+    $('.popup-gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        tLoading: 'Загрузка изображения #%curr%...',
+
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+        },
+        image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+            titleSrc: function (item) {
+                return item.el.attr('title');
+            }
+        }
+    });
 
 
 
@@ -483,6 +500,27 @@ $(document).ready(function () {
     hoverPartOfClotes( $("#code_sleeve"), $(".clothes_body__sleeve") );
     hoverPartOfClotes( $("#code_waist"), $(".clothes_body__waist") );
     hoverPartOfClotes( $("#code_hip"), $(".clothes_body__hip") );
+
+
+
+//// Button ShowMoreInformation
+    function showMoreInformation() {
+        var buttonShowMoreInformation = $(".button_showMore"),
+        classShowFullBlock = "full_block";
+
+        buttonShowMoreInformation.on("click", function () {
+
+          var  blockWithCEO = $(this).prev(),
+               fullBlock = $(this).parent();
+
+
+            fullBlock.toggleClass(classShowFullBlock);
+            blockWithCEO.toggleClass(classShowFullBlock);
+            $(this).remove();
+        });
+
+    }
+     showMoreInformation();
 
 
 
@@ -583,9 +621,48 @@ $(document).ready(function () {
 
     } popupWindowBiforeAddToShopBag();
 
+///// Popups Advantages
+
+    function popupAdvantages() {
+
+        var popupBlock = $(".popup_advantages"),
+            buttonOriginal = $(".code_original"),
+            buttonShowroom = $(".code_showroom"),
+            buttonDelivery = $(".code_delivery"),
+            contentBlock = $(".popup_advantages__fullContent"),
+            closeButton = $(".popup_advantages__close");
+
+
+        function showPopupAdvantage(btn) {
+            btn.on("click", function () {
+                contentBlock.html("");
+                popupBlock.removeClass("hidden");
+
+                contentBlock.insertAfter();  //// Тут вставляй свой контент
+
+                blackWrapper.removeClass("hidden");
+                blackWrapper.animate({opacity: 0.6}, 300);
+            });
+        }
+        showPopupAdvantage(buttonOriginal);
+        showPopupAdvantage(buttonShowroom);
+        showPopupAdvantage(buttonDelivery);
+
+        function hidePopupAdvantage(btn){
+            btn.on("click", function () {
+                popupBlock.addClass("hidden");
+                blackWrapper.addClass("hidden");
+                blackWrapper.animate({opacity: 0}, 400);
+            })
+        }
+
+        hidePopupAdvantage(closeButton);
+        hidePopupAdvantage(blackWrapper);
 
 
 
+
+    }popupAdvantages();
 
 
 

@@ -30,6 +30,7 @@
   }
 
   .bl_product__FullImages {
+    max-height: initial;
     flex-direction: column;
   }
 
@@ -66,7 +67,7 @@
   }
 
   .bl_product__verticalSlider.slick-slider .slickArrow-next.slick-arrow {
-    left: 100%;
+    left: 94.5%;
 
     &:before {
       content: "\f105";
@@ -153,9 +154,6 @@
     width: calc(100% - 50px);
     margin: 0 auto;
   }
-  .bl_manage__item {
-
-  }
 
   .bl_language {
     margin-left: 0;
@@ -203,10 +201,46 @@
     border-top: none;
     margin: 0 auto;
   }
+  .bl_product__verticalSlider.slick-slider .slickArrow-next.slick-arrow {
+    left: 97%;
+  }
+
+
+  .bl_inPresence__eagle{
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 14vw;
+  }
+
+  .bl_inPresence__secondPart{
+    margin-top: 0;
+    width: 84%;
+  }
+
+
+  .bl_inPresence__bigText{
+    font-size: 14px;
+  }
+  .bl_inPresence__smallText{
+    line-height: 14px;
+    font-size: 14px;
+  }
+  .bl_inPresence__procent{
+
+    left: 0;
+    font-size: 30px;
+    margin-left: 3%;
+    margin-top: 5px;
+  }
 
   .bl_nav__item:hover .bl_nav__subCategory {
     display: none;
   }
+
+
+
+
 
   .bl_nav__link {
     display: block;
@@ -219,15 +253,6 @@
   .bl_breadcrumbs__item {
     padding-right: 3%;
   }
-
-  //.bl_nav__discount {
-  //  float: none;
-  //
-  //  display: none;
-  //  width: 100%;
-  //  margin-bottom: 4px;
-  //
-  //}
 
   .bl_classicsGenre__full {
     .owl-nav {
@@ -313,6 +338,9 @@
 /* Small Devices, Tablets 768px */
 @media only screen and (max-width: 768px) {
 
+
+
+
   .bl_fullProducts__item {
     width: 49%;
 
@@ -348,6 +376,10 @@
   .bl_blog__year {
     line-height: 24px;
     font-size: 26px;
+  }
+
+  .bl_inPresence__procent{
+    padding-top: 5px;
   }
 
   .bl_news p{
@@ -391,6 +423,13 @@
       content: none;
     }
   }
+
+  .bl_navFooter{
+    padding-top: 0;
+    flex-direction: column;
+    min-height:100px;
+  }
+
 
 }
 
@@ -466,11 +505,29 @@
     font-size: 20px;
   }
 
+  .button_continueBuying__corrected{
+    margin-right: 0;
+  }
 
   .bl_contacts__icon{
     display: none;
   }
 
+  .bl_subscribe__fullInput{
+   min-width: initial;
+  }
+  .bl_subscribe__icon:after{
+    left: 20%;
+  }
+
+  .slider_classicGenre__description{
+    overflow: hidden;
+  }
+
+  .bl_ceoText__fullBlock{
+    max-height:220px;
+    overflow: hidden;
+  }
 
 }
 

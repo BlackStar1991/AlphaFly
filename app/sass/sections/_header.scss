@@ -330,13 +330,14 @@
   display: block;
   margin: 0 auto;
   width: 100%;
-  //max-width: 222px;
+  max-width: 160px;
 }
 
 .header_logo__title{
 
   color: #fff;
-  margin: 0;
+  margin-top: 6px;
+  margin-bottom: 0;
   font-size: 14px;
   text-align: right;
 }
@@ -569,7 +570,9 @@
 }
 // navMenu
 .bl_nav__fullItems{
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   width: 100%;
   line-height: 40px;
 }
