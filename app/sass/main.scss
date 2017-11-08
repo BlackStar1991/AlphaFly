@@ -789,12 +789,19 @@ $ml: 5%;
   position: relative;
   width: 100%;
   height: 100%;
-  min-height: 330px;
+  max-height: 310px;
 
   padding: 15px 20px;
 
   overflow-y: auto;
 }
+
+.bl_ceoText__fullBlock{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
 
 .slider_classicGenre__buttonsBlock {
   width: 100%;
@@ -2459,6 +2466,9 @@ $ml: 5%;
 .bl_productAdvantages__original {
   @include sprite($laib-100proc);
 }
+.advantage_ukr .bl_productAdvantages__original{
+  @include sprite($laib-100proc-ua);
+}
 
 .bl_productAdvantages__showroom {
   @include sprite($laib-showroom);
@@ -2466,6 +2476,9 @@ $ml: 5%;
 
 .bl_productAdvantages__delivery {
   @include sprite($laib-free-delivery);
+}
+.advantage_ukr .bl_productAdvantages__delivery{
+  @include sprite($laib-free-delivery-ua);
 }
 
 ////////
@@ -3400,7 +3413,7 @@ $ml: 5%;
 
 .shoppingBasket_product__title {
   padding-bottom: 3px;
-  border-bottom: 1px solid $color_blue;
+  border-bottom: 1px solid $color_oliv;
 }
 
 .shoppingBasket_product__item {
@@ -3616,7 +3629,7 @@ $ml: 5%;
     content: "";
     height: 1px;
     width: 100%;
-    background-color: $color_red;
+    background-color: $color_oliv;
   }
 }
 
@@ -3726,8 +3739,24 @@ $ml: 5%;
   float: right;
 }
 
+//////////////
 
+.button_showMore {
+  color: $color_blue2;
+  font-size: 16px;
+  background: none;
+  outline: none;
+  box-sizing: border-box;
+  margin-top: 10px;
 
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.full_block{
+  max-height: initial!important;
+}
 
 
 ///// Page Wishlist (Закладки)

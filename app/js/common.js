@@ -503,6 +503,27 @@ $(document).ready(function () {
 
 
 
+//// Button ShowMoreInformation
+    function showMoreInformation() {
+        var buttonShowMoreInformation = $(".button_showMore"),
+        classShowFullBlock = "full_block";
+
+        buttonShowMoreInformation.on("click", function () {
+
+          var  blockWithCEO = $(this).prev(),
+               fullBlock = $(this).parent();
+
+
+            fullBlock.toggleClass(classShowFullBlock);
+            blockWithCEO.toggleClass(classShowFullBlock);
+            $(this).remove();
+        });
+
+    }
+     showMoreInformation();
+
+
+
 
 
 

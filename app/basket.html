@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="utf-8">
+
+    <title> Alpha Fly </title>
+    <!-- SEO -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="image/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="image/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="image/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="image/favicon/apple-touch-icon-114x114.png">
+
+    <!-- build:css css/libs.min.css -->
+    <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+    <link rel="stylesheet" href="bower/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="bower/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="bower/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="bower/magnific-popup/dist/magnific-popup.css">
+    <!-- endbuild -->
+
+    <!-- build:css css/main.min.css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+
+</head>
+
+<body class="body">
+
+<!--[if lt IE 10]>
+<p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="http://browsehappy.com/">обновите</a>
+    его.</p>
+<![endif]-->
+
+
+<!-- ======================================  HEADER ========================================================== -->
+<header id="header" class="header">
+    <div class="mainWrapper">
+        <div class="bl_fullNavigation">   <!-- bl_nav__mobile closeMenu  -->
+            <div class="container">
+                <div class="col-xs-12 clearfix">
+
+                    <form class="bl_language" method="" action="">
+                        <span class="bl_language__active">ua</span>
+                        <ul class="bl_language__variables hidden">
+                            <li class="bl_language__variables_item language-select">ua</li>
+                            <li class="bl_language__variables_item language-select">ru</li>
+                        </ul>
+                    </form>
+
+
+                    <button class="bl_controls__button icon-controls__open hidden-lg"></button>
+
+                    <ul class="bl_controls">
+                        <li class="bl_controls_item"><a href="#"
+                                                        class="bl_controls__link controls_icon controls_icon__size">Выбор размера</a>
+                        </li>
+
+                        <li class="bl_controls_item"><a href="#"
+                                                        class="bl_controls__link controls_icon controls_icon__delivery">Доставка и оплата</a>
+                        </li>
+
+                        <li class="bl_controls_item"><a href="#"
+                                                        class="bl_controls__link controls_icon controls_icon__exchange">Обмен и возврат</a>
+                        </li>
+                        <li class="bl_controls_item"><a href="#"
+                                                        class="bl_controls__link controls_icon controls_icon__contacts">Контакты</a>
+                        </li>
+
+
+                    </ul>
+                    <ul class="bl_manage">
+                        <li class="bl_manage__item hidden"><a href="#"
+                                                              class="bl_manage__link manage_icon manage_icon__login">Логин</a>
+                        </li>
+                        <li class="bl_manage__item"><a href="#" class="bl_manage__link manage_icon manage_icon__tab">Закладки
+                            (<span>99</span>)</a></li>
+                        <!--<li class="bl_manage__item"><a href="#"-->
+                        <!--class="bl_manage__link manage_icon manage_icon__compare">Сравнение-->
+                        <!--товаров (<span>99</span>)</a></li>-->
+                        <li class="bl_manage__item"><a href="#"
+                                                       class="bl_manage__link manage_icon manage_icon__blog">Блог</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="main_header">
+                <div class="container">
+
+                    <div class="col-md-2">
+                        <div class="header_logo">
+                            <a href="#" class="header_logo__link">
+                                <img class="header_logo__image" src="image/log_Alpha.svg" alt="aaaa">
+                                <h2 class="header_logo__title">от компании Alpha FLY</h2>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-md-offset-1">
+                        <div class="bl_search">
+                            <div class="bl_wrappen">
+                                <input class="bl_search__field " type="text" placeholder="Поиск товара">
+                                <button class="bl_search__button"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 clearfix">
+                        <div class="bl_phones">
+                            <p class="bl_phones__text">+38 (096) 111-22-33</p>
+                            <p class="bl_phones__text">+38 (050) 222-33-44</p>
+                            <p class="bl_phones__text">info@alpha-fly.com.ua</p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3 correct_left">
+                        <a class="bl_shopBag" href="#">
+                            <p class="bl_shopBag__goods">
+                                Товаров:<span class="bl_shopBag__things">999</span>
+                                <span class="bl_shopBag__price">(9999999 грн)</span>
+                            </p>
+                            <svg class="bl_shopBag__image" viewBox="0 0 44 40">
+                                <path id="icon_bag" class="cls-1"
+                                      d="M1529.48,86.074h40.74v4.444h-40.74V86.074Zm40.74,11.851V92h-40.74v12.592a0.739,0.739,0,0,0,.74.741h5.21a3.7,3.7,0,1,0,4.4,0h15.6a3.7,3.7,0,1,0,4.4,0h4.47a0.741,0.741,0,0,0,0-1.481h-33.34V97.925h39.26Zm-43.7-24.443h2.96v11.11h40.74V78.667h-39.26V72.741a0.739,0.739,0,0,0-.74-0.741h-3.7A0.741,0.741,0,0,0,1526.52,73.481Z"
+                                      transform="translate(-1525.78 -72)"/>
+                            </svg>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bl_nav">
+                <div class="container">
+                    <div class="col-xs-12">
+                        <nav class="bl_nav__wrapper">
+                            <button type="button" class="bl_nav__button icon_stars hidden-md hidden-lg">
+                                <span class="bl_nav__button_text ">категории</span>
+                            </button>
+                            <ul class="bl_nav__fullItems">
+                                <li class="bl_nav__item"><a href="#" class="bl_nav__link">Мужская одежда</a>
+                                    <button class="bl_nav__button_subCategory icon_arrowSubmenu  hidden-md hidden-lg"></button>
+                                    <!-- Кнопку добавлять только есть подкатигории в категории -->
+                                    <ul class="bl_nav__subCategory">
+                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Куртки, пальто</a>
+                                        </li>
+                                        <li class="bl_nav__subItem"><a href="#"
+                                                                       class="bl_nav__link">Рубашки, регланы</a></li>
+                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Футболки, майки</a>
+                                        </li>
+                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Носки</a></li>
+                                        <li class="bl_nav__subItem"><a href="#"
+                                                                       class="bl_nav__link">Мужские брюки, штаны, шорты</a>
+                                        </li>
+                                        <li class="bl_nav__subItem"><a href="#"
+                                                                       class="bl_nav__link">Спортирные костюмы</a></li>
+                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Термобелье</a></li>
+                                        <li class="bl_nav__subItem"><a href="#"
+                                                                       class="bl_nav__link">Жилетки, безрукавки</a></li>
+                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Перчатки, шарфы</a>
+                                        </li>
+                                    </ul>
+
+                                </li>
+                                <li class="bl_nav__item"><a href="#" class="bl_nav__link">Женская одежда</a>
+                                    <button class="bl_nav__button_subCategory icon_arrowSubmenu  hidden-md hidden-lg"></button>
+                                    <ul class="bl_nav__subCategory">
+                                        <li class="bl_nav__subItem"><a href="#" class="bl_nav__link">Труселя</a></li>
+                                    </ul>
+
+                                </li>
+                                <li class="bl_nav__item"><a href="#" class="bl_nav__link">Детская одежда</a></li>
+                                <li class="bl_nav__item"><a href="#" class="bl_nav__link">Аксессуары</a></li>
+                                <li class="bl_nav__item"><a href="#" class="bl_nav__link">Скидки</a></li>
+
+                            </ul>
+
+                            <div class="bl_nav__discount">
+                                <a class="bl_nav__discount__link" href="#"></a>
+                            </div>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</header>
+<!-- ========================================== MAIN ===================================================== -->
+<main class="main">
+    <div class="container">
+
+        <div class="bl_breadcrumbs__wrapper hidden-xs">
+            <div class="container">
+                <div class="col-xs-12 ">
+                    <ul class="bl_breadcrumbs">
+                        <li class="bl_breadcrumbs__item"><a class="bl_breadcrumbs__link" href="#">Главная</a></li>
+                        <li class="bl_breadcrumbs__item"><p class="bl_breadcrumbs__link bl_breadcrumbs__active"
+                                                            href="#">Корзина покупок</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row row-flex row-flex-wrapss clearfix">
+            <div class="col-xs-12 col-md-5 col-md-offset-1 ">
+                <div class="bl_receiver">
+                    <h2 class="text_title text_title__margin">Получатель</h2>
+                    <form class="bl_receiver__form" role="form" action="">
+
+                        <div class="form-group ">
+                            <label for="user_name" class="text_paragraph">Имя:</label>
+                            <input class="form-control form-lineStyle" id="user_name" type="text" autofocus>
+                        </div>
+                        <div class="form-group form_telephone">
+                            <label for="user_tel" class="text_paragraph text_decor__importantField">Телефон:</label>
+                            <input class="form-control" id="user_tel" type="tel" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="user_email" class="text_paragraph">E-mail:</label>
+                            <input class=" form-control" id="user_email" type="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="user_refinement" class="text_paragraph">Пожелания и уточнения:</label>
+                            <textarea class=" form-control" name="" id="user_refinement" cols="30" rows="5"></textarea>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="col-xs-12 col-md-5 ">
+                <div class="bl_deliveryMethod">
+                    <h2 class="text_title text_title__margin">Способ доставки</h2>
+                    <label class="shoppingBasket_label">
+                        <input class="shoppingBasket_input" type="radio" name="deliveryMethod_radio" checked>
+                        <p class="shoppingBasket_text">Отправить Новой Почтой</p>
+                    </label>
+                    <label class="shoppingBasket_label">
+                        <input class="shoppingBasket_input" type="radio" name="deliveryMethod_radio">
+                        <p class="shoppingBasket_text">Доставить курьером по Киеву</p>
+                    </label>
+                    <label class="shoppingBasket_label">
+                        <input class="shoppingBasket_input" type="radio" name="deliveryMethod_radio">
+                        <p class="shoppingBasket_text">Самовывоз из магазина</p>
+                    </label>
+
+                    <div class="form-group group_selects">
+                        <select name="zone_id" id="input-payment-zone" class="form-control">
+                            <option value=""> Выберете область</option>
+                            <option value="">Киевская</option>
+                            <option value="">Волынская</option>
+                            <option value="">Одесская</option>
+                        </select>
+                    </div>
+                    <div class="form-group group_selects">
+                        <select name="city" id="input-payment-city" class="form-control">
+                            <option value=""> Выберите город</option>
+                            <option value="">Киев</option>
+                            <option value="">Луцк</option>
+                            <option value="">Одесса</option>
+                        </select>
+                    </div>
+                    <div class="form-group group_selects">
+                        <select name="department" id="input-payment-department" class="form-control">
+                            <option value=""> Выберите отделение</option>
+                            <option value="">№15</option>
+                            <option value="">№3</option>
+                            <option value="">№11</option>
+                        </select>
+                    </div>
+
+
+                    <h2 class="text_title text_title__margin">Способ оплаты</h2>
+
+
+                    <label class="shoppingBasket_label">
+                        <input class="shoppingBasket_input" type="radio" name="bl_paymentMethod_radio" checked>
+                        <p class="shoppingBasket_text">Оплата наличными</p>
+                    </label>
+
+                    <label class="shoppingBasket_label">
+                        <input class="shoppingBasket_input" type="radio" name="bl_paymentMethod_radio">
+                        <p class="shoppingBasket_text">Оплата через сайт</p>
+                    </label>
+
+
+                    <label class="shoppingBasket_label">
+                        <input class="shoppingBasket_input" type="radio" name="bl_paymentMethod_radio">
+                        <p class="shoppingBasket_text">Оплата на карту</p>
+                    </label>
+
+                    <label class="shoppingBasket_label">
+                        <input class="shoppingBasket_input" type="radio" name="bl_paymentMethod_radio">
+                        <p class="shoppingBasket_text">Самовывоз из магазина</p>
+                    </label>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="shoppingBasket_product">
+            <div class="row">
+
+                <div class="shoppingBasket_product__title clearfix">
+
+                    <div class="visible-xs visible-sm col-xs-12">
+                        <p class="table_title">Товары к покупке</p>
+                    </div>
+
+
+                    <div class="hidden-xs hidden-sm col-xs-12 col-md-5">
+                        <p class="table_title table_title__left">Товар</p>
+                    </div>
+                    <div class="hidden-xs hidden-sm col-xs-6 col-md-2">
+                        <p class="table_title ">Код товара</p>
+                    </div>
+                    <div class="hidden-xs hidden-sm col-xs-6 col-md-2">
+                        <p class="table_title">Количество</p>
+                    </div>
+
+                    <div class="hidden-xs hidden-sm col-xs-6 col-md-1">
+                        <p class="table_title">Цена</p>
+                    </div>
+                    <div class="hidden-xs hidden-sm col-xs-6 col-md-2">
+                        <p class="table_title">Итого</p>
+                    </div>
+                </div>
+
+
+                <!--  GOODS -->
+
+                <!-- product 1-->
+
+                <div class="shoppingBasket_product__good clearfix">
+                    <div class="col-xs-12 col-md-5">
+
+                        <div class="shoppingBasket_product__item">
+
+                            <div class="shoppingBasket_product__wrapper">
+                                <button class="delite_product">
+                                    <!--<i class="fa fa-times" aria-hidden="true"></i>-->
+                                </button>
+                                <img class="shoppingBasket_product__img" src="image/Products/product_small_1.jpg" alt="">
+
+                                <div class="shoppingBasket_product__description">
+                                    <h2 class="shoppingBasket_product__name">Мужская сумка со съемным плечевым ремешком
+                                        Piquadro
+                                        Pulse</h2>
+                                    <p class="shoppingBasket_product__value"><span>Цвет:</span> <span>черный</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xs-6 col-md-2">
+
+                        <div class="shoppingBasket_product__item">
+                            <p class="shoppingBasket_product__mark">FR-528M</p>
+                        </div>
+
+
+                    </div>
+                    <div class="col-xs-6 col-md-2">
+
+
+                        <div class="shoppingBasket_product__item">
+                            <div class="block_quantity__box">
+                                <button class="block_quantity__minus"><span>-</span></button>
+                                <input class="block_quantity__input" type="text" value="1">
+                                <button class="block_quantity__plus"><span>+</span></button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-xs-6 col-md-1">
+
+
+                        <div class="shoppingBasket_product__item" >
+                            <!--<span class="good-price__normal good-price__minSize">2 990 грн</span>-->
+                            <!-- Если есть акция то выподить эти цены -->
+                            <span class="good-price__old">5000 грн</span>
+                            <span class="good-price__new">2 990 грн</span>
+                        </div>
+
+
+                    </div>
+                    <div class="col-xs-6 col-md-2">
+
+
+                        <div class="shoppingBasket_product__item" >
+                            <span class="good-price__normal">9150 грн</span>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <!-- product 2-->
+
+                <div class="shoppingBasket_product__good clearfix">
+                    <div class="col-xs-12 col-md-5">
+
+                        <div class="shoppingBasket_product__item" >
+
+                            <div class="shoppingBasket_product__wrapper">
+                                <button class="delite_product">
+                                    <!--<i class="fa fa-times" aria-hidden="true"></i>-->
+                                </button>
+                                <img class="shoppingBasket_product__img" src="image/Products/product_small_2.jpg" alt="">
+
+                                <div class="shoppingBasket_product__description">
+                                    <h2 class="shoppingBasket_product__name">Мужская сумка со съемным плечевым ремешком
+                                        Piquadro
+                                        Pulse</h2>
+                                    <p class="shoppingBasket_product__value"><span>Цвет:</span> <span>черный</span></p>
+                                    <p class="shoppingBasket_product__value"><span>Цвет:</span> <span>черный</span></p>
+                                    <p class="shoppingBasket_product__value"><span>Размер:</span> <span>XXL</span></p>
+                                    <p class="shoppingBasket_product__value"><span>Материал:</span>
+                                        <span>Драконья кожа</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xs-6 col-md-2">
+
+                        <div class="shoppingBasket_product__item" >
+                            <p class="shoppingBasket_product__mark">FR-528M</p>
+                        </div>
+
+
+                    </div>
+                    <div class="col-xs-6 col-md-2">
+
+
+                        <div class="shoppingBasket_product__item">
+                            <div class="block_quantity__box">
+                                <button class="block_quantity__minus"><span>-</span></button>
+                                <input class="block_quantity__input" type="text" value="1">
+                                <button class="block_quantity__plus"><span>+</span></button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-xs-6 col-md-1">
+
+
+                        <div class="shoppingBasket_product__item" >
+                            <span class="good-price__normal ">2 990 грн</span>
+                            <!-- Если есть акция то выподить эти цены -->
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-xs-6 col-md-2">
+
+
+                        <div class="shoppingBasket_product__item" >
+                            <span class="good-price__normal">99999999 грн</span>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---->
+
+        <div class="col-xs-12 col-md-2 col-md-offset-10">
+            <div class="shoppingBasket_product__fullPrise">
+                <p>
+                    <span class="table_title">всего:</span>
+                    <span class="good-price__normal good-price__minSize shoppingBasket_product__fullPrise_text">99999999 грн</span>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="col-xs-12 clearfix">
+            <button class="button_buyProduct button_buyProduct__corrected decor_threeLine">
+                <span class="button_buyProduct__text">Оформить заказ</span>
+            </button>
+
+
+            <button class="button_continueBuying button_continueBuying__corrected">
+                <a class="button_buyProduct__text button_continueBuying__link" href="#">Продолжить покупки</a>
+            </button>
+
+
+
+
+        </div>
+
+
+        <div class="col-xs-12">
+            <div class="decor_line"></div>
+        </div>
+    </div>
+
+
+</main>
+
+<!-- ====================================== FOOTER  ==================================================== -->
+<footer class="footer">
+
+    <div class="mainWrapper">
+        <div class="container">
+
+            <div class="footer_firstPart clearfix">
+                <div class="col-md-2">
+                    <nav class="bl_navFooter">
+                        <a class="bl_navFooter__link" href="#">Контакты</a>
+                        <a class="bl_navFooter__link" href="#">Доставка</a>
+                        <a class="bl_navFooter__link" href="#">Обмен</a>
+                        <a class="bl_navFooter__link" href="#">Выбор размера</a>
+                    </nav>
+                </div>
+                <div class="col-md-8">
+                    <div class="bl_mainAdress">
+                        <p class="bl_mainAdress__text">г. Киев, м."Лесная",</p>
+                        <p class="bl_mainAdress__text">ул. Беломорская, 1, ЦТ "Дарынок", зал Г, магазин ДЛ-8</p>
+                        <!--<a class="bl_mainAdress__link" href="" title="">-->
+                        <!--<img class="bl_mainAdress__map" src="image/map.png" alt="">-->
+                        <!--</a>-->
+
+                    </div>
+
+
+                    <div class="bl_subscribe">
+                        <p class="bl_subscribe__information hidden-xs">
+                            Будьте в курсе новостей и акций, от компании Alpha industries подписавшись на нашу рассылку.
+                            Не пропустите свою скидку, когда у нас будет АКЦИЯ!
+                        </p>
+                        <p class="bl_subscribe__information visible-xs">Подпишись, не пропустите свою скидку</p>
+                        <form class="bl_subscribe__fullInput clearfix">
+                            <input class="bl_subscribe__input" type="text" placeholder="Ваш емейл адрес ...">
+                            <div class="bl_subscribe__message"> </div>
+                            <button class="bl_subscribe__button" type="button">
+                                <i class="bl_subscribe__icon"></i>
+                                <span class="bl_subscribe__choose">Подписаться</span>
+                            </button>
+                        </form>
+
+                        <p class="text_error hidden">Email указан не верно!</p>
+                        <!-- Текст показывается если указан не правильный Email -->
+
+                    </div>
+                </div>
+
+                <div class="col-md-2 hidden-xs">
+                    <div class="bl_phones footer_firstPart__phones clearfix">
+                        <p class="bl_phones__text">+38 (096) 111-22-33</p>
+                        <p class="bl_phones__text">+38 (050) 222-33-44</p>
+                        <p class="bl_phones__text">info@alpha-fly.com.ua</p>
+                    </div>
+                    <a class="bl_phones__facebook fa fa-facebook" href="#"></a>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="footer_secondPart hidden-xs">
+            <div class="container">
+                <div class="col-xs-12">
+                    <p class="footer_secondPart__description">
+                        © 2017 Alpha FLY
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ANCOR -->
+
+<div class="bl_ancor hidden-xs hidden">
+    <div class="bl_wrappen">
+        <a class="bl_ancor__link bl_ancor__icon" href="#header">Вверх</a>
+    </div>
+</div>
+
+<!-- POPUP BIFORE ADD TO SHOPBAG-->
+
+<div class="popup_likeShopbag hidden">
+    <div class="wrapperBlock">
+        <button type="button" class="popup_likeShopbag__close">
+            <i class="fa fa-times decor_icon__close" aria-hidden="true"></i>
+        </button>
+        <p class="popup_likeShopbag__text popup_likeShopbag__text_main">Подтверждение</p>
+
+        <div class="popup_likeShopbag__product">
+            <p class="shoppingBasket_product__name">Электро-сеть ываыв ыв аываы аыв аываываыва ываываыва ываываываываыва
+                ываыва</p>
+        </div>
+        <p class="popup_likeShopbag__text  popup_likeShopbag__text_main">добавлен в корзину</p>
+
+        <div class="popup_likeShopbag__buttons">
+            <button class="button_buyProduct popup_likeShopbag__continueBuying">
+                <span class="button_buyProduct__text popup_likeShopbag__buttons_text">Продолжить покупки</span>
+            </button>
+            <div class="button_buyProduct popup_likeShopbag__goToShopbag">
+                <a href="#" class="button_buyProduct__text popup_likeShopbag__goToShopbag_text">Оформление заказа</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Popup ADVANTAGES-->
+
+<div class="popup_advantages hidden">
+    <button type="button" class="popup_advantages__close decor_close"></button>
+    <div class="popup_advantages__fullContent">
+        ВПИХИВАЙ УМНЫЕ СЛОВА СЮДА
+    </div>
+</div>
+
+
+<div class="blackWrapper hidden"></div>
+
+
+<script src="libs/jquery.min.js"></script>
+
+<!-- build:js js/libs.min.js -->
+
+<script src="bower/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="bower/fancybox/dist/jquery.fancybox.min.js"></script>
+<script src="bower/jquery.maskedinput/dist/jquery.maskedinput.min.js"></script>
+<script src="bower/slick-carousel/slick/slick.min.js"></script>
+<script src="bower/elevatezoom/jquery.elevateZoom-2.2.3.min.js"></script>
+<script src="bower/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+
+<!-- endbuild -->
+
+<!-- build:js js/common.min.js -->
+<script src="js/common.js"></script>
+<!-- endbuild -->
+
+
+<script src="libs/LocalMarker.js"></script>
+</body>
+
+</html>
