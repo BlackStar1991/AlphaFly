@@ -40,7 +40,7 @@ $(document).ready(function () {
         mainNavigationFixed = "bl_nav__fixed";
 
 
-    console.log( topMainHeaderBlock + " =topMainHeaderBlock");
+    // console.log( topMainHeaderBlock + " =topMainHeaderBlock");
 
     var screenWidth = screen.width;
     // Showed ancor only when scrolling > scrineSize

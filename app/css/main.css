@@ -361,10 +361,11 @@ button {
   max-width: 160px; }
 
 .bl_search {
+  float: right;
+  width: 95%;
   position: relative;
   margin-top: 10px;
   margin-left: 26px;
-  width: 100%;
   max-width: 415px; }
 
 .bl_search__field {
@@ -3803,12 +3804,15 @@ button {
   .bl_language {
     margin-left: 0; }
   .bl_search {
-    margin: 10px auto; }
+    float: none;
+    margin: 20px auto 0;
+    width: 115%; }
   .bl_phones {
-    float: none; }
+    float: none;
+    margin-top: 10px; }
   .bl_phones__text {
     text-align: center;
-    font-size: 18px; }
+    font-size: 16px; }
   .bl_shopBag {
     position: fixed;
     top: 0;

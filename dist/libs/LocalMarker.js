@@ -1,7 +1,11 @@
 window.onload = function () {
-    var a = window.location.toString();
-        console.log("a =" + a);
+    var url = window.location.toString(),
+        textForMarker = "loc",
+        coincidence = url.search( "/" + textForMarker + "/i" );
 
+    if( coincidence !== -1){
+        console.log("coincidence =" + coincidence);
+    }
 
     var body = document.body;
     var divMarker =  document.createElement('div');
@@ -11,11 +15,6 @@ window.onload = function () {
     var after = document.createElement('div');
         after.style.cssText ='position:absolute;transform:translate(-150%, -50%)';
         after.innerHTML = 'Layout';
-
-
-
     body.appendChild(divMarker);
     divMarker.appendChild(after);
-
-
 };
