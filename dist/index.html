@@ -36,7 +36,7 @@
 <header id="header" class="header">
     <div class="mainWrapper">
         <div class="bl_fullNavigation">   <!-- bl_nav__mobile closeMenu  -->
-            <div class="container">
+            <div class="container fixed_menu">
                 <div class="col-xs-12 clearfix">
 
                     <form class="bl_language" method="" action="">
@@ -48,7 +48,7 @@
                     </form>
 
 
-                    <button class="bl_controls__button icon-controls__open hidden-lg"></button>
+                    <button class="bl_controls__button icon-controls__open hidden-lg hidden-md"></button>
 
                     <ul class="bl_controls">
                         <li class="bl_controls_item"><a href="#"
@@ -67,32 +67,27 @@
                         </li>
 
 
-                    </ul>
-                    <ul class="bl_manage">
-                        <li class="bl_manage__item hidden"><a href="#"
-                                                              class="bl_manage__link manage_icon manage_icon__login">Логин</a>
-                        </li>
-                        <li class="bl_manage__item"><a href="#" class="bl_manage__link manage_icon manage_icon__tab">Закладки
+                        <li class="bl_controls_item"><a href="#" class="bl_controls__link controls_icon controls_icon__tab">Закладки
                             (<span>99</span>)</a></li>
-                        <!--<li class="bl_manage__item"><a href="#"-->
-                        <!--class="bl_manage__link manage_icon manage_icon__compare">Сравнение-->
-                        <!--товаров (<span>99</span>)</a></li>-->
-                        <li class="bl_manage__item"><a href="#"
-                                                       class="bl_manage__link manage_icon manage_icon__blog">Блог</a>
+
+                        <li class="bl_controls_item"><a href="#"
+                                                       class="bl_controls__link controls_icon controls_icon__blog">Блог</a>
                         </li>
+
+
                     </ul>
+
 
                 </div>
 
             </div>
             <div class="main_header">
-                <div class="container">
+                <div class="container ">
 
                     <div class="col-md-2">
                         <div class="header_logo">
                             <a href="#" class="header_logo__link">
                                 <img class="header_logo__image" src="image/log_Alpha.svg" alt="">
-                                <h2 class="header_logo__title">от компании Alpha FLY</h2>
                             </a>
                         </div>
                     </div>
@@ -1066,6 +1061,8 @@
 </div>
 
 <div class="blackWrapper hidden"></div>
+
+
 
 
 <script src="libs/jquery.min.js"></script>

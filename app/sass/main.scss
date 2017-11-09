@@ -10,10 +10,9 @@
 /*FONTS*/
 /*********************************************/
 
-@include font-face("Tahoma", "../fonts/Tahoma/Tahoma", 400, normal, eot ttf woff);
-@include font-face("Arial Narrow", "../fonts/Arial Narrow/Arial Narrow", 400, normal, eot ttf woff);
-@include font-face("Arial Narrow Bold", "../fonts/Arial Narrow Bold/Arial Narrow Bold", 700, normal, eot ttf woff);
-@include font-face("FontAwesome", "../fonts/FontAwesome/FontAwesome", 400, normal, eot ttf woff woff2);
+@include font-face("Arial Narrow", "../fonts/Arial Narrow/Arial Narrow", 400, normal, woff2 woff ttf);
+@include font-face("Arial Narrow Bold", "../fonts/Arial Narrow Bold/Arial Narrow Bold", 400, normal, woff2 woff ttf);
+@include font-face("FontAwesome", "../fonts/FontAwesome/FontAwesome", 400, normal, woff2 woff ttf);
 
 /*********************************************/
 /*MAIN STYLES*/
@@ -86,6 +85,7 @@ img {
 }
 
 a {
+  font-family: $ArialNarrow;
   text-decoration: none;
   color: #000;
   &:hover,
@@ -780,7 +780,7 @@ $ml: 5%;
 
 .slider_classicGenre__currentPrice {
   text-align: center;
-  color: #e50014;
+  color: $color_oliv;
   font-family: $ArialBold;
   font-size: 28px;
 }
@@ -790,6 +790,7 @@ $ml: 5%;
   width: 100%;
   height: 100%;
   max-height: 310px;
+  min-height: 308px;
 
   padding: 15px 20px;
 
@@ -1808,7 +1809,6 @@ $ml: 5%;
       color: #000 !important;
 
       box-sizing: border-box;
-      font-family: $Tahoma;
       font-size: 16px;
       line-height: 30px;
     }
@@ -1817,7 +1817,6 @@ $ml: 5%;
   a.bl_pagination__link_number {
     width: 30px;
     color: #000;
-    font-family: $ArialNarrow;
     font-size: 14px;
     box-sizing: border-box;
   }
@@ -1969,8 +1968,13 @@ $ml: 5%;
   max-width: 94px;
 }
 
+
+
+
+
 .bl_product__verticalItem {
   width: 100%;
+  margin-right: 5px;
   cursor: pointer;
 }
 
@@ -3572,15 +3576,16 @@ $ml: 5%;
 
 .button_continueBuying {
   margin-top: 18px;
-  width: 100%;
   max-width:206px;
   min-height: 35px;
   box-sizing: border-box;
   background-color: #000;
   transition: all .3s;
 
-  &:hover {
+  &:hover,
+  &:focus{
     transition: all .3s;
+    color: #fff;
     background-color: $color_oliv;
   }
 }
@@ -3737,6 +3742,11 @@ $ml: 5%;
 
 #button-search{
   float: right;
+}
+
+
+.serch-entry-title{
+  padding-top: 7px;
 }
 
 //////////////
