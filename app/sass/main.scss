@@ -1270,14 +1270,13 @@ $ml: 5%;
 
 .bl_catalog__main {
   position: relative;
+  clear: both;
   width: 100%;
   color: #fff;
   margin: 0;
   text-align: center;
-  //min-height: 40px;
   background-color: #000;
   padding: 10px;
-
   font-family: $ArialNarrow;
   font-size: 18px;
 }

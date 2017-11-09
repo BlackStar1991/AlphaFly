@@ -213,7 +213,7 @@ button {
   .bl_controls_item:first-child {
     margin-left: 0; }
   .bl_controls_item:nth-last-child(2) {
-    margin-left: 34%; }
+    margin-left: 33%; }
 
 .bl_controls__link {
   font-size: 14px;
@@ -346,7 +346,8 @@ button {
   background-color: #000; }
 
 .header_logo {
-  width: 100%; }
+  width: 100%;
+  margin-top: 10px; }
 
 .header_logo__link {
   display: block;
@@ -421,8 +422,14 @@ button {
   float: right; }
 
 .bl_phones__text {
+  display: block;
   text-align: left;
   color: #fff; }
+  .bl_phones__text:hover {
+    color: #fff; }
+  .bl_phones__text:focus {
+    color: #fff;
+    text-decoration: underline; }
 
 .bl_shopBag {
   float: right;
@@ -458,10 +465,11 @@ button {
 .bl_nav__fixed {
   position: fixed;
   width: 100%;
-  top: 101px;
+  top: 91px;
   z-index: 10; }
 
-.bl_nav__button {
+.bl_nav__button,
+.bl_filters__button {
   display: block;
   width: 100%;
   margin: 5px auto;
@@ -469,6 +477,12 @@ button {
   box-sizing: border-box;
   background-color: #000;
   border-radius: 4px; }
+
+.bl_filters__button {
+  display: none; }
+
+.ocfilter {
+  display: block; }
 
 .bl_nav__button_text {
   position: relative;
@@ -1409,6 +1423,7 @@ button {
 
 .bl_catalog__main {
   position: relative;
+  clear: both;
   width: 100%;
   color: #fff;
   margin: 0;
@@ -3753,6 +3768,8 @@ button {
     border-bottom: 2px solid white; }
   .main_header {
     padding-top: 57px; }
+  .header_logo {
+    margin-top: 0; }
   .bl_nav__subCategory {
     position: relative;
     top: 0;
@@ -3779,6 +3796,10 @@ button {
   .bl_controls__link {
     font-size: 20px;
     margin-left: 10%; }
+  .bl_filters__button {
+    display: block; }
+  .ocfilter {
+    display: none; }
   .bl_language {
     margin-left: 0; }
   .bl_search {
@@ -3826,7 +3847,7 @@ button {
     margin-top: 0;
     width: 84%; }
   .bl_inPresence__bigText {
-    font-size: 14px; }
+    font-size: 16px; }
   .bl_inPresence__smallText {
     line-height: 14px;
     font-size: 14px; }
@@ -3922,6 +3943,16 @@ button {
   .inf_product__tabs li {
     width: 100%;
     display: block; }
+  .bl_inPresence__fullText {
+    background-size: cover;
+    min-height: 250px; }
+  .bl_inPresence__wrapper {
+    margin-top: 36px; }
+  .bl_inPresence__smallText {
+    font-size: 17px; }
+  .bl_inPresence__eagle {
+    top: 10px;
+    width: 25vw; }
   table {
     overflow-x: auto;
     display: block; }
@@ -3946,10 +3977,14 @@ button {
 
 /* Extra Small Devices, Phones 480px */
 @media only screen and (max-width: 480px) {
+  .bl_shopBag__text {
+    display: none; }
   .bl_subscribe__icon {
     display: block; }
   .bl_subscribe__choose {
     display: none; }
+  .bl_inPresence__eagle {
+    width: 42vw; }
   .bl_fullProducts__item {
     width: 100%; }
     .bl_fullProducts__item:nth-of-type(2n) {

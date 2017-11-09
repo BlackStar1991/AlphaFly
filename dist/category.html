@@ -36,7 +36,7 @@
 <header id="header" class="header">
     <div class="mainWrapper">
         <div class="bl_fullNavigation">   <!-- bl_nav__mobile closeMenu  -->
-            <div class="container">
+            <div class="container fixed_menu">
                 <div class="col-xs-12 clearfix">
 
                     <form class="bl_language" method="" action="">
@@ -48,7 +48,7 @@
                     </form>
 
 
-                    <button class="bl_controls__button icon-controls__open hidden-lg"></button>
+                    <button class="bl_controls__button icon-controls__open hidden-lg hidden-md"></button>
 
                     <ul class="bl_controls">
                         <li class="bl_controls_item"><a href="#"
@@ -67,37 +67,31 @@
                         </li>
 
 
-                    </ul>
-                    <ul class="bl_manage">
-                        <li class="bl_manage__item hidden"><a href="#"
-                                                              class="bl_manage__link manage_icon manage_icon__login">Логин</a>
-                        </li>
-                        <li class="bl_manage__item"><a href="#" class="bl_manage__link manage_icon manage_icon__tab">Закладки
+                        <li class="bl_controls_item"><a href="#" class="bl_controls__link controls_icon controls_icon__tab">Закладки
                             (<span>99</span>)</a></li>
-                        <!--<li class="bl_manage__item"><a href="#"-->
-                        <!--class="bl_manage__link manage_icon manage_icon__compare">Сравнение-->
-                        <!--товаров (<span>99</span>)</a></li>-->
-                        <li class="bl_manage__item"><a href="#"
-                                                       class="bl_manage__link manage_icon manage_icon__blog">Блог</a>
+
+                        <li class="bl_controls_item"><a href="#"
+                                                        class="bl_controls__link controls_icon controls_icon__blog">Блог</a>
                         </li>
+
+
                     </ul>
+
 
                 </div>
 
             </div>
             <div class="main_header">
-                <div class="container">
+                <div class="container ">
 
-                    <div class="col-md-2">
+                    <div class="col-xs-6 col-md-2">
                         <div class="header_logo">
                             <a href="#" class="header_logo__link">
                                 <img class="header_logo__image" src="image/log_Alpha.svg" alt="">
-                                <h2 class="header_logo__title">от компании Alpha FLY</h2>
                             </a>
                         </div>
                     </div>
-
-                    <div class="col-md-4 col-md-offset-1">
+                    <div class="col-xs-12 col-md-4 col-md-offset-1">
                         <div class="bl_search">
                             <div class="bl_wrappen">
                                 <input class="bl_search__field " type="text" placeholder="Поиск товара">
@@ -105,7 +99,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 clearfix">
+                    <div class="col-xs-6  col-md-2 clearfix">
                         <div class="bl_phones">
                             <p class="bl_phones__text">+38 (096) 111-22-33</p>
                             <p class="bl_phones__text">+38 (050) 222-33-44</p>
@@ -114,10 +108,11 @@
 
                     </div>
 
-                    <div class="col-md-3 correct_left">
+                    <div class="col-xs-12 col-md-3 correct_left">
                         <a class="bl_shopBag" href="#">
                             <p class="bl_shopBag__goods">
-                                Товаров:<span class="bl_shopBag__things">999</span>
+                                <span class="bl_shopBag__text">Товаров:</span>
+                                <span class="bl_shopBag__things">999</span>
                                 <span class="bl_shopBag__price">(9999999 грн)</span>
                             </p>
                             <svg class="bl_shopBag__image" viewBox="0 0 44 40">
@@ -212,63 +207,12 @@
         <div class="bl_catalog">
             <div class="container">
                 <div class="col-md-3">
+
+                    <button type="button" class="bl_filters__button" title="Filters button">
+                        <span class="bl_nav__button_text ">фильтры</span>
+                    </button>
+
                     <div class="bl_catalog__filtersWrapper">
-
-
-                        <!--
-                                                <div class="bl_category">
-                                                    <p class="bl_catalog__title">Категории</p>
-                                                    <ul class="bl_category__full">
-                                                        <li class="bl_category__item">
-                                                            <label class="bl_category__label">
-                                                                <input class="bl_category__checkbox" type="checkbox" name="categoryName">
-                                                                <p class="bl_category__name">Аксессуары <span
-                                                                        class="bl_category__number">(7)</span>
-                                                                </p>
-                                                            </label>
-                                                        </li>
-                                                        <li class="bl_category__item">
-                                                            <label class="bl_category__label">
-                                                                <input class="bl_category__checkbox" type="checkbox" name="categoryName"
-                                                                       checked>
-                                                                <p class="bl_category__name">Детская одежда <span
-                                                                        class="bl_category__number">(7)</span></p>
-                                                            </label>
-                                                        </li>
-                                                        <li class="bl_category__item">
-                                                            <label class="bl_category__label">
-                                                                <input class="bl_category__checkbox" type="checkbox" name="categoryName">
-                                                                <p class="bl_category__name">Аксессуары <span
-                                                                        class="bl_category__number">(7)</span>
-                                                                </p>
-                                                            </label>
-                                                        </li>
-                                                        <li class="bl_category__item">
-                                                            <label class="bl_category__label">
-                                                                <input class="bl_category__checkbox" type="checkbox" name="categoryName">
-                                                                <p class="bl_category__name">Женская одежда <span
-                                                                        class="bl_category__number">(14)</span></p>
-                                                            </label>
-                                                        </li>
-                                                        <li class="bl_category__item">
-                                                            <label class="bl_category__label">
-                                                                <input class="bl_category__checkbox" type="checkbox" name="categoryName">
-                                                                <p class="bl_category__name">Мужская одежда <span
-                                                                        class="bl_category__number">(74)</span></p>
-                                                            </label>
-                                                        </li>
-                                                        <li class="bl_category__item">
-                                                            <label class="bl_category__label">
-                                                                <input class="bl_category__checkbox" type="checkbox" name="categoryName">
-                                                                <p class="bl_category__name">Спецодежда <span
-                                                                        class="bl_category__number">(5)</span>
-                                                                </p>
-                                                            </label>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                        -->
-                        <!-- Filter Color -->
 
                         <div class="filter_color">
                             <p class="bl_catalog__title">Цвет</p>
@@ -470,6 +414,8 @@
                         </div>
 
                     </div>
+
+
                 </div>
 
                 <div class="col-md-9">
@@ -1435,9 +1381,9 @@
 
                 <div class="col-md-2 hidden-xs">
                     <div class="bl_phones footer_firstPart__phones clearfix">
-                        <p class="bl_phones__text">+38 (096) 111-22-33</p>
-                        <p class="bl_phones__text">+38 (050) 222-33-44</p>
-                        <p class="bl_phones__text">info@alpha-fly.com.ua</p>
+                        <a href="" class="bl_phones__text">+38 (096) 111-22-33</a>
+                        <a href="" class="bl_phones__text">+38 (050) 222-33-44</a>
+                        <a href="" class="bl_phones__text">info@alpha-fly.com.ua</a>
                     </div>
                     <a class="bl_phones__facebook fa fa-facebook" href="#"></a>
                 </div>
