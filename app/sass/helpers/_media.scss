@@ -210,6 +210,8 @@
   }
 
   .bl_shopBag__goods {
+    position: relative;
+    top:-7px;
     text-align: center;
     font-size: 18px;
   }
@@ -423,13 +425,13 @@
     margin-top: 36px;
   }
   .bl_inPresence__smallText{
+    line-height: 20px;
     font-size: 17px;
   }
 
   .bl_inPresence__eagle{
-    top: 10px;
+    top: 0;
     width: 25vw;
-
   }
 
 
@@ -574,6 +576,10 @@
   .bl_ceoText__fullBlock {
     max-height: 220px;
     overflow: hidden;
+  }
+
+  .button_buyProduct__corrected{
+    float: none;
   }
 
 }

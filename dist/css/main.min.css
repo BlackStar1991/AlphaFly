@@ -2161,7 +2161,7 @@ button {
 .bl_characteristics__fullList {
   position: relative;
   width: 100%;
-  min-height: 150px;
+  min-height: 90px;
   margin-top: 19px;
   padding-bottom: 17px; }
 
@@ -3230,12 +3230,13 @@ button {
       justify-content: center; }
 
 .shoppingBasket_product__name {
-  text-align: center !important;
+  text-align: left;
   margin: 0 0 25px;
   font-size: 16px;
   color: #000; }
-  .shoppingBasket_product__name.popup_likeShopbag__text {
-    text-align: center; }
+
+.popup_likeShopbag .shoppingBasket_product__name {
+  text-align: center; }
 
 .shoppingBasket_product__value {
   text-align: left;
@@ -3447,7 +3448,7 @@ button {
   padding-top: 7px; }
 
 .button_showMore {
-  color: #0d8dd2;
+  color: #7f8000;
   font-size: 16px;
   background: none;
   outline: none;
@@ -3823,6 +3824,8 @@ button {
     background-color: #000;
     z-index: 999; }
   .bl_shopBag__goods {
+    position: relative;
+    top: -7px;
     text-align: center;
     font-size: 18px; }
   .bl_shopBag__image {
@@ -3953,9 +3956,10 @@ button {
   .bl_inPresence__wrapper {
     margin-top: 36px; }
   .bl_inPresence__smallText {
+    line-height: 20px;
     font-size: 17px; }
   .bl_inPresence__eagle {
-    top: 10px;
+    top: 0;
     width: 25vw; }
   table {
     overflow-x: auto;
@@ -4035,7 +4039,9 @@ button {
     overflow: hidden; }
   .bl_ceoText__fullBlock {
     max-height: 220px;
-    overflow: hidden; } }
+    overflow: hidden; }
+  .button_buyProduct__corrected {
+    float: none; } }
 
 /* Custom, iPhone Retina 320px */
 @media only screen and (max-width: 320px) {
