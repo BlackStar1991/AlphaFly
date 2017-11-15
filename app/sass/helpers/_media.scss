@@ -6,6 +6,11 @@
 /* Large Devices, Wide Screens 1280px */
 @media only screen and (max-width: 1200px) {
 
+  .bl_inPresence__eagle{
+    top: -70px;
+  }
+
+
   .bl_controls_item:nth-last-child(2) {
     margin-left: 19%;
   }
@@ -185,7 +190,6 @@
   .bl_search {
     float: none;
     margin:20px auto 0;
-    width: 115%;
   }
 
   .bl_phones {
@@ -194,7 +198,7 @@
   }
   .bl_phones__text {
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
   }
 
 
@@ -245,8 +249,8 @@
   }
 
   .bl_inPresence__secondPart {
-    margin-top: 0;
-    width: 84%;
+    margin-top: 5px;
+    width: 83%;
   }
 
   .bl_inPresence__bigText {
@@ -261,7 +265,7 @@
     left: 0;
     font-size: 30px;
     margin-left: 3%;
-    margin-top: 5px;
+    margin-top: 20px;
   }
 
   .bl_nav__item:hover .bl_nav__subCategory {
@@ -400,7 +404,7 @@
   }
 
   .bl_inPresence__procent {
-    padding-top: 5px;
+    padding-top: 0;
   }
 
   .bl_news p {
@@ -414,6 +418,16 @@
   .inf_product__tabs li {
     width: 100%;
     display: block;
+  }
+
+  .bl_inPresence{
+    margin-top: 0;
+    background: none;
+    min-height: initial;
+  }
+
+  .bl_inPresence__info{
+    transform: none;
   }
 
   .bl_inPresence__fullText{
@@ -434,6 +448,24 @@
     width: 25vw;
   }
 
+  .slider_classicGenre__title{
+    background-color: #fff;
+  }
+  .slider_classicGenre__link{
+    font-family:$ArialNarrow;
+    color: #333;
+    font-size: 18px;
+    &:hover,
+    &:focus{
+      color: #333;
+    }
+    &:focus{
+      text-decoration: underline;
+    }
+
+  }
+
+  
 
   table {
     overflow-x: auto;
@@ -470,11 +502,20 @@
     min-height: 100px;
   }
 
+
+  .bl_phones .bl_phones__text:last-child{
+    display: none;
+  }
+
+
 }
 
 /* Extra Small Devices, Phones 480px */
 @media only screen and (max-width: 480px) {
 
+  .bl_inPresence__wrapper{
+    margin-top: 12px;
+  }
 
 
   .bl_shopBag__text {

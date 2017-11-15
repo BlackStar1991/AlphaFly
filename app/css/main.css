@@ -905,7 +905,7 @@ button {
   -ms-transform: translateY(-50%);
       transform: translateY(-50%);
   width: 100%;
-  min-height: 164px;
+  min-height: 200px;
   background: url("../image/line_eagle.png") 50% 50% no-repeat;
   background-size: contain;
   color: #333; }
@@ -915,13 +915,13 @@ button {
 
 .bl_inPresence__eagle {
   position: absolute;
-  top: 30px;
+  top: 20px;
   right: 47px; }
 
 .bl_inPresence__procent {
   float: left;
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 38px;
   margin-left: 7%;
   color: #000;
   font-family: "Arial Narrow Bold", sans-serif;
@@ -931,13 +931,14 @@ button {
 .bl_inPresence__secondPart {
   width: 70%;
   float: left;
-  margin-top: 30px; }
+  margin-top: 50px; }
 
 .bl_inPresence__bigText {
   margin-left: 5%;
   color: #000;
   font-family: "Arial Narrow Bold", sans-serif;
   font-size: 24px;
+  line-height: 22px;
   text-transform: uppercase; }
 
 .bl_inPresence__smallText {
@@ -945,6 +946,7 @@ button {
   margin-top: 0;
   color: #333;
   font-size: 19px;
+  line-height: 20px;
   margin-left: 5%;
   padding: 0; }
 
@@ -958,7 +960,6 @@ button {
 
 .bl_classicsGenre__histore {
   display: block;
-  margin-top: 28px;
   margin-bottom: 10px;
   line-height: 24px;
   height: 120px;
@@ -3537,6 +3538,7 @@ button {
   float: left;
   width: 60%;
   max-width: 400px;
+  border-radius: 0;
   height: 40px;
   color: #000;
   box-sizing: border-box;
@@ -3544,15 +3546,15 @@ button {
   .bl_subscribe__input::-webkit-input-placeholder {
     color: #000;
     font-size: 14px;
-    line-height: 36px; }
+    line-height: 40px; }
   .bl_subscribe__input:-ms-input-placeholder {
     color: #000;
     font-size: 14px;
-    line-height: 36px; }
+    line-height: 40px; }
   .bl_subscribe__input::placeholder {
     color: #000;
     font-size: 14px;
-    line-height: 36px; }
+    line-height: 40px; }
 
 .bl_subscribe__message {
   position: absolute;
@@ -3694,6 +3696,8 @@ button {
 /*********************************************/
 /* Large Devices, Wide Screens 1280px */
 @media only screen and (max-width: 1200px) {
+  .bl_inPresence__eagle {
+    top: -70px; }
   .bl_controls_item:nth-last-child(2) {
     margin-left: 19%; }
   .bl_inPresence__procent {
@@ -3806,14 +3810,13 @@ button {
     margin-left: 0; }
   .bl_search {
     float: none;
-    margin: 20px auto 0;
-    width: 115%; }
+    margin: 20px auto 0; }
   .bl_phones {
     float: none;
     margin-top: 10px; }
   .bl_phones__text {
     text-align: center;
-    font-size: 16px; }
+    font-size: 15px; }
   .bl_shopBag {
     position: fixed;
     top: 0;
@@ -3851,8 +3854,8 @@ button {
     right: 0;
     width: 14vw; }
   .bl_inPresence__secondPart {
-    margin-top: 0;
-    width: 84%; }
+    margin-top: 5px;
+    width: 83%; }
   .bl_inPresence__bigText {
     font-size: 16px; }
   .bl_inPresence__smallText {
@@ -3862,7 +3865,7 @@ button {
     left: 0;
     font-size: 30px;
     margin-left: 3%;
-    margin-top: 5px; }
+    margin-top: 20px; }
   .bl_nav__item:hover .bl_nav__subCategory {
     display: none; }
   .bl_nav__link {
@@ -3942,7 +3945,7 @@ button {
     line-height: 24px;
     font-size: 26px; }
   .bl_inPresence__procent {
-    padding-top: 5px; }
+    padding-top: 0; }
   .bl_news p {
     padding: 0 20px; } }
 
@@ -3950,6 +3953,13 @@ button {
   .inf_product__tabs li {
     width: 100%;
     display: block; }
+  .bl_inPresence {
+    margin-top: 0;
+    background: none;
+    min-height: initial; }
+  .bl_inPresence__info {
+    -ms-transform: none;
+        transform: none; }
   .bl_inPresence__fullText {
     background-size: cover;
     min-height: 250px; }
@@ -3961,6 +3971,16 @@ button {
   .bl_inPresence__eagle {
     top: 0;
     width: 25vw; }
+  .slider_classicGenre__title {
+    background-color: #fff; }
+  .slider_classicGenre__link {
+    font-family: "Arial Narrow", sans-serif;
+    color: #333;
+    font-size: 18px; }
+    .slider_classicGenre__link:hover, .slider_classicGenre__link:focus {
+      color: #333; }
+    .slider_classicGenre__link:focus {
+      text-decoration: underline; }
   table {
     overflow-x: auto;
     display: block; }
@@ -3981,10 +4001,14 @@ button {
     padding-top: 0;
     -ms-flex-direction: column;
         flex-direction: column;
-    min-height: 100px; } }
+    min-height: 100px; }
+  .bl_phones .bl_phones__text:last-child {
+    display: none; } }
 
 /* Extra Small Devices, Phones 480px */
 @media only screen and (max-width: 480px) {
+  .bl_inPresence__wrapper {
+    margin-top: 12px; }
   .bl_shopBag__text {
     display: none; }
   .bl_subscribe__icon {

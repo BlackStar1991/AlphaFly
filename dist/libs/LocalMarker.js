@@ -1,10 +1,9 @@
 window.onload = function () {
-    var textForMarker = "loc",
-        coincidence = window.location.toString().search("/" + textForMarker + "//i ");
+    var textForMarker = "loc";
+    var re = new RegExp( textForMarker , 'gi' ),
+        coincidence = window.location.toString().search(re);
 
-    console.log(coincidence + " = coincidence");
-
-    if (coincidence != -1) {
+    if (coincidence !== -1) {
         var body = document.body,
             divMarker = document.createElement('div');
         divMarker.id = 'marker';
@@ -18,7 +17,5 @@ window.onload = function () {
     } else {
         console.log("You use 'Bobber for local page' ©Zirka Andry\nYou should add this script to .gitignore or delete it ! ")
     }
-
-
 
 };
