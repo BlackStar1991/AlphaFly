@@ -962,7 +962,7 @@ button {
   display: block;
   margin-bottom: 10px;
   line-height: 24px;
-  height: 120px;
+  height: 150px;
   overflow-y: auto; }
   .bl_classicsGenre__histore p {
     margin: 0;
@@ -3465,6 +3465,10 @@ button {
   text-align: center;
   vertical-align: middle; }
 
+.container.bl_information ul {
+  list-style-type: unset;
+  padding: 0px 40px; }
+
 /*********************************************/
 /*FOOTER*/
 /*********************************************/
@@ -3846,13 +3850,19 @@ button {
     border: 1px solid #000;
     border-top: none;
     margin: 0 auto; }
-  .bl_product__verticalSlider.slick-slider .slickArrow-next.slick-arrow {
-    left: 97%; }
+  .bl_inPresence__info {
+    min-height: 120px; }
+  .bl_inPresence__fullText {
+    min-height: 190px; }
   .bl_inPresence__eagle {
     position: absolute;
-    top: 100px;
-    right: 0;
-    width: 14vw; }
+    top: -50px;
+    right: -10px;
+    width: 24vw; }
+  .bl_inPresence__secondPart {
+    margin-top: 12px; }
+  .bl_product__verticalSlider.slick-slider .slickArrow-next.slick-arrow {
+    left: 97%; }
   .bl_inPresence__secondPart {
     margin-top: 5px;
     width: 83%; }
@@ -3866,6 +3876,21 @@ button {
     font-size: 30px;
     margin-left: 3%;
     margin-top: 20px; }
+  .bl_phones__facebook {
+    margin-bottom: 20px;
+    margin-top: -5px; }
+  .bl_inPresence {
+    min-height: 250px;
+    background-attachment: inherit; }
+  .bl_inPresence__fullText {
+    background-size: cover; }
+  .bl_inPresence__bigText {
+    font-size: 21px; }
+  .bl_inPresence__smallText {
+    line-height: 18px;
+    font-size: 18px; }
+  .bl_subscribe__input {
+    line-height: 40px; }
   .bl_nav__item:hover .bl_nav__subCategory {
     display: none; }
   .bl_nav__link {
@@ -3954,23 +3979,28 @@ button {
     width: 100%;
     display: block; }
   .bl_inPresence {
-    margin-top: 0;
+    margin-top: 80px;
     background: none;
-    min-height: initial; }
+    min-height: initial;
+    margin-bottom: 30px; }
   .bl_inPresence__info {
     -ms-transform: none;
         transform: none; }
+  .bl_phones__text {
+    font-size: 21px; }
+  .bl_inPresence__bigText {
+    font-size: 16px; }
   .bl_inPresence__fullText {
     background-size: cover;
     min-height: 250px; }
   .bl_inPresence__wrapper {
     margin-top: 36px; }
   .bl_inPresence__smallText {
-    line-height: 20px;
-    font-size: 17px; }
+    line-height: 14px;
+    font-size: 14px; }
   .bl_inPresence__eagle {
-    top: 0;
-    width: 25vw; }
+    top: -65px;
+    width: 34vw; }
   .slider_classicGenre__title {
     background-color: #fff; }
   .slider_classicGenre__link {
@@ -3981,6 +4011,10 @@ button {
       color: #333; }
     .slider_classicGenre__link:focus {
       text-decoration: underline; }
+  .bl_inPresence__procent {
+    margin-top: 5px; }
+  .bl_inPresence__secondPart {
+    margin-top: 2px; }
   table {
     overflow-x: auto;
     display: block; }
@@ -4002,6 +4036,8 @@ button {
     -ms-flex-direction: column;
         flex-direction: column;
     min-height: 100px; }
+  .bl_phones__text {
+    font-size: 21px; }
   .bl_phones .bl_phones__text:last-child {
     display: none; } }
 
@@ -4065,7 +4101,9 @@ button {
     max-height: 220px;
     overflow: hidden; }
   .button_buyProduct__corrected {
-    float: none; } }
+    float: none; }
+  .clothes_sizes {
+    overflow-x: scroll; } }
 
 /* Custom, iPhone Retina 320px */
 @media only screen and (max-width: 320px) {

@@ -237,15 +237,28 @@
     border-top: none;
     margin: 0 auto;
   }
-  .bl_product__verticalSlider.slick-slider .slickArrow-next.slick-arrow {
-    left: 97%;
-  }
 
+  .bl_inPresence__info {
+    min-height: 120px;
+  }
+  .bl_inPresence__fullText {
+    min-height: 190px;
+  }
   .bl_inPresence__eagle {
     position: absolute;
-    top: 100px;
-    right: 0;
-    width: 14vw;
+    top: -50px;
+    right: -10px;
+    width: 24vw;
+  }
+  .bl_inPresence__secondPart {
+    margin-top: 12px;
+  }
+
+
+
+
+  .bl_product__verticalSlider.slick-slider .slickArrow-next.slick-arrow {
+    left: 97%;
   }
 
   .bl_inPresence__secondPart {
@@ -267,6 +280,35 @@
     margin-left: 3%;
     margin-top: 20px;
   }
+
+
+  .bl_phones__facebook {
+    margin-bottom: 20px;
+    margin-top: -5px;
+
+  }
+
+  .bl_inPresence{
+    min-height: 250px;
+    background-attachment: inherit;
+  }
+  .bl_inPresence__fullText{
+    background-size: cover;
+  }
+  .bl_inPresence__bigText {
+    font-size: 21px;
+  }
+  .bl_inPresence__smallText {
+    line-height: 18px;
+    font-size: 18px;
+  }
+  .bl_subscribe__input{
+    line-height: 40px;
+  }
+
+
+
+
 
   .bl_nav__item:hover .bl_nav__subCategory {
     display: none;
@@ -421,13 +463,21 @@
   }
 
   .bl_inPresence{
-    margin-top: 0;
+    margin-top: 80px;
     background: none;
     min-height: initial;
+    margin-bottom: 30px;
   }
 
   .bl_inPresence__info{
     transform: none;
+  }
+
+  .bl_phones__text {
+    font-size: 21px;
+  }
+  .bl_inPresence__bigText {
+    font-size: 16px;
   }
 
   .bl_inPresence__fullText{
@@ -439,14 +489,13 @@
     margin-top: 36px;
   }
   .bl_inPresence__smallText{
-    line-height: 20px;
-    font-size: 17px;
+    line-height: 14px;
+    font-size: 14px;
   }
 
-  .bl_inPresence__eagle{
-    top: 0;
-    width: 25vw;
-  }
+  .bl_inPresence__eagle {
+    top: -65px;
+    width: 34vw;}
 
   .slider_classicGenre__title{
     background-color: #fff;
@@ -463,6 +512,14 @@
       text-decoration: underline;
     }
 
+  }
+
+
+  .bl_inPresence__procent {
+    margin-top: 5px;
+  }
+  .bl_inPresence__secondPart {
+    margin-top: 2px;
   }
 
   
@@ -500,6 +557,10 @@
     padding-top: 0;
     flex-direction: column;
     min-height: 100px;
+  }
+
+  .bl_phones__text {
+    font-size: 21px;
   }
 
 
@@ -621,6 +682,10 @@
 
   .button_buyProduct__corrected{
     float: none;
+  }
+
+  .clothes_sizes{
+    overflow-x: scroll;
   }
 
 }
